@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <h1>관심 부동산 상세</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 부동산 정보 -->
+            <div class="module-box module-header bg-ex-purple3 fc-white pb30">
+                <p class="fs-2xl fw-m ellipsis">마포한강아이파크</p>
+                <p class="mb10 ellipsis">서울시 마포구 희우정로 77</p>
+                <p class="pb20">
+                    <span class="custom-label label-square c-estate3 fw-m mr5">관심</span> 
+                    <span class="mr5">아파트</span>                 
+                    <span class="bullet bullet-dot  fc-white fs-df">84m² (25평)</span>
+                </p>
+
+                <dl class="data-list2 line-height-1 pt20">
+                    <dt>최근 매매 시세</dt>
+                    <dd>
+                        <p class="number-unit">
+                            <span class="number">140,000</span>
+                            <span class="unit">만원</span>
+                        </p>
+                    </dd>
+                    <dt>목표 금액</dt>
+                    <dd>
+                        <p class="number-unit">
+                            <span class="number">100,000</span>
+                            <span class="unit">만원</span>
+                        </p>
+                    </dd>
+                    <dt>저축 금액</dt>
+                    <dd>
+                        <p class="number-unit number-up">
+                            <span class="number">85,000</span>
+                            <span class="unit">만원</span>
+                        </p>
+                    </dd>
+                    <dt>목표 달성율</dt>
+                    <dd>
+                        <p class="number-unit fw-b">
+                            <span class="number fc-pink">목표달성을 축하드립니다</span>
+                        </p>
+                    </dd>
+                    <!-- 전세 시 -->
+                    <!-- <dt>보증금</dt>
+                    <dd>
+                        <p class="number-unit">
+                            <span class="number">55,000</span>
+                            <span class="unit">만원</span>
+                        </p>
+                    </dd>
+                    <dt>만기일</dt>
+                    <dd>
+                        <p class="number-unit fw-b">
+                            <span class="date">2024.12.12</span>
+                            <span class="dday">(D-729)</span>
+                        </p>
+                    </dd> -->
+                </dl>
+                <div class="btn-box mt15">
+                    <button type="button" class="btn btn-primary btn-block p10 opacity-07">삭제하기</button>
+                    <button type="button" class="btn btn-primary btn-block p10 opacity-07">수정하기</button>
+                </div>
+            </div>
+
+            <!-- 매매 / 전세 탭 -->
+            <div>
+                <ul class="tab-head tab-block w-full pt20">
+                    <li id="tab_t01" class="tab-btn" aria-controls="tab_panelt01">매매</li>
+                    <li id="tab_t02" class="tab-btn" aria-controls="tab_panelt02">전세</li>
+                </ul>
+
+                <!-- 매매 - 시세 -->
+                <div id="tab_panelt01" class="tab-panel p0">
+                    <div class="module-box">
+                        <h3 class="fs-lg fw-m">시세</h3>
+                        <!-- 라디오 버튼(탭기능)  -->
+                        <div class="grid-box col-4 pt10">
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd01" checked>
+                                <label for="rdo_hd01"><i></i>1년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd02">
+                                <label for="rdo_hd02"><i></i>3년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd03">
+                                <label for="rdo_hd03"><i></i>5년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd04">
+                                <label for="rdo_hd04"><i></i>7년</label>
+                            </div>
+                        </div>
+
+                        <!-- 차트 -->
+                        <div class="chart-wrapper">
+                            <div id="chart-line01"></div>
+                        </div>
+
+                        <!-- 범례 -->
+                        <div class="d-flex-center align-items-start pb40">
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#e22d72;"></span>
+                                상한가
+                            </p>
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#3c3e90;"></span>
+                                하한가
+                            </p> 
+                            <p class="fs-sm">
+                                <span class="legend-dot" style="background-color:#6abc7f;"></span>
+                                실거래가
+                            </p>  
+                        </div>
+
+                        <!-- 데이터 없을 경우(그래프) -->
+                        <div class="no-data pt">
+                            <p class="fs-lg fw-m">시세정보 내역이 없습니다.</p>
+                        </div>
+
+                        <!-- 매매 상한가/하한가 박스 -->
+                        <div class="p16 bg-white2">
+                            <ul class="d-flex text-center">
+                                <li class="w-50 p10">
+                                    <span class="fc-gray-d fw-r d-block">매매 상한가</span>
+                                    <span class="fw-b fs-xl fc-pink">142,000</span>
+                                    <span class="fs-md fc-pink fw-m" style="vertical-align: text-bottom;">만원</span>
+                                </li>
+                                <li class="w-50 p10 border-left">
+                                    <span class="fc-gray-d fw-r d-block">매매 하한가</span>
+                                    <span class="fw-b fs-xl fc-num-blue">122,000</span>
+                                    <span class="fs-md fw-m fc-num-blue" style="vertical-align: text-bottom;">만원</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="fs-sm fc-gray text-right mt10">2022.12 공감랩 기준</p>
+                    </div>
+
+                    <!-- 매매 - 실거래가 -->
+                    <div class="module-box module-border">
+                        <h3 class="fs-lg fw-m">실거래가</h3>
+                        <p class="fs-sm fc-gray text-right mt10">국토교통부, 단위:만원</p>
+                    
+                        <table class="custom-table mt10">
+                            <caption>실거래가 데이터</caption>
+                            <thead>
+                                <tr>
+                                    <th class="w-30">계약월</th>
+                                    <th class="w-20">층</th>
+                                    <th>가격</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022.06</td>
+                                    <td class="text-center">16층</td>
+                                    <td class="text-right fw-b">148,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.12</td>
+                                    <td class="text-center">2층<br>12층</td>
+                                    <td class="text-right fw-b">120,000<br>125,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.10</td>
+                                    <td class="text-center">13층</td>
+                                    <td class="text-right fw-b">121,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.03</td>
+                                    <td class="text-center">2층<br>10층<br>5층</td>
+                                    <td class="text-right fw-b">120,000<br>125,000<br>115,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2020.12</td>
+                                    <td class="text-center">13층</td>
+                                    <td class="text-right fw-b">105,000</td>
+                                </tr>
+                                <!-- 데이터 없을 경우(테이블) -->
+                                <tr class="table-no-data">
+                                    <td colspan="3">
+                                        <i class="icon">
+                                            <img src="../../../resources/new_images/icons/ico_nodata.svg" alt="">
+                                        </i>
+                                        <p class="fs-lg fw-m">실거래가 내역이 없습니다.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="button" class="btn btn-lg btn-block btn-border mt20">더보기</button>
+                    </div>
+
+                    <!-- 근처 아파트 최근 실거래가 -->
+                    <div class="module-box module-border">
+                        <h3 class="fs-lg fw-m">우리집 근처 아파트, <br>
+                        최근 매매 실거래가 알려드릴게요</h3>
+                        <p class="fs-sm fc-gray text-right mt10">국토교통부, 단위:만원</p>
+                    
+                        <table class="custom-table mt10">
+                            <caption>최근 매매 실거래가 데이터</caption>
+                            <thead>
+                                <tr>
+                                    <th class="w-50">단지명</th>
+                                    <th class="w-50">가격</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left">망원대림1차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">84,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">한강대주파크빌1차<br>
+                                        <span class="fs-xs fc-gray">98m² (29평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">100,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">망원대림2차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">합정한강아파트<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">그레이스3차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="button" class="btn btn-lg btn-block btn-border mt20">더보기</button>
+                    </div>
+
+                    <!-- 우리 단지 정보 확인 -->
+                    <div class="module-box module-border">
+                        <h3 class="fs-lg fw-m">우리 단지의 정보를 확인해보세요</h3>
+
+                        <div class="card-box-purple text-center mt10 p20">
+                            <p class="fs-md">우리 단지 보유자의 연 평균 추정소득은 <br>
+                            <span class="fw-b">120,000만원</span>이에요</p>
+                        </div>
+
+                        <div class="chart-wrapper">
+                            <div id="chart-column-basic"></div>
+                        </div>
+
+
+                        <div class="card-box-purple text-center mt10 p20">
+                            <p class="fs-md">우리 단지 보유자는<br>
+                            <span class="fw-b">40대</span>가 가장 많아요</p>
+                        </div>
+
+                        <div class="chart-wrapper">
+                            <div id="chart-column-basic2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 전세 -->
+                <div id="tab_panelt02" class="tab-panel p0">
+                    <div class="module-box">
+                        <h3 class="fs-lg">시세</h3>
+                        <!-- 라디오 버튼(탭기능)  -->
+                        <div class="grid-box col-4 pt10">
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-charter" id="rdo_ct01" checked>
+                                <label for="rdo_ct01"><i></i>1년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-charter" id="rdo_ct02">
+                                <label for="rdo_ct02"><i></i>3년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-charter" id="rdo_ct03">
+                                <label for="rdo_ct03"><i></i>5년</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-charter" id="rdo_ct04">
+                                <label for="rdo_ct04"><i></i>7년</label>
+                            </div>
+                        </div>
+
+                        <!-- 차트 -->
+                        <div class="chart-wrapper">
+                            <div id="chart-line02"></div>
+                        </div>
+
+                        <!-- 범례 -->
+                        <div class="d-flex-center align-items-start pb40">
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#e22d72;"></span>
+                                상한가
+                            </p>
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#3c3e90;"></span>
+                                하한가
+                            </p> 
+                            <p class="fs-sm">
+                                <span class="legend-dot" style="background-color:#6abc7f;"></span>
+                                실거래가
+                            </p>  
+                        </div>
+
+                        <!-- 전세 상한가/하한가 박스 -->
+                        <div class="p16 bg-white2">
+                            <ul class="d-flex text-center">
+                                <li class="w-50 p10">
+                                    <span class="fc-gray-d fw-r d-block">매매 상한가</span>
+                                    <span class="fw-b fs-xl fc-pink">150,000</span>
+                                    <span class="fs-md fc-pink fw-m" style="vertical-align: text-bottom;">만원</span>
+                                </li>
+                                <li class="w-50 p10 border-left">
+                                    <span class="fc-gray-d fw-r d-block">매매 하한가</span>
+                                    <span class="fw-b fs-xl fc-num-blue">100,000</span>
+                                    <span class="fs-md fw-m fc-num-blue" style="vertical-align: text-bottom;">만원</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="fs-sm fc-gray text-right mt10">2022.12 공감랩 기준</p>
+                    </div>
+
+                    <!-- 전세 - 실거래가 -->
+                    <div class="module-box module-border">
+                        <h3 class="fs-lg">실거래가</h3>
+                        <p class="fs-sm fc-gray text-right mt10">국토교통부, 단위:만원</p>
+                    
+                        <table class="custom-table mt10">
+                            <caption>실거래가 데이터</caption>
+                            <thead>
+                                <tr>
+                                    <th class="w-30">계약월</th>
+                                    <th class="w-20">층</th>
+                                    <th>가격</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022.06</td>
+                                    <td class="text-center">20층</td>
+                                    <td class="text-right">150,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.12</td>
+                                    <td class="text-center">2층<br>12층</td>
+                                    <td class="text-right">120,000<br>125,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.10</td>
+                                    <td class="text-center">13층</td>
+                                    <td class="text-right">121,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2021.03</td>
+                                    <td class="text-center">2층<br>10층<br>5층</td>
+                                    <td class="text-right">120,000<br>125,000<br>115,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2020.12</td>
+                                    <td class="text-center">13층</td>
+                                    <td class="text-right">105,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="button" class="btn btn-lg btn-block btn-border mt20">더보기</button>
+                    </div>
+
+                    <!-- 근처 아파트 최근 실거래가 -->
+                    <div class="module-box module-border">
+                        <h3 class="fs-lg fw-m">우리집 근처 아파트, <br>
+                        최근 매매 실거래가 알려드릴게요</h3>
+                        <p class="fs-sm fc-gray text-right mt10">국토교통부, 단위:만원</p>
+                    
+                        <table class="custom-table mt10">
+                            <caption>최근 매매 실거래가 데이터</caption>
+                            <thead>
+                                <tr>
+                                    <th class="w-50">단지명</th>
+                                    <th class="w-50">가격</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left">망원대림1차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">84,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">한강대주파크빌1차<br>
+                                        <span class="fs-xs fc-gray">98m² (29평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">100,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">망원대림2차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">합정한강아파트<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">그레이스3차<br>
+                                        <span class="fs-xs fc-gray">84m² (25평)</span>
+                                    </td>
+                                    <td class="text-right fw-b">95,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <button type="button" class="btn btn-lg btn-block btn-border mt20">더보기</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer">나의 부동산 등록</button>
+                <button type="button" class="btn btn-footer btn-primary">관심 부동산 등록</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+      <!--하이차트 관련 lib-->
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+      <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+         // Highcharts Default options (Highchart 사용시 필수 적용)
+         Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        //실거래가 추이(매매) Line chart - Basic
+        var chartLine = new Highcharts.Chart('chart-line01', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 30,
+                    spacingLeft: 0,
+                    spacingRight: 0
+                },
+                xAxis:{
+                    categories: [ '22.02', '22.04', '22.06', '22.08', '22.10', '22.12' ]
+                },
+                yAxis: {
+                    min: 10,
+                    max: 15,
+                    tickInterval: 1,
+                    labels: { 
+                        enabled: true,
+                        format: '{value}억'
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                series: [
+                    {
+                        name: '상한가', 
+                        data: [11.2, 13.5, 14, 11, 13.5, 14],
+                        lineColor: '#f095b8',
+                        marker: {
+                            fillColor: '#e22d72',
+                            enabled: true
+                        }
+                    }, 
+                    {
+                        name: '하한가',
+                        data: [10.1, 10.5, 11, 10.6, 12, 11],
+                        lineColor: '#9d9ec7',
+                        marker: {
+                            fillColor: '#3c3e90',
+                            enabled: true
+                        }
+                    }, 
+                    {
+                        name: '실거래가', 
+                        data: [14],
+                        lineColor: '#59c39b',
+                        marker: {
+                            fillColor: '#b4e3d1',
+                            enabled: true
+                        }
+                    }
+
+                ]
+
+            }
+        )); 
+
+        //실거래가 추이(전세) Line chart - Basic
+        var chartLine2 = new Highcharts.Chart('chart-line02', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 30,
+                    spacingLeft: 0,
+                    spacingRight: 0
+                },
+                xAxis:{
+                    categories: [ '22.02', '22.04', '22.06', '22.08', '22.10', '22.12' ]
+                },
+                yAxis: {
+                    min: 10,
+                    max: 15,
+                    tickInterval: 1,
+                    labels: { 
+                        enabled: true,
+                        format: '{value}억'
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                series: [
+                    {
+                        name: '상한가', 
+                        data: [11.2, 13.5, 14, 13, 13.5, 14],
+                        lineColor: '#f095b8',
+                        marker: {
+                            fillColor: '#e22d72',
+                            enabled: true
+                        }
+                    }, 
+                    {
+                        name: '하한가',
+                        data: [11.1, 12.5, 11, 10.6, 12, 11],
+                        lineColor: '#9d9ec7',
+                        marker: {
+                            fillColor: '#3c3e90',
+                            enabled: true
+                        }
+                    }, 
+                    {
+                        name: '실거래가', 
+                        data: [14, 14.2],
+                        lineColor: '#59c39b',
+                        marker: {
+                            fillColor: '#b4e3d1',
+                            enabled: true
+                        }
+                    }
+
+                ]
+
+            }
+        )); 
+
+        // 우리 단지 정보 - 연 평균 추정소득
+        var chartColumnBasic = new Highcharts.Chart('chart-column-basic', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 190,
+                    marginTop: 30,
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 48,
+                        dataLabels: {
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y) +'만원</span>'
+                            }
+                        }
+                    },
+                },
+                xAxis: { 
+                    categories: ['연 평균 추정소득'],
+                    labels:{
+                        style: { fontSize: '10px', fontWeight: '500', color: '#888' }
+                    }
+                },                    
+                yAxis: {
+                    min: 40000,
+                    max: 140000,
+                    tickInterval: 20000,
+                    labels: {
+                        enabled: true,
+                        format: '{value}만원'
+                    }    
+                },
+                series: [{
+                    data: [
+                        { y: 120000, color: '#f36b7f' },
+                    ]
+                }]
+            }
+        ));
+
+        // 우리 단지 정보 - 단지 보유자
+        var chartColumnBasic2 = new Highcharts.Chart('chart-column-basic2', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 220,
+                    marginTop: 30,
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 22,
+                        dataLabels: {
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y) +'%</span>'
+                            }
+                        }
+                    },
+                },
+                xAxis: { 
+                    categories: ['20대 미만', '30대', '40대', '50대', '60대', '70대 이상'],
+                    labels:{
+                        // y: 25,
+                        style: { fontSize: '10px', fontWeight: '500', color: '#888' }
+                    }
+                },                    
+                yAxis: {
+                    min: 0,
+                    max: 40,
+                    tickInterval: 10,
+                    labels: {
+                        enabled: true,
+                        format: '{value}%'
+                    }    
+                },
+                series: [{
+                    data: [
+                        { y: 2, color: '#59c39b' },
+                        { y: 28, color: '#59c39b' },
+                        { y: 37, color: '#59c39b' },
+                        { y: 16, color: '#59c39b' },
+                        { y: 12, color: '#59c39b' },
+                        { y: 5, color: '#59c39b' },
+                    ]
+                }]
+            }
+        ));
+    </script>
+</body>
+
+</html>

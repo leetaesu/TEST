@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="32" viewBox="0 0 98 32">
+    <defs>
+        <clipPath id="n21gry1vna">
+            <path data-name="사각형 3263" style="fill:#fff" d="M0 0h20v20H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 16900" transform="translate(-17 -833)">
+        <rect data-name="사각형 9713" width="98" height="32" rx="16" transform="translate(17 833)" style="fill:#7551aa"/>
+        <text data-name="Check!" transform="translate(77 855)" style="font-size:16px;font-family:SpoqaHanSansNeo-Medium,Spoqa Han Sans Neo;font-weight:500;fill:#fff"><tspan x="-26.136" y="0">Check!</tspan></text>
+        <circle data-name="타원 2342" cx="13" cy="13" r="13" transform="translate(20 836)" style="fill:#573885"/>
+        <g data-name="Check - 192x192" transform="translate(23 839)" style="clip-path:url(#n21gry1vna)">
+            <path data-name="패스 5557" d="m17.5 7-8.333 8.334L5 11.167" transform="translate(-.833 -1.167)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px"/>
+        </g>
+    </g>
+</svg>

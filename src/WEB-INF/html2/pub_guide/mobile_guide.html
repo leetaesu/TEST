@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터 퍼블리싱 가이드</title>
+
+    <link rel="shortcut icon" href="https://m.kiwoom.com/nkm/img/main/icn_kmobile01.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/ui_common_pub.css">
+    <link rel="stylesheet" href="assets/css/ui_guide.css">
+</head>
+
+<body>
+
+    <header class="guide-header">
+        <h1>
+            <img src="assets/images/logo.png" alt="키움증권">마이데이터 모바일
+        </h1>
+        <ul>
+            <li><a href="mobile_publish_list.html">퍼블리싱 화면 목록</a></li>
+            <li class="on"><a href="mobile_guide.html">퍼블리싱 개발 가이드</a></li>
+        </ul>
+    </header>
+
+    <main class="guide-main">
+        <!-- Menu -->
+        <div class="guide-menu">
+            <ul>
+                <li class="on"><a href="#" data-load="ui_guide">1. Publishing Guide</a></li>
+                <!-- <li><a href="#" data-load="layout_main">2. Page layout - Main</a></li>
+                <li><a href="#" data-load="layout_sub">3. Page layout - Sub</a></li>
+                <li><a href="#" data-load="ui_component">4. UI Components</a></li>
+                <li><a href="#" data-load="ui_patterns">5. UI Patterns</a></li>
+                <li><a href="#" data-load="ui_main_module">6. Main Module</a></li>
+                <li><a href="#" data-load="ui_chart_sample">7. Chart Sample</a></li> -->
+                <li><a href="pages/layout_main.html" target="_blank">2. Page layout - Main</a></li>
+                <li><a href="pages/layout_sub.html" target="_blank">3. Page layout - Sub</a></li>
+                <li><a href="pages/ui_component.html" target="_blank">4. UI Components</a></li>
+                <li><a href="pages/ui_elements.html" target="_blank">5. UI Elements</a></li>
+                <li><a href="pages/ui_detail_header.html" target="_blank">6. Detail page header</a></li>
+                <li><a href="pages/ui_chart_sample.html" target="_blank">7. Chart Sample</a></li>
+            </ul>
+        </div>
+        
+        <div class="guide-content"></div>
+    </main>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>    
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    
+    <script src="../../../resources/js/views/common/ui_common.js"></script>
+    <script src="assets/js/ui_guide.js"></script>
+    
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // Page init
+            $('.guide-content').load('pages/ui_guide.html #content_detail');
+        });
+
+        var eventDates = [1, 10, 12, 22],
+        $datepicker = $('#card_calendar');
+
+        $datepicker.datepicker({
+            language: 'ko',
+            onRenderCell: function(date, cellType) {
+                var currentDate = date.getDate();
+
+                if (cellType == 'day' && eventDates.indexOf(currentDate) != -1) {
+                    return {
+                        html: currentDate + '<span class="date-price">100,000</span>'
+                    }
+                }
+            },
+            onSelect: function() {
+
+            }
+        });
+
+        var currentDate = new Date();
+        $datepicker.data('datepicker')
+            .selectDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()));
+    </script>
+
+</body>
+
+</html>

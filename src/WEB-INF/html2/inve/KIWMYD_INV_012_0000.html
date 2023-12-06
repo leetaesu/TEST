@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>주식 진단</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group bg-white2">
+
+            <section class="module-box w-full">
+
+                <div class="swiper-container custom-swiper mt20" id="swiper01">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">보유한 주식<br>점검해보세요</h3>
+                            <p class="h70 fs-md fc-gray-d mt10">국내ㆍ해외 주식의 모멘텀,<br>수급 현황 등을 알아볼까요?</p>
+
+                            <img src="../../../resources/new_images/views/inve/img_diagnosis14.png" class="mt100" alt="">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">다른 증권사에 보유한 종목들도<br>진단받을 수 있어요</h3>
+                            <p class="h70 fs-md fc-gray-d mt10">대신 정확한 진단을 위해,<br>자산 연결 절차가 필요해요</p>
+
+                            <img src="../../../resources/new_images/views/inve/img_diagnosis15.png" class="mt100" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 14rem"></div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">펀드 진단받기</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+    </script>
+
+</body>
+
+</html>

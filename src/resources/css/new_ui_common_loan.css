@@ -1,0 +1,1635 @@
+/* 재심사 요청 버튼 */
+.retest-btn {
+    width: 7.8rem;
+    height: 3rem;
+    padding: 0;
+    border: none;
+    border-radius: .8rem;
+    background-color: #f2f2f2;
+    color: #212121;
+    font-size: 1.2rem;
+}
+/* scroll 클래스 추가 시 overflow 변경 */
+.page-wrapper.main.scroll {
+    overflow: inherit;
+    overflow-y: inherit;
+}
+.page-wrapper.sub.scroll > main,
+.page-wrapper.main.scroll > main {
+    overflow: inherit;
+    overflow-y: inherit;
+}
+.table-no-data {
+    text-align: center;
+}
+.table-no-data > td {
+    padding: 4.5rem 0 3rem !important;
+}
+.table-no-data .icon {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 3rem;
+}
+.data-list2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+.data-list2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #000;
+    opacity: 0.15;
+}
+.data-list2 .number-unit {
+    font-weight: 400;
+}
+.data-list2 dt, .data-list2 dd {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-size: var(--fs-df);
+    color: var(--c-white);
+    white-space: normal;
+    overflow: hidden;
+    padding: 0.4rem 0;
+}
+.data-list2 dt {
+    opacity: 0.6;
+}
+.data-list2 dd {
+    align-items: flex-end;
+}
+.data-list2 .number-unit.number-up {
+    color: #e22d72;
+    font-weight: bold;
+}
+.data-list2 .number-unit.number-down {
+    color: #36acc1;
+    font-weight: bold;
+}
+.data-list2 .number-down::before {
+    color: #36acc1;
+}
+/* 버튼 선택시 divide-bar 색상 */
+.custom-check.btn-type3 input:checked + label .divide-bar::before, 
+.custom-radio.btn-type3 input:checked + label .divide-bar::before {
+    background-color: var(--c-primary);
+}
+.bullet.bullet-noti16::before,
+.bullet-list.bullet-noti16 > li::before {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url(../new_images/icons/ico_noti.svg);
+    border-radius: 50%;
+}
+/* custom-table2 */
+.custom-table2 {
+    width: 100%;
+}
+.custom-table2 caption {
+    text-align: left;
+    margin-bottom: 1.2rem;
+    color: var(--c-black);
+    font-weight: 500;
+    font-size: var(--fs-md);
+}
+.custom-table2 tr {
+    border-bottom: 1px solid var(--c-gray-300);
+}
+.custom-table2 tr:first-child {
+    border-top: 1px solid var(--c-black-200);
+}
+.custom-table2 th {
+    width: 11rem;
+    padding: 1.5rem 0 1.5rem 0.6rem;
+    color: var(--c-gray-700);
+    font-weight: 400;
+}
+.custom-table2 td {
+    padding: 1.5rem 0 1.5rem 3.5rem;
+    color: var(--c-black-200);
+    font-weight: 500;
+}
+.custom-table2 .btn.btn-sm {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: .6rem;
+    height: 3.1rem;
+    color: var(--c-black-200);
+}
+.custom-table2 .input-wrap {
+    position: relative;
+    width: 11.3rem;
+    height: 3.1rem;
+}
+.custom-table2 .input-wrap .table-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11.3rem;
+    height: 3.1rem;
+    border: 1px solid var(--c-gray-300);
+    border-radius: .6rem;
+    padding: .6rem 4.2rem .6rem 1.2rem;
+    color: var(--c-black-200);
+    font-weight: 500;
+}
+.custom-table2 .input-wrap .txt-unit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-51%);
+    right: 1.2rem;
+}
+/* 숫자 옆 화살표 up */
+.num-up {
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: var(--fs-sm);
+    color: var(--c-pink);
+    font-weight: 500;
+}
+.num-up::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: .9rem;
+    height: .6rem;
+    background-image: url(../new_images/icons/icon_num_up.svg);
+    background-size: contain;
+    background-position: center;
+}
+/* 숫자 옆 화살표 down */
+.num-down {
+    position: relative;
+    padding-left: 1.2rem;
+    font-size: var(--fs-sm);
+    color: var(--c-num-blue);
+    font-weight: 500;
+}
+.num-down::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: .9rem;
+    height: .6rem;
+    background-image: url(../new_images/icons/icon_num_down.svg);
+    background-size: contain;
+    background-position: center;
+}
+
+/* 유효시간 시계 아이콘 */
+.icon-clock {
+    position: relative;
+    padding-left: 1.5rem;
+}
+.icon-clock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url('../new_images/icons/ico_clock.svg') center / contain;
+}
+
+/* 대출 리스트 커스텀 */
+.loan-list .custom-radio:not(:last-of-type) {
+    border-bottom: 1px solid var(--c-gray-300);
+    padding-bottom: 1.3rem;
+}
+.loan-list .custom-radio:not(:first-of-type) {
+    margin-top: 1.3rem !important;
+}
+.loan-list > .module-box {
+    padding-left: 0;
+    padding-right: 0;
+}
+.loan-list > .module-box + .module-box {
+    border-top: 1px solid var(--c-gray-300);
+}
+
+/* 대출 취소선 */
+.loan-cancel {
+    position: relative;
+}
+.loan-cancel .cancel-line {
+    margin-left: .5rem;
+    color: var(--c-gray-700);
+    font-size: var(--fs-sm);
+    vertical-align: text-top;
+}
+.loan-amount {
+    position: absolute;
+    right: 8rem;
+}
+/* 대출 이벤트 리스트 */
+.event-list.bg1 {
+    background-color: #e8f3fc;
+}
+.event-list.bg1 .number-motion li {
+    background-color: #e8f3fc;
+}
+.event-list.bg1 .number-motion li span,
+.event-list.bg2 .number-motion li span {
+    color: #3c3e90;
+}
+.event-list.bg2 {
+    background-color: #ececfc;
+}
+.event-list.bg2 .number-motion li {
+    background-color: #ececfc;
+}
+.event-list .tit {
+    margin-bottom: 8rem;
+    font-size: 2.2rem;
+    color: var(--c-black);
+    font-weight: 500;
+}
+.event-list .loan-btn {
+    font-size: 1.2rem;
+    height: 3rem;
+    padding: 0.7rem 0.8rem 0.8rem 1.2rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--c-white);
+    border: none;
+}
+.event-list .loan-btn .sub-link {
+    color: var(--c-num-blue);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.event-list .loan-btn .sub-link .count {
+    width: 2.3rem;
+    height: 1.8rem;
+    margin-left: 0.8rem;
+    color: var(--c-white);
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--c-num-blue);
+}
+.event-list .numb {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--c-black-200);
+}
+.event-list .numb > strong {
+    margin-right: .2rem;
+}
+.event-list .list-item:not(:last-of-type) {
+    margin-bottom: 3.2rem;
+}
+.event-list .sub-icon-link.icon-title::after {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.event-list .list-item span {
+    font-size: var(--fs-df);
+}
+.event-list .list-item span strong {
+    display: inline-block;
+    font-size: var(--fs-md);
+    margin-top: .4rem;
+    font-weight: 500;
+}
+.event-list.active .btn-box {
+    position: fixed;
+    bottom: 1.6rem;
+    width: calc(100% - 3.2rem);
+    z-index: 10;
+    animation: btnAni 0.5s ease-in-out;
+}
+@keyframes btnAni {
+    0% {
+        bottom: -10%;
+    }
+    100% {
+        bottom: 1.6rem;
+    }
+}
+.event-list.active .counter-list {
+    margin-bottom: 7.4rem !important;
+}
+.event-list .card-box {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 1.4rem 4rem 1.5rem;
+    margin-top: 2rem;
+    background: #f7f7f7 url('../new_images/icons/icon_arrow_right_blue.png') no-repeat right 1.6rem center / .7rem 1.2rem;
+}
+.event-list .card-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url('../new_images/icons/icon_invoice.png') no-repeat center / 2.2rem 2.2rem;
+}
+.event-list .card-box p {
+    font-size: var(--fs-md);
+    color: var(--c-num-blue);
+}
+.event-list .card-box p strong {
+    margin-left: .8rem;
+    font-weight: bold;
+}
+/* 노란색 밑줄 */
+.yellow-line {
+    position: relative;
+    z-index: 1;
+}
+.yellow-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #ffea97;
+    z-index: -1;
+}
+/* 은행대출비교 */
+/* .credit-list {
+    margin-bottom: 5.2rem;
+} */
+.credit-list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.credit-list li {
+    float: left;
+    width: calc((100% - 1.4rem) / 2);
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 .3rem .6rem 0 #d3d3d3;
+}
+.credit-list li:first-child {
+    background-color: #eff1fd;
+}
+.credit-list li:last-child {
+    background-color: #fdefef;
+    margin-left: 1.4rem;
+}
+.credit-list li img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-bottom: .8rem;
+}
+.credit-list li p {
+    font-size: var(--fs-sm);
+    color: var(--c-gray-700);
+    margin-bottom: .6rem;
+}
+.credit-list li strong {
+    position: relative;
+    font-size: var(--fs-md);
+    font-weight: 500;
+}
+.credit-list li strong::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url('../new_images/icons/ico_arrow12.png') no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+/* ICON BUTTON */
+.btn-icon-white::before {
+    background-image: url('../new_images/icons/icon_add_white.svg');
+}
+/* 대출 갈아타기 */
+.module-box.change-loan .change-loan-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--c-black);
+    padding: 2.2rem 6rem 2.2rem;
+    border-radius: 1.2rem;
+}
+.module-box.change-loan .change-loan-link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url('../new_images/icons/ico_arrow_right24.svg') no-repeat center;
+}
+.module-box.change-loan .change-loan-link:first-of-type {
+    background: #fef7ea url('../new_images/views/loan/img_alarm.png') no-repeat 2rem center / 3.2rem 3.2rem;
+    margin-bottom: 1rem;
+}
+.module-box.change-loan .change-loan-link:last-of-type {
+    background: #f2faf6 url('../new_images/views/loan/img_loan_money.png') no-repeat 2rem center / 3.2rem 3.2rem;
+}
+.module-box.change-loan .change-loan-link > strong {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: var(--fs-md);
+    font-weight: 500;
+}
+.module-box.change-loan .change-loan-link > p {
+    font-size: var(--fs-sm);
+}
+/* 대출 조회 결과 카드박스 */
+.dsr-box {
+    padding: 0 var(--main-padding) 0;
+}
+.dsr-box > .card-box {
+    background-color: #f6f6fd;
+    margin-bottom: 2rem;
+}
+.interest-box {
+    padding: 0 var(--main-padding) 3rem;
+}
+.interest-box > .card-box {
+    background-color: #fff8ed;
+}
+/* 라벨 */
+.loan-label-wrap {
+    padding-left: 4.5rem;
+    margin-top: 2rem;   
+}
+.loan-label-wrap span {
+    padding: .3rem .8rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+}
+.loan-label-wrap .label-row {
+    margin-bottom: .6rem;
+}
+.loan-label-wrap .label-row > span {
+    background-color: #eff2f7;
+    color: #3c3e90;
+}
+.loan-label-wrap .label-row > span + span {
+    margin-left: .5rem;
+}
+.loan-label-wrap > span {
+    background-color: #f5f5f5;
+    color: #616161;
+}
+/* 모달팝업 유의사항 */
+.modal-body.notice-wrap ul li + li {
+    margin-top: 1.6rem;
+}
+.modal-body.notice-wrap ul li > span {
+    width: 5.2rem;
+    height: 2.2rem;
+    border-radius: 1.1rem;
+    background-color: #212266;
+    font-size: 1rem;
+    color: #fff;
+    padding: .4rem 1.2rem;
+}
+.modal-body.notice-wrap ul li > p {
+    margin-top: .6rem;
+    color: var(--c-black-300);
+    font-size: var(--fs-df);
+}
+.modal-body.notice-wrap ul li > p strong {
+    font-weight: bold;
+}
+.modal-body.notice-wrap > p {
+    position: relative;
+    padding-left: 1rem;
+    margin-top: 2.4rem;
+    font-size: 1.2rem;
+    color: var(--c-gray-700);
+}
+.modal-body.notice-wrap > p::after {
+    content: '';
+    position: absolute;
+    top: .6rem;
+    left: 0;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+/* 자세히 보기 */
+.condition-cont {
+    display: none;
+    word-break: keep-all;
+}
+.condition-cont.active {
+    display: block;
+    margin-top: 2.8rem;
+}
+.condition-cont.active + p {
+    margin-top: 0 !important;
+    border-top: none;
+}
+/* 숫자 카운팅 */
+.count-wrap {
+    display: flex;
+}
+.year-txt {
+    padding-top: 10px;
+    margin-right: .5rem;
+    font-size: var(--fs-df);
+    color: var(--c-black-200);
+}
+.number-motion {
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    overflow: hidden;
+}
+.percent-ul {
+    position: absolute;
+    top: 0.5rem;
+    width: 2rem;
+    height: 3rem;
+    margin:0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    animation-iteration-count: 1;
+}
+.percent-ul.rolling {
+    animation: rotateMotion 3s 0s 1 ease-in-out both;
+}
+.percent-ul:nth-child(1) {
+    left: 0rem;
+}
+.percent-ul:nth-child(2) {
+    left: 1.8rem;
+}
+.percent-ul:nth-child(3) {
+    left: 3.8rem;
+}
+.percent-ul:nth-child(4) {
+    left: 5.7rem;
+}
+.percent-ul.on:nth-child(2) {
+    left: 2.1rem;
+}
+.percent-ul.on:nth-child(3) {
+    left: 3.9rem;
+}
+.percent-ul.on .percentData { 
+    position: relative;
+}
+.percent-ul.before .percentData:before {
+    content:"";
+    display: inline-block;
+    position: absolute;
+    left: -.4rem;
+    bottom: .3rem;
+    width: .4rem;
+    height: .4rem;
+    background-color: #212121;
+}
+.event-list.bg1 .percent-ul.before .percentData:before,
+.event-list.bg2 .percent-ul.before .percentData:before {
+    background-color: #3c3e90;
+}
+.percent-ul.before:nth-child(3) .percentData:before {
+    left: -.4rem;
+}
+.percent-ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 5rem;
+    background-color: #fff;
+    transform-origin: 50% 50%;
+}
+.percent-ul li:nth-child(1) {
+    transform: rotateX(0) translateZ(75px);
+}
+.percent-ul li:nth-child(2) {
+    transform: rotateX(36deg) translateZ(75px);
+}
+.percent-ul li:nth-child(3) {
+    transform: rotateX(72deg) translateZ(75px);
+}
+.percent-ul li:nth-child(4) {
+    transform: rotateX(108deg) translateZ(75px);
+}
+.percent-ul li:nth-child(5) {
+    transform: rotateX(144deg) translateZ(75px);
+}
+.percent-ul li:nth-child(6) {
+    transform: rotateX(180deg) translateZ(75px);
+}
+.percent-ul li:nth-child(7) {
+    transform: rotateX(216deg) translateZ(75px);
+}
+.percent-ul li:nth-child(8) {
+    transform: rotateX(252deg) translateZ(75px);
+}
+.percent-ul li:nth-child(9) {
+    transform: rotateX(288deg) translateZ(75px);
+}
+.percent-ul li:nth-child(10) {
+    transform: rotateX(324deg) translateZ(75px);
+}
+.percent-ul li span {
+    display: inline-block;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: #212121;
+}
+.percent-txt {
+    height: 3rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #212121;
+}
+.money-ul {
+    position: absolute;
+    top: 0.5rem;
+    width: 2rem;
+    height: 3rem;
+    margin:0;
+    z-index: 10;
+    transform-style: preserve-3d;
+    animation-iteration-count: 1;
+}
+.money-ul.rolling {
+    animation: rotateMotion 3s 0s 1 ease-in-out both;
+}
+.money-ul:nth-child(1) {
+    left: 0;
+}
+.money-ul:nth-child(2) {
+    left: 1.9rem;
+}
+.money-ul:nth-child(3) {
+    left: 3.8rem;
+}
+.money-ul:nth-child(4) {
+    left: 5.7rem;
+}
+.money-ul:nth-child(5) {
+    left: 7.6rem;
+}
+.money-ul:nth-child(6) {
+    left: 9.5rem;
+}
+.money-ul.on:nth-child(1) {
+    left: 0;
+}
+.money-ul.on:nth-child(2) {
+    left: 2.2rem;
+}
+.money-ul.on:nth-child(3) {
+    left: 3.9rem;
+}
+.money-ul.on:nth-child(4) {
+    left: 5.8rem;
+}
+.money-ul.on .moneyData {
+    position: relative;
+}
+.money-ul.before .moneyData:before {
+    display: inline-block;
+    content:"";
+    position: absolute;
+    left: -.5rem;
+    bottom: 0;
+    width: .6rem;
+    height: .8rem;
+    background: url('../new_images/icons/icon_comma.png') no-repeat center/ .6rem .8rem;
+}
+.event-list.bg1 .money-ul.before .moneyData:before, 
+.event-list.bg2 .money-ul.before .moneyData:before {
+    background-image: url('../new_images/icons/icon_comma_blue.png');
+} 
+.money-ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 5rem;
+    background-color: #fff;
+    transform-origin: 50% 50%;
+}
+.money-ul li:nth-child(1) {
+    transform: rotateX(0) translateZ(75px);
+}
+.money-ul li:nth-child(2) {
+    transform: rotateX(36deg) translateZ(75px);
+}
+.money-ul li:nth-child(3) {
+    transform: rotateX(72deg) translateZ(75px);
+}
+.money-ul li:nth-child(4) {
+    transform: rotateX(108deg) translateZ(75px);
+}
+.money-ul li:nth-child(5) {
+    transform: rotateX(144deg) translateZ(75px);
+}
+.money-ul li:nth-child(6) {
+    transform: rotateX(180deg) translateZ(75px);
+}
+.money-ul li:nth-child(7) {
+    transform: rotateX(216deg) translateZ(75px);
+}
+.money-ul li:nth-child(8) {
+    transform: rotateX(252deg) translateZ(75px);
+}
+.money-ul li:nth-child(9) {
+    transform: rotateX(288deg) translateZ(75px);
+}
+.money-ul li:nth-child(10) {
+    transform: rotateX(324deg) translateZ(75px);
+}
+.money-ul li span {
+    display: inline-block;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: #212121;
+}
+.money-txt{
+    float: left;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+    color: #212121;
+}
+@keyframes rotateMotion {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+/* 약관동의 박스 */
+.agree-box {
+    padding: 2rem;
+    margin-bottom: 1.8rem;
+    border-radius: 1.2rem;
+    background-color: #fafafa;
+}
+.agree-box .tit {
+    margin-bottom: 1.2rem;
+    font-size: var(--fs-md);
+    font-weight: bold;
+    color: var(--c-black-200);
+}
+.agree-box li {
+    display: flex;
+}
+.agree-box li + li {
+    margin-top: 1.6rem;
+}
+.agree-box li .img-wrap {
+    width: 4rem;
+    height: 4rem;
+}
+.agree-box li .text-wrap {
+    margin-left: .8rem;
+}
+.agree-box li .text-wrap span {
+    font-size: 1.4rem;
+    color: var(--c-black-200);
+    font-weight: 500;
+}
+.agree-box li .text-wrap p {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: .4rem;
+}
+/* 금리 인하 이벤트 */
+.interest-rate-event .modal-header {
+    background-color: #e8f3fc;
+    border-bottom: none !important;
+}
+.interest-rate-event .modal-header .modal-close {
+    z-index: 10;
+}
+.interest-rate-event .modal-body {
+    display: block;
+}
+.interest-rate-event .module-box {
+    background-color: #e8f3fc;
+}
+.interest-rate-event .module-box.visual-box {
+    position: relative;
+    width: 100%;
+    height: 44.8rem;
+    padding: 1.4rem 0 1.8rem;
+    margin: 0 auto;
+}
+.interest-rate-event .visual-box > div  {
+    position: relative;
+    width: 36rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.interest-rate-event .visual-box > div::after {
+    content: '';
+    position: absolute;
+    top: -4.7rem;
+    left: 0;
+    width: 36rem;
+    height: 44.8rem;
+    background: #e8f3fc url('../new_images/views/loan/bg_interest_event.png') no-repeat center / 36rem 44.8rem;
+}
+.interest-rate-event .visual-box .tit {
+    position: relative;
+    z-index: 10;
+    font-size: 2.2rem;
+    color: var(--c-black);
+    font-weight: 500;
+    text-align: center;
+}
+.interest-rate-event .visual-box .tit > strong {
+    color: #1c4fde;
+    font-weight: bold;
+}
+.interest-rate-event .visual-box .text1,
+.interest-rate-event .visual-box .text2 {
+    font-size: 1.6rem;
+    color: var(--c-black);
+    z-index: 10;
+}
+.interest-rate-event .visual-box .text1 > strong,
+.interest-rate-event .visual-box .text2 > strong {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.interest-rate-event .visual-box .text1 {
+    position: absolute;
+    top: 10.4rem;
+    left: 4.6rem;
+    text-align: left;
+}
+.interest-rate-event .visual-box .text2 {
+    position: absolute;
+    top: 14.3rem;
+    right: 5.5rem;
+    text-align: right;
+}
+.interest-rate-event h3.tit {
+    color: var(--c-black);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.interest-rate-event h3.tit > span {
+    font-weight: bold;
+    color: #e22d72;
+}
+/* 기본 타입 버튼 */
+.btn-basic {
+    width: 100%;
+    height: 4.8rem;
+    background-color: var(--c-white);
+    border: 1px solid var(--c-gray-400);
+    border-radius: var(--border-radius-sm);
+    margin-top: 3rem;
+    margin-left: 0;
+    font-size: var(--fs-df);
+    color: var(--c-gray-800);
+    font-weight: 400;
+    letter-spacing: -0.035rem;
+}
+.btn-basic + .btn-basic {
+    margin-top: 1rem;
+}
+/* 은행대출비교, 대출갈아타기 */
+.loan_compare_cont .link_list {
+    margin-top: .5rem;
+}
+.loan_compare_cont .link_list > li {
+    position: relative;
+    line-height: 2.1rem;
+    padding-left: 2.8rem;
+    font-size: var(--fs-lg);
+    color: #666;
+    font-weight: 500;
+}
+.loan_compare_cont .link_list > li + li {
+    margin-top: 1.6rem;
+}
+.loan_compare_cont .link_list > li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.8rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.8rem 2rem;
+}
+.loan_compare_cont .link_list > li:first-child::before {
+    background-image: url('../new_images/views/loan/icon_event_list_rate01.svg');
+}
+.loan_compare_cont .link_list > li:last-child::before {
+    background-image: url('../new_images/views/loan/icon_event_list_rate02.svg');
+}
+.loan_compare_cont .link_list > li .sub-link::after {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    right: -.3rem;
+}
+.loan_compare_cont .bank_list {
+    position: relative;
+    height: 25.6rem;
+    margin: 4rem 4.2rem 4rem;
+}
+.loan_compare_cont .bank_list > li {
+    position: absolute;
+    line-height: 1.7rem;
+    width: 100%;
+    padding: 2.1rem 2.4rem 2rem 0;
+    border-radius: 1.2rem;
+    font-size: var(--fs-md);
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    opacity: 0;
+}
+.loan_compare_cont .bank_list > li:nth-child(1) {
+    animation-fill-mode: forwards;
+    animation-name: bankListAni01, bankListAni01_2; 
+    animation-delay: 1.8s, 2.4s;
+    animation-duration: .6s, .7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    z-index: 10;
+}
+.loan_compare_cont .bank_list > li:nth-child(2) {
+    animation-fill-mode: forwards;
+    animation-name: bankListAni02, bankListAni02_2, bankListAni02_3; 
+    animation-delay: 0s, 1.2s, 2.4s;
+    animation-duration: .6s, .6s, .7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+}
+.loan_compare_cont .bank_list > li:nth-child(3) {
+    animation-fill-mode: forwards;
+    animation-name: bankListAni03, bankListAni03_2; 
+    animation-delay: 1.2s, 2.4s;
+    animation-duration: .6s, .7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+}
+.loan_compare_cont .bank_list > li:nth-child(4) {
+    animation-fill-mode: forwards;
+    animation-name: bankListAni04, bankListAni04_2, bankListAni04_3; 
+    animation-delay: .6s, 1.2s, 2.4s;
+    animation-duration: .6s, .6s, .7s;
+    animation-timing-function: ease-in-out, ease-in-out;
+}
+.loan_compare_cont .bank_list > li > img {
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.6rem;
+}
+.loan_compare_cont .bank_list > li span {
+    margin-left: 1rem;
+}
+.loan_compare_cont .bank_list2 {
+    margin-top: 4rem;
+}
+.loan_compare_cont .bank_list2 > li {
+    padding: 1rem 2rem 2rem;
+    opacity: 0;
+    animation: bankListAni .8s ease-in-out forwards;
+}
+.loan_compare_cont .bank_list2 > li + li {
+    margin-top: 1rem;
+}
+.loan_compare_cont .bank_list2 > li:nth-child(2) {
+    animation-delay: .5s;
+}
+@keyframes bankListAni01 {
+    0% {
+        opacity: 0;
+        top: 26.4rem;
+    }
+    70%, 100% {
+        opacity: 1;
+        top: 19.8rem;
+    }
+}
+@keyframes bankListAni01_2 {
+    0% {
+        top: 19.8rem;
+    }
+    70%, 100% {
+        top: 0;
+    }
+}
+@keyframes bankListAni02 {
+    0% {
+        opacity: 0;
+        top: 6.6rem;
+    }
+    70%, 100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes bankListAni02_2 {
+    0% {
+        top: 0;
+    }
+    30% {
+        top: -.3rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+@keyframes bankListAni02_3 {
+    0% {
+        top: 0;
+    }
+    70%, 100% {
+        top: 6.6rem;
+    }
+}
+@keyframes bankListAni03 {
+    0% {
+        opacity: 0;
+        top: 6.6rem;
+        transform: translateX(100%);
+    }
+    70%, 100% {
+        opacity: 1;
+        top: 6.6rem;
+        transform: translateX(0);
+    }
+}
+@keyframes bankListAni03_2 {
+    0% {
+        top: 6.6rem;
+    }
+    70%, 100% {
+        top: 13.2rem;
+    }
+}
+@keyframes bankListAni04 {
+    0% {
+        opacity: 0;
+        top: 13.2rem;
+    }
+    70%, 100% {
+        opacity: 1;
+        top: 6.6rem;
+    }
+}
+@keyframes bankListAni04_2 {
+    0% {
+        top: 6.6rem;
+    }
+    70%, 100% {
+        top: 13.2rem;
+    }
+}
+@keyframes bankListAni04_3 {
+    0% {
+        top: 13.2rem;
+    }
+    70%, 100% {
+        top: 19.8rem;
+    }
+}
+@keyframes bankListAni {
+    0% {
+        opacity: 0;
+        transform: translateY(60%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.loan_compare_cont .info_wrap .bullet-list > li {
+    margin-top: 1.6rem;
+}
+.loan_compare_cont .img_plane_wrap {
+    width: 17.7rem;
+    height: 11.5rem;
+    margin: 8rem auto 0;
+}
+.loan_compare_cont .box_interaction .bar_01.on, 
+.loan_compare_cont .box_interaction .bar_02.on,
+.loan_compare_cont .box_interaction .bar_shadow_01 {
+    animation: 1s ease-in-out backwards fadeEffect;
+}
+@keyframes heightSize {
+    0%, 100%, 60% {
+        top:5.5rem;
+        height:16.4rem;
+    }
+    30% {
+        top:6.4rem;
+        height:15.5rem;
+    }
+}
+@keyframes heightSize2 {
+    0%, 100%, 60% {
+        top:12.6rem;
+        height:12.9rem;
+    }
+    30% {
+        top:13.5rem;
+        height:12rem;
+    }
+}
+@keyframes heightSize3 {
+    0%, 100%, 60% {
+        top:19.1rem;
+        height:9.9rem;
+    }
+    30% {
+        top:19.5rem; 
+        height:9.5rem;
+    }
+}
+@keyframes fadeEffect {
+    0% {
+        opacity:0;
+    }
+    100%, 50% {
+        opacity:1;
+    }
+}
+@keyframes coinEffect2 {
+    0% {
+        transform:rotateY(0);
+    }
+    50% {
+        transform:rotateY(180deg);
+    }
+    100% {
+        transform:rotateY(360deg)};
+    }
+@keyframes coinEffect1 {
+    0% {
+        opacity:1;
+        top:-5rem;
+    }
+    100% {
+        opacity:1;
+        top:.4rem;
+    }
+}
+@keyframes shadowEffect {
+    0% {
+        width:0%;
+    }
+    100%, 30%, 50% {
+        width:100%;
+    }
+    40% {
+        width:80%;
+    }
+}
+@keyframes shadowEffectOff {
+    0% {
+        width:100%;
+    } 
+    100%, 40% {
+        width:0%;
+    }
+}
+@keyframes coinMove{
+    0% {
+        left:8.4rem;
+        top:1.8rem
+    }
+    30% {
+        left:10rem;
+        top:0;
+    }
+    60% {
+        left:12rem;
+        top:-1rem;
+    }
+    100% {
+        left:15.9rem;
+        top:8.9rem;
+        }
+    }
+@keyframes circleEffect {
+    0% {
+        clip-path:circle(0% at 0% 0%);
+    }
+    75% {
+        clip-path:circle(70% at 0% 0%);
+    }
+    100% {
+        clip-path:circle(140% at 0% 0%);
+    }
+}
+.loan_compare_cont .box_interaction {
+    position:relative;
+    width:36rem;
+    height:36rem;
+    margin-left:-1rem;
+    overflow:hidden;
+}
+.loan_compare_cont .box_interaction .bar_01 {
+    background:url("../new_images/views/loan/bar_01.png") 0 0/100% 100% no-repeat;
+    width:9rem;
+    height:16.4rem;
+    position:absolute;
+    left:6rem;
+    top:5.5rem;
+    z-index:10;
+    display:none;
+}
+.loan_compare_cont .box_interaction .bar_01.on2 {
+    animation:1s ease-in-out forwards heightSize;
+}
+.loan_compare_cont .box_interaction .bar_shadow_01 {
+    background:url("../new_images/views/loan/bar_shadow_01.png") 0 0/100% 100% no-repeat;
+    width:16.5rem;
+    height:13.5rem;
+    position:absolute;
+    left:-.3rem;
+    top:12.4rem;
+    z-index:9;
+    display:none
+}
+.loan_compare_cont .box_interaction .bar_02 {
+    background:url("../new_images/views/loan/bar_02.png") 0 0/100% 100% no-repeat;
+    width:9rem;
+    height:12.9rem;
+    position:absolute;
+    left:13.4rem;
+    top:12.6rem;
+    z-index:20;
+    display:none;
+}
+.loan_compare_cont .box_interaction .bar_02.on2 {
+    animation:1s ease-in-out forwards heightSize2;
+}
+.loan_compare_cont .box_interaction .bar_shadow_02 {
+    background:url("../new_images/views/loan/bar_shadow_02.png") 0 0/100% 100% no-repeat;
+    width:13.2rem;
+    height:18.7rem;
+    position:absolute;
+    left:6.6rem;
+    top:9.1rem;
+    z-index:19;
+    animation:1s ease-in-out .9s backwards fadeEffect;
+}
+.loan_compare_cont .box_interaction .bar_03 {
+    background:url("../new_images/views/loan/bar_03.png") 0 0/100% 100% no-repeat;
+    width:9rem;
+    height:9.9rem;
+    position:absolute;
+    left:21rem;
+    top:19.1rem;
+    z-index:30;
+    animation:1s ease-in-out 1.1s backwards fadeEffect;
+}
+.loan_compare_cont .box_interaction .bar_03.on2 {
+    animation:1s ease-in-out forwards heightSize3;
+}
+.loan_compare_cont .box_interaction .bar_shadow_03 {
+    background:url("../new_images/views/loan/bar_shadow_03.png") 0 0/100% 100% no-repeat;
+    width:13.2rem;
+    height:17.2rem;
+    position:absolute;
+    left:14.5rem;
+    top:14.6rem;
+    z-index:29;
+    animation:1s ease-in-out 1.2s backwards fadeEffect;
+}
+.loan_compare_cont .box_interaction .coin_box {
+    position:relative;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01 {
+    position:absolute;
+    left:8rem;
+    top:.5rem;
+    z-index:100;
+    opacity:0;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01.on {
+    animation:.4s ease-in-out forwards coinEffect1;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01:after {
+    content:"";
+    display:block;
+    background:url("../new_images/views/loan/coin.png") 0 0/100% 100% no-repeat;
+    width:4.1rem;
+    height:4.4rem;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow1:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow2:after {
+    opacity:.2;
+    background-image:radial-gradient(circle at 50% 50%,#203f6a,#acc0db 67%,rgba(172,192,219,0) 95%);
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01.on2 {
+    animation:.4s cubic-bezier(.02,.01,.21,1) forwards xAxis_step1_x;
+}
+@keyframes xAxis_step1_x {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.3,0.27,0.07,1.64);
+        transform:translateX(7.6rem);
+    }
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01.on2:after {
+    animation:1.5s cubic-bezier(.3,.27,.07,1.64) forwards yAxis_step1_y;
+}
+@keyframes yAxis_step1_y {
+    0% {
+        opacity:1;
+    }
+    15% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.02,0.01,0.21,1);
+        transform:translateY(-2rem);
+    }
+    25% {
+        animation-timing-function:cubic-bezier(0.02,0.01,0.21,1);
+        transform:translateY(6.7rem);
+    }
+    100% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.02,0.01,0.21,1);
+        transform:translateY(6.7rem);
+    }
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01.on3 {
+    transform:translateX(8rem) translateY(7rem);
+    animation:.4s cubic-bezier(.02,.01,.21,1) forwards xAxis_step2_x;
+}
+@keyframes xAxis_step2_x {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.3,0.27,0.07,1.64);
+        transform:translateX(15rem);
+    }
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01.on3:after {
+    animation:.5s cubic-bezier(.3,.27,.07,1.64) forwards yAxis_step2_y;
+}
+@keyframes yAxis_step2_y {
+    0% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.02,0.01,0.21,1);
+        transform:translateY(1rem);
+    }
+    100% {
+        opacity:1;
+        animation-timing-function:cubic-bezier(0.02,0.01,0.21,1);
+        transform:translateY(13.5rem);
+    }
+}
+.loan_compare_cont .box_interaction .coin_box .coin_01_bg { 
+    background:url("../new_images/views/loan/coin_shadow.png") 0 0/100% 100% no-repeat;
+    height:.8rem;
+    width:100%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-1rem;
+    z-index:9;
+    text-align:center;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow1 {
+    position:absolute;
+    left:8.5rem;
+    top:4.7rem;
+    width:4rem;
+    z-index:80;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow1:after {
+    display:block;
+    content:"";
+    width:0%;
+    height:.4rem;
+    margin:0 auto;
+    transform:rotate(-7deg);
+    border-radius:50%;
+    object-fit:contain;
+    mix-blend-mode:darken;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow2:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow3:after {
+    display:block;
+    content:"";
+    width:0%;
+    height:.5rem;
+    margin:0 auto;
+    border-radius:50%;
+    transform:rotate(-7deg);
+    object-fit:contain;
+    mix-blend-mode:darken;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow1.on:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow2.on:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow3.on:after {
+    animation:1.5s ease-in forwards shadowEffect;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow1.off:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow2.off:after,
+.loan_compare_cont .box_interaction .coin_box .coin_shadow3.off:after {
+    animation:.5s ease-in-out forwards shadowEffectOff;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow2 {
+    position:absolute;
+    left:16rem;
+    top:11.5rem;
+    width:4rem;
+    z-index:80;
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow3 {
+    position:absolute;
+    left:23.5rem;
+    top:18.2rem;
+    width:4rem;
+    z-index:80
+}
+.loan_compare_cont .box_interaction .coin_box .coin_shadow3:after {
+    opacity:.6;
+    background-image:radial-gradient(circle at 50% 50%,#61123e,#a10055 67%,rgba(184,0,97,0) 96%);
+}
+.loan_compare_cont .box_interaction .coin_line {
+    background:url("../new_images/views/loan/coin_line.png") 0 0/100% 100% no-repeat;
+    width:14.3rem;
+    height:12.1rem;
+    position:absolute;
+    left:11rem;
+    top:3.5rem;
+    z-index:40;
+    clip-path:circle(0% at 0% 0%);
+    animation:.8s ease-in 1.3s forwards circleEffect;
+}
+/* 주택담보대출 */
+.loan_compare_cont .house_wrap {
+    position: relative;
+    height: 28rem;
+    margin: 2.4rem auto 0;
+}
+.loan_compare_cont .house_wrap .house1 {
+    position: absolute;
+    left: -3.5rem;
+    top: 14rem;
+    width: 23.8rem;
+    height: 13.9rem;
+    background: url("../new_images/views/loan/house1_off.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 50;
+}
+.loan_compare_cont .house_wrap .house1.on:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 23.8rem;
+    height: 13.9rem;
+    background: url("../new_images/views/loan/house1_on.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 51;
+    animation: fadeInEffect 0.5s 0s ease-in-out 1 backwards;
+}
+.loan_compare_cont .house_wrap .house2 {
+    position: absolute;
+    left: 5.5rem;
+    top: 4rem;
+    width: 23.8rem;
+    height: 22.8rem;
+    background: url("../new_images/views/loan/house2_off.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 40;
+}
+.loan_compare_cont .house_wrap .house2.on:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 23.8rem;
+    height: 22.8rem;
+    background: url("../new_images/views/loan/house2_on.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 41;
+    animation: fadeInEffect 0.5s 0s ease-in-out 1 forwards;
+}
+.loan_compare_cont .house_wrap .house3 {
+    position: absolute;
+    left: 14.3rem;
+    top: 11.8rem;
+    width: 23.8rem;
+    height: 13.6rem;
+    background: url("../new_images/views/loan/house3_off.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 30;
+}
+.loan_compare_cont .house_wrap .house3.on:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 23.8rem;
+    height: 13.6rem;
+    background: url("../new_images/views/loan/house3_on.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 31;
+    animation: fadeInEffect 0.5s 0s ease-in-out 1 backwards;
+}
+.loan_compare_cont .house_wrap .coin_bg {
+    display: none;
+    position: absolute;
+    left: 18.3rem;
+    top: -.5rem;
+    width: 6.4rem;
+    height: 6.8rem;
+    background: url("../new_images/views/loan/ico_coin_bg.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 100;
+    transform: scale(0);
+}
+.loan_compare_cont .house_wrap .coin_bg.on {
+    animation: sizeMotion 0.5s 0s ease-in-out 1 forwards;
+}
+.loan_compare_cont .house_wrap .coin_ic {
+    display: none;
+    position: absolute;
+    left: 20.2rem;
+    top: 1.2rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    background: url("../new_images/views/loan/ico_coin.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 100;
+    transform: scale(0);
+}
+.loan_compare_cont .house_wrap .coin_ic.on {
+    animation: sizeMotion 0.3s 0s ease-in-out 1 forwards;
+}
+@keyframes sizeMotion {
+    0% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+    }
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

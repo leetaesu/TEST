@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>나의 포트폴리오</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">닫기</button>
+        </header>
+
+        <main class="module-group">
+            <div class="module-box p0">
+
+                <ul class="tab-head tab-block pt20">
+                    <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">보유종목 비중</li>
+                    <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">국내주식 비중</li>
+                    <li id="tab_03" class="tab-btn" aria-controls="tab_panel03">해외주식 비중</li>
+                </ul>
+
+                <!-- 보유종목 비중 탭 컨텐츠 -->
+                <div id="tab_panel01" class="tab-panel p0">
+                    <div class="module-box pt0 pb40">
+
+                        <ul class="tab-head w-full mt10">
+                            <li id="tab_04" class="tab-btn" aria-controls="tab_panel04">국내주식 50.2%</li>
+                            <li id="tab_05" class="tab-btn" aria-controls="tab_panel05">해외주식 0%</li>
+                        </ul>
+
+                        <!-- 국내주식 탭 컨텐츠 -->
+                        <div id="tab_panel04" class="tab-panel p0">
+
+                            <!-- 차트 - 보유중인 국내주식 TOP5 -->
+                            <div class="bg-gray-l w-full py30 px-padding text-center">
+                                <h3>보유중인 국내주식 TOP5</h3>
+
+                                <div class="chart-wrapper mt10">
+                                    <div id="chart-donut-legend1"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt20">
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio01" id="rdo_01" checked>
+                                    <label for="rdo_01"><i></i>종목비중순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio01" id="rdo_02">
+                                    <label for="rdo_02"><i></i>수익률순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio01" id="rdo_03">
+                                    <label for="rdo_03"><i></i>종목명순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio01" id="rdo_04">
+                                    <label for="rdo_04"><i></i>업종순</label>
+                                </div>
+                            </div>                           
+
+                            <!-- 종목비중순 -->
+                            <div class="module-box p0">
+
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-red fs-lg">삼성전자</h4>
+                                    <p>업종 : 전기전자</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-pink fs-lg">현대차</h4>
+                                    <p>업종 : 전기전자</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>                                
+
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-green fs-lg">키움증권</h4>
+                                    <p>업종 : 전기전자</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-blue fs-lg">하이닉스</h4>
+                                    <p>업종 : 전기전자</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-yellow fs-lg">셀트리온</h4>
+                                    <p>업종 : 전기전자</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                
+                                <div class="btn-box mt10">
+                                    <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                                </div>                                
+
+                            </div>
+
+                        </div>
+
+                        <!-- 해외주식 탭 컨텐츠 -->
+                        <div id="tab_panel05" class="tab-panel p0">
+
+                            <!-- 주식이 없는 경우 -->
+                            <div class="module-box d-flex-center h300 p0">
+                                <div class="no-data">
+                                    <p class="fs-lg fw-m">보유 중인 주식이 없습니다.</p>
+                                </div>
+                            </div>
+                            <div class="btn-box pt20">
+                                <button type="button" class="btn btn-lg btn-block fs-lg btn-primary">투자고수 관심상품 보기</button>
+                            </div>
+
+                        </div>
+                
+                    </div>                    
+                </div>
+
+                <!-- 국내주식 비중 탭 컨텐츠 -->
+                <div id="tab_panel02" class="tab-panel p0">
+                    <div class="module-box pt0 pb40">
+                        <ul class="tab-head w-full mt10">
+                            <li id="tab_06" class="tab-btn" aria-controls="tab_panel06">코스피 비중 50.2%</li>
+                            <li id="tab_07" class="tab-btn" aria-controls="tab_panel07">코스닥 비중 48.8%</li>
+                        </ul>
+
+                        <!-- 코스피 비중 탭 컨텐츠 -->
+                        <div id="tab_panel06" class="tab-panel p0">
+
+                            <!-- 차트 - 보유중인 코스피 업종 TOP5 -->
+                            <div class="bg-gray-l w-full py30 px-padding text-center">
+                                <h3>보유중인 코스피 업종 TOP5</h3>
+
+                                <div class="chart-wrapper mt10">
+                                    <div id="chart-donut-legend2"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt20">
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio02" id="rdo_05" checked>
+                                    <label for="rdo_05"><i></i>업종비중순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio02" id="rdo_06">
+                                    <label for="rdo_06"><i></i>업종수익률순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio02" id="rdo_07">
+                                    <label for="rdo_07"><i></i>업종순</label>
+                                </div>
+                            </div> 
+
+                            <!-- 업종별 리스트 -->
+                            <div class="module-box p0">
+
+                                <!-- 업종1 -->
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-red fs-lg">전기전자</h4>
+                                    <p>비중 50.2%</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">SK 하이닉스</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 종목 더 보기 -->
+                                <div id="collapse_01" style="display: none;">
+                                    <ul>
+                                        <li class="border-top">
+                                            <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                            <ul class="py20 border d-flex px-padding">
+                                                <li class="w-100">
+                                                    <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                    <span class="fw-b">2.99%</span>
+                                                </li>
+                                                <li class="w-100">
+                                                    <span class="fs-sm fc-gray mr5">수익률</span>
+                                                    <span class="fw-b fc-num-red">+26.12%</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border-top">
+                                            <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">SK 하이닉스</p>
+                                            <ul class="py20 border d-flex px-padding">
+                                                <li class="w-100">
+                                                    <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                    <span class="fw-b">2.99%</span>
+                                                </li>
+                                                <li class="w-100">
+                                                    <span class="fs-sm fc-gray mr5">수익률</span>
+                                                    <span class="fw-b fc-num-red">+26.12%</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text-center border-top pt10">
+                                    <a href="#;" class="sub-link sub-icon-more" onclick="KW_MOBILE.guiEvent.collapseBox('#collapse_01')">더 보기</a>
+                                </div>
+
+                                <!-- 업종2 -->
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-pink fs-lg">IT부품</h4>
+                                    <p>비중 50.2%</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- 업종3 -->
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-green fs-lg">의약품</h4>
+                                    <p>비중 50.2%</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- 업종4 -->
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-blue fs-lg">해외채권</h4>
+                                    <p>비중 50.2%</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- 업종5 -->
+                                <div class="d-flex-between pt30">
+                                    <h4 class="chart-legend legend-square legend-yellow fs-lg">유동성</h4>
+                                    <p>비중 50.2%</p>
+                                </div>
+                                <ul class="border-top-black mt5">
+                                    <li class="border-top">
+                                        <p class="py20 border fc-black fw-b px-padding bg-white2 ellipsis">삼성전자</p>
+                                        <ul class="py20 border d-flex px-padding">
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">보유비중</span>
+                                                <span class="fw-b">2.99%</span>
+                                            </li>
+                                            <li class="w-100">
+                                                <span class="fs-sm fc-gray mr5">수익률</span>
+                                                <span class="fw-b fc-num-red">+26.12%</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+                                <!-- 업종 더 보기 -->
+                                <div class="btn-box mt30">
+                                    <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 코스닥 비중 탭 컨텐츠 -->
+                        <div id="tab_panel07" class="tab-panel p0">
+                            <!-- 코스피 비중 탭 컨텐츠와 구조 동일 -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 해외주식 비중 탭 컨텐츠 -->
+                <div id="tab_panel03" class="tab-panel p0">
+
+                    <div class="module-box pt0 pb40">
+                        <div class="tab-overflow w-full mt10">
+                            <ul class="tab-head">
+                                <li id="tab_08" class="tab-btn" aria-controls="tab_panel08">기타 38.2%</li>
+                                <li id="tab_09" class="tab-btn" aria-controls="tab_panel09">중국 30.8%</li>
+                                <li id="tab_10" class="tab-btn" aria-controls="tab_panel10">홍콩 30.8%</li>
+                                <li id="tab_11" class="tab-btn" aria-controls="tab_panel11">싱가포르 30.8%</li>
+                                <li id="tab_12" class="tab-btn" aria-controls="tab_panel12">미국 0%</li>
+                            </ul>
+                        </div>
+
+                        <!-- 해외주식 비중 탭 컨텐츠 하위 1 -->
+                        <div id="tab_panel08" class="tab-panel p0">
+
+                            <div class="mt20">
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio03" id="rdo_08" checked>
+                                    <label for="rdo_08"><i></i>업종비중순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio03" id="rdo_09">
+                                    <label for="rdo_09"><i></i>수익률순</label>
+                                </div>
+                                <div class="custom-radio btn-type2">
+                                    <input type="radio" name="radio03" id="rdo_10">
+                                    <label for="rdo_10"><i></i>업종순</label>
+                                </div>
+                            </div>   
+                            
+                            <div class="d-flex-between pt30">
+                                <h4 class="chart-legend legend-square legend-red fs-lg">종목명이 출력됨</h4>
+                                <p>거래소 : 브라질</p>
+                            </div>
+                            <ul class="border-top-black mt5">
+                                <li class="border-top">
+                                    <ul class="py20 border d-flex px-padding">
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">보유비중</span>
+                                            <span class="fw-b">2.99%</span>
+                                        </li>
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">수익률</span>
+                                            <span class="fw-b fc-num-red">+26.12%</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex-between pt30">
+                                <h4 class="chart-legend legend-square legend-pink fs-lg">종목명</h4>
+                                <p>거래소 : 브라질</p>
+                            </div>
+                            <ul class="border-top-black mt5">
+                                <li class="border-top">
+                                    <ul class="py20 border d-flex px-padding">
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">보유비중</span>
+                                            <span class="fw-b">2.99%</span>
+                                        </li>
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">수익률</span>
+                                            <span class="fw-b fc-num-red">+26.12%</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>                                
+
+                            <div class="d-flex-between pt30">
+                                <h4 class="chart-legend legend-square legend-green fs-lg">종목명</h4>
+                                <p>거래소 : 브라질</p>
+                            </div>
+                            <ul class="border-top-black mt5">
+                                <li class="border-top">
+                                    <ul class="py20 border d-flex px-padding">
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">보유비중</span>
+                                            <span class="fw-b">2.99%</span>
+                                        </li>
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">수익률</span>
+                                            <span class="fw-b fc-num-red">+26.12%</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex-between pt30">
+                                <h4 class="chart-legend legend-square legend-blue fs-lg">종목명</h4>
+                                <p>거래소 : 브라질</p>
+                            </div>
+                            <ul class="border-top-black mt5">
+                                <li class="border-top">
+                                    <ul class="py20 border d-flex px-padding">
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">보유비중</span>
+                                            <span class="fw-b">2.99%</span>
+                                        </li>
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">수익률</span>
+                                            <span class="fw-b fc-num-red">+26.12%</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex-between pt30">
+                                <h4 class="chart-legend legend-square legend-yellow fs-lg">종목명</h4>
+                                <p>거래소 : 브라질</p>
+                            </div>
+                            <ul class="border-top-black mt5">
+                                <li class="border-top">
+                                    <ul class="py20 border d-flex px-padding">
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">보유비중</span>
+                                            <span class="fw-b">2.99%</span>
+                                        </li>
+                                        <li class="w-100">
+                                            <span class="fs-sm fc-gray mr5">수익률</span>
+                                            <span class="fw-b fc-num-red">+26.12%</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <div class="btn-box mt10">
+                                <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                            </div>                                
+
+                        </div>
+
+                        <!-- 해외주식 비중 탭 컨텐츠 하위 2 -->
+                        <div id="tab_panel09" class="tab-panel p0">
+                        </div>
+
+                        <!-- 해외주식 비중 탭 컨텐츠 하위 3 -->
+                        <div id="tab_panel10" class="tab-panel p0">
+                        </div>
+
+                        <!-- 해외주식 비중 탭 컨텐츠 하위 4 -->
+                        <div id="tab_panel11" class="tab-panel p0">
+                        </div>
+
+                        <!-- 해외주식 비중 탭 컨텐츠 하위 5 -->
+                        <div id="tab_panel12" class="tab-panel p0">
+                        </div>                        
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+        // Highcharts Default options
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // Donut chart - 보유중인 국내주식 TOP5
+        var chartDonut1 = new Highcharts.Chart('chart-donut-legend1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.donutLegend,
+            {
+                series:[{
+                    data: [
+                        {name: '삼성전자', y: 50.2},
+                        {name: '현대차', y: 20.3},
+                        {name: '키움증권', y: 18.5},
+                        {name: '하이닉스', y: 15},
+                        {name: '셀트리온', y: 10}
+                    ]
+                }]
+            }
+        ));
+
+        // Donut chart - 보유중인 코스피 업종 TOP5
+        var chartDonut2 = new Highcharts.Chart('chart-donut-legend2', Highcharts.merge (
+            KW_MOBILE.highcharts.types.donutLegend,
+            {
+                series:[{
+                    data: [
+                        {name: '전기전자', y: 50.2},
+                        {name: 'IT부품', y: 20.3},
+                        {name: '의약품', y: 18.5},
+                        {name: '해외채권', y: 15},
+                        {name: '유동성', y: 10}
+                    ]
+                }]
+            }
+        ));
+    </script>
+    
+</body>
+
+</html>

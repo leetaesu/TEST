@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <clipPath id="igoqmhztda">
+            <path data-name="사각형 9009" transform="translate(20 418)" style="stroke:#707070;fill:#3a3a3a" d="M0 0h21v21H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="36" transform="translate(-26 -418)">
+        <rect data-name="사각형 9032" width="3" height="7" rx="1.5" transform="translate(30 419)" style="fill:#b7d9fc"/>
+        <rect data-name="사각형 9033" width="3" height="7" rx="1.5" transform="translate(36 428)" style="fill:#b7d9fc"/>
+        <g data-name="마스크 그룹 13721" transform="translate(6)" style="clip-path:url(#igoqmhztda)">
+            <path data-name="패스 17781" d="M7.383 12.8H4.1a.82.82 0 0 0 0 1.641h3.283a.82.82 0 0 0 0-1.641z" style="fill:#3a3a3a" transform="translate(20 418)"/>
+            <path data-name="패스 17782" d="M20.18 0a.82.82 0 0 0-.82.82v2.461h-5.743a.82.82 0 0 0 0 1.641h5.742V12.8h-1.64v-.82a2.459 2.459 0 0 0-4.1-1.832 2.459 2.459 0 0 0-4.1 1.832v3.281a2.459 2.459 0 0 0 4.1 1.832 2.459 2.459 0 0 0 4.1-1.832v-.82h1.641V16.9a2.464 2.464 0 0 1-2.46 2.459H4.1A2.464 2.464 0 0 1 1.641 16.9V4.922h1.64v.82a2.459 2.459 0 0 0 4.1 1.832 2.459 2.459 0 0 0 4.1-1.832V2.461A2.459 2.459 0 0 0 7.383.629a2.459 2.459 0 0 0-4.1 1.832v.82H1.641V.82A.82.82 0 0 0 0 .82V16.9A4.106 4.106 0 0 0 4.1 21h12.8a4.106 4.106 0 0 0 4.1-4.1V.82a.82.82 0 0 0-.82-.82zm-8.2 16.078a.821.821 0 0 1-.82-.82v-3.281a.82.82 0 0 1 1.641 0v3.281a.821.821 0 0 1-.824.82zm4.1-.82a.82.82 0 0 1-1.641 0v-3.281a.82.82 0 0 1 1.641 0zM9.023 1.641a.821.821 0 0 1 .82.82v3.281a.82.82 0 0 1-1.641 0V2.461a.821.821 0 0 1 .821-.82zm-4.1.82a.82.82 0 0 1 1.641 0v3.281a.82.82 0 0 1-1.641 0z" style="fill:#3a3a3a" transform="translate(20 418)"/>
+        </g>
+    </g>
+</svg>

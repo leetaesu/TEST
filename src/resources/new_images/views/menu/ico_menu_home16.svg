@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <clipPath id="pbaov075da">
+            <path data-name="사각형 9007" transform="translate(20 418)" style="stroke:#707070;fill:#3a3a3a" d="M0 0h21v21H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="16">
+        <g data-name="마스크 그룹 13719" transform="translate(-20 -418)" style="clip-path:url(#pbaov075da)">
+            <circle data-name="타원 2214" cx="3" cy="3" r="3" transform="translate(28 419)" style="fill:#b7d9fc"/>
+            <circle data-name="타원 2215" cx="3" cy="3" r="3" transform="translate(34 432)" style="fill:#b7d9fc"/>
+            <circle data-name="타원 2216" cx="3" cy="3" r="3" transform="translate(21 432)" style="fill:#b7d9fc"/>
+            <g transform="translate(20 418)">
+                <path data-name="패스 17774" d="M10.5 8.2a4.106 4.106 0 0 0 3.683-2.3 7.351 7.351 0 0 1 3.582 5.081.82.82 0 1 0 1.615-.291 9.031 9.031 0 0 0-4.78-6.425v-.163a4.1 4.1 0 1 0-4.1 4.1zm0-6.562A2.461 2.461 0 1 1 8.039 4.1 2.464 2.464 0 0 1 10.5 1.641z" style="fill:#3a3a3a"/>
+                <path data-name="패스 17775" d="M16.9 12.8a4.1 4.1 0 0 0-3.653 5.966 7.4 7.4 0 0 1-2.91.6 7.512 7.512 0 0 1-.771-.04.82.82 0 1 0-.166 1.626 9.163 9.163 0 0 0 .94.048 9.032 9.032 0 0 0 3.975-.921A4.1 4.1 0 1 0 16.9 12.8zm0 6.563a2.461 2.461 0 1 1 2.459-2.463 2.464 2.464 0 0 1-2.459 2.459z" style="fill:#3a3a3a"/>
+                <path data-name="패스 17776" d="M4.1 12.8a4.109 4.109 0 0 0-.768.072 7.334 7.334 0 0 1 1.919-5.916.82.82 0 1 0-1.2-1.116 9.028 9.028 0 0 0-2.281 7.686A4.1 4.1 0 1 0 4.1 12.8zm0 6.563A2.461 2.461 0 1 1 6.563 16.9 2.464 2.464 0 0 1 4.1 19.359z" style="fill:#3a3a3a"/>
+                <circle data-name="타원 2200" cx=".82" cy=".82" r=".82" transform="translate(16.078 16.078)" style="fill:#3a3a3a"/>
+                <circle data-name="타원 2201" cx=".82" cy=".82" r=".82" transform="translate(9.68 3.281)" style="fill:#3a3a3a"/>
+                <circle data-name="타원 2202" cx=".82" cy=".82" r=".82" transform="translate(3.281 16.078)" style="fill:#3a3a3a"/>
+                <path data-name="패스 17777" d="M8.039 12.141A2.461 2.461 0 1 0 10.5 9.68a2.464 2.464 0 0 0-2.461 2.461zm3.281 0a.82.82 0 1 1-.82-.82.821.821 0 0 1 .82.82z" style="fill:#3a3a3a"/>
+            </g>
+        </g>
+    </g>
+</svg>

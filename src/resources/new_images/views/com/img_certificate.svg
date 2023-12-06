@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116.5" height="134.5" viewBox="0 0 116.5 134.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #b3b9fd;
+      }
+
+      .cls-4 {
+        fill: #d6daff;
+        font-size: 10px;
+        font-family: SpoqaHanSansNeo-Bold, Spoqa Han Sans Neo;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #aeb4fc;
+      }
+
+      .cls-7 {
+        fill: #c5c9fd;
+      }
+
+      .cls-8 {
+        filter: url(#사각형_16055);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6d8ff"/>
+      <stop offset="1" stop-color="#c5c8f8"/>
+    </linearGradient>
+    <filter id="사각형_16055" x="11.5" y="0" width="105" height="129" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.098"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9099ff"/>
+      <stop offset="1" stop-color="#6d77ea"/>
+    </linearGradient>
+  </defs>
+  <g id="img_certificate" transform="translate(-121 -214.5)">
+    <g id="A" transform="translate(3 -3)">
+      <g class="cls-8" transform="matrix(1, 0, 0, 1, 118, 217.5)">
+        <rect id="사각형_16055-2" data-name="사각형 16055" class="cls-1" width="96" height="120" rx="16" transform="translate(16 2.5)"/>
+      </g>
+      <path id="패스_32572" data-name="패스 32572" class="cls-2" d="M12,0H68.293L100,32.116V108a12,12,0,0,1-12,12H12A12,12,0,0,1,0,108V12A12,12,0,0,1,12,0Z" transform="translate(118 232)"/>
+      <path id="패스_32577" data-name="패스 32577" class="cls-3" d="M.351.028,32,32H10A10,10,0,0,1,0,22Z" transform="translate(186 232)"/>
+      <text id="건강·장기_요양보험료_납부확인서" data-name="건강·장기
+요양보험료
+납부확인서" class="cls-4" transform="translate(130 311)"><tspan x="0" y="0">건강·장기</tspan><tspan x="0" y="14">요양보험료</tspan><tspan x="0" y="28">납부확인서</tspan></text>
+      <g id="로고" transform="translate(128.5 248.016)">
+        <path id="패스_32573" data-name="패스 32573" class="cls-5" d="M25.725,12.863A12.863,12.863,0,1,1,12.862,0,12.863,12.863,0,0,1,25.725,12.863" transform="translate(0 0)"/>
+        <path id="패스_32574" data-name="패스 32574" class="cls-6" d="M20.971,14.03a4.247,4.247,0,0,0-6.04,1.268,4.251,4.251,0,0,1-7.684-1.168h0c0-.016-.007-.029-.011-.045a.554.554,0,0,1-.014-.054A5.41,5.41,0,0,1,7,12.343c0-3.809,3.909-8.049,9.536-8.049a10.727,10.727,0,0,1,9.908,6.825c-.014-.044-.026-.085-.042-.13A12.136,12.136,0,0,0,2.79,14.927c0,5.99,4.32,11.119,10.314,11.119a9.75,9.75,0,0,0,9.466-6.374,4.679,4.679,0,0,0-1.6-5.641" transform="translate(-2.062 -2.063)"/>
+        <path id="패스_32575" data-name="패스 32575" class="cls-7" d="M38.462,15.612A10.7,10.7,0,0,0,28.478,8.55c-5.628,0-9.536,4.24-9.536,8.049a5.41,5.41,0,0,0,.218,1.688,3.493,3.493,0,0,1-.111-.865c0-3.967,3.971-6.715,8.053-6.715a10.005,10.005,0,0,1,10.005,10,11.028,11.028,0,0,1-6.115,9.883v0a12.139,12.139,0,0,0,8-11.413,12.009,12.009,0,0,0-.534-3.57" transform="translate(-14 -6.319)"/>
+      </g>
+    </g>
+  </g>
+</svg>

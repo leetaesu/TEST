@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">        
+        <header>
+            <h1>개인정보처리</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <section class="module-box">
+                <h2 class="fs-xl mb30">개인정보 처리 동의</h2>
+                <h3 class="fs-md mb10">MY자산(마이데이터) 필수동의</h3>
+                <ul class="border-top-black">
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">서비스 이용 약관 동의</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">개인(신용)정보 동의</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">키움증권 자산 자동연결 동의</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="module-box module-border">
+                <h3 class="fs-md mb10">서비스 이용 동의</h3>
+                <ul class="border-top-black">
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">자동차 시세 조회</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">신용관리</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <dl class="data-list">
+                                <dt class="flex-row">
+                                    <p class="ellipsis fs-md fc-black">대출한도비교</p>
+                                </dt>
+                                <dd class="flex-row">
+                                    <span class="fs-df fc-gray pr10">2020.03.14</span>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="module-box module-border">
+                <h3 class="fs-md mb10">MY자산(마이데이터) 마케팅 정보 활용 동의</h3>
+                <div class="py20 border-top-black">
+                    <div class="custom-radio">
+                        <input type="radio" name="agree" id="agreeY" checked="" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">
+                        <label for="agreeY"><i></i>동의</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" name="agree" id="agreeN">
+                        <label for="agreeN"><i></i>동의하지 않음</label>
+                    </div>
+                </div>
+
+                <div class="border-top pt20">
+                    <div class="custom-check">
+                        <input type="checkbox" id="chk_01">
+                        <label for="chk_01"><i></i>문자(SMS, LMS 등)</label>
+                    </div>
+                    <div class="custom-check">
+                        <input type="checkbox" id="chk_02">
+                        <label for="chk_02"><i></i>APP PUSH(스마트알림)</label>
+                    </div>
+                    <div class="mt10">
+                        <div class="custom-check">
+                            <input type="checkbox" id="chk_03">
+                            <label for="chk_03"><i></i>전화</label>
+                        </div>
+                        <div class="custom-check">
+                            <input type="checkbox" id="chk_04">
+                            <label for="chk_04"><i></i>우편</label>
+                        </div>
+                        <div class="custom-check">
+                            <input type="checkbox" id="chk_05">
+                            <label for="chk_05"><i></i>이메일</label>
+                        </div>                        
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="module-box module-border">
+                <h3 class="fs-md mb10">개인정보</h3>
+                <ul class="border-top-black border-bottom">
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <p class="ellipsis fs-md fc-black">개인정보 처리방침</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>            
+        </main>
+    </div>
+
+    <!-- KIWMYD_AUT_011_0001_P002 -->
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>마케팅 동의 변경 컨펌 팝업</h1>
+        </div>
+        <div class="modal-body text-center">
+            <p class="fs-md fw-m">마케팅 정보 활용 동의를 변경 하시겠습니까?</p>
+            <p class="fc-gray mt5">MY자산(마이데이터) 마케팅 활용 동의에 대한 설정을 변경합니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">취소</button>
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>                          
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

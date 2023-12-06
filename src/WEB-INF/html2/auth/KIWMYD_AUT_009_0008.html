@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">        
+        <header>
+            <h1>금융사 연결</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <h2 class="fs-xl fw-m">전송요구서 및 수집ㆍ이용에<br>동의해 주세요</h2>
+
+                <h3 class="fs-md mt30">개인(신용)정보 전송요구서 및 수집ㆍ이용 동의서</h3>
+                <p class="mt15">키움증권은 「신용정보의 이용 및 보호에 관한 법률」, 「개인정보보호법」 등 관련 법령에 따라 다음과 같이 귀하의 개인(신용)정보를 처리합니다.</p>
+
+                <h3 class="fs-md mt30">정보 제공자</h3>
+                <p class="fc-gray-d fs-md fw-b mt10">IBK 기업, KDB산업, 하나은행, 카카오뱅크, 한국투자증권, 신한카드, 교보생병, 삼성화재</p>
+
+                <h3 class="fs-md mt30">정보 수신자</h3>
+                <p class="fc-gray-d fs-md fw-b mt10">키움증권</p>
+
+                <h3 class="fs-md mt30">전송요구 및 수집ㆍ이용 목적</h3>
+                <p class="fc-gray-d fs-md fw-b mt10">연결(전송 요구)을 통한 본인신용정보 통합조회, 데이터분석 서비스의 이용</p>
+
+                <h3 class="fs-md mt30">보유 및 이용 기간</h3>
+                <p class="fs-md fw-b fc-gray-d mt10">서비스 이용 종료 시 또는 삭제 요구 시 까지</p>
+
+                <h3 class="fs-md mt30">거부 권리 및 불이익</h3>
+                <div class="card-box-sm bg-gray-l mt10">
+                    <p class="fc-gray">
+                        <ul class="bullet-list bullet-dot">
+                            <li>귀하는 개인(신용)정보 수집･이용에 관한 동의를 거부하실 수 있습니다.</li>
+                            <li>다만, “수집･이용에 관한 동의”는 본인신용정보 통합조회, 데이터분석 서비스의 이용을 위한 필수적 사항입니다.</li>
+                            <li>동의를 거부하실 경우 본인신용정보 통합조회, 데이터 분석 서비스의 이용이 제한될 수 있습니다.</li>
+                        </ul>
+                    </p>                    
+                </div>
+            </div>
+
+            <div class="module-box module-border">
+                <!-- 개인(신용)정보 수집·이용 동의 -->
+                <h3 class="fs-md">수집ㆍ이용 항목</h3>
+
+                <h4 class="fw-m mt30">개인(식별)정보</h4>
+                <p class="fc-gray-d mt10">전자서명, 접근토큰, 인증서, 전송 요구서</p>
+
+                <h4 class="fw-m mt30">연결할 개인(신용)정보</h4>
+                <div class="card-box-sm bg-gray-l mt10">
+                    <p class="fc-gray">
+                        <ul class="bullet-list bullet-dot">
+                            <li>수신계좌목록<br>
+                                고객정보 최초생성일시, 적요 정보 전송 요구여부, 계좌번호, 회차번호, 상품명, 외화계좌여부, 마이너스약정 여부, 계좌 번호 별 구분 코드, 계좌번호 별 상태 코드</li>
+                            <li>투자상품계좌목록<br>
+                                고객정보 최초생성일시, 적요 정보 전송요구여부, 계좌번호, 회차번호, 상품명, 계좌번호 별 구분 코드, 계좌번호 별 상태 코드</li>
+                            <li>대출상품계좌목록<br>
+                                고객정보 최초생성일시, 적요 정보 전송요구 여부, 계좌번호, 회차번호, 상품명, 계좌번호 별 구분 코드, 계좌번호 별 상태 코드</li>
+                        </ul>
+                    </p>                    
+                </div>                
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">동의 안함</button>
+                <button type="button" class="btn btn-footer btn-primary">동의</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 동의 안함 클릭 시 알럿 -->
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>서비스 이용을 위한 동의 안내</h1>
+        </div>
+        <div class="modal-body">
+            <p class="fc-gray mt5">본인신용정보 통합조회, 데이터분석 서비스의 이용을 위한 필수 항목으로 서비스를 이용하시려면 동의 하셔야 합니다</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>                          
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

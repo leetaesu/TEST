@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="description" content="키움증권의 대표 홈페이지입니다.">
+	<meta name="keywords" content="키움증권">
+	<meta name="author" content="키움증권">
+
+	<title>키움증권 마이데이터</title>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+	<link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+	<link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+	<div class="page-wrapper main fixed">
+		<main>
+			<section class="module-box p0">
+
+                <div class="swiper-container custom-swiper mt30 pt30" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">펀드투자진단은?</span>
+							<h3 class="fs-2xl fw-m">펀드 투자 스타일 진단</h3>
+							<p class="fc-gray h60 mt15">전금융권에서<br>고객님이 보유한 펀드를 점수화하고 진단하여,<br>우수펀드와 비교분석해드리는 무료서비스입니다.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_diagnosis11.png" alt="">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">펀드투자진단은?</span>
+							<h3 class="fs-2xl fw-m">개별 펀드 진단</h3>
+							<p class="fc-gray h60 mt15">내가 주로 투자하는 펀드의 스타일을<br>한눈에 알려줘요.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_diagnosis12.png" alt="">
+                        </div>
+
+						<!-- Slide 3 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">펀드투자진단은?</span>
+							<h3 class="fs-2xl fw-m">평가 상위 펀드</h3>
+							<p class="fc-gray h60 mt15">보유 펀드의 점수가 내려 간다면<br>해당 포트폴리오를 점검할 필요가 있어요.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_diagnosis13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 12em;"></div>
+                </div>
+
+			</section>
+		</main>
+
+		<footer>
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-footer btn-primary">내 펀드 진단받기</button>
+            </div>
+		</footer>
+	</div>
+    
+
+	<!-- Script -->
+	<script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+	<script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+	<script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+	<script src="../../../resources/js/views/common/ui_common.js"></script>
+    <script>
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', true);
+    </script>
+</body>
+
+</html>

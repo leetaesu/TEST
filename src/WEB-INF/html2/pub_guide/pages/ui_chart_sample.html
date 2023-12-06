@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터 퍼블리싱 가이드</title>
+
+    <!-- <link rel="shortcut icon" href="https://m.kiwoom.com/nkm/img/main/icn_kmobile01.png"> -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../assets/css/ui_guide.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <main class="p30 px-padding">
+
+            <h2 class="guide-main-title">UI Chart Sample v.2</h2>
+
+            <!-- Legend -->
+            <section class="content-box">
+                <h3 class="guide-title">범례</h3>
+                <!-- normal -->
+                <section>
+                    <h4 class="guide-sub-title">범례 - 기본 (chart-legend-box)</h4>
+                    <ul class="chart-legend-box">
+                        <li class="chart-legend legend-red">하나카드</li>
+                        <li class="chart-legend legend-pink">하나카드</li>
+                        <li class="chart-legend legend-green">하나카드</li>                    
+                    </ul>
+                    </section>
+                    <!-- flow -->
+                    <section>
+                        <h4 class="guide-sub-title">범례 - flow (chart-legend-box.flow)</h4>                
+                    <ul class="chart-legend-box flow">
+                        <li class="chart-legend legend-red">하나카드<span class="d-block fw-m">50.8%</span></li>
+                        <li class="chart-legend legend-pink">하나카드<span class="d-block fw-m">50.8%</span></li>
+                        <li class="chart-legend legend-green">하나카드<span class="d-block fw-m">50.8%</span></li>
+                        <li class="chart-legend legend-blue">하나카드<span class="d-block fw-m">50.8%</span></li>
+                        <li class="chart-legend legend-yellow">하나카드<span class="d-block fw-m">50.8%</span></li>
+                    </ul>
+                    </section>
+                    <!-- vertical -->
+                    <section>
+                        <h4 class="guide-sub-title">범례 - vertical (chart-legend-box.flex-column)</h4>                    
+                    <ul class="chart-legend-box flex-column">
+                        <li class="chart-legend legend-red">하나카드</li>
+                        <li class="chart-legend legend-pink">하나카드</li>
+                        <li class="chart-legend legend-green">하나카드</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Bar chart -->
+            <section class="content-box">
+                <h3 class="guide-title">Bar chart</h3>
+
+                <!-- Bar chart - WEB -->
+                <section>
+                    <h4 class="guide-sub-title">Bar chart (WEB)</h4>
+
+                    <div class="barchart-box">
+                        <span class="w60">샤프지수</span>
+                        <div class="barchart"><i class="bg-ex-purple2" style="width: 100%;"></i></div>
+                        <span class="text-right w20">100</span>
+                    </div>
+                    <div class="barchart-box">
+                        <span class="w60">트레이너지수</span>
+                        <div class="barchart"><i class="bg-ex-green" style="width: 90%;"></i></div>
+                        <span class="text-right w20">90</span>
+                    </div>
+                    <div class="barchart-box">
+                        <span class="w60">정보비율</span>
+                        <div class="barchart"><i class="bg-blue" style="width: 70%;"></i></div>
+                        <span class="text-right w20">70</span>
+                    </div>
+                    <div class="barchart-box">
+                        <span class="w60">젠센의 알파</span>
+                        <div class="barchart"><i class="bg-purple" style="width: 50%;"></i></div>
+                        <span class="text-right w20">50</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">Bar chart (WEB - large)</h4>
+
+                    <!-- 좌우 Value -->
+                    <div class="barchart-box flex-wrap mt20">
+                        <div class="barchart barchart-lg barchart-tip"><i class="bg-ex-green3" style="width: 70%;"></i></div>
+                        <span>1000등</span>
+                        <span>1등</span>
+                    </div>
+
+                    <!-- Stack with tooltip -->
+                    <div class="barchart-box flex-wrap mt20">
+                        <div class="chart-tooltip tooltip-flow flex-column">총 공제 적용금액<span class="fc-black">6,500,000원</span></div>
+                        
+                        <div class="barchart barchart-lg">
+                            <i class="bg-ex-blue3" style="width: 30%;"></i>
+                            <i class="bg-ex-green3" style="width: 40%;"></i>
+                        </div>
+                        <p class="ml-auto text-right">세액공제 한도 금액<br>7,000,000원</p>
+                    </div>
+                </section>
+
+                <!-- Bar chart - Rainbow (DSR) -->
+                <section>
+                    <h4 class="guide-sub-title">Bar chart - Rainbow (DSR)</h4>
+
+                    <ul class="barchart-rainbow">
+                        <li class="user-data">
+                            <span class="chart-tooltip">예상 DSR</span>
+                            <em>40%</em>
+                        </li>
+                        <li class="target-data data-risk1">
+                            <span>위험</span>
+                            <em>70%</em>
+                        </li>
+                        <li class="target-data data-risk2">
+                            <span>고위험</span>
+                            <em>90%</em>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Bar chart - Stack -->            
+                <section>
+                    <h4 class="guide-sub-title">Bar chart - Stack</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-stacked-bar1"></div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Column chart -->
+            <section class="content-box">
+                <h3 class="guide-title">Column chart</h3>
+
+                <!-- Column chart - Basic -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Basic</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-column-basic"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - Negative -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Negative</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-column-negative"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - Group -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Group</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-column-group"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - Scroll -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Scroll</h4>
+
+                    <div class="chart-wrapper w-full overflow-x">
+                        <div id="chart-column-scroll1"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - Scroll2 -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Scroll2</h4>
+
+                    <div class="chart-wrapper w-full overflow-x">
+                        <div id="chart-column-scroll2"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - 상/중/하 -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - 상/중/하</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-column-level"></div>
+                    </div>
+                </section>
+
+                <!-- Column chart - Stack -->
+                <section>
+                    <h4 class="guide-sub-title">Column chart - Stack</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-stacked-column1"></div>
+                    </div>
+                </section>            
+            </section>
+
+            <!-- Line chart -->
+            <section class="content-box">
+                <h3 class="guide-title">Line chart</h3>
+
+                <section>
+                    <h4 class="guide-sub-title">Line chart - Basic</h4>
+                    <div class="chart-wrapper">
+                        <div id="chart-line"></div>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">Line chart - scroll</h4>
+                    <div class="chart-wrapper w-full overflow-x">
+                        <div id="chart-line-scroll"></div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Pie chart -->
+            <section class="content-box">
+                <h3 class="guide-title">Pie chart</h3>
+
+                <!-- Pie chart - Basic -->
+                <section>
+                    <h4 class="guide-sub-title">Pie chart</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-pie1"></div>
+                    </div>
+                </section>
+
+                <!-- Donut chart -->
+                <section>
+                    <h4 class="guide-sub-title">Donut chart</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-donut1"></div>
+                    </div>
+                </section>
+
+                <!-- Donut chart - Legend(custom) -->
+                <section>
+                    <h4 class="guide-sub-title">Donut chart - Legend(custom)</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-donut-legend"></div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Gauge chart -->
+            <section class="content-box">
+                <h3 class="guide-title">Gauge chart</h3>
+
+                <!-- Gauge chart - Basic -->
+                <section>
+                    <h4 class="guide-sub-title">Gauge chart - Half Gauge</h4>
+
+                    <div class="chart-wrapper bg-ex-black">
+                        <div id="chart-guage" class="chart-gauge"></div>
+                    </div>
+                </section>
+
+                <!-- Gauge chart - Solid -->
+                <section>
+                    <h4 class="guide-sub-title">Gauge chart - Solid Gauge</h4>
+
+                    <div class="chart-wrapper">
+                        <div id="chart-solid-gauge"></div>
+                    </div>
+                </section>
+            </section>
+        
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../../resources/js/views2/common/new_ui_common.js"></script>
+    <script src="../assets/js/ui_guide.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // Bar chart - Stack with tooltip
+        $('.chart-tooltip.tooltip-flow').each(function() {
+            var totalWidth = 0,
+                targetWidth = $(this).next('.barchart').children('i'),
+                tooltipWidth = $(this).outerWidth();
+            for (var i = 0; i < targetWidth.length; i++) totalWidth += parseInt(targetWidth.eq(i).outerWidth());
+
+            totalWidth - tooltipWidth < 0 ? $(this).css('left', tooltipWidth) : $(this).css('left', totalWidth);
+        });
+        
+        // Bar chart - Rainbow (DSR)
+        $('.barchart-rainbow').each(function() {
+            var chartSeries = $('.barchart-rainbow li');
+            var chartData = chartSeries.find('em');
+            var userData = [];
+
+            chartData.each(function() {
+                var value = parseInt($(this).text().replace(/[^-\.0-9]/g,''));
+                userData.push(value);
+            });
+
+            var maxValue = userData.reduce(function(a, b) { return a > b ? a : b; });
+            (maxValue > 100) ? maxValue += 20 : maxValue = 100;
+
+            var userData2 = userData.map(function(value) {
+                return Math.round(100 * value / maxValue);
+            });
+
+            for (var i = 0; i < userData2.length; i++) {
+                chartSeries.eq(i).css('left', userData2[i] + '%');
+            }
+        });
+
+        // Bar chart - Stack
+        var chartStackedBar = new Highcharts.Chart('chart-stacked-bar1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.stackedBar,
+            {
+                chart: { height: 270 },
+                xAxis: { 
+                    categories: ['연령평균', '나'],
+                    lineWidth: 0,
+                    labels:{
+                        align: 'left',
+                        x: 0,
+                        y: -35,
+                        style: { fontSize: '13px', fontWeight: 'bold', color: '#888' }
+                    }
+                },
+                yAxis: {
+                    labels:{
+                        formatter: function() {return this.value + '%';},
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    reversed: true
+                },
+                plotOptions: {
+                    bar: { pointWidth: 48 },
+                },
+                series: [
+                    { name: '삼성카드', data: [3,4], color: '#6adc7f', borderRadiusTopLeft: 8, borderRadiusTopRight: 8 },
+                    { name: '농협카드', data: [3,4], color: '#59c39b' },
+                    { name: '신한카드', data: [2,2], color: '#3a89c0' },
+                    { name: '하나카드', data: [5,3], color: '#17469f', borderRadiusBottomLeft: 8, borderRadiusBottomRight: 8 }
+                ]
+            }
+        ));
+
+        // Column chart - Basic
+        var chartColumnBasic = new Highcharts.Chart('chart-column-basic', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 200,
+                    marginTop: 30
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 44,
+                        dataLabels: {
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y) +'%</span>'
+                            }
+                        }
+                    },
+                },
+                xAxis: { 
+                    categories: ['내종목', '키움증권', 'MY자산'],
+                    labels:{
+                        y: 25,
+                        style: { fontSize: '12px', fontWeight: 'bold', color: '#888' }
+                    }
+                },                    
+                yAxis: {
+                    labels: {
+                        enabled: true
+                    }    
+                },
+                series: [{
+                    data: [
+                        { y: 5.10, color: '#59c39b' },
+                        { y: 12.29, color: '#2969ba' },
+                        { y: 8.59, color: '#dcdfe4' }
+                    ]
+                }]
+            }
+        ));
+
+        // Column chart - Negative
+        var chartColumnBasic = new Highcharts.Chart('chart-column-negative', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 200,
+                    marginTop: 40,
+                    events: {
+                        render: function() {
+                            var tick0 = this.yAxis[0].toPixels(0, true);
+                            this.series[0].points.forEach(function(point) {
+                                if(point.y < 0) {
+                                    point.dataLabel.attr({ y: tick0 - 40 });
+                                }
+                            });
+                        }
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 44,
+                        dataLabels: {
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y) +'%</span>'
+                            }
+                        }
+                    },
+                },
+                xAxis: { 
+                    categories: ['내종목', '키움증권', 'MY자산'],
+                    labels:{
+                        y: 25,
+                        style: { fontSize: '12px', fontWeight: 'bold', color: '#888' }
+                    }
+                },                    
+                yAxis: {
+                    labels: {
+                        enabled: true
+                    },
+                    plotLines: [{
+                        color: '#ddd',
+                        width: 1,
+                        value: 0,
+                        zIndex: 1
+                    }]
+                },
+                series: [{
+                    data: [
+                        { y: 5.10, color: '#f36b7f' },
+                        { y: -2.29, color: '#2969ba' },
+                        { y: 8.59, color: '#f36b7f' }                      
+                    ]
+                }]
+            }
+        ));
+
+        // Column chart - Group
+        var chartColumnGroup = new Highcharts.Chart('chart-column-group', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { height: 250 },
+                xAxis: { 
+                    categories: ['샤프지수', '트레이너<br>지수', '젠센의<br>알파', '정보비율']
+                },                    
+                yAxis: {
+                    max: 100,
+                    tickInterval: 20,
+                    labels: {
+                        formatter: function() {return this.value + '%';},
+                    }
+                },
+                legend: {
+                    enabled: true
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false
+                        },
+                        pointWidth: 22,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.15,
+                    }
+                },
+                series: [
+                    {name: '내펀드 점수', data: [87, 90, 87, 77]},
+                    {name: '우수펀드 점수', data: [71, 71, 71, 71]}
+                ]
+            }
+        ));
+
+        // Column chart - Scroll
+        var chartColumn = new Highcharts.Chart('chart-column-scroll1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: {
+                    height: 200,
+                    events: {
+                        load: function(){
+                            var windowWidth = $(window).width(),
+                                target = $('#chart-column-scroll1'),
+                                targetBox = target.parent();
+
+                            this.setSize(windowWidth * this.pointCount / 16, this.chartHeight);
+                            target.width(this.chartWidth);
+
+                            targetBox.scrollLeft((target.width() - targetBox.width()) / 2);
+                        }
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    borderWidth: 0,
+                    borderRadius: 10,
+                    backgroundColor: '#181949',
+                    shadow: false,
+                    useHTML: true,
+                    headerFormat: '<div style="font-size:10px">',
+                    pointFormat: '<p style="color:#fff">계좌수 {point.y}</p>',
+                    footerFormat: '<p style="color:#a4a4ff">수익률 {point.x}%</p></div>'
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 10
+                    }
+                },
+                xAxis: {
+                    tickInterval: 10,
+                    tickLength: 0,
+                },
+                yAxis: {
+                    labels: {
+                        enabled: false
+                    }
+                },
+                series: [{
+                    color: '#d1d6e8',
+                    data: [
+                        {x: -50, y: 20000},
+                        {x: -45, y: 20200},
+                        {x: -40, y: 14000},
+                        {x: -35, y: 18000},
+                        {x: -30, y: 25000},
+                        {x: -25, y: 28000},
+                        {x: -20, y: 10000},
+                        {x: -15, y: 13000},
+                        {x: -10, y: 15000},
+                        {x: -5, y: 19000},
+                        {x: 0, y: 23000},
+                        {x: 5, y: 13000},
+                        {x: 10, y: 16000},
+                        {x: 15, y: 19000, color:'#6666cc'}, // 내 종목
+                        {x: 20, y: 8000},
+                        {x: 25, y: 16000},
+                        {x: 30, y: 18000},
+                        {x: 35, y: 22000},
+                        {x: 40, y: 24000},
+                        {x: 45, y: 24000},
+                        {x: 50, y: 4000}
+                    ]
+                }]
+            }
+        ));
+
+        // Column chart - Scroll2
+        var chartColumn = new Highcharts.Chart('chart-column-scroll2', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: {
+                    height: 200,
+                    events: {
+                        load: function(){
+                            var barCnt = this.pointCount;
+                            if(barCnt > 5) {
+                                this.setSize(barCnt*($(window).width()/6), this.chartHeight);
+                                $("#chart-column-scroll2").width(this.chartWidth);
+                            }
+                        }
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 22,
+                        dataLabels: {
+                            enabled: true,
+                            formatter: function() {
+                                return Highcharts.numberFormat(this.y) + '%'
+                            }
+                        }
+                    }
+                },
+                xAxis: {
+                    categories: ['우리은행 신용대출', 'IBK 직장인 대출', 'NH 신용대출', '현대캐피탈 신용대출', '신한카드 장기대출',],
+                    labels:{
+                        rotation: 0,
+                        y: 25,
+                        style: { textOverflow: 'initial' }
+                    }
+                },
+                yAxis: {
+                    labels: {
+                        enabled: false
+                    }
+                },
+                series: [{
+                    color: '#59c39b',
+                    data: [9.9, 9.7, 9.39, 8.92, 8.43]
+                }]
+            }
+        ));
+
+        // Column chart - (상/중/하)
+        var chartColumnLevel = new Highcharts.Chart('chart-column-level', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { height: 200 },
+                plotOptions: {
+                    column: {
+                        pointWidth: 40,
+                    }
+                },
+                xAxis: { 
+                    categories: ['실손<br>의료비', '암', '심장', '뇌', '일반<br>질병', '일반<br>상해']                        
+                },                    
+                yAxis: {
+                    max: 40,
+                    tickInterval: 10,
+                    labels: {
+                        enabled: false
+                    }
+                },
+                series: [{
+                    data: [
+                        { y: 40, color: '#2E82CA' },
+                        { y: 20, color: '#f8cf61' },
+                        { y: 3, color: '#f36b7f' },
+                        { y: 3, color: '#f36b7f' },
+                        { y: 20, color: '#f8cf61' },
+                        { y: 40, color: '#2E82CA' }
+                    ]
+                }]
+            }
+        ));
+
+        // Column chart - Stack
+        var chartStackedColumn = new Highcharts.Chart('chart-stacked-column1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.stackedColumn,
+            {
+                chart: { height: 270 },                
+                xAxis: { 
+                    categories: ['나', '연령평균'],
+                    labels: {
+                        align: 'center',
+                        x: 0,
+                        y: 25,
+                        style: { fontSize: '12px', fontWeight: 'bold', color: '#1e1e1e' }
+                    }
+                },
+                yAxis: {
+                    labels: {
+                        visible: true,
+                        enable: true,
+                        style: { fontSize: 10, color: '#bbb' }
+                    },
+                    stackLabels: {
+                        enabled: true,
+                        formatter: function(){
+                            return '<span class="chart-tooltip">' + Highcharts.numberFormat(this.total, 0) +'만원</span>'
+                        }
+                    }
+                },
+                legend: {
+                    enabled: true,
+                    reversed: true
+                },
+                plotOptions: {
+                    column: { pointWidth: 48 }
+                },
+                series: [
+                    { name: '퇴직연금', data: [7000,3000], color: '#59c39b' },
+                    { name: '개인연금', data: [13000,6000], color: '#17469f' }
+                ]
+            }
+        ));
+        
+        //Line chart - Basic
+        var chartLine = new Highcharts.Chart('chart-line', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 250,
+                    spacingTop: 35
+                },
+                xAxis:{
+                    categories: [ '01.14', '01.31', '02.28', '03.21', '03.24', '03.31' ]
+                },
+                yAxis: {
+                    min: 0,
+                    tickInterval: 200,
+                    labels: { 
+                        enabled: false
+                    }
+                },
+                plotOptions: {
+                    marker: {
+                        fillColor: '#2969ba'
+                    }
+                },
+                series: [
+                    {
+                        name: '184', // 상승점수
+                        data: [250, 736, 736, 802, 850, 1000],
+                        lineColor: '#96bae4',
+                        dataLabels: {
+                            enabled: true,
+                            x: -1,
+                            formatter: function() {
+                                var lastNum = this.series.data.length - 1;
+                                var lastValue = this.series.data[lastNum].y;
+                                if( this.y === lastValue ) {
+                                    var tooltip = '<p class="chart-tooltip blue mb5">' + this.series.name +'점 상승</p>';
+                                    var labelScore = '<p class="text-center">' + this.y + '</p>';  
+                                    return tooltip + labelScore;
+                                } else {
+                                    return this.y;
+                                }
+                            }
+                        }  
+                    }
+                ]
+
+            }
+        ));
+        
+        //Line chart - Scroll
+        var chartLine = new Highcharts.Chart('chart-line-scroll', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 65,
+                    events: {
+                        load: function(){
+                                var dotCnt = this.pointCount;
+                                if(dotCnt > 5) {
+                                    this.setSize(dotCnt*($(window).width()/5), this.chartHeight);
+                                    $("#chart-line-scroll").width(this.chartWidth);
+                                }
+                            }
+                        }
+                },
+                xAxis:{
+                    categories: [ '2021.11', '2021.10', '2021.09', '2021.08', '2021.07', '2021.06' ]
+                },
+                yAxis: {
+                    labels: { 
+                        enabled: false
+                    }
+                },
+                plotOptions: {
+                    marker: {
+                        fillColor: '#2969ba'
+                    }
+                },
+                series: [
+                    {
+                        data: [3.42, 3.82, 3.65, 3.11, 3.90, 3.3],
+                        lineColor: '#96bae4',
+                        dataLabels: {
+                            enabled: true,
+                            x: -1,
+                            formatter: function() {
+                                var lastNum = this.series.data.length - 1;
+                                var lastValue = this.series.data[lastNum].y;
+                                if( this.y === lastValue ) {
+                                    return `<p class="chart-tooltip blue p10 mb5">최초 계약금리<br>${this.y}%</p>` 
+                                } else {
+                                    return `${this.y}%`;
+                                }
+                            }
+                        }  
+                    }
+                ]
+
+            }
+        ));
+    
+
+        // Pie chart - Basic
+        var chartPieBasic = new Highcharts.Chart('chart-pie1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.pie,
+            {
+                colors: ['#6666cc', '#66ccff', '#ff9933', '#fe74a2'],
+                chart: {
+                    height: 200
+                },
+                plotOptions: {
+                    pie: {
+                        borderWidth: 1,
+                        showInLegend: true,
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y}',
+                            distance: -30,
+                            color: '#fff',
+                            style: {
+                                fontSize: '12px',
+                                textOutline: false
+                            }
+                        }
+                    }
+                },
+                series:[{
+                    data: [
+                        {name:'펀드', y: 35},
+                        {name: 'ETF', y: 25},
+                        {name: '보험', y: 25},
+                        {name: '예수금', y: 15}
+                    ]
+                }]
+            }
+        ));
+
+        // Pie chart - Donut
+        var chartDonut = new Highcharts.Chart('chart-donut1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.donut,
+            {
+                chart: {
+                    height: 280,
+                },                    
+                series:[{
+                    data: [
+                        {name: '삼성전자삼성전자', y: 50.2},
+                        {name: '현대차', y: 20.3},
+                        {name: '키움증권', y: 18.5},
+                        {name: '하이닉스', y: 15},
+                        {name: '셀트리온', y: 10}
+                    ]
+                }]
+            }
+        ));
+
+        // Pie chart - Donut - Legend(custom)
+        var chartDonut2 = new Highcharts.Chart('chart-donut-legend', Highcharts.merge (
+            KW_MOBILE.highcharts.types.donutLegend,
+            {
+                series:[{
+                    data: [
+                        {name: '삼성전자', y: 50.2},
+                        {name: '현대차', y: 20.3},
+                        {name: '키움증권', y: 18.5},
+                        {name: '하이닉스', y: 15},
+                        {name: '셀트리온', y: 10}
+                    ]
+                }]
+            }
+        ));
+
+        // Gauge 차트 - half gauge
+        var chartGuage = new Highcharts.chart('chart-guage', Highcharts.merge (
+            KW_MOBILE.highcharts.types.halfgauge,
+            {
+                chart: {
+                    height: 170,
+                    margin: [10, 0, 30, 0],
+                    events: {
+                        load: function() {
+                            // Gauge chart set border rounded
+                            var target = this.container.parentElement.id;
+                            KW_MOBILE.highcharts.gaugeRound(target);
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    max: 1000,
+                    minTickInterval: 1000,
+                    labels: { 
+                        enabled: true,
+                        distance: -8,
+                        x: 0,
+                        y: 25,
+                        style: { fontSize: '12px', color: '#ccc' },
+                        formatter: function() { return this.value; }
+                    }
+                },
+                pane: {
+                    background: {
+                        borderColor: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                series: [{
+                    name: '17', // %
+                    data: [789], // 점수
+                    borderColor: '#ff9900',
+                    dataLabels: { 
+                        enabled: true,
+                        y: 1,
+                        formatter: function() {
+                            var labelPercent = '<p class="custom-label label-solid c-white-alpha fs-sm">상위' + this.series.name + '%</p>';
+                            var labelScore = '<p class="fc-white fs-2xl fw-b text-center">' + this.y + '<span class="fs-df fw-l">점</span></p>';
+                            return labelPercent + labelScore;
+                        }
+                    }
+                }]
+                
+            }
+        ));
+
+        // Gauge 차트 - Solid gauge
+        var chartGauge = new Highcharts.Chart('chart-solid-gauge', Highcharts.merge (
+            KW_MOBILE.highcharts.types.solidgauge,
+            {
+                chart: {
+                    width: 170,
+                    height: 170,
+                },
+                plotOptions: {
+                    solidgauge: {
+                        dataLabels: {
+                            enabled: true,
+                            y: -20,
+                            formatter: function() {
+                                return `<div class="text-center">
+                                    <p class="fc-gray fs-sm">상환비율</p>
+                                    <p class="fc-black fs-df fw-m">${this.y + '%'}</p>
+                                </div>`
+                            }
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    max: 100
+                },
+                series:[{
+                    data: [{
+                        color: '#59c39b',
+                        y: 35
+                    }]
+                }]
+            }
+        ));
+
+        // Go to Top
+        KW_MOBILE.guiEvent.goTop.init();
+            
+    </script>
+</body>
+
+</html>

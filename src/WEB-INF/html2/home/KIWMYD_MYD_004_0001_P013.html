@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+        <header>
+            <h1>자동차 추가</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+        <main class="module-group">
+
+            <div class="module-box">
+
+                <h3 class="fs-xl fw-m">내 차량번호를 입력하고<br>시세를 확인해 보세요.</h3>
+
+                <!-- 차량번호 입력 -->
+                <div class="form-box flex-column mt30">
+                    <p class="form-label fc-gray">차량번호</p>
+                    <input type="text" class="custom-input error input-block mt10" placeholder="12가1234 또는 123하5678">
+                    <p class="fs-sm mt10 fc-red">차량 번호를 확인해주세요</p>
+                </div>
+
+                <!-- 소유주 -->
+                <div class="form-box flex-column mt30">
+                    <p class="form-label fc-gray">
+                        <a href="#;" class="tooltip fc-gray" data-tooltip="aa">소유주</a>
+                    </p>
+                    <div class="tooltip-box" data-tooltip-box="aa">
+                        <p class="title">소유주명 입력안내</p>
+                        <p>공동명의 차량인 경우 ‘김키움님 외 0명’으로 입력해주세요.</p>
+                        <p>장기렌트인 경우 렌트사명을 입력해주세요.</p>
+                        <button type="button" class="tooltip-close">닫기</button>
+                    </div>
+                    <input type="text" class="custom-input input-block mt10 " placeholder="" value="김키움">
+                </div>
+
+
+                <!-- 주행거리추가 -->
+                <div class="form-box flex-column mt30">
+                    <p class="form-label fc-gray mb10">주행거리</p>
+                    <div class="custom-select2 w-100" data-title="주행거리 선택" data-placeholder="2만 Km 미만">
+                        <select>
+                            <option>2만Km 미만</option>
+                            <option>4만km 이상 ~ 6만km 미만</option>
+                            <option>6만km 이상 ~ 8만km 미만</option>
+                            <option>8만km 이상 ~ 10만km 미만</option>
+                            <option>10만km 이상 ~ 12만km 미만</option>
+                            <option>12만km 이상 ~ 14만km 미만</option>
+                            <option>14만km 이상 ~ 16만km 미만</option>
+                            <option>16만km 이상 ~ 18만km 미만</option>
+                            <option>18만km 이상 ~ 20만km 미만</option>
+                            <option>20만km 이상</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- 개인정보 수집 이용 동의 -->
+                <div class="card-box card-border p16 mt30">
+                    <div class="d-flex-between">
+                        <div class="custom-check no-box">
+                            <input type="checkbox" id="check1_1" name="check1">
+                            <label for="check1_1">
+                                <i></i>
+                                <p class="fs-sm fc-gray">개인정보 수집 이용 동의</p>
+                            </label>
+                        </div>                                                
+                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" disabled="">등록하기</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

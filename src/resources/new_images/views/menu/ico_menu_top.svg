@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="38" viewBox="0 0 79 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #1e1e1e;
+        font-size: 14px;
+        font-family: SpoqaHanSansNeo-Medium, Spoqa Han Sans Neo;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #3a3a3a;
+      }
+
+      .cls-7 {
+        filter: url(#사각형_3832);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.248" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#f9f9f9"/>
+    </radialGradient>
+    <filter id="사각형_3832" x="0" y="0" width="79" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.949" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_16648" data-name="그룹 16648" transform="translate(-113 -162)">
+    <g data-type="innerShadowGroup">
+      <rect id="사각형_3832-2" data-name="사각형 3832" class="cls-1" width="79" height="38" rx="19" transform="translate(113 162)"/>
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 113, 162)">
+        <rect id="사각형_3832-3" data-name="사각형 3832" class="cls-2" width="79" height="38" rx="19"/>
+      </g>
+    </g>
+    <text id="알림" class="cls-3" transform="translate(151.001 187)"><tspan x="0" y="0">알림</tspan></text>
+    <g id="그룹_16649" data-name="그룹 16649" transform="translate(129 174)">
+      <g id="패스_18095" data-name="패스 18095" class="cls-4" transform="translate(9.5 15.004) rotate(-180)">
+        <path class="cls-5" d="M3.154,0h.193A3.154,3.154,0,0,1,6.5,3.154a.35.35,0,0,1-.35.35H.35A.35.35,0,0,1,0,3.154,3.154,3.154,0,0,1,3.154,0Z"/>
+        <path class="cls-6" d="M 3.153520107269287 1.000003099441528 C 2.192340850830078 1.000003099441528 1.376232624053955 1.632905602455139 1.10010290145874 2.503903150558472 L 5.39989709854126 2.503903150558472 C 5.123767852783203 1.632905602455139 4.307659149169922 1.000003099441528 3.346479892730713 1.000003099441528 L 3.153520107269287 1.000003099441528 M 3.153520107269287 3.099441528320312e-06 L 3.346479892730713 3.099441528320312e-06 C 5.088119983673096 3.099441528320312e-06 6.5 1.41187310218811 6.5 3.153513193130493 C 6.5 3.347033023834229 6.343120098114014 3.503903150558472 6.149610042572021 3.503903150558472 L 0.3503899574279785 3.503903150558472 C 0.1568698883056641 3.503903150558472 0 3.347033023834229 0 3.153513193130493 C 0 1.41187310218811 1.411880016326904 3.099441528320312e-06 3.153520107269287 3.099441528320312e-06 Z"/>
+      </g>
+      <g id="패스_18094" data-name="패스 18094" class="cls-4">
+        <path class="cls-5" d="M6.25,0A6.25,6.25,0,0,1,12.5,6.25v5.473a.781.781,0,0,1-.781.781H.781A.781.781,0,0,1,0,11.723V6.25A6.25,6.25,0,0,1,6.25,0Z"/>
+        <path class="cls-6" d="M 6.25 1.000002861022949 C 3.35513973236084 1.000002861022949 1 3.355143547058105 1 6.250003337860107 L 1 11.50390338897705 L 11.5 11.50390338897705 L 11.5 6.250003337860107 C 11.5 3.355143547058105 9.14486026763916 1.000002861022949 6.25 1.000002861022949 M 6.25 2.86102294921875e-06 C 9.701780319213867 2.86102294921875e-06 12.5 2.798223495483398 12.5 6.250003337860107 L 12.5 11.72265338897705 C 12.5 12.15413284301758 12.15021991729736 12.50390338897705 11.71875 12.50390338897705 L 0.78125 12.50390338897705 C 0.3497800827026367 12.50390338897705 0 12.15413284301758 0 11.72265338897705 L 0 6.250003337860107 C 0 2.798223495483398 2.798219680786133 2.86102294921875e-06 6.25 2.86102294921875e-06 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

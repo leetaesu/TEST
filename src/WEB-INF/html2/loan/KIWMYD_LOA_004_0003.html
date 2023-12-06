@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>DSR 계산기</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <div class="module-box py30">
+                <p class="fs-xl">
+                    연간 총 상환 원리금은<br>
+                    <span class="text-link custom-underline fw-b">16,000,000원</span>으로<br>
+                    연 소득대비 <span class="text-link custom-underline fw-b">30.8%</span>입니다.
+                </p>
+
+                <!-- 바차트 -->
+                <div class="chart-wrapper mt20">
+                    <ul class="barchart-rainbow">
+                        <li class="user-data">
+                            <span class="chart-tooltip">예상 DSR</span>
+                            <em>40%</em>
+                        </li>
+                        <li class="target-data data-risk1">
+                            <span>위험</span>
+                            <em>70%</em>
+                        </li>
+                        <li class="target-data data-risk2">
+                            <span>고위험</span>
+                            <em>90%</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CASE1. 기대출자 정보 계산시 노출 -->
+                <table class="custom-table mt10">
+                    <caption>DSR 정보 테이블</caption>
+                    <thead>
+                        <tr>
+                            <th style="width: 110px;">구분</th>
+                            <th>현재 DSR</th>
+                            <th>예상 DSR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="text-left">총 상환원리금</th>
+                            <td class="text-right">
+                                <p class="number-unit">
+                                    <span class="number">1,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </td>
+                            <td class="text-right">
+                                <p class="number-unit fw-b">
+                                    <span class="number">1,200,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">DSR</th>
+                            <td class="text-right">0.00%</td>
+                            <td class="text-right fw-b">0.00%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul class="bullet-list bullet-dot mt15">
+                    <li>현재 DSR : MY 대출정보 기준</li>
+                    <li>예상 DSR : MY 대출정보 + 추가 대출 입력값 기준</li>
+                </ul>
+                <!-- // CASE1. 기대출자 정보 계산시 노출 -->
+            </div>
+            
+            <!-- DSR 계산 내역 -->
+            <div class="module-box module-border">
+                <h3 class="fs-xl fw-m">DSR 계산 내역</h3>
+                <ul class="border-top-black mt20">
+                    <li class="py20 px-padding border bg-white2">
+                        <div class="d-flex-between">
+                            <span class="fs-md fc-gray">연 소득</span>
+                            <p class="number-unit fs-md fw-b">
+                                <span class="number">92,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="py20 px-padding border">
+                        <p class="fs-md ellipsis">[신한은행] 신한 청년월세 대출</p>
+                        <div class="d-flex-between mt15">
+                            <span class="fs-sm fc-gray">상환 원리금</span>
+                            <p class="number-unit fs-md fw-b">
+                                <span class="number">92,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="py20 px-padding border">
+                        <p class="fs-md ellipsis">[신한은행] 신한 청년월세 대출</p>
+                        <div class="d-flex-between mt15">
+                            <span class="fs-sm fc-gray">상환 원리금</span>
+                            <p class="number-unit fs-md fw-b">
+                                <span class="number">92,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- DSR 대출한도 -->
+            <div class="module-group module-border p0">
+                <div class="module-box pb0">
+                    <h3 class="fs-xl fw-m">DSR 대출한도</h3>
+                    <p class="fc-gray mt5">DSR 한도로 계산한 잔여대출 한도를 추정해 봤어요</p>
+                    <ul class="border-top-black mt20">
+                        <li class="py20 px-padding border bg-white2">
+                            1금융권(은행)
+                        </li>
+                        <li class="py20 px-padding border">
+                            <div class="d-flex-between">
+                                <span class="fc-gray">추가 가능 대출한도</span>
+                                <p class="number-unit fw-b fc-num-red">
+                                    <span class="number">3,000</span>
+                                    <span class="unit">만원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py20 px-padding border">
+                            <div class="d-flex-between">
+                                <span class="fc-gray">DSR 상환 기준</span>
+                                <p class="fw-b fc-num-red">40%</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="border-top-black mt10">
+                        <li class="py20 px-padding border bg-white2">
+                            2금융권(저축은행, 캐피탈)
+                        </li>
+                        <li class="py20 px-padding border">
+                            <div class="d-flex-between">
+                                <span class="fc-gray">추가 가능 대출한도</span>
+                                <p class="number-unit fw-b fc-num-red">
+                                    <span class="number">53,000</span>
+                                    <span class="unit">만원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py20 px-padding border">
+                            <div class="d-flex-between">
+                                <span class="fc-gray">DSR 상환 기준</span>
+                                <p class="fw-b fc-num-red">50%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="module-box w-full">
+                    <a href="#;" class="sub-link d-block">
+                        <img src="../../../resources/new_images/views/loan/img_banner_loan_01.png" alt="">
+                    </a>
+                    <a href="#;" class="sub-link d-block mt15">
+                        <img src="../../../resources/new_images/views/loan/img_banner_loan_02.png" alt="">
+                    </a>
+                </div>
+                <div class="module-box">
+                    <h3 class="fs-xl fw-m">DSR이란 (Debt Service Ratio)</h3>
+                    <p class="fc-gray mt5">연 소득 대비 ‘모든 금융 부채의 원리금 상환액＇이 차지하는 비율로 개인의 총 금융 부채 상환 부담을 판단하기 위해 활용 </p>
+                    <img src="../../../resources/new_images/views/loan/img_txt_dsr.png" class="mt20" alt="">
+                    <p class="bullet bullet-dot mt10">전세자금대출, 예적금담보대출, 보험약관대출은 DSR 계산에 포함되지 않습니다.</p>
+                </div>
+                <div class="module-box">
+                    <h3 class="fs-xl fw-m">유의사항</h3>
+                    <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                        <li>금융당국에서 공시된 표준 계산방법으로 산출된 추정 값으로써 금융사에서 계산하는 실제 DSR 값과 상이할 수 있습니다.</li>
+                        <li>DSR 대출한도는 대출금리 1금융권 4% / 2금융권 10% 기준으로 계산 된 추정 신용대출 한도 입니다. </li>
+                        <li>DSR 계산기를 통해 제공하는 신용대출 한도는 DSR 비율을 바탕으로 한 예상치로 신용정보 및 금융사의 조건에 따라 달라 질 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 바차트 - Rainbow (DSR)
+        $('.barchart-rainbow').each(function() {
+                var chartBar = $('.barchart-rainbow');
+                var chartSeries = $('.barchart-rainbow li');
+                var chartData = chartSeries.find('em');
+                var userData = [];
+
+                chartData.each(function() {
+                    var value = parseInt($(this).text().replace(/[^-\.0-9]/g,''));
+                    userData.push(value);
+                });
+
+                var maxValue = userData.reduce(function(a, b) { return a > b ? a : b; });
+                (maxValue > 100) ? maxValue += 20 : maxValue = 100;
+
+                var userData2 = userData.map(function(value) {
+                    return Math.round(100 * value / maxValue);
+                });
+
+                for (var i = 0; i < userData2.length; i++) {
+                    chartSeries.eq(i).css('left', userData2[i] + '%');
+                }
+            });
+    </script>
+</body>
+
+</html>

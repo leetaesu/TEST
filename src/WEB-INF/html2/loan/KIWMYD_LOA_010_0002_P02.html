@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+
+    <!-- coverflow 스와이퍼 사용 -->
+    <link rel="stylesheet" href="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">통계정보</a>
+
+    <article class="modal-popup popup-full interest-rate-event" id="modal_full-popup">
+        <div class="modal-header">
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+            <!-- 조회 결과 -->
+            <div class="module-box pt15">
+                <h3 class="fw-m" style="font-size:2.2rem;"><span class="fw-b" style="color: #1c4fde;">40대 남성</span> 투자자들의 <br>조회 결과에요</h3>
+                <div class="card-box py30 mt20 pl0" style="box-shadow: .3rem .3rem .4rem rgba(0,0,0,0.1);">
+                    <div class="d-flex-between">   
+                        <div class="align-self-start position-relative w-50">
+                            <div class="position-absolute pr30" style="top:0;right:-1rem;">
+                                <img src="../../../resources/new_images/views/loan/ico_kirari.svg" style="width:2.8rem;height:2.8rem;">
+                            </div>
+                            
+                            <!-- avatar lottie animation -->
+                            <div id="female_20"></div>
+
+                            <!-- 성별/연령대별 애니메이션 아이콘 -->
+                            <!-- 
+                            <div id="female_20"></div>
+                            <div id="female_30"></div>
+                            <div id="female_40"></div>
+                            <div id="female_50"></div>
+                            <div id="female_60"></div>
+                            <div id="male_20"></div>
+                            <div id="male_30"></div>
+                            <div id="male_40"></div>
+                            <div id="male_50"></div>
+                            <div id="male_60"></div>
+                            -->
+
+                            <div class="text-center">
+                                <p class="fs-md fw-m fc-black3">20대</p>
+                                <p class="fs-md fw-m fc-black3">여자 기준</p>
+                            </div>
+                        </div>
+
+                        <div class="align-self-start position-relative w-50">
+                            <p class="fs-sm fc-gray-2">평균금리</p>
+                            <p class="fs-xl fw-b fc-black3">3.29%</p>
+                            <p class="custom-label label-square label-solid c-blue fs-sm mt5" style="background-color: #528ee2; border-radius: .6rem;">
+                                <span>전일대비</span>
+                                <span class="ml5">-0.02</span>
+                                <span>%</span>
+                            </p>
+                            <p class="fs-sm mt30  fc-gray-2">평균한도</p>
+                            <p class="fs-xl fw-b fc-black3">2억 5,000만원</p>                                
+                            <p class="custom-label label-square label-solid c-pink fs-sm mt5" style="background-color: #f04486; border-radius: .6rem;">
+                                <span>전일대비</span>
+                                <span class="ml5">+1,000</span>
+                                <span>만원</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 최근 승인 내역 -->
+            <div class="module-box pt20 pb115">
+                <h3 class="fw-m mb20" style="font-size:2.2rem;">다양한 투자자들의<br>최근 승인 내역이에요</h3>
+                <div class="overflow-x w-full">
+                    <ul class="list-inline px-padding2">
+                        <li>
+                            <div class="card-box w290 pr30 pb15">
+                                <div class="icon-title">                                    
+                                    <!-- Avatar Icon -->
+                                    <!-- 성별/연령대별 아이콘 구분 -->
+                                    <!-- 
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_20.svg" alt="20대남">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_30.svg" alt="30대남">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_40.svg" alt="40대남">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_50.svg" alt="50대남">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_60.svg" alt="60대남">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_20.svg" alt="20대여">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_30.svg" alt="30대여">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_40.svg" alt="40대여">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_50.svg" alt="50대여">
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_60.svg" alt="60대여">
+                                    -->
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_male_40.svg" alt="40대남">
+                                    <div class="ml10">
+                                        <p class="fs-md fw-m fc-black3">김키움님(40대)</p>
+                                        <p class="fs-sm fc-gray-2">키움증권 투자 1년 6개월차</p>
+                                    </div>
+                                </div>
+                                <p class="fs-md fw-b mt20 fc-num-blue">키움YES 저축은행</p>
+                                <div class="d-flex mt10">
+                                    <div class="w100">
+                                        <p class="fs-sm fc-gray-2">최저금리</p>
+                                        <p class="fs-xl fw-b fc-black3">3.29%</p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-sm fc-gray-2">최대한도</p>
+                                        <p class="fs-xl fw-b fc-black3">2억 5,000만원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-box w290 pr30 pb15">
+                                <div class="icon-title"> 
+                                    <img class="icon60" src="../../../resources/new_images/views/loan/img_avatar_female_30.svg" alt="30대여">
+                                    <div class="ml10">
+                                        <p class="fs-md fw-m fc-black3">김키움님(30대)</p>
+                                        <p class="fs-sm fc-gray-2">키움증권 투자 1년 6개월차</p>
+                                    </div>
+                                </div>
+                                <p class="fs-md fw-b mt20 fc-num-blue">키움YES 저축은행</p>
+                                <div class="d-flex mt10">
+                                    <div class="w100">
+                                        <p class="fs-sm fc-gray-2">최저금리</p>
+                                        <p class="fs-xl fw-b fc-black3">3.59%</p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-sm fc-gray-2">최대한도</p>
+                                        <p class="fs-xl fw-b fc-black3">5,000만원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>    
+    <script src="../../../resources/js/lib/lottie.min.js"></script>     
+
+    <!-- avatar lottie -->
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('female_20'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/female_20.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('female_30'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/female_30.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('female_40'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/female_40.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('female_50'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/female_50.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('female_60'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/female_60.json'
+        });        
+    </script>                
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('male_20'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/male_20.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('male_30'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/male_30.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('male_40'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/male_40.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('male_50'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/male_50.json'
+        });        
+    </script>
+    <script>
+        var anmation = bodymovin.loadAnimation({
+            container : document.getElementById('male_60'),
+            renderer : 'svg',
+            loop : true,
+            autoplay : true,
+            path: '../../../resources/new_images/views/loan/male_60.json'
+        });        
+    </script>  
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">full popup</a>
+
+        <article class="modal-popup popup-full" id="modal_full-popup">
+            <div class="modal-header">
+                <h1>기준 변경 </h1>
+                <button type="button" class="modal-close">팝업 닫기</button>
+            </div>
+            <div class="modal-body">
+                <div class="module-box">
+
+                    <!-- 선택 전 -->
+                    <div class="card-box card-border">
+                        <p class="fc-gray">변경하실 기준을 선택해주세요</p>
+                    </div>
+
+                    <!-- 선택한 값 순서대로 나열 -->
+                    <div class="card-box card-border border-primary">
+                        <p class="fw-m fc-blue-dark">서울특별시 - 강남구 - 30대</p>
+                    </div>
+
+                    <div class="custom-select2 select-block mt20" data-title="지역(시/도) 선택" data-placeholder="지역(시/도)을 선택해주세요">                    
+                        <select>
+                            <option>전체</option>
+                            <option>서울특별시</option>
+                            <option>부산광역시</option>
+
+                            <option>경상남도</option>
+                            <option>제주특별자치도</option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select2 select-block mt20" data-title="지역(시/군/구) 선택" data-placeholder="지역(시/군/구)을 선택해주세요">                    
+                        <select>
+                            <option>전체</option>
+                            <option>강남구</option>
+
+                            <option>중구</option>
+                            <option>중랑구</option>
+                        </select>
+                    </div>
+                    
+                    <div class="custom-select2 select-block mt20" data-title="연령 선택" data-placeholder="연령을 선택해주세요">                    
+                        <select>
+                            <option>전체</option>
+                            <option>10대</option>
+                            <option>20대</option>
+                            
+                            <option>80대</option>
+                            <option>90대</option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select2 select-block mt20" data-title="성별 선택" data-placeholder="성별을 선택해주세요">                    
+                        <select>
+                            <option>전체</option>
+                            <option>남자</option>
+                            <option>여자</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="btn-box">
+                    <button type="button" class="btn btn-footer btn-primary">선택하기</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

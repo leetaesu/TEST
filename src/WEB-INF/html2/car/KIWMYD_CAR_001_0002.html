@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+        <header>
+            <h1>자동차 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+        <main class="module-group">
+
+            <div class="module-box pt20">
+                <!-- 커스텀 팝업 KIWMYD_CAR_001_0002_P003 연결 -->
+                <div class="custom-select2 select-block custom-popup">
+                    <select>
+                        <option selected="">12가1234</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="module-box pt0">
+                <p class="fs-2xl fw-b">현대<br>팰리세이드</p>
+                <p class="mt10">가솔린 3.8 프레스티지 7인승</p>
+                <p>2020년</p>
+            </div>
+            
+            <div class="module-box pb0">
+                <div class="car-main-bg">
+                    <p>현재시세</p>
+                    <p class="fs-xl fw-b">2,717만원</p>
+                    <p class="mt5">
+                        <span class="mr5">출고차대비</span>
+                        <!-- <span class="arrow-up">1.58%</span> -->
+                        <span class="arrow-down">-50.5%</span>
+                    </p>
+                </div>
+                <div class="car-main-img">
+                    <img src="../../../resources/new_images/views/home/img_car_sample.png" alt="자동차 이미지" class="w280">
+                </div>
+            </div>
+
+            <div class="module-box pt10">
+                <div class="detail-block">
+                    <div class="detail-collapse">
+                        <dl class="data-list">
+                            <dt class="fs-sm">출고가</dt>
+                            <dd>
+                                <p class="number-unit fc-black fw-b">
+                                    <span class="number">3,400</span>
+                                    <span class="unit">만원</span>
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">주행거리</dt>
+                            <dd>
+                                <div class="d-flex-start">
+                                    <p class="mr10 fc-black">100,000Km</p>
+                                    <button type="button" class="btn btn-xs btn-border fc-gray">변경</button>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">최초등록일</dt>
+                            <dd class="fc-black">2018.09.28</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">배기량</dt>
+                            <dd class="fc-black">2157cc</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">연료</dt>
+                            <dd class="fc-black">디젤</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">변속기</dt>
+                            <dd class="fc-black">오토</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">연비</dt>
+                            <dd class="fc-black">10.1km/L(4등급)</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">색상</dt>
+                            <dd class="fc-black">검정</dd>
+                        </dl>
+                        <dl class="data-list">
+                            <dt class="fs-sm">차대번호</dt>
+                            <dd class="fc-black">KPDKFDNE1JP127459</dd>
+                        </dl>                                                
+                        <dl class="data-list">
+                            <dt class="fs-sm">기본 보증</dt>
+                            <dd class="fc-black">2년 / 40,000km</dd>
+                        </dl>                         
+                    </div>                    
+                    <div class="detail-footer">
+                        <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 내 차 시세 -->            
+            <div class="module-box module-border p0 pt30">
+                <h3 class="fs-xl fw-m pl20">내 차 시세</h3>
+
+                <!-- Tab head -->
+                <ul class="tab-head tab-block pt10">
+                    <li id="tabmenu_1" class="tab-btn" aria-controls="tabmenu_panel1">표준시세</li>
+                    <li id="tabmenu_2" class="tab-btn" aria-controls="tabmenu_panel2">주행거리 기준 시세</li>
+                </ul>
+
+                <!-- 표준시세 Tab -->
+                <div id="tabmenu_panel1" class="tab-panel">
+                    <p class="bullet bullet-dot">내 차와 동일한 차종의 실 거래가에 기반한 평균 시세입니다.</p>                    
+                    <p class="text-right fs-sm fc-gray mt20">단위: 만원</p>                    
+                    <div class="chart-wrapper mt15">
+                        <div id="chart-line1"></div>
+                    </div>
+                </div>
+
+                <!-- 주행거리기준 Tab -->
+                <div id="tabmenu_panel2" class="tab-panel">
+                    <p class="fs-sm fc-gray">주행거리: 4만km이상~6만km 미만</p>                    
+                    <p class="fs-sm fc-gray text-right mt20">단위: 만원</p>
+                    <div class="chart-wrapper mt15">
+                        <div id="chart-line2"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 내 차 관리 -->            
+            <div class="module-box module-border">
+                <h3 class="fs-xl fw-m">내 차 관리</h3>
+
+                <p class="fs-md fw-m mt20">자동차 정기/종합<br>검사일이 <span class="fc-pink">D-150</span> 남았어요</p>
+                <div class="card-box card-border mt10">
+                    <div class="d-flex-between">
+                    <p class="fs-sm fc-gray">검사 가능 기간</p>
+                    <p class="fs-md fw-b">2022. 08. 27 ~ 2022. 10. 28</p>
+                    </div>
+                </div>
+
+                <!-- 미납 내역 있는 경우 -->
+                <p class="fs-md fw-m mt20">미납 내역이 <span class="fc-pink">2건</span> 조회되었어요</p>
+                <div class="card-box card-border mt10 py10">
+                    <div class="py20 border">
+                        <p>자동차 세금</p>
+                        <div class="d-flex-between mt10">
+                            <p class="fs-sm fc-gray">국세청: 2022.03.28</p>
+                            <p class="fs-md fw-b">70,000원</p>
+                        </div>
+                    </div>
+                    <div class="py20 border">
+                        <p>통행요금</p>
+                        <div class="d-flex-between mt10">
+                            <p class="fs-sm fc-gray">인천IC : 2022.4.10</p>
+                            <p class="fs-md fw-b">2,000원</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 미납 내역 없는 경우 -->
+                <div class="card-box card-border mt10 py10">
+                    <div class="no-data">
+                        <p class="fs-lg fw-m">미납 내역이 없어요</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 내 차 보험 -->
+            <div class="module-box module-border">
+                <h3 class="fs-xl fw-m">내 차 보험</h3>               
+
+                <p class="fs-md fw-m mt20">자동차 보험 보험기간<br>만기일까지 <span class="fc-pink">90일</span> 남았어요</p>
+                <div class="card-box card-border mt10">
+                    <div class="icon-title">
+                        <img class="icon40" src="../../../resources/images/icons/org/A1AAEO0000.png" alt="">
+                        <div class="overflow-hidden">
+                            <p class="fs-md fw-m ellipsis">삼성화제 다이렉트 자동차보험</p>
+                        </div>
+                    </div>
+                    <div class="d-flex-between mt20">
+                        <p class="fs-sm fc-gray">가입기간</p>
+                        <p class="fs-md fw-b">2020.01.01~2023.01.01</p>
+                    </div>                    
+                </div>
+
+                <p class="fs-md fw-m mt20">운전자 보험</p>
+                <div class="card-box card-border mt10">
+                    <div class="icon-title">
+                        <img class="icon40" src="../../../resources/images/icons/org/A1AAEO0000.png" alt="">
+                        <div class="overflow-hidden">
+                            <p class="fs-md fw-m ellipsis">DB손해보험 참좋은운전자상해보험 다이렉트 자동차보험</p>
+                        </div>
+                    </div>
+                    <div class="d-flex-between mt20">
+                        <p class="fs-sm fc-gray">만기일</p>
+                        <p>2023.01.01</p>
+                    </div>
+                    <p class="fs-md fw-b text-right mt10">월 12,900원</p>
+                </div>
+
+                <div class="btn-box mt10">
+                    <button type="button" class="btn btn-lg btn-block btn-border btn-icon-add">보험 추가하기</button>
+                </div>
+
+            </div>
+
+            <!-- 내 차 보험 자산 미연결 -->
+            <div class="module-box module-border">
+                <h3 class="fs-xl fw-m">내 차 보험</h3>
+                <p class="fs-md fw-m mt20">MY자산 보험을 연결하면<br>자동차 보험 정보를 확인 할 수 있어요</p>
+                <div class="btn-box mt20">
+                    <button type="button" class="btn btn-lg btn-block btn-border">내 차 보험 확인하기</button>
+                </div>
+            </div>
+
+            <!-- 카드결제금액 -->
+            <div class="module-box module-border">
+                <h3 class="sr-only">카드결제금액</h3>
+                <p class="fs-md fw-m">지난 달보다 <span class="fc-pink">100,000원</span>의<br>주유 사용 비용이 <span class="fc-pink">상승했어요</span></p>
+                <p class="fs-md fw-m">지난 달과<br>주유 사용 비용이 <span class="fc-pink">동일해요</span></p>
+                <p class="fs-md fw-m">지난 달보다 <span class="fc-pink">242,000원</span>의<br>주유 사용 비용을 <span class="fc-pink">절감했어요</span></p>
+
+                <div class="chart-wrapper">
+                    <div id="chart-column-basic"></div>
+                </div>                        
+
+                <div class="btn-box mt10">
+                    <button type="button" class="btn btn-lg btn-block btn-border btn-icon-add">카드 추가하기</button>
+                </div>
+                <p class="bullet bullet-dot mt20">카드 내역에서 가맹점명으로 조회하므로 정확하지 않을 수 있습니다.</p>
+                <p class="bullet bullet-dot mt10">키움증권은 해당 정보를 외부기관에 절대로 제공하지 않습니다.</p>      
+            </div> 
+
+            <!-- 카드결제금액 자산 미연결 -->
+            <div class="module-box module-border">
+                <h3 class="sr-only">카드결제금액</h3>
+                <p class="fs-md fw-m">내 신용카드를 연결하면<br>차량 관련 소비내역을 분석해드려요</p>
+                <div class="btn-box mt20">
+                    <button type="button" class="btn btn-lg btn-block btn-border">차량 소비내역 분석하기</button>
+                </div>
+            </div>
+
+            <div class="module-box module-border">
+                <h3 class="fs-xl fw-m">요즘 어떤 차가 많이 팔릴까?</h3>
+                <div class="mt20">
+                    <img src="" alt="이벤트 이미지">
+                </div>
+                
+                <h3 class="fs-xl fw-m mt30">경기도 파주시에 사는 30대 여자가<br>최근 구입한 자동차 거래 내역이에요</h3>
+
+                <a href="#;" class="sub-link sub-icon-link fs-sm fw-m mt10 mb10">기준 변경</a>
+
+                <div class="card-box card-border mt10">
+                    <div class="icon-title">
+                        <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w90">
+                        <div class="overflow-hidden ml10">
+                            <p class="fs-sm ellipsis">현대 팰리세이드</p>
+                            <span class="fs-md fw-m">1,717만원</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card-box card-border mt10">
+                    <div class="icon-title">
+                        <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w90">
+                        <div class="overflow-hidden ml10">
+                            <p class="fs-sm ellipsis">현대 팰리세이드</p>
+                            <span class="fs-md fw-m">1,717만원</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>  
+
+        </main>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+
+    <script>
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // 중고차판매 시세 차트
+        var chartLine1 = new Highcharts.Chart('chart-line1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200
+                },
+                xAxis:{
+                    categories: [ "2022.05", "2023.05"]
+                },
+                yAxis: [
+                    {
+                        labels:{ formatter: function() {return this.value} },
+                        title: { enabled: false },
+                        min: 0,
+                        max: 1000,
+                        tickInterval: 200
+                    }
+                ],
+                plotOptions : {
+                    series: {                            
+                        color: '#6666cc'                            
+                    },
+                    line: {
+                        marker: {
+                            fillColor: '#2969ba',
+                            lineColor: '#6666cc'
+                        }
+                    },
+                },
+                series: [
+                    {
+                        dataLabels: { enabled: true, color: '#1e1e1e' },
+                        fillOpacity: 0,
+                        data: [840,780]
+                    }
+                ]
+            }
+        ));
+
+        // 주행거리 기준시세 차트
+        var chartLine2 = new Highcharts.Chart('chart-line2', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200
+                },
+                xAxis:{
+                    categories: [ "8만㎞", "10만km", "12만km", "14만km"]
+                },
+                yAxis: [
+                    {
+                        labels:{ formatter: function() {return this.value} },
+                        title: { enabled: false },
+                        min: 0,
+                        max: 1000,
+                        tickInterval: 200
+                    }
+                ],
+                plotOptions : {
+                    series: {                            
+                        color: '#6666cc'                            
+                    },
+                    line: {
+                        marker: {
+                            fillColor: '#2969ba',
+                            lineColor: '#6666cc'
+                        }
+                    },
+                    // label: {
+                    //     style:{'color':'#cccccc','font-size':'10px'}
+                    // }
+                },
+                series: [
+                    {
+                        dataLabels: { enabled: true, color: '#1e1e1e' },
+                        fillOpacity: 0,
+                        data: [840,740,690,500]
+                    }
+                ]
+
+            }
+        ));
+
+            // Column chart - Basic
+            var chartColumnBasic = new Highcharts.Chart('chart-column-basic', Highcharts.merge (
+                KW_MOBILE.highcharts.types.column,
+                {
+                    chart: { 
+                        height: 230,
+                        marginTop: 30
+                    },
+                    plotOptions: {
+                        column: {
+                            pointWidth: 44,
+                            dataLabels: {
+                                enabled: true,
+                                inside: false,
+                                overflow: 'none',
+                                crop: false,
+                                useHTML: true,
+                                formatter: function() {
+                                    return '<span class="chart-tooltip mb5">' + this.y +'원</span>'
+                                }
+                            }
+                        },
+                    },
+                    xAxis: { 
+                        categories: ['3월', '4월'],
+                        labels:{
+                            y: 25,
+                            style: { fontSize: '12px', fontWeight: 'bold', color: '#888' }
+                        }
+                    },                    
+                    yAxis: {
+                        labels: {
+                            enabled: false
+                        }    
+                    },
+                    series: [{
+                        data: [
+                            { y: 150000, color: '#dcdfe4' },
+                            { y: 250000, color: '#59c39b' }
+                        ]
+                    }]
+                }
+            ));
+
+    </script>
+
+</body>
+
+</html>

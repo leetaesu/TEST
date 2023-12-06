@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>계좌 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box bg-white2 pt30">
+                <!-- 은행명 -->
+                <p class="fs-lg fw-m">신한은행</p>
+                <!-- 상품명 -->
+                <h3 class="fs-lg fw-m ellipsis">우리 아파트 담보대출</h3>
+
+                <div class="d-flex-between mt20">
+                    <a href="#;" class="copy-link">41033408120-8788</a>
+                    <p class="fc-gray">금리<span class="fc-pink fw-m ml5">0.10%</span></p>
+                </div>
+
+                <div class="text-right">
+                    <p class="number-unit fs-2xl fw-b mt10">
+                        <span class="number">-120,000,000</span>
+                        <span class="unit">원</span>
+                    </p>
+                </div>
+                
+                <div class="btn-box mt20">
+                    <button type="button" class="btn btn-round btn-primary btn-block">이체하기</button>
+                </div>
+            </div>
+
+            <div class="module-box module-border w-full pt20">
+
+                <ul class="tab-head tab-block">
+                    <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">거래내역</li>
+                    <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">상품정보</li>
+                    <li id="tab_03" class="tab-btn" aria-controls="tab_panel03">금리변동</li>
+                </ul>
+                
+                <!-- 거래내역 Tab -->
+                <div id="tab_panel01" class="tab-panel p0">
+
+                    <div class="module-box pt20">
+                        <div class="form-box mb30">
+                            <input type="text" class="custom-input input-block calendar month" placeholder="기간선택" readonly="">
+                        </div>
+
+                        <!-- 상환 -->
+                        <div class="detail-block">
+                            <p class="fs-sm fc-gray">2022.03.10 11:56</p>
+                            <p class="fs-lg fw-m fc-black mt5">상환</p>
+
+                            <div class="detail-collapse">
+                                <dl class="data-list">
+                                    <dt>거래금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fc-black">
+                                            <span class="number">125,480,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl class="data-list">
+                                    <dt>거래 후 잔액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit">
+                                            <span class="number">105,480,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl class="data-list">
+                                    <dt>대출 원금</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit">
+                                            <span class="number">5,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl class="data-list">
+                                    <dt>대출 이자</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit">
+                                            <span class="number">1,480,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+
+                                <div class="card-box-sm bg-white2 mt10 mb10 p16">
+                                    <dl class="data-list">
+                                        <dt>이자적용기간</dt>
+                                        <dd>2019.12.31</dd>
+                                        <dt>적용이율</dt>
+                                        <dd>2.30%</dd>
+                                        <dt>이자구분</dt>
+                                        <dd>정상이자</dd>
+                                        <dt>통화</dt>
+                                        <dd>USD</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-footer">
+                                <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                            </div>
+                        </div>
+
+                        <!-- 거래내역이 500개 이상인 경우 노출 -->
+                        <button type="button" class="btn btn-lg btn-block btn-border mt20">더 보기</button>
+                    </div>
+                </div>
+
+                <!-- 상품정보 Tab -->
+                <div id="tab_panel02" class="tab-panel p0">
+
+                    <div class="module-box pt30">
+
+                        <!-- 차트 -->
+                        <div class="d-flex-between">
+                            <div class="chart-wrapper">
+                                <div id="chart-gauge"></div>
+                            </div>
+                            <dl class="data-list mr10">
+                                <dt class="fs-sm">대출금액</dt>
+                                <dd class="fs-sm">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">125,480,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                                <dt class="fs-sm">상환회차</dt>
+                                <dd class="fs-sm fc-black fw-m">24/240회</dd>
+                                <dt class="fs-sm">대출잔액</dt>
+                                <dd class="fs-sm">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">125,480,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                        
+                        <!-- 상품정보 Table -->
+                        <table class="custom-table mt10">
+                            <caption>상품정보</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">대출실행일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">대출만기일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">월 상환일</th>
+                                    <td class="text-right">매월 10일</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">상환정보</th>
+                                    <td class="text-right">
+                                        NH농협은행 자유 입출금<br>
+                                        <a href="#;" class="copy-link">33333333333333</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">상환 방식</th>
+                                    <td class="text-right">거치식-원리금균등분할상환</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <dl class="data-list mt10">
+                            <dt>원금상환액</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit fc-black">
+                                    <span class="number">125,480,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- 금리변동 Tab -->
+                <div id="tab_panel03" class="tab-panel p0">
+
+                    <div class="module-box">
+
+                        <p class="fs-md"><span class="fw-b mr5">2021년 06월</span>보다<span class="fc-pink fw-b ml5">0.17%</span> 올랐어요</p>
+
+                        <div class="d-flex-between mt30">
+                            <dl class="head-box">
+                                <dt>2021년 6월 금리</dt>
+                                <dd>3.65%</dd>
+                            </dl>
+                            <dl class="head-box fc-black fw-m">
+                                <dt>2021년 7월 금리</dt>
+                                <dd>3.82%</dd>
+                            </dl>
+                            <dl class="head-box">
+                                <dt>차이</dt>
+                                <dd class="fc-pink fw-b">+0.17%</dd>
+                            </dl>
+                        </div>
+
+                        <!-- 라인차트 -->
+                        <div class="chart-wrapper w-full overflow-x mt10">
+                            <div id="chart-line-scroll"></div>
+                        </div>
+                    </div>
+
+                    <div class="module-box module-border">
+                        <img src="../../../resources/new_images/icons/ico_check_label.svg" class="w-30" alt="">
+
+                        <p class="fs-md line-height-md mt20">현재 대출금리<span class="fc-pink fw-b ml5">3.82%</span> 보다<br>
+                            나은 조건의 대출상품을 찾아보세요.</p>
+                        <button type="button" class="btn btn-lg btn-block mt20">투자 상품보기</button>                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // Gauge 차트 - Solid gauge
+        var chartGauge = new Highcharts.Chart('chart-gauge', Highcharts.merge (
+            KW_MOBILE.highcharts.types.solidgauge,
+            {
+                chart: {
+                    width: 170,
+                    height: 170,
+                },
+                plotOptions: {
+                    solidgauge: {
+                        dataLabels: {
+                            enabled: true,
+                            y: -20,
+                            formatter: function() {
+                                return `<div class="text-center">
+                                    <p class="fc-gray fs-sm">상환비율</p>
+                                    <p class="fc-black fs-df fw-m">${this.y + '%'}</p>
+                                </div>`
+                            }
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    max: 100
+                },
+                series:[{
+                    data: [{
+                        color: '#59c39b',
+                        y: 35
+                    }]
+                }]
+            }
+        ));
+
+        //Line차트
+        var chartLine = new Highcharts.Chart('chart-line-scroll', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 65,
+                    events: {
+                        load: function(){
+                                var dotCnt = this.pointCount;
+                                if(dotCnt > 5) {
+                                    this.setSize(dotCnt*($(window).width()/5), this.chartHeight);
+                                    $("#chart-line-scroll").width(this.chartWidth);
+                                }
+                            }
+                        }
+                },
+                xAxis:{
+                    categories: [ '2021.11', '2021.10', '2021.09', '2021.08', '2021.07', '2021.06' ]
+                },
+                yAxis: {
+                    labels: { 
+                        enabled: false
+                    }
+                },
+                plotOptions: {
+                    marker: {
+                        fillColor: '#2969ba'
+                    }
+                },
+                series: [
+                    {
+                        data: [3.42, 3.82, 3.65, 3.11, 3.90, 3.3],
+                        lineColor: '#96bae4',
+                        dataLabels: {
+                            enabled: true,
+                            x: -1,
+                            formatter: function() {
+                                var lastNum = this.series.data.length - 1;
+                                var lastValue = this.series.data[lastNum].y;
+                                if( this.y === lastValue ) {
+                                    return `<p class="chart-tooltip blue p10 mb5">최초 계약금리<br>${this.y}%</p>` 
+                                } else {
+                                    return `${this.y}%`;
+                                }
+                            }
+                        }  
+                    }
+                ]
+
+            }
+        ));
+        
+    </script>
+</body>
+
+</html>

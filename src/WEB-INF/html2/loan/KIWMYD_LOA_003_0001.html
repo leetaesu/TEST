@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+        <header>
+            <h1>대출이자 계산</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+        <main class="module-group">
+            <section class="module-box pt30">
+                <h3 class="sr-only">대출이자 계산 입력</h3>
+                <div class="form-box flex-column">
+                    <p class="form-label fc-gray">대출 금액</p>
+                    <div class="input-unit input-block mt10">
+                        <input type="text" class="custom-input" placeholder="대출금액 입력해주세요" maxlength="6">
+                        <span class="txt-unit">만원</span>
+                    </div>
+                    <!-- 대출금액 입력시 노출-->
+                    <p class="input-unit-amount" style="display: none">999억 9999원</p>
+                </div>
+                <div class="form-box flex-column mt30">
+                    <p class="form-label fc-gray">연 금리</p>
+                    <div class="input-unit input-block mt10">
+                        <input type="text" class="custom-input" placeholder="연 금리 입력해주세요" maxlength="4">
+                        <span class="txt-unit">%</span>
+                    </div>
+                </div>
+                <div class="form-box flex-column mt30">
+                    <p class="form-label fc-gray">대출 기간</p>
+                    <div class="input-unit input-block mt10">
+                        <input type="text" class="custom-input" placeholder="대출 기간 입력해주세요" maxlength="3">
+                        <span class="txt-unit">개월</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" disabled>계산하기</button>
+            </div>
+        </footer>
+    </div>
+
+    <article class="modal-popup popup-alert" id="modal_alert01">
+        <div class="modal-header sr-only">
+            <h1>대출금액 입력 초과</h1>
+        </div>
+        <div class="modal-body">
+            <p>대출금액은 1~999,999만원까지 입력 가능해요</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert01')">확인</button>
+            </div>                          
+        </div>
+    </article>
+    <article class="modal-popup popup-alert" id="modal_alert02">
+        <div class="modal-header sr-only">
+            <h1>연금리 입력 초과</h1>
+        </div>
+        <div class="modal-body">            
+            <p>연 금리는 0.01~99.99%까지 입력 가능해요</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert02')">확인</button>
+            </div>                          
+        </div>
+    </article>
+    <article class="modal-popup popup-alert" id="modal_alert03">
+        <div class="modal-header sr-only">
+            <h1>대출 기간 초과</h1>
+        </div>
+        <div class="modal-body">            
+            <p>대출 기간은 1~999개월까지 입력 가능해요</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert03')">확인</button>
+            </div>                          
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

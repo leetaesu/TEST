@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <g data-name="그룹 13787" transform="translate(-18 -1244)">
+        <circle data-name="타원 768" cx="36" cy="36" r="36" transform="translate(18 1244)" style="fill:#f5f5f5"/>
+        <g data-name="그룹 13788">
+            <g data-name="그룹 13789">
+                <g transform="translate(42 1272)" style="stroke:#333;fill:none">
+                    <rect width="1" height="20" rx=".5" style="stroke:none"/>
+                    <rect x=".5" y=".5" height="19" style="fill:none"/>
+                </g>
+                <g data-name="line" transform="translate(50 1267)" style="stroke:#333;fill:none">
+                    <rect width="1" height="20" rx=".5" style="stroke:none"/>
+                    <rect x=".5" y=".5" height="19" style="fill:none"/>
+                </g>
+                <g data-name="line" transform="translate(58 1274)" style="stroke:#333;fill:none">
+                    <rect width="1" height="20" rx=".5" style="stroke:none"/>
+                    <rect x=".5" y=".5" height="19" style="fill:none"/>
+                </g>
+                <g data-name="line" transform="translate(66 1268)" style="stroke:#333;fill:none">
+                    <rect width="1" height="20" rx=".5" style="stroke:none"/>
+                    <rect x=".5" y=".5" height="19" style="fill:none"/>
+                </g>
+                <g data-name="사각형 3862" transform="translate(40 1276)" style="fill:#fff;stroke:#333">
+                    <rect width="5" height="12" rx="1" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="4" height="11" rx=".5" style="fill:none"/>
+                </g>
+                <g data-name="사각형 3863" transform="translate(48 1270)" style="fill:#deecfb;stroke:#333">
+                    <rect width="5" height="8" rx="1" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="4" height="7" rx=".5" style="fill:none"/>
+                </g>
+                <g data-name="사각형 3864" transform="translate(56 1278)" style="fill:#fff;stroke:#333">
+                    <rect width="5" height="12" rx="1" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="4" height="11" rx=".5" style="fill:none"/>
+                </g>
+                <g data-name="사각형 3865" transform="translate(64 1271)" style="fill:#deecfb;stroke:#333">
+                    <rect width="5" height="12" rx="1" style="stroke:none"/>
+                    <rect x=".5" y=".5" width="4" height="11" rx=".5" style="fill:none"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

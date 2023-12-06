@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="description" content="키움증권의 대표 홈페이지입니다.">
+	<meta name="keywords" content="키움증권">
+	<meta name="author" content="키움증권">
+
+	<title>키움증권 마이데이터</title>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+	<link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+	<link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+	<div class="page-wrapper main fixed">
+		<main>
+			<section class="module-box p0">
+
+                <div class="swiper-container custom-swiper mt30 pt30" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">투자자산 분석 리포트는?</span>
+							<h3 class="fs-2xl fw-m">수익률 분포도</h3>
+							<p class="fc-gray h60 mt15">전 증권사에 보유한 주식, 해외주식, 펀드 등을<br>고객님과 투자성향이 동일한 ‘투자고수’와<br>비교 분석해드리는 서비스입니다.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_report11.png" alt="">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">투자자산 분석 리포트는?</span>
+							<h3 class="fs-2xl fw-m">업종별 포트폴리오 분석</h3>
+							<p class="fc-gray h60 mt15">보유 종목의 수익률 위치 및 전체의<br>평균 매입가를 파악하여 매물대 분석에 도움이 되요.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_report12.png" alt="">
+                        </div>
+
+						<!-- Slide 3 -->
+                        <div class="swiper-slide text-center">
+							<span class="fc-red">투자자산 분석 리포트는?</span>
+							<h3 class="fs-2xl fw-m">투자고수들의 관심상품</h3>
+							<p class="fc-gray h60 mt15">요즘 HOT업종은? 내가 보유한 종목이 HOT한가?<br>한눈에 확인 가능해요.</p>
+							<img class="mt70" src="../../../resources/new_images/views/inve/img_report13.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 12em;"></div>
+                </div>
+
+			</section>
+		</main>
+
+		<footer>
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-footer btn-primary">무료 분석 받고 종목 찾기</button>
+            </div>
+		</footer>
+	</div>
+
+	
+	<!-- Script -->
+	<script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+	<script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+	<script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+	<script src="../../../resources/js/views/common/ui_common.js"></script>
+    <script>
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', true);
+    </script>
+</body>
+
+</html>

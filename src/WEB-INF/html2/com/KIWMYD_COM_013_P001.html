@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>본인인증</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 1. 본인인증 최초 화면 -->
+            <div class="module-box">
+                <h3 class="fs-xl fw-m fc-black2">김키움님<br>본인이 맞는지 확인하는 인증이에요</h3>
+                    
+                    <h4 class="fw-m fc-gray mt30">이름</h4>
+                    <!-- 오류메시지 출력시 input에 error 클래스 추가 -->
+                    <input type="text" class="custom-input input-block mt10 error" value="김키움">
+                    <p class="fs-sm mt10 fc-red">오류 메시지 출력 영역</p>
+
+                    <!-- KIWMYD_COM_017_P001 팝업 연결 -->
+                    <h4 class="fw-m fc-gray mt30">통신사 선택</h4>
+                    <div class="custom-select2 select-block custom-popup mt10">
+                        <!-- 기본 표시되는 값 -->
+                        <p class="fs-md fc-gray-l">통신사 선택</p>
+                        <!-- 팝업에서 선택한 값 -->
+                        <!-- <p class="fs-md">SKT</p> -->
+                    </div>
+
+                    <h4 class="fw-m fc-gray mt30">휴대폰 번호</h4>
+                    <!-- 오류메시지 출력시 input에 error 클래스 추가 -->
+                    <input type="text" class="custom-input input-block mr10" value="01012345678">
+                    <p class="fs-sm mt10 fc-red">오류 메시지 출력 영역</p>
+
+            </div>
+
+            <!-- 2. 인증번호 입력 화면 -->
+            <div class="module-box">                    
+                    <h3 class="fs-xl fw-m fc-black2">SMS로 전송된 인증번호를<br>입력해주세요</h3>
+
+                    <h4 class="fw-m fc-gray mt30">인증번호</h4>
+                    <div class="d-flex mt10">
+                        <div class="input-unit error input-block mr10">
+                            <input type="text" class="custom-input text-left" placeholder="인증번호 입력">
+                            <span class="fc-primary">03:00</span>
+                        </div>
+                        <button type="button" class="btn btn-border fc-black2">재요청</button>
+                    </div>
+                    <p class="fs-sm mt10 fc-red">인증번호가 일치하지 않습니다.<br>인증번호를 다시 확인 후 입력해 주세요.</p>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <!-- 인증번호 입력 값 없을 시 버튼 비활성화 disabled-->
+                <button type="button" class="btn btn-footer btn-primary" disabled>다음</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

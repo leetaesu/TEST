@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet')">Open Slide Popup</a>
+
+        <article class="modal-popup bottomsheet" id="bottomsheet">
+            <div class="modal-header">
+                <h1>내 차량</h1>
+                <button type="button" class="modal-close">닫기</button>
+            </div>                        
+            <div class="modal-body">
+
+                <!-- 자동차 목록 -->
+                <div class="custom-radio radio-vertical btn-type3">
+                    <input type="radio" name="radio-sample4" id="rdo_01" checked="">
+                    <label for="rdo_01"><i></i>
+                        <div class="d-flex-between w-100">
+                            <div class="icon-title">
+                                <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w90">
+                                <div class="overflow-hidden">
+                                    <p class="fs-sm ellipsis">현대 팰리세이드</p>
+                                    <p class="fs-sm fc-gray">12가 1234<span class="divide-bar">2021.11.27</span></p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-delete" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">삭제</button>
+                        </div>
+
+                    </label>
+                </div>
+                <div class="custom-radio radio-vertical btn-type3">
+                    <input type="radio" name="radio-sample4" id="rdo_02">
+                    <label for="rdo_02"><i></i>                        
+                        <div class="d-flex-between w-100">
+                            <div class="icon-title">
+                                <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w90">
+                                <div class="overflow-hidden">
+                                    <p class="fs-sm ellipsis">현대 팰리세이드</p>
+                                    <p class="fs-sm fc-gray">12가 1234<span class="divide-bar">2021.11.27</span></p>
+                                </div>
+                            </div>                            
+                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-delete" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">삭제</button>                            
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- <div class="card-box card-border mt10">
+                    <div class="d-flex-between">
+                        <div class="icon-title">
+                            <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w90">
+                            <div class="overflow-hidden ml10">
+                                <p class="fs-sm ellipsis">현대 팰리세이드</p>
+                                <p class="fs-sm fc-gray">12가 1234<span class="divide-bar">2021.11.27</span></p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-delete" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">삭제</button>
+                    </div>
+                </div> -->
+
+                <!-- 자동차 추가 -->
+                <div class="btn-box mt10">
+                    <button type="button" class="btn btn-lg btn-block btn-icon-add btn-dashed fc-gray">자동차 추가</button>
+                </div>
+                <!-- <a href="#;" class="sub-link d-block mt10">
+                    <div class="card-box card-dot d-flex-start h100">
+                        <div class="icon-title">
+                            <img src="../../../resources/new_images/icons/ico_plus_round.svg" class="w40">
+                            <div class="fc-gray ml10">
+                                <p class="fs-md fw-b">자동차 추가</p>
+                                <span class="fs-sm">내 차 등록하고 현재 시세를 알아보세요.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="btn-box">
+                    <button type="button" class="btn btn-footer btn-primary">확인</button>
+                </div>                            
+            </div>
+            
+        </article>
+
+    </div>
+
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>삭제 알럿</h1>
+        </div>
+        <div class="modal-body">
+            <p class="fs-md fw-m text-center p20">해당 차량을 삭제하시겠습니까?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer w-70">취소</button>
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

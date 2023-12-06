@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>부동산 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 부동산-오피스텔 정보 -->
+            <div class="module-box module-header bg-purple fc-white pb30">
+                <div class="swiper-container custom-swiper" id="swiper01">
+                    <div class="swiper-wrapper">
+
+                        <!-- 자가인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">레미안공덕3차</p>
+                            <p class="mt5 fw-l">오피스텔
+                                <span class="divide-bar">84m²</span>
+                                <span class="divide-bar">자가 102동 1107호</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">실 거래가</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p>                         
+                                </dd>
+                                <dt class="fw-l">시세 차익</dt>
+                                <dd>
+                                    <!-- +일 때 number-up fc-yellow -->
+                                    <!-- -일 때 number-down fc-green -->
+                                    <p class="number-unit number-up fc-yellow">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p>
+                                </dd>
+                                <dt class="fw-l">매입가</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p>                         
+                                </dd>
+                                <dt class="fw-l">등락률</dt>
+                                <dd>
+                                    <!-- +일 때 number-up fc-yellow -->
+                                    <!-- -일 때 number-down fc-green -->                                    
+                                    <p class="number-up fc-yellow">135%</p>
+                                    <!-- <p class="number-down fc-green">135%</p> -->
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <!-- 전세인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">마포태영데시앙</p>
+                            <p class="mt5 fw-l">오피스텔
+                                <span class="divide-bar">84m²</span>
+                                <span class="divide-bar">전세 102동 1107호</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">보증금</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p>                         
+                                </dd>
+                                <dt class="fw-l">남은 만기일</dt>
+                                <dd class="fc-yellow">D-156</dd>
+                                <dt class="fw-l">계약일</dt>
+                                <dd>2020.04.29</dd>
+                                <dt class="fw-l">만기일</dt>
+                                <dd>2020.04.29</dd>
+                            </dl>
+                        </div>
+
+                        <!-- 월세인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">마포태영데시앙</p>
+                            <p class="mt5 fw-l">오피스텔
+                                <span class="divide-bar">84m²</span>
+                                <span class="divide-bar">월세 102동 1107호</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">보증금</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p>                         
+                                </dd>
+                                <dt class="fw-l">월세</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999</span>
+                                        <span class="unit">만원</span>
+                                    </p>                         
+                                </dd>                                
+                                <dt class="fw-l">남은 만기일</dt>
+                                <dd class="fc-yellow">D-156</dd>
+                                <dt class="fw-l">계약일</dt>
+                                <dd>2020.04.29</dd>
+                                <dt class="fw-l">만기일</dt>
+                                <dd>2020.04.29</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination bullet-white mt10"></div>
+                </div>            
+            </div>
+
+            <!-- 오피스텔 매매 / 전세 / 월세 -->
+            <div class="module-group pt10">
+
+                <!-- tabs -->
+                <ul class="tab-head tab-block">
+                    <li id="tab_t01" class="tab-btn" aria-controls="tab_panelt01">매매</li>
+                    <li id="tab_t02" class="tab-btn" aria-controls="tab_panelt02">전세</li>
+                    <li id="tab_t03" class="tab-btn" aria-controls="tab_panelt03">월세</li>
+                </ul>                
+
+                <!-- 매매 Tab -->
+                <div id="tab_panelt01" class="tab-panel p0">
+                    
+                    <!-- 차트 -->
+                    <div class="module-box pb0">
+                        <h3 class="fs-lg">실거래가 추이</h3>
+                        <div class="chart-wrapper">
+                            <div id="chart-line01"></div>
+                        </div>
+                        <!-- 범례 -->
+                        <div class="d-flex-center align-items-start pb40">
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#17469f;"></span>실 거래가<span class="d-block fc-gray pl10">국토교통부</span>
+                            </p>
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#3a89c0;"></span>현재 시세<span class="d-block fc-gray pl10">공감랩</span>
+                            </p> 
+                            <p class="fs-sm">
+                                <span class="legend-dot" style="background-color:#6abc7f;"></span>공시가격
+                            </p>  
+                        </div>
+                    </div>
+
+                    <!-- 매매 실거래가 / 공시가격 -->
+                    <div class="module-box py0">
+                        <div class="grid-box col-2">
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd01" checked>
+                                <label for="rdo_hd01"><i></i>실 거래가</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal" id="rdo_hd03">
+                                <label for="rdo_hd03"><i></i>공시가격</label>
+                            </div>
+                        </div>
+
+                        <!-- 1. 매매-실거래가 테이블 -->
+                        <div class="mt20">
+                            <p class="fs-sm fc-gray text-right">국토교통부, 단위 : 만원</p>                        
+                            <table class="custom-table mt10">
+                                <caption>매매 실거래가 데이터</caption>
+                                <thead>
+                                    <tr>
+                                        <th class="w-30">계약일</th>
+                                        <th class="w-20">구분</th>
+                                        <th>가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022.05.22</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.22</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.22</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.22</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.22</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 5개 미만, 추가 데이터 없는 경우, 더보기 버튼 미노출 -->
+                            <button type="button" class="btn btn-lg btn-block btn-border mt20">더 보기</button>
+                        </div>                        
+
+                        <!-- 2. 매매-공시가격 테이블 -->
+                        <!-- <div class="mt20">
+                            <p class="fs-sm fc-gray text-right">공시가격, 단위 : 만원</p>                        
+                            <table class="custom-table mt10">
+                                <caption>매매 공시가격 데이터</caption>
+                                <thead>
+                                    <tr>
+                                        <th class="w-30">계약일</th>
+                                        <th class="w-20">구분</th>
+                                        <th>공시가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022.05.13</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right"><span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.13</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right"><span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.13</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right"><span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.13</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right"><span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05.13</td>
+                                        <td class="text-center">매매</td>
+                                        <td class="text-right"><span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button" class="btn btn-lg btn-block btn-border mt20">더 보기</button>
+                        </div>                         -->
+
+                    </div>
+
+                </div>
+
+                <!-- 전세 Tab -->
+                <div id="tab_panelt02" class="tab-panel p0">
+
+                    <!-- 차트 -->
+                    <div class="module-box pb0">
+                        <h3 class="fs-lg">실거래가 추이</h3>
+                        <div class="chart-wrapper">
+                            <div id="chart-line02"></div>
+                        </div>
+                        <!-- 범례 -->
+                        <div class="d-flex-center align-items-start pb40">
+                            <p class="fs-sm mr10">
+                                <span class="legend-dot" style="background-color:#17469f;"></span>전세보증금<span class="d-block fc-gray pl10">국토교통부</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 전세 실거래가 / 공시가격 -->
+                    <div class="module-box py0">
+                        <div class="grid-box col-2">
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal2" id="rdo_hd11" checked>
+                                <label for="rdo_hd11"><i></i>실 거래가</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal2" id="rdo_hd13">
+                                <label for="rdo_hd13"><i></i>공시가격</label>
+                            </div>
+                        </div>
+
+                        <!-- 3. 전세-실거래가 테이블 -->
+                        <div class="mt20">
+                            <p class="fs-sm fc-gray text-right">국토교통부, 단위 : 만원</p>                        
+                            <table class="custom-table mt10">
+                                <caption>전세 실거래가 데이터</caption>
+                                <thead>
+                                    <tr>
+                                        <th class="w-30">계약월</th>
+                                        <th class="w-20">구분</th>
+                                        <th>가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">전세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">전세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">전세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">전세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">전세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">9,999,999</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 5개 미만, 추가 데이터 없는 경우, 더보기 버튼 미노출 -->
+                            <button type="button" class="btn btn-lg btn-block btn-border mt20">더 보기</button>
+                        </div>                        
+
+                        <!-- 전세-공시가격은 2번 테이블과 동일 -->
+
+                    </div>                    
+
+                </div>
+
+                <!-- 월세 Tab -->
+                <div id="tab_panelt03" class="tab-panel p0">
+                    <!-- 월세 시 실거래가 추이 그래프 미제공 -->
+                    <!-- 월세 실거래가 / 공시가격 -->
+                    <div class="module-box pb0">
+                        <div class="grid-box col-2">
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal3" id="rdo_hd21" checked>
+                                <label for="rdo_hd21"><i></i>실 거래가</label>
+                            </div>
+                            <div class="custom-radio btn-type">
+                                <input type="radio" name="radio-hdeal3" id="rdo_hd23">
+                                <label for="rdo_hd23"><i></i>공시가격</label>
+                            </div>
+                        </div>
+
+                        <!-- 4. 월세 실거래가 테이블 -->
+                        <div class="mt20">
+                            <p class="fs-sm fc-gray text-right">국토교통부, 단위 : 만원</p>                        
+                            <table class="custom-table mt10">
+                                <caption>실거래가 데이터</caption>
+                                <thead>
+                                    <tr>
+                                        <th class="w-30">계약월</th>
+                                        <th class="w-20">구분</th>
+                                        <th>가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">월세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">26,000 / 60</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">월세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">26,000 / 60</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">월세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">26,000 / 60</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">월세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">26,000 / 60</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.05</td>
+                                        <td class="text-center">월세</td>
+                                        <td class="text-right">16층<span class="fw-b ml5">26,000 / 60</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 5개 미만, 추가 데이터 없는 경우, 더보기 버튼 미노출 -->
+                            <button type="button" class="btn btn-lg btn-block btn-border mt20">더 보기</button>
+                        </div>                        
+
+                        <!-- 전세-공시가격은 2번 테이블과 동일 -->
+
+                    </div>     
+
+                </div>
+
+                <!-- 부동산 변경/삭제 -->
+                <div class="module-box">
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-lg btn-block">부동산 변경</button>
+                        <button type="button" class="btn btn-lg btn-block" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">부동산 삭제</button>
+                    </div>                    
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>삭제 알럿</h1>
+        </div>
+        <div class="modal-body">
+            <p class="fs-md fw-m text-center p20">등록된 부동산을 삭제합니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer w-70" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">취소</button>
+                <button type="button" class="btn btn-footer btn-primary">확인</button>
+            </div>
+        </div>
+    </article>    
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        //실거래가 추이(매매) Line chart - Basic
+        var chartLine = new Highcharts.Chart('chart-line01', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 30,
+                    spacingLeft: 0,
+                    spacingRight: 0
+                },
+                xAxis:{
+                    categories: [ '2018.05', '2019.09', '2020.05', '2021.05', '2022.04' ]
+                },
+                yAxis: {
+                    min: 4,
+                    max: 9,
+                    tickInterval: 1,
+                    labels: { 
+                        enabled: true,
+                        format: '{value}억'
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                series: [
+                    {
+                        name: '실거래가 국토교통부', 
+                        data: [7.1, 6.8, 8.4, 6.0, 7.5],
+                        lineColor: '#17469f',
+                        marker: {
+                            fillColor: '#17469f',
+                            enabled: true
+                        }
+                    }, {
+                        name: '현재 시세 KB부동산',
+                        data: [6.7, 6.4, 8.0, 5.6, 7.1],
+                        lineColor: '#b6dffc',
+                        marker: {
+                            fillColor: '#b6dffc',
+                            enabled: true
+                        }
+                    }, {
+                        name: '공시가격', 
+                        data: [6.3, 6.0, 7.6, 5.1, 6.7],
+                        lineColor: '#b4e3d1',
+                        marker: {
+                            fillColor: '#b4e3d1',
+                            enabled: true
+                        }
+                    }
+
+                ]
+
+            }
+        )); 
+
+        //실거래가 추이(전세) Line chart - Basic
+        var chartLine2 = new Highcharts.Chart('chart-line02', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 200,
+                    spacingTop: 30,
+                    spacingLeft: 0,
+                    spacingRight: 0
+                },
+                xAxis:{
+                    categories: [ '2018.05', '2019.09', '2020.05', '2021.05', '2022.04' ]
+                },
+                yAxis: {
+                    min: 4,
+                    max: 9,
+                    tickInterval: 1,
+                    labels: { 
+                        enabled: true,
+                        format: '{value}억'
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                series: [
+                    {
+                        name: '전세보증금 국토교통부', 
+                        data: [7.1, 6.8, 8.4, 6.0, 7.5],
+                        lineColor: '#17469f',
+                        marker: {
+                            fillColor: '#17469f',
+                            enabled: true
+                        }
+                    }
+
+                ]
+
+            }
+        )); 
+
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+
+    </script>
+
+</body>
+
+</html>

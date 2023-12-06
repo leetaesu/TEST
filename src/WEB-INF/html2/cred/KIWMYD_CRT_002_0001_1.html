@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>신용정보</h1>
+            <button type="button" class="sub-close">닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 신용 점수 -->            
+            <div class="module-box pt30">
+                <div class="card-box bg-ex-black py30">                    
+                <div class="d-flex-start">
+                    <p class="fs-sm fc-white">기준일: 2022.03.02 09:15</p>
+                    <button type="button" class="btn btn-xs btn-icon-only btn-icon-refresh">새로고침</button>
+                </div>                
+                    <!-- 차트 -->                          
+                    <div class="chart-wrapper">
+                        <div id="chart-guage" class="chart-gauge"></div>
+                    </div>
+                    <div class="d-flex-between pl20 pr20">
+                        <a href="#;" class="sub-link sub-icon-link fc-white"><span class="opacity-07 mr5">변동내역</span>113건</a>
+                        <a href="#;" class="sub-link sub-icon-link fc-white"><span class="opacity-07 mr5">조회내역</span>87건</a>
+                    </div>                    
+                </div>
+                <div class="btn-box mt20">
+                    <button type="button" class="btn btn-lg btn-block btn-border">신용점수 올리기</button>
+                </div>
+            </div>
+
+            <div class="module-box">
+                <h3 class="fs-xl fw-m">신용정보</span></h3>
+                <ul class="border-top-black mt10">
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <div class="d-flex-between fs-md mr10">
+                                <p>카드<span class="fw-b ml5">13</span>건</p>
+                                <p><span class="fw-b">12,500,000</span>원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <div class="d-flex-between fs-md mr10">
+                                <p>대출<span class="fw-b ml5">7</span>건</p>
+                                <p><span class="fw-b">12,500,000</span>원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <div class="d-flex-between fs-md mr10">
+                                <p>연체<span class="fw-b ml5">11</span>건</p>
+                                <p><span class="fw-b">-12,500,000</span>원</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="py20 border">
+                        <a href="#;" class="sub-link sub-icon-link d-block">
+                            <div class="d-flex-between fs-md mr10">
+                                <p>보증<span class="fw-b ml5">24</span>건</p>
+                                <p><span class="fw-b">-12,500,000</span>원</p>
+                            </div>
+                        </a>
+                    </li>                                                        
+                </ul>
+            </div>            
+
+
+            <div class="module-box module-border py30">                
+                <h3 class="fs-xl fw-m">신용점수 변동 정보</span></h3>
+                <div class="chart-wrapper mt30">
+                    <div id="chart-line"></div>
+                </div>
+            </div>
+
+            <!-- 신용 순위 -->            
+            <div class="module-box module-border">                
+                <h3 class="fs-xl fw-m">내 신용순위</h3>
+                <!-- 차트 -->
+                <div class="barchart-box flex-wrap mt30">
+                    <div class="barchart barchart-lg barchart-tip"><i class="bg-ex-green3" style="width: 70%;"></i></div>
+                    <span>1000등</span>
+                    <span>1등</span>
+                </div>
+                <div class="d-flex-between mt20">
+                    <p class="chart-legend legend-green2">내 순위</p>
+                    <p class="fw-m">550등</p>
+                </div>
+                    
+            </div>            
+
+            <!-- 신용 비교 -->            
+            <div class="module-box module-border">                 
+                <h3 class="fs-xl fw-m"><span class="fw-b">내 또래와 비교</h3>
+                <!-- 차트 -->                
+                <div class="chart-wrapper mt30">
+                    <div id="chart-column-basic"></div>
+                </div>
+            </div>
+
+            <!-- 신용관리 팁 -->            
+            <div class="module-box module-border">
+                <a href="#;" class="sub-link sub-icon-link d-block">
+                    <h3 class="fs-xl fw-m"><span class="fw-b">신용관리 팁</h3>
+                </a>
+
+                <div class="d-flex mt30">
+                    <a href="#;" class="sub-link w-100 h-100">
+                    <div class="card-box-sm card-border border-gray-l p20 h160">                        
+                        <span class="custom-label label-solid c-primary fs-sm">웹툰</span>
+                        <p class="fs-md mt10">신용이 뭐길래?</p>                        
+                    </div>
+                    </a>
+                    <a href="#;" class="sub-link w-100 h-100 ml5">
+                        <div class="card-box-sm card-border border-gray-l p20 h160">
+                            <span class="custom-label label-solid c-primary fs-sm">웹툰</span>
+                            <p class="fs-md mt10">신용 이용!<br>좋다 vs 나쁘다</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="d-flex mt5">
+                    <a href="#;" class="sub-link w-100 h-100">
+                        <div class="card-box-sm card-border border-gray-l p20 h160">
+                            <span class="custom-label label-solid c-custom-mint fs-sm">뉴스</span>
+                            <p class="fs-md mt10">신용점수<br>어떻게 책정될까?</p>
+                        </div>
+                    </a>
+                    <a href="#;" class="sub-link w-100 h-100 ml5">
+                        <div class="card-box-sm card-border border-gray-l p20 h160">
+                            <span class="custom-label label-solid c-custom-mint fs-sm">뉴스</span>
+                            <p class="fs-md mt10">고신용자와 저신용자의 관리법, 어떻게 다를까?</p>
+                        </div>
+                    </a>
+                </div>                
+
+                <div class="d-flex mt5">
+                    <a href="#;" class="sub-link w-100 h-100">
+                        <div class="card-box-sm card-border border-gray-l p20 h160">
+                            <span class="custom-label label-solid c-custom-purple fs-sm">꿀팁</span>
+                            <p class="fs-md mt10">신용점수를 조회하면 좋은 점</p>
+                        </div>
+                    </a>
+                    <a href="#;" class="sub-link w-100 h-100 ml5">
+                        <div class="card-box-sm card-border border-gray-l p20 h160">
+                            <span class="custom-label label-solid c-custom-purple fs-sm">꿀팁</span>
+                            <p class="fs-md mt10">연체된 채무가 감당이 안될때 도움받는 방법</p>
+                        </div>  
+                    </a>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+        
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // Gauge 차트 - half gauge
+        var chartGuage2 = new Highcharts.chart('chart-guage', Highcharts.merge (
+                KW_MOBILE.highcharts.types.halfgauge,
+                {
+                    chart: {
+                        height: 170,
+                        margin: [10, 0, 30, 0],
+                        events: {
+                            load: function() {
+                                // Gauge chart set border rounded
+                                var target = this.container.parentElement.id;
+                                KW_MOBILE.highcharts.gaugeRound(target);
+                            }
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 1000,
+                        minTickInterval: 1000,
+                        labels: { 
+                            enabled: true,
+                            distance: -8,
+                            x: 0,
+                            y: 25,
+                            style: { fontSize: '12px', color: '#ccc' },
+                            formatter: function() { return this.value; }
+                        },
+                    },
+                    pane: {
+                        background: {
+                            borderColor: 'rgba(255, 255, 255, 0.1)'
+                        },
+                    },
+                    series: [{
+                        name: '17', // %
+                        data: [789], // 점수
+                        borderColor: '#ff9900',
+                        dataLabels: { 
+                            enabled: true,
+                            y: 1,
+                            formatter: function() {
+                                var labelPercent = '<p class="custom-label label-solid c-white-alpha fs-sm">상위' + this.series.name + '%</p>';
+                                var labelScore = '<p class="fc-white fs-2xl fw-b text-center">' + this.y + '<span class="fs-df fw-l">점</span></p>';
+                                return labelPercent + labelScore;
+                            }
+                        }
+                    }]    
+
+                }
+            ));
+
+        //Line차트
+        var chartLine = new Highcharts.Chart('chart-line', Highcharts.merge (
+            KW_MOBILE.highcharts.types.line,
+            {
+                chart: {
+                    height: 250,
+                    spacingTop: 35
+                },
+                xAxis:{
+                    categories: [ '2022.01.14', '2022.02.28', '2022.03.24' ]
+                },
+                yAxis: {
+                    min: 0,
+                    tickInterval: 200,
+                    labels: { 
+                        enabled: false
+                    }
+                },
+                plotOptions: {
+                    marker: {
+                        fillColor: '#2969ba'
+                    }
+                },
+                series: [
+                    {
+                        data: [ 802, 850, 999],
+                        lineColor: '#96bae4',
+                        dataLabels: { enabled: true }
+                    }
+                ]
+
+            }
+        ));
+
+        // Column chart - Basic
+        var chartColumnBasic = new Highcharts.Chart('chart-column-basic', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 230,
+                    marginTop: 30
+                },
+                plotOptions: {
+                    column: {
+                        pointWidth: 44,
+                        dataLabels: {
+                        enabled: true,
+                        inside: false,
+                        overflow: 'none',
+                        crop: false,
+                        useHTML: true,
+                        formatter: function(){
+                            return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y, 0) +'점</span>'
+                            }
+                        }
+                    }
+                },
+                xAxis: { 
+                    categories: ['나', '30대 평균', '전국민'],
+                    labels:{
+                        y: 25,
+                        style: { fontSize: '12px', fontWeight: 'bold', color: '#888' }
+                    }                        
+                },                    
+                yAxis: {
+                    labels: {
+                        enabled: false
+                    },
+                    tickInterval: 200
+                },
+                series: [{
+                    data: [
+                        { y: 846, color: '#59c39b' },
+                        { y: 685, color: '#2969ba' },
+                        { y: 736, color: '#dcdfe4' }                      
+                    ]
+                }]
+            }
+        ));
+
+    </script>
+
+</body>
+
+</html>

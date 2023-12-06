@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>다른 증권사 정보 불러오기</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="module-box w-full">
+                <h3 class="fs-xl fw-r px-padding">다른 증권사에 보유한 계좌로<br>인증해보세요</h3>  
+
+                <div class="">
+                    <img src="../../../resources/new_images/views/inve/img_018_0001_p001.png" class="mt40" alt="">
+                </div>               
+
+                <ul class="count-step mt40 px-padding">
+                    <li>
+                        <p><span class="custom-label label-solid c-primary fs-sm">STEP 1</span></p>
+                        <p class="fc-gray-d mt5 ml5">정보를 가져오고 싶은 증권사 선택</p>
+                    </li>
+                    <li>
+                        <p><span class="custom-label label-solid c-primary fs-sm">STEP 2</span></p>
+                        <p class="fc-gray-d mt5 ml5">본인인증 후 정보 가져오기에 동의</p>
+                    </li>
+                    <li>
+                        <p><span class="custom-label label-solid c-primary fs-sm">STEP 3</span></p>
+                        <p class="fc-gray-d mt5 ml5">연결된 증권사 정보로 인증서 만들기</p>
+                    </li>                        
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">증권사 선택하기</button>
+            </div>
+        </div>
+
+    </article>
+    
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

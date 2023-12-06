@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>직장명 입력</h1>
+            <!-- <h1>사업장명(상호) 입력</h1> -->
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group overflow-hidden">
+            <div class="module-box pb0">
+                <h3 class="fs-xl fw-m fw-m">직장명을 입력해주세요</h3>
+                <!-- <h3 class="fs-xl fw-m fw-m">사업장명(상호)을 입력해주세요</h3> -->
+                
+                <h4 class="fs-df fw-m fc-gray mt30">직장명</h4>
+                <!-- <h4 class="fs-df fw-m fc-gray mt30">사업장명(상호)</h4> -->
+                <div class="input-unit w-100 mt10">
+                    <input type="text" class="custom-input input-block clear text-left" placeholder="직장명을 입력해주세요">
+                    <!-- <input type="text" class="custom-input input-block clear text-left" placeholder="사업장명(상호) 검색"> -->
+                </div>
+                
+                <div class="d-flex-between w-full bg-gray-l mt30 p20">
+                    <p class="fs-sm fc-black">직장명이 검색되지 않을 경우<br>직접입력 해주세요</p>
+                    <!-- <p class="fs-sm fc-black">사업장명(상호)이 검색되지 않을 경우<br>직접입력 해주세요</p> -->
+                    <button type="button" class="btn btn-sm btn-border btn-round flex-shrink0" style="width: 9rem;">직접입력</button>
+                </div>
+
+                <!-- 프리랜서 경우 -->
+                <button type="button" class="btn-basic">지금은 일을 쉬고 있어요</button>
+
+                <!-- 재직정보 자동 발급 -->
+                <button type="button" class="btn-basic">재직 정보를 자동으로 가져올게요 (4대보험 가입자)</button>
+            </div>
+
+            <!-- 1. 검색 결과 있음 -->
+            <div class="module-box pt10">
+                <ul>
+                    <li class="py25 border">
+                        <p class="fw-b">키움증권㈜</p>
+                        <p class="fc-gray fs-sm mt10">사업자번호 : 107-81-76756</p>
+                        <p class="fc-gray fs-sm">대표자명 : 홍길동</p>                        
+                    </li>
+                    <li class="py25 border">
+                        <p class="fw-b">키움이엔에스</p>
+                        <p class="fc-gray fs-sm mt10">사업자번호 : 107-81-76756</p>
+                        <p class="fc-gray fs-sm">대표자명 : 홍길동</p>                        
+                    </li>
+                    <li class="py25 border">
+                        <p class="fw-b">키움종합조경㈜</p>
+                        <p class="fc-gray fs-sm mt10">사업자번호 : 107-81-76756</p>
+                        <p class="fc-gray fs-sm">대표자명 : 홍길동</p>                        
+                    </li>
+                    <li class="py25 border">
+                        <p class="fw-b">㈜건축사사무고아르키움</p>
+                        <p class="fc-gray fs-sm mt10">사업자번호 : 107-81-76756</p>
+                        <p class="fc-gray fs-sm">대표자명 : 홍길동</p>                        
+                    </li>
+                </ul>
+                <!-- 더보기 버튼 -->
+                <div class="btn-box mt10">
+                    <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                </div>
+            </div>
+
+            <!-- 2. 검색 결과 없음 -->
+            <div class="no-data-sm">
+                <p class="fs-md fw-m">검색결과가 없습니다.</p>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">다음</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

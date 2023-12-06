@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub sticky-wrap">
+        
+        <header>
+            <h1>대출 금융기관 선택</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main>
+            <div class="module-box module-border-bottom">
+                <h3 class="fs-xl fw-m">대출이 있는<br>금융기관을 선택해 주세요</h3>
+                <!-- 금융기관 검색 -->
+                <!-- <div class="input-unit w-100 mt20">
+                    <input type="text" class="custom-input input-block clear text-left" placeholder="금융사를 검색해 보세요">
+                    <button type="button" class="btn btn-icon-only btn-icon-search">검색</button>
+                </div> -->
+            </div>
+
+            <!-- Tab head -->
+            <div class="tab-overflow sticky-tab py10">
+                <ul class="tab-head btn-type2 main-tab mb20">
+                    <li id="tabmenu_00" class="tab-btn" aria-controls="tabmenu_panel00">추천</li>
+                    <li id="tabmenu_01" class="tab-btn" aria-controls="tabmenu_panel01">은행</li>
+                    <li id="tabmenu_02" class="tab-btn" aria-controls="tabmenu_panel02">보험</li>
+                    <li id="tabmenu_03" class="tab-btn" aria-controls="tabmenu_panel03">카드</li>
+                    <li id="tabmenu_04" class="tab-btn" aria-controls="tabmenu_panel04">캐피탈</li>
+                </ul>
+            </div>
+
+            <!-- 추천 Panel -->
+            <div id="tabmenu_panel00" class="tab-panel">
+                <div class="d-flex-between">
+                    <p class="fs-lg fw-b">추천 금융사</p>
+                    <div class="custom-check">
+                        <input type="checkbox" id="chk_01">
+                        <label for="chk_01"><i></i>전체선택</label>
+                    </div>
+                </div>
+                
+                <!-- 은행 -->
+                <section class="module-box p0 py20 mt5">
+                    <h4 class="fs-df fw-m mb20">은행</h4>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="reco_bank1">
+                        <label for="reco_bank1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40 mr15" src="../../../resources/new_images/icons/ico_bank_sample2.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black fw-m ellipsis">하나은행</p>
+                                    <span class="custom-label c-primary ml5">연결됨</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="reco_bank2">               
+                        <label for="reco_bank2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40 mr15" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black fw-m ellipsis">국민은행</p>
+                                    <span class="custom-label c-orange2 ml5">재연결</span>
+                                </div>
+                            </div>
+                        </label>
+                        <p class="fs-sm fc-orange2" style="padding-left: 5.6rem;">자산연결 진행중이였어요. 연결을 완료해주세요.</p>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="reco_bank3">               
+                        <label for="reco_bank3">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40 mr15" src="../../../resources/new_images/icons/ico_bank_sample3.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black fw-m ellipsis">신한은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <!-- 보험 -->
+                <section class="module-box p0 py20 mt10">
+                    <h4 class="fs-df fw-m mb20">보험</h4>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="reco_bank1">
+                        <label for="reco_bank1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40 mr15" src="../../../resources/new_images/icons/ico_bank_sample2.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black fw-m ellipsis">교보생명</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="reco_bank2">               
+                        <label for="reco_bank2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40 mr15" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black fw-m ellipsis">카카오페이증권</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 은행 Panel -->
+            <div id="tabmenu_panel01" class="tab-panel">
+                <section class="module-box p0 py20">
+                    <div class="d-flex-between mb20">
+                        <h4 class="fs-df fw-m">은행</h4>
+                        <div class="custom-check">
+                            <input type="checkbox" id="bank0">
+                            <label for="bank0"><i></i>전체선택</label>
+                        </div>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="bank1">
+                        <label for="bank1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">우리은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="bank2">               
+                        <label for="bank2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">하나은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="bank3">               
+                        <label for="bank3">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">신한은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 보험 Panel -->
+            <div id="tabmenu_panel02" class="tab-panel">
+                <section class="module-box p0 py20">
+                    <div class="d-flex-between mb20">
+                        <h4 class="fs-df fw-m">보험</h4>
+                        <div class="custom-check">
+                            <input type="checkbox" id="insu0">
+                            <label for="insu0"><i></i>전체선택</label>
+                        </div>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="insu1">
+                        <label for="insu1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">우리은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="insu2">               
+                        <label for="insu2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">하나은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="insu3">               
+                        <label for="insu3">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">신한은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 카드 Panel -->
+            <div id="tabmenu_panel03" class="tab-panel">
+                <section class="module-box p0 py20">
+                    <div class="d-flex-between mb20">
+                        <h4 class="fs-df fw-m">카드</h4>
+                        <div class="custom-check">
+                            <input type="checkbox" id="card0">
+                            <label for="card0"><i></i>전체선택</label>
+                        </div>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card1">
+                        <label for="card1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">우리은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card2">               
+                        <label for="card2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">하나은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card3">               
+                        <label for="card3">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">신한은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 캐피탈 Panel -->
+            <div id="tabmenu_panel04" class="tab-panel">
+                <section class="module-box p0 py20">
+                    <div class="d-flex-between mb20">
+                        <h4 class="fs-df fw-m">캐피탈</h4>
+                        <div class="custom-check">
+                            <input type="checkbox" id="card0">
+                            <label for="card0"><i></i>전체선택</label>
+                        </div>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card1">
+                        <label for="card1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">우리은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card2">               
+                        <label for="card2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">하나은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">
+                        <input type="checkbox" id="card3">               
+                        <label for="card3">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden d-flex-start">
+                                    <p class="fs-md fc-black ellipsis">신한은행</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            
+            <!-- 플로팅 말풍선 -->
+            <div style="position:absolute; bottom: 5rem; left: 50%; transform: translateX(-50%); z-index: 2;">
+                <img src="../../../resources/new_images/views/loan/img_bubble_KCB.png" style="width: 25rem;">
+            </div>
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <!-- 비활성화시 disabled 추가 -->
+                <button type="button" class="btn btn-footer btn-primary" disabled>다음</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 추천 탭 초기화
+        $('.tab-panel').hide();
+        $('#tabmenu_panel00').show().addClass('is-selected');
+
+        $('.main-tab > .tab-btn').on('click', function() {
+            if($(this).prop('id') == 'tabmenu_00') {
+                $('.tab-panel').hide();
+                $('#tabmenu_panel00').show();
+                
+            } else {
+                $('.tab-panel').show();
+                $('#tabmenu_panel00').hide();
+            }            
+        })
+        // 해더 고정, 앵커 위치 이동 및 스크롤과 연동 (커스텀 첫번째 탭)
+        KW_MOBILE.guiEvent.stickyTab.init(-1);        
+    </script>
+</body>
+
+</html>

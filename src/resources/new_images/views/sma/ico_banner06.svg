@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 13481">
+        <g data-name="그룹 13480">
+            <g data-name="사각형 3869" transform="translate(5 5)" style="stroke:#292929;fill:#fff">
+                <rect width="28" height="28" rx="4" style="stroke:none"/>
+                <rect x=".5" y=".5" width="27" height="27" rx="3.5" style="fill:none"/>
+            </g>
+            <path data-name="패스 5782" d="M5 9h26.657" transform="translate(.5 2.113)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 5783" d="M9 13h4" transform="translate(2.129 3.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 5784" d="M14 13h4" transform="translate(7.415 3.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 9232" d="M9 13h4" transform="rotate(90 10.193 15.936)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 9233" d="M9 13h4" transform="rotate(45 -2.109 21.44)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 9234" d="M9 13h4" transform="rotate(135 9.632 19.312)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="패스 9235" d="M14 13h4" transform="translate(7.415 11.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+            <path data-name="사각형 3870" transform="translate(23.415 23)" style="stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+            <path data-name="사각형 3871" transform="rotate(30 -37.694 56.936)" style="stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+            <g data-name="Sign - Division Circle - 192x192" transform="translate(17 14.001)">
+                <circle data-name="타원 152" cx="9" cy="9" r="9" transform="translate(3 2.999)" style="fill:#deecfb;stroke-linejoin:round;stroke-linecap:round;stroke:#292929"/>
+                <path data-name="사각형 3374" transform="translate(12 8)" style="stroke-width:2px;stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+                <path data-name="사각형 3375" transform="translate(12 16)" style="stroke-width:2px;stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+                <path data-name="패스 5816" d="M17 12H9" transform="translate(-1)" style="stroke-linejoin:round;stroke-linecap:round;fill:none;stroke:#292929"/>
+            </g>
+        </g>
+    </g>
+</svg>

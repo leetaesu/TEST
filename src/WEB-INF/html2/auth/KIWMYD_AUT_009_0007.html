@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>금융사 연결</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <h3 class="fs-xl fw-r">연결할 계좌·상품을 선택하세요.</h3>
+                <p class="mt5"><span class="fw-b">3개</span> 금융사의 계좌를 찾았습니다.</p>
+
+                <div class="d-flex-between mt30">
+                    <p class="fw-m">계좌·상품 선택<span class="pl10 fw-b fc-pink">4</span></p>
+
+                    <div class="custom-check">
+                        <input type="checkbox" id="chk_all">
+                        <label for="chk_all"><i></i>전체선택</label>
+                    </div>
+                </div>
+
+                <!-- 은행 -->
+                <h4 class="fw-m fc-gray-d mt40">은행</h4>
+                <ul class="accordion-wrap type-block no-border">
+
+                    <li class="accordion">
+                        <div class="fold-head pb0">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p class="fs-df fw-m">신한은행 <span class="fs-sm fc-gray fw-r">(1/2)</span></p>
+                            </div>
+                        </div>
+                        <div class="fold-body" style="display: none;">
+                            <ul>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd01">
+                                        <label for="chk_bnk_prd01">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">신한 주거래 우대통장(저축예금)</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd02">
+                                        <label for="chk_bnk_prd02">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">신한 S-MORE 포인트통장</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="accordion">
+                        <div class="fold-head pb0">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p class="fs-df fw-m">우리은행 <span class="fs-sm fc-gray fw-r">(1/1)</span></p>
+                            </div>
+                        </div>
+                        <div class="fold-body" style="display: none;">
+                            <ul>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd03">
+                                        <label for="chk_bnk_prd03">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- 증권 -->
+                <h4 class="fw-m fc-gray-d mt40">증권</h4>
+                <ul class="accordion-wrap type-block no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb0">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p class="fs-df fw-m">신한금융투자 <span class="fs-sm fc-gray fw-r">(1/2)</span></p>
+                            </div>
+                        </div>
+                        <div class="fold-body" style="display: none;">
+                            <ul>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd04">
+                                        <label for="chk_bnk_prd04">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">신한금융투자증권거래예금(S-Lite)</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd05">
+                                        <label for="chk_bnk_prd05">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">신한금융투자증권거래예금(FNA)</p>
+                                                1234567890123456
+                                            </p>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- 보험 -->
+                <h4 class="fw-m fc-gray-d mt40">보험</h4>
+                <ul class="accordion-wrap type-block no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb0">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p class="fs-df fw-m">신한금융투자 <span class="fs-sm fc-gray fw-r">(1/1)</span></p>
+                            </div>
+                        </div>
+                        <div class="fold-body" style="display: none;">
+                            <ul>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd06">
+                                        <label for="chk_bnk_prd06">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">(무)건강검진걱정없는미니보험(모바일)</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="mt10">
+                                    <div class="custom-check check-vertical reverse">
+                                        <input type="checkbox" id="chk_bnk_prd07">
+                                        <label for="chk_bnk_prd07">
+                                            <i></i>
+                                            <div class="fs-sm fc-gray pl45 overflow-hidden">
+                                                <p class="ellipsis">해외여행보험</p>
+                                                1234567890123456
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- 상품 목록 정보 수신 후 연결 금융사별 계좌·상품이 없는 경우  -->
+            <div class="module-box">
+                <h3 class="fs-xl fw-r">연결할 계좌·상품을 선택하세요.</h3>
+                <p class="mt5"><span class="fw-b">3개</span> 금융사의 계좌ㆍ상품이 없으시네요</p>
+
+                <div class="d-flex-between mt30">
+                    <p class="fw-m">계좌·상품 선택</p>
+
+                    <div class="custom-check">
+                        <input type="checkbox" id="chk_all" disabled>
+                        <label for="chk_all"><i></i>전체선택</label>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="mt15">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <p class="fs-df fw-m">신한은행 <span class="fs-sm fc-gray fw-r">(0/0)</span></p>
+                        </div>
+                    </li>
+
+                    <li class="mt15">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <p class="fs-df fw-m">우리은행 <span class="fs-sm fc-gray fw-r">(0/0)</span></p>
+                        </div>
+                    </li>
+
+                    <li class="mt15">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <p class="fs-df fw-m">신한금융투자 <span class="fs-sm fc-gray fw-r">(0/0)</span></p>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <!-- 연결 실패한 금융사 -->
+            <div class="module-box module-border">
+
+                <p class="fw-m">연결 실패한 금융사<span class="pl10 fw-b fc-pink">2</span></p>
+
+                <ul>
+                    <li class="mt15">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <p class="fs-df fw-m">신한은행</p>
+                        </div>
+                        <p class="fs-sm fc-red ml45">제공기관의 오류로 연결에 실패하였습니다.</p>
+                    </li>
+
+                    <li class="mt15">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <p class="fs-df fw-m">신한은행</p>
+                        </div>
+                        <p class="fs-sm fc-red ml45">제공기관의 오류로 연결에 실패하였습니다.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">다음</button>
+
+                <!-- 상품 목록 정보 수신 후 연결 금융사별 계좌·상품이 없는 경우 -->
+                <!-- <button type="button" class="btn btn-footer btn-primary">다른 금융사 연결하기</button> -->
+            </div>
+        </footer>
+    </div>
+
+    <!-- 금융사 연결 취소 팝업 -->
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>금융사 연결 취소 컨펌 팝업</h1>
+        </div>
+        <div class="modal-body text-center">
+            <h3 class="fs-lg">금융사 연결을 취소하시겠습니까?</h3>
+            <p class="fc-gray mt15">
+                금융사 연결이 완료되지 않았습니다.<br>다음에 연결 시 처음부터 다시 진행하셔야 합니다.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">취소</button>
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_full_popup');KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>                          
+        </div>
+    </article>
+
+    <!-- 연결 계좌 7000바이트 이상 선택시 팝업 -->
+    <article class="modal-popup popup-alert" id="modal_alert2">
+        <div class="modal-header sr-only">
+            <h1>연결 계좌 개수 초과 선택시 오류 alert</h1>
+        </div>
+        <div class="modal-body text-center">
+            <h3 class="fs-lg">계좌(상품) 전체를 연결하시겠습니까?</h3>
+            <p class="fc-gray mt15">
+                선택하신 계좌(상품)이 [200]개를 초과하여 현재 조회된 모든 계좌(상품)을 연결합니다.
+            </p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert2')">확인</button>
+            </div>
+        </div>
+    </article>    
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+    
+    <script>
+        // 팝업 닫기 방지
+        $('.sub-prev, .sub-close').off('click').on('click', function(e) {
+            e.preventDefault();
+            KW_MOBILE.guiEvent.popup.openPop('#modal_alert2');
+        })
+    </script>
+</body>
+</html>

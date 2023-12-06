@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>직장명 직접입력</h1>
+            <!-- <h1>사업자명(상호) 직접입력</h1> -->
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+            
+            <div class="module-box">
+                
+                <h4 class="fw-m fc-gray">직장명</h4>
+                <!-- <h4 class="fw-m fc-gray">사업장명(상호)</h4> -->
+                <!-- <input type="text" class="custom-input input-block mt10 mb30" placeholder="직장명을 입력해 주세요"> -->
+                <input type="text" class="custom-input input-block mt10 mb30" placeholder="사업장명(상호)을 입력해 주세요">
+
+                <h4 class="fw-m fc-gray">사업자번호</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="사업자번호를 입력해 주세요">
+                <p class="fc-gray fs-sm mt10">* 사업자번호는 "-" 없이 입력해주세요.</p>
+                <!-- <p class="fc-gray fs-sm">* 사업자번호를 모르는 경우 입력하지 않으셔도 됩니다.</p> -->
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">입력 완료</button>
+            </div>
+        </div>
+
+    </article>
+
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>소득정보 입력</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <h3 class="fs-xl fw-m">입력하신 소득정보를 기준으로<br>
+                금리와 한도를 조회해 드려요</h3>
+
+                <!-- 직장인 선택시: 직장명, 고용형태, 입사일, 가입한 의료보험, 연 소득 -->
+                <!-- 입력 영역 터치 시 '직장명 입력/직장명 직접입력' 팝업 연결 -->
+                <h4 class="fw-m fc-gray mt30">직장명</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="직장명을 입력해 주세요" value="키움증권(주)">
+
+                <h4 class="fc-gray fw-m mt30">고용형태</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="고용형태 선택" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet1')">
+
+                <h4 class="fw-m fc-gray mt30">입사일</h4>
+                <input readonly type="text" id="rolldate" class="custom-input calendar input-block mt10" placeholder="입사일을 입력해 주세요">
+
+                <h4 class="fc-gray fw-m mt30">가입한 의료보험</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="의료보험 선택" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet3')">
+
+                <h4 class="fw-m fc-gray mt30">연 소득</h4>
+
+                <!-- inputmode 테스트 -->
+                <div class="input-unit input-block mt10">
+                    <input type="text" id="amount" class="custom-input text-left" placeholder="연 소득(세전)을 입력해 주세요" inputmode="numeric" value="">
+                    <span class="txt-unit">만원</span>
+                </div>
+
+                <!-- <h4 class="fw-m fc-gray mt30">연 소득</h4>
+                <div class="input-unit input-block mt10">
+                    <input type="text" class="custom-input text-left" placeholder="연소득(세전)을 입력해 주세요" value="1,500,000">
+                    <span class="txt-unit">만원</span>
+                </div> -->
+
+                <!-- 개인사업자 선택시: 사업자명, 개업일, 가입한 의료보험, 연 소득 -->
+                <h4 class="fw-m fc-gray mt30">사업자명(상호)</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="사업자명을 입력해 주세요" value="키움증권(주)">
+
+                <h4 class="fw-m fc-gray mt30">개업일</h4>
+                <input readonly type="text" id="rolldate2" class="custom-input calendar input-block mt10" placeholder="개업일을 입력해 주세요">
+
+                <h4 class="fc-gray fw-m mt30">가입한 의료보험</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="의료보험 선택" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet3')">
+
+                <h4 class="fw-m fc-gray mt30">연 소득</h4>
+                <div class="input-unit input-block mt10">
+                    <input type="text" class="custom-input text-left" placeholder="연 소득(세전)을 입력해 주세요">
+                    <span class="txt-unit">만원</span>
+                </div>
+
+                <!-- 공무원 선택시: 직장명, 입사일, 가입한 의료보험, 연 소득 -->
+
+                <!-- 프리랜서 선택시: 직장명, 일을 시작한 날짜, 가입한 의료보험, 연 소득 -->
+                <h4 class="fw-m fc-gray mt30">일을 시작한 날짜</h4>
+                <input readonly type="text" id="rolldate3" class="custom-input calendar input-block mt10" placeholder="일을 시작한 날짜를 입력해 주세요">
+
+                <!-- 기타 선택시: 가입한 의료보험, 연 소득 -->
+
+            </div>
+
+        </main>
+
+        <footer>
+            <!-- 비활성화 시 disabled 추가 -->
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" disabled>다음</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <article class="modal-popup bottomsheet" id="bottomsheet1">
+        <div class="modal-header">
+            <h1>고용형태 선택</h1>
+            <button type="button" class="modal-close">닫기</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">정규직</a>
+                </li>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">계약직</a>                        
+                </li>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">임시근로직</a>                        
+                </li>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">기타</a>                        
+                </li>                                                   
+            </ul>          
+        </div>        
+        <div class="modal-footer">                        
+        </div>
+    </article>
+
+    <article class="modal-popup bottomsheet" id="bottomsheet3">
+        <div class="modal-header">
+            <h1>가입한 의료보험 선택</h1>
+            <button type="button" class="modal-close">닫기</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">직장의료보험</a>
+                </li>
+                <li>
+                    <a href="#;" class="sub-link chk-type d-block">지역의료보험</a>                        
+                </li>                                            
+            </ul>
+        </div>        
+        <div class="modal-footer">                        
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script src="../../../resources/js/lib/rolldate-master/rolldate.js"></script>
+    <script>   
+        new Rolldate({
+            el: '#rolldate',
+            format: 'YYYY.MM.DD',
+            beginYear: 2000,
+            endYear: 2023,
+            lang: { title: '입사일 선택', confirm: '확인', year: '', month: '', day: '' },
+
+            trigger: 'tap',
+            // Callback function
+            init: function() {
+                console.log('on init');
+            },
+            moveEnd: function(scroll) {
+                console.log(scroll)
+                console.log('scroll end');
+            },
+            confirm: function(date) {
+                console.log(date)
+                console.log('confirm');
+            },                        
+            cancel: function() {
+                console.log('cancel');
+            }
+        })
+        new Rolldate({
+            el: '#rolldate2',
+            format: 'YYYY.MM.DD',
+            beginYear: 2000,
+            endYear: 2023,
+            lang: { title: '개업일 선택', confirm: '확인', year: '', month: '', day: '' }
+        })
+        new Rolldate({
+            el: '#rolldate3',
+            format: 'YYYY.MM.DD',
+            beginYear: 2000,
+            endYear: 2023,
+            lang: { title: '일을 시작한 날짜 선택', confirm: '확인', year: '', month: '', day: '' }
+        })        
+    </script>
+
+</body>
+</html>

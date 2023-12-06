@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>본인인증</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 1. 본인인증 주민등록번호 -->
+            <div class="module-box">
+                <h3 class="fs-xl fw-m fc-black2">주민등록번호 뒷자리를<br>입력해주세요.</h3>
+                <!-- 오류메시지 출력시 input에 error 클래스 추가 -->
+                <div class="grid-box col-2-persnal">
+                    <input type="text" class="custom-input input-block mt10 error" value="861214" readonly>
+                    <span class="dash-line"></span>
+                    <div class="list-bullet">
+                        <input type="text" class="custom-input input-block mt10 error" value="1" readonly>
+                        <!-- class="" 회색 , class="active" 클래스시 검정색 -->
+                        <ul class="">
+                            <li>●</li>
+                            <li>●</li>
+                            <li>●</li>
+                            <li>●</li>
+                            <li>●</li>
+                            <li>●</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="fs-sm mt10 fc-red">오류 메시지 출력 영역</p>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <!-- 인증번호 입력 값 없을 시 버튼 비활성화 disabled-->
+                <button type="button" class="btn btn-footer btn-primary" disabled>오늘의 최대한도 확인하기</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

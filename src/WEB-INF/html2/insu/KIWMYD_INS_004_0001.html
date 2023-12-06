@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>실손보험 청구 대상 탐지</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+        <main class="module-group">
+            <div class="module-box text-center py20">
+                <button type="button" class="btn btn-sm btn-border btn-round btn-icon-box fs-df">
+                    <span class="btn-icon-link fw-r">연결카드<em class="fw-b fc-num-red ml5">8</em>개</span>
+                </button>
+            </div>
+            <div class="module-box bg-white2 pt10">
+                <div class="form-box">
+                    <span class="fs-md mr10">최근 1년간</span>
+                    <div class="custom-select2 fc-pink">
+                        <select>
+                            <option>병원비 전체</option>
+                            <option>병원</option>
+                            <option>의원</option>
+                            <option>치과</option>
+                            <option>약국</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fs-md pt15">총 사용 금액
+                    <p class="number-unit fw-b">
+                        <span class="number">9,980,000</span>
+                        <span class="unit">원</span>
+                    </p>
+                    이예요
+                </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="module-box w-full">
+                <div class="swiper-container custom-swiper px-padding" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- 많이 방문한 의료기관 -->
+                            <div class="card-box bg-blue w-100">
+                                <h4 class="d-flex-start fw-l fc-white" style="margin-left:-0.5rem"><span class="deco-icon ico-insu11 icon-30 mr5"></span>많이 방문한 의료기관</h4>
+                                <ol class="order-list border-top-alpha w-full-20 px20 pt10 mt15">
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round white"></span>
+                                        <p class="ellipsis">같은마음 정신건강의학과의원</p>
+                                        <span class="flex-shrink0 ml5">(5,120회)</span>
+                                    </li>
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round"></span>
+                                        <p class="ellipsis">디자인스타치과의원</p>
+                                        <span class="flex-shrink0 ml5">(12회)</span>
+                                    </li>
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round"></span>
+                                        <p class="ellipsis">삼성한의원</p>
+                                        <span class="flex-shrink0 ml5">(4회)</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- 많은 비용을 지출한 의료기관 -->
+                            <div class="card-box bg-ex-purple2 w-100">
+                                <h4 class="d-flex-start fw-l fc-white" style="margin-left:-0.5rem"><span class="deco-icon ico-insu12 icon-30 mr5"></span>많은 비용을 지출한 의료기관</h4>
+                                <ol class="order-list border-top-alpha w-full-20 px20 pt10 mt15">
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round white"></span>
+                                        <p class="ellipsis">같은마음 정신건강의학과의원</p>
+                                        <span class="flex-shrink0 ml5">(8,502,800원)</span>
+                                    </li>
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round"></span>
+                                        <p class="ellipsis">디자인스타치과의원</p>
+                                        <span class="flex-shrink0 ml5">(52,000원)</span>
+                                    </li>
+                                    <li class="d-flex-start mt10">
+                                        <span class="order-count count-round"></span>
+                                        <p class="ellipsis">삼성한의원</p>
+                                        <span class="flex-shrink0 ml5">(5,950원)</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination bullet-gray mt10"></div>
+                </div>
+            </div>
+
+            <!-- 리스트 -->
+            <div class="module-box module-border">
+
+                <div class="d-flex-between border-bottom mt5 pb10">
+                    <p class="fs-sm fc-gray-d"><span class="fc-gray mr5">기준일</span>2022.03.02 09:15</p>
+                    <a href="#;" class="text-link text-icon-refresh fs-sm fc-gray">새로고침</a>
+                </div>
+
+                <ul>
+                    <li class="py10">
+                        <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                        <!-- 병원 -->
+                        <div class="d-flex-start mt5">
+                            <span class="fc-mint mr5">병원</span>
+                            <p class="ellipsis">같은마음 정신건강의학과의원</p>
+                        </div>                        
+                        <div class="d-flex-between mt5">
+                            <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                            <p class="number-unit fw-m fs-md">
+                                <span class="number">3,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="py10">
+                        <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                        <!-- 약국 -->
+                        <div class="d-flex-start mt5">
+                            <span class="fc-pink mr5">약국</span>
+                            <p class="ellipsis">공덕오거리약국</p>
+                        </div>
+                        <div class="d-flex-between mt5">
+                            <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                            <p class="number-unit fw-m fs-md">
+                                <span class="number">3,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="py10">
+                        <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                        <!-- 치과 -->
+                        <div class="d-flex-start mt5">
+                            <span class="fc-blue mr5">치과</span>
+                            <p class="ellipsis">디자인스타치과의원</p>
+                        </div>
+                        <div class="d-flex-between mt5">
+                            <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                            <p class="number-unit fw-m fs-md">
+                                <span class="number">3,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="py10">
+                        <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                        <!-- 의원 -->
+                        <div class="d-flex-start mt5">
+                            <span class="fc-purple mr5">의원</span>
+                            <p class="ellipsis">광덕안정한의원 신촌점</p>
+                        </div>
+                        <div class="d-flex-between mt5">
+                            <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                            <p class="number-unit fw-m fs-md">
+                                <span class="number">3,000,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="btn-box flex-column mt10">
+                    <button type="button" class="btn btn-lg btn-block">더 보기</button>
+                    <button type="button" class="btn btn-lg btn-block btn-border btn-icon-add mt20">카드 연결하기</button>
+                </div>
+
+            </div>
+
+            <!-- 유의사항 -->
+            <div class="module-box">
+                <h3 class="fs-lg fw-m">유의사항</h3>
+                <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                    <li>병원/약국 지출 내역은 보험금 청구를 위한 참고자료 입니다.</li>
+                    <li>카드 내역에서 가맹점명으로 조회하므로 정확하지 않을 수 있습니다.</li>
+                    <li>키움증권은 해당 정보를 보험사 등 외부시관에 절대로 제공하지 않습니다.</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">실손보험 빠른청구</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+    </script>
+
+</body>
+
+</html>

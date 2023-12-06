@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet')">Open Slide Popup</a>
+
+        <article class="modal-popup bottomsheet" id="bottomsheet">
+            <div class="modal-header">
+                <h1>상세정보 조회 조건 설정</h1>
+                <button type="button" class="modal-close">닫기</button>
+            </div>                        
+            <div class="modal-body">
+
+                <!-- 전자금융업권 선택시 -->
+                <p>[선택] 상품구매정보 수집ㆍ이용 동의</p>
+                <div class="mt10">
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_1" id="rdo_01" checked="">
+                        <label for="rdo_01"><i></i>동의 안함</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_1" id="rdo_02">
+                        <label for="rdo_02"><i></i>동의</label>
+                    </div>
+                </div>
+                <p class="bullet bullet-noti mt10"><span class="fc-pink">[선불전자지급수단의 상품구매정보 항목]</span>에는 실제 구매한 상품이 아닌 해당 상품의 카테고리가 포함되어 있습니다.</p>
+
+                <!-- 카드, 전자금융업권 선택시 -->
+                <p class="mt30">[선택] 가맹점명ㆍ사업자 등록번호 정보 수집ㆍ이용 동의</p>
+                <div class="mt10">
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_2" id="rdo_03" checked="">
+                        <label for="rdo_03"><i></i>동의 안함</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_2" id="rdo_04">
+                        <label for="rdo_04"><i></i>동의</label>
+                    </div>
+                </div>
+                <p class="bullet bullet-noti mt10"><span class="fc-pink">[카드청구 및 결제정보의 가맹점명 및 사업자등록번호 항목]</span>에는 본인의 소비생활 등에 관련된 상세한 정보가 포함되어 있습니다.</p>
+
+                <!-- 은행, 전자금융업권 선택시 -->
+                <p class="mt30">[선택] 적요 또는 거래메모정보 수집ㆍ이용 동의</p>
+                <div class="mt10">
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_3" id="rdo_05" checked="">
+                        <label for="rdo_05"><i></i>동의 안함</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input type="radio" name="rdo_3" id="rdo_06">
+                        <label for="rdo_06"><i></i>동의</label>
+                    </div>
+                </div>
+                <p class="bullet bullet-noti mt10"><span class="fc-pink">[계좌정보의 적요 항목]</span>에는 송금인/수취인명 정보 등 본인의  사생활 및 경제활동 등에 관련된 상세한 정보가 포함되어 있습니다.</p>
+
+            </div>
+            <div class="modal-footer">
+                <div class="btn-box">
+                    <button type="button" class="btn btn-footer btn-primary">다음</button>
+                </div>                            
+            </div>
+        </article>
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

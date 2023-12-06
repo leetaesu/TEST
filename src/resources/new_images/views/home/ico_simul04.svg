@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="그룹 198">
+        <path data-name="패스 9" d="m5.675 7.544 1.153-.2a8.105 8.105 0 0 1 2.145-3.685 5.129 5.129 0 0 0-.506-2.581A.4.4 0 0 1 8.87.5a3.8 3.8 0 0 1 2.621 1.373A10.2 10.2 0 0 1 15.948.868c5.173 0 9.366 3.755 9.366 8.387A7.868 7.868 0 0 1 23 14.771a3.806 3.806 0 0 0-.939 1.715l-.541 2.086a.786.786 0 0 1-.77.668h-2.071a.79.79 0 0 1-.78-.8l-.054-.544a.4.4 0 0 0-.458-.354 10.461 10.461 0 0 1-2.509.044.4.4 0 0 0-.442.355l-.05.5a.789.789 0 0 1-.78.8h-2.071a.786.786 0 0 1-.77-.668L10.358 17a3.936 3.936 0 0 0-1.134-1.906 8.226 8.226 0 0 1-2.274-3.509l-1.275-.218a.8.8 0 0 1-.662-.786V8.33a.8.8 0 0 1 .662-.786z" transform="translate(-.743 5.724)" style="stroke:#333;stroke-miterlimit:10;fill:none"/>
+        <path data-name="패스 11" d="M.5 20.662a1.676 1.676 0 1 0 2.846-1.772" transform="translate(24.022 -4.255)" style="stroke-linecap:round;stroke:#333;stroke-miterlimit:10;fill:none"/>
+        <path data-name="사각형 1482" style="fill:none" d="M0 0h25.822v22H0z" transform="translate(1 6)"/>
+    </g>
+    <g data-name="그룹 11588" transform="translate(-190.482 -992.572)">
+        <circle data-name="타원 17" cx="6" cy="6" r="6" transform="translate(203.572 996.572)" style="fill:#fff;stroke:#333;stroke-miterlimit:10"/>
+        <path data-name="선 8" transform="translate(207.224 1002.349)" style="stroke-linecap:round;stroke:#333;stroke-miterlimit:10;fill:none" d="M0 0h5"/>
+    </g>
+</svg>

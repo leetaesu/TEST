@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>키움증권 개인(신용)정보<br>수집·이용·제공 동의</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+            <div class="module-box p0">
+                <div class="tab-overflow">
+                    <ul class="tab-head">
+                        <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">키움증권<br>개인(신용)정보<br>수집·이용 동의</li>
+                        <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">키움증권<br>개인(신용)정보<br>제3자 제공 동의</li>
+                        <li id="tab_03" class="tab-btn" aria-controls="tab_panel03">키움증권<br>고유식별정보<br>수집·이용 동의</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 요약 동의서인 경우 -->
+            <div class="module-box bg-white2 p20 d-flex-between">
+                <p class="fs-sm">본 동의서는 기본 요약 동의서가 제공되며,<br>'상세 동의서' 버튼을 통해  상세 동의서를<br>확인하실 수 있습니다.</p>
+                <button type="button" class="btn btn-sm btn-border btn-round">상세 동의서</button>
+            </div>
+
+            <!-- 상세 동의서인 경우 -->
+            <!-- <div class="module-box bg-white2 p20 d-flex-between">
+                <p class="fs-sm">본 동의서는 기본 요약 동의서가 제공되며,<br>'요약 동의서' 버튼을 통해  요약 동의서를<br>확인하실 수 있습니다.</p>
+                <button type="button" class="btn btn-sm btn-border btn-round">요약 동의서</button>
+            </div> -->
+
+            <div id="tab_panel01" class="tab-panel p0">
+                약관별 동의서1
+            </div>
+            <div id="tab_panel02" class="tab-panel p0">
+                약관별 동의서2
+            </div>
+            <div id="tab_panel03" class="tab-panel p0">
+                약관별 동의서3
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">동의</button>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>인증서 조회결과</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <!-- *** 1 *** case: 수익률 인증서 이력이 있는 경우 노출 -->
+            <div class="module-box inve-cert" style="grid-template-rows: 14.4rem auto 1fr;"><!-- 22.09.29 -->
+
+                <!--  상단 -->
+                <div class="module-box p20" style="height: 14.4rem; background-color: #13161e !important;">
+                    <div class="d-flex-between h-100">
+
+                        <div class="w-100 py20">
+                            <p class="fs-lg fc-cert-yellow">abcd*** 님께서</p><!-- 보유종목인증시 아이디 숨김 -->
+                            <p class="fs-lg fc-cert-gray-l">2022년 8월 25일에</p>
+                        </div>
+
+                        <div class="w-100 align-self-start text-right">
+                            <img src="../../../resources/new_images/views/inve/img_cert_signature.png" alt="" class="w90"><br>
+
+                            <!-- 아래 이미지: 수익률 구간에 따른 메달 이미지 파일(.png) (제플린 디자인 기준)
+                                -50% 미만:  img_level_unique
+                                -20% 미만:  img_level_01_1
+                                0% 미만:    img_level_01_2
+                                20% 미만:   img_level_02_1
+                                50% 미만:   img_level_02_2
+                                50% 이상:   img_level_03
+                                100% 이상:  img_level_04
+                                200% 이상:  img_level_05
+                                400% 이상:  img_level_06
+                            -->
+                            <!-- <img src="../../../resources/new_images/views/inve/img_level_unique.png" alt="" class="position-relative w150 mt15" style="z-index: 1;"> -->
+                            <img src="../../../resources/new_images/views/inve/img_level_unique.png" alt="" class="position-absolute w150 mt15" style="right:1.5rem;z-index: 1;">
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!--  중단 -->
+                <div class="module-box cert-content border-level unique"><!-- 레벨에 따라 border color 적용 [ unique, level1-1, level1-2, level2-1, level2-2, level3, level4, level5, level6 ] -->
+                    
+                    <div class="fs-xl fc-cert-gray-l line-height-md mt20">
+                        <!-- case : 보유종목 인증 시 -->
+                        <p class="fc-cert-yellow fw-m">삼성전자</p>
+                        수익률 <span class="fc-num-red fw-b">16.54%</span><br>
+                        평가차액 <span class="fc-num-red fw-b">120,000,000,000원</span> 으로<br>
+                        발급한 인증서입니다.
+
+                        <!-- case : 계좌 인증  시 -->
+                        <!-- <p class="fc-cert-yellow fw-m">키움증권</p>
+                        계좌수익률 <span class="fc-num-blue fw-b">-16.54%</span><br>
+                        손익금액 <span class="fc-num-blue fw-b">-120,000,000,000원</span> 으로<br>
+                        발급한 인증서입니다. -->
+
+                        <!-- case : MY랭킹 인증 시 -->
+                        <!-- <p class="fc-cert-yellow fw-m">키움증권<br>8월, 1억이상, 국내, 40대, 여성</p>
+                        월 수익률 <span class="fc-num-red fw-b">6.88%</span> 으로<br>
+                        발급한 인증서입니다. -->
+                    </div>
+
+                    <div class="mt60">
+                        <p class="fs-2xl fc-cert-gray-l opacity-04 ff-nanum">시작은 미약하나, 그 끝은 창대하리</p><!-- 22.09.23 수정-->
+                        <p class="mt20 text-right">
+                            <img src="../../../resources/new_images/views/inve/img_cert_logo.png" alt="키움증권" class="w80">
+                        </p>
+                    </div>
+                </div>
+
+                <!--  하단 -->
+                <div class="module-box">
+
+                    <!-- case : 보유종목 인증 시 -->
+                    <h3 class="fs-lg fw-m">유의사항</h3>
+                    <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                        <li>본 인증서는 단순 참고자료로 추정치이며, 투자권유가 아닙니다.</li>
+                        <li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                    </ul>
+                    <!-- 유의사항 더 보기 -->
+                    <div id="collapse_01" style="display: none;">
+                        <ul class="bullet-list bullet-dot">                        
+                            <li>금융투자상품은 자산가격 변동 등에 따라 투자원금손실(0~100%)이 발생 할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                            <li>수익률 인증서 발급 시 직전 조회 시점의 시세를 반영하며, 조회 시점에 따라 동일 일자의 수익률도 달라질 수 있습니다.</li>
+                            <li>보유종목 수익률 인증서, 계좌 수익률 인증서는 타 증권사의 계좌 및 종목으로 수익률 인증 이용이 가능하며, 
+                                타 증권사의 종목정보는 결제일(매입일 +2일)을 기준으로 산정하므로 실제 수익률과 차이가 발생 할 수 있습니다.<br>
+                                (단, 일부 서비스 이용에 제한이 있을 수 있습니다.)</li>
+                            <li>타사에서 제공한 정보에 대해 당사에서는 공유된 자료만 제공하며, 이에 대해 당사는 어떠한 책임을 지지 않습니다.</li>
+                            <li>수익률 인증서는 유형별 1일5회 이내로 발급 가능함에 따라, 동일 일자의 복수 인증서가 발급 될 수 있습니다.</li>
+                            <li>수익률 인증서는 개인의 이익을 위한 위변조, 오남용 해서는 안되며, 당사는 이에 대해 법적 책임을 지지 않습니다.</li>
+                            <li>계좌 수익률 기준 및 범위<br>
+                                당사 : (총 평가금액 – 총 매입금액) / 총 매입금액 * 100<br>(KOSPI, Kosdaq종목만 반영)<br>
+                                타사 : (총 평가금액 - 총 매입금액) / 총 매입금액 x 100<br>(KOSPI, Kosdaq종목만 반영)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt15 border-top">
+                        <a href="#;" class="sub-link sub-icon-more" onclick="KW_MOBILE.guiEvent.collapseBox('#collapse_01')">더 보기</a>
+                    </div>
+
+                    <!-- case : 계좌 인증  시 -->
+                    <!-- <h3 class="fs-lg fw-m">유의사항</h3>
+                    <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                        <li>본 인증서는 단순 참고자료로 추정치이며, 투자권유가 아닙니다.</li>
+                        <li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                    </ul> -->
+                    <!-- 유의사항 더 보기 -->
+                    <!-- <div id="collapse_02" style="display: none;">
+                        <ul class="bullet-list bullet-dot">                        
+                            <li>금융투자상품은 자산가격 변동 등에 따라 투자원금손실(0~100%)이 발생 할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                            <li>수익률 인증서 발급 시 직전 조회 시점의 시세를 반영하며, 조회 시점에 따라 동일 일자의 수익률도 달라질 수 있습니다.</li>
+                            <li>보유종목 수익률 인증서, 계좌 수익률 인증서는 타 증권사의 계좌 및 종목으로 수익률 인증 이용이 가능하며, 
+                                타 증권사의 종목정보는 결제일(매입일 +2일)을 기준으로 산정하므로 실제 수익률과 차이가 발생 할 수 있습니다.<br>
+                                (단, 일부 서비스 이용에 제한이 있을 수 있습니다.)</li>
+                            <li>타사에서 제공한 정보에 대해 당사에서는 공유된 자료만 제공하며, 이에 대해 당사는 어떠한 책임을 지지 않습니다.</li>
+                            <li>수익률 인증서는 유형별 1일5회 이내로 발급 가능함에 따라, 동일 일자의 복수 인증서가 발급 될 수 있습니다.</li>
+                            <li>수익률 인증서는 개인의 이익을 위한 위변조, 오남용 해서는 안되며, 당사는 이에 대해 법적 책임을 지지 않습니다.</li>
+                            <li>계좌 수익률 기준 및 범위<br>
+                                당사 : (총 평가금액 – 총 매입금액) / 총 매입금액 * 100<br>(KOSPI, Kosdaq종목만 반영)<br>
+                                타사 : (총 평가금액 - 총 매입금액) / 총 매입금액 x 100<br>(KOSPI, Kosdaq종목만 반영)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt15 border-top">
+                        <a href="#;" class="sub-link sub-icon-more" onclick="KW_MOBILE.guiEvent.collapseBox('#collapse_02')">더 보기</a>
+                    </div> -->
+
+                    <!-- case : MY랭킹 인증 시 -->
+                    <!-- <h3 class="fs-lg fw-m">유의사항</h3>
+                    <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                        <li>본인증서는 단순 참고자료로 추정치이며, 투자권유가 아닙니다.</li>
+                        <li>금융투자상품은 예금자보호법에 따라 예금보험공사가 보호하지 않습니다.</li>
+                    </ul> -->
+                    <!-- 유의사항 더 보기 -->
+                    <!-- <div id="collapse_03" style="display: none;">
+                        <ul class="bullet-list bullet-dot">                        
+                            <li>금융투자상품은 자산가격 변동 등에 따라 투자원금손실(0~100%)이 발생 할 수 있으며, 그 손실은 투자자에게 귀속됩니다.</li>
+                            <li>수익률 인증서 발급 시 직전 조회 시점의 시세를 반영하며, 조회 시점에 따라 동일 일자의 수익률도 달라질 수 있습니다.</li>
+                            <li>보유종목 수익률 인증서, 계좌 수익률 인증서는 타 증권사의 계좌 및 종목으로 수익률 인증 이용이 가능하며, 
+                                타 증권사의 종목정보는 결제일(매입일 +2일)을 기준으로 산정하므로 실제 수익률과 차이가 발생 할 수 있습니다.<br>
+                                (단, 일부 서비스 이용에 제한이 있을 수 있습니다.)</li>
+                            <li>타사에서 제공한 정보에 대해 당사에서는 공유된 자료만 제공하며, 이에 대해 당사는 어떠한 책임을 지지 않습니다.</li>
+                            <li>수익률 인증서는 유형별 1일5회 이내로 발급 가능함에 따라, 동일 일자의 복수 인증서가 발급 될 수 있습니다.</li>
+                            <li>수익률 인증서는 개인의 이익을 위한 위변조, 오남용 해서는 안되며, 당사는 이에 대해 법적 책임을 지지 않습니다.</li>
+                            <li>MY랭킹 수익률 기준 및 범위<br>
+                                MY랭킹은 키움 전체 계좌 중 내 계좌의 수익률 순위를 제공하는 서비스입니다. 실전투자대회 기준의 수익률이 적용됩니다. (기간투자손익 / 투자원금 * 100.  일부 종목 수익률 산정 제외)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt15 border-top">
+                        <a href="#;" class="sub-link sub-icon-more" onclick="KW_MOBILE.guiEvent.collapseBox('#collapse_03')">더 보기</a>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <!-- *** 2 *** case: 수익률 인증서 이력이 없는 경우 노출 -->
+            <!-- <div class="module-box">
+                <div class="no-data">
+                    <p class="fs-lg fw-m">조회하신 번호는<br>발급된 이력이 없습니다.</p>
+                    <p class="fc-gray-d mt5">
+                        인증번호를 다시 한번 확인 후<br>
+                        조회해 주시기 바랍니다.
+                    </p>
+                </div>
+            </div> -->
+
+        </main>
+
+        <footer>
+            <!-- *** 2 *** case: 수익률 인증서 이력이 없는 경우 노출 -->
+            <!-- <div class="module-box">
+                <ul class="bullet-list bullet-dot border-top py15 border-bottom">
+                    <li>수익률 인증서는 개인의 이익을 위한 위변조, 오남용 해서는 안되며, 당사는 이에 대해 법적, 책임을 지지 않습니다.</li>
+                    <li>수익률 발급 이력이 없는 인증서의 경우 투자사기, 허위광고, 유사수신행위, 불건전, 불공정 행위 등에 피해가 없도록 주의하시기 바랍니다.</li>
+                </ul>
+            </div> -->
+            
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-footer btn-primary">확인</button>
+            </div>
+		</footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

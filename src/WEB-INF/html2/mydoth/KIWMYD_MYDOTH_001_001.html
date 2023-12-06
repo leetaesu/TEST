@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+        <!-- 0329 삭제 -->
+        <!-- <header>
+            <h1>MY 페이지</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header> -->
+        <main class="module-group">
+            <!-- 다른금융 총자산 -->
+            <div class="module-box bg-ex-blue6">
+                <div class="d-flex-between">
+                    <p class="fs-md c-gray-800">다른금융 총자산</p>
+                    <button type="button" class="btn btn-xs box-shadow3 btn-icon-connect">자산연결</button>
+                </div>
+                <p class="mt10 fs-2xl fw-b">1,845,158,638,000<span class="fw-r">원</span></p>
+                <p class="fixed-date d-flex-start fc-gray fs-sm">
+                    <span>2021.03.10 09:53</span>
+                    <button type="button" class="main-reload" onclick="KW_MOBILE.guiEvent.mainLoader.start()">다시로드<span><i>0</i>%</span></button>
+                </p>
+                <div class="card-box box-shadow3 finance-box">
+                    <div class="d-flex-start">
+                        <span class="custom-label label-solid c-risk1 fs-sm fw-b" style="height: 2.4rem;">D-2</span>
+                        <span class="ml5 fs-df fc-black4">하나은행 대출상환</span>
+                        <span class="ml5 fs-df fw-b fc-black4">1,257,300원</span>
+                        <a href="#" class="sub-link sub-icon-link fs-sm ml-auto fc-gray-2">외 2건</a>
+                    </div>
+                </div>
+                <div class="d-flex-between finance-list">
+                    <a href="#" class="non-style d-block">
+                        <div class="card-box icon gradient1">
+                            <img src="../../../resources/new_images/icons/ico_card.png" alt="관리자이미지1">
+                            <p class="fc-white">카드발급혜택</p>
+                            <p class="mt3 fs-df fc-yellow2 text-shadow fw-b">최대 54만원</p>
+                        </div>
+                    </a>
+                    <a href="#" class="non-style d-block ml10">
+                        <div class="card-box icon gradient2">
+                            <img src="../../../resources/new_images/icons/ico_reduction.png" alt="관리자이미지2">
+                            <p class="fc-white">대출금리인하</p>
+                            <p class="mt3 fs-df fc-yellow2 text-shadow fw-b">최대 1.0%</p>
+                        </div>
+                    </a>
+                    <a href="#" class="non-style d-block ml10">
+                        <div class="card-box icon gradient3">
+                            <img src="../../../resources/new_images/icons/ico_insu.png" alt="관리자이미지3">
+                            <p class="fc-white">보험료비교</p>
+                            <p class="mt3 fs-df fc-yellow2 text-shadow fw-b">31개사 보험</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex-between mt16" style="display: none !important;">
+                    <a href="#" class="non-style d-block">
+                        <div class="card-box icon gradient2 ty2">
+                            <img src="../../../resources/new_images/icons/ico_reduction2.png" alt="관리자이미지4">
+                            <p class="fc-white">대출금리인하</p>
+                            <p class="mt3 fs-df fc-yellow text-shadow fw-b">최대 1.0%</p>
+                        </div>
+                    </a>
+                    <a href="#" class="non-style d-block ml10">
+                        <div class="card-box icon gradient2 ty3">
+                            <img src="../../../resources/new_images/icons/ico_reduction3.png" alt="관리자이미지5">
+                            <p class="fc-white">대출금리인하</p>
+                            <p class="mt3 fs-df fc-yellow text-shadow fw-b">최대 1.0%</p>
+                        </div>
+                    </a>
+                    <a href="#" class="non-style d-block ml10">
+                        <div class="card-box icon gradient2 ty4">
+                            <img src="../../../resources/new_images/icons/ico_reduction4.png" alt="관리자이미지6">
+                            <p class="fc-white">대출금리인하</p>
+                            <p class="mt3 fs-df fc-yellow text-shadow fw-b">최대 1.0%</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="module-box pb0">
+                <ul class="tab-head tab-block box">
+                    <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">금융사별 자산</li>
+                    <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">계좌별 자산</li>                    
+                </ul>
+                <!-- 금융사별 자산 탭 -->
+                <div id="tab_panel01" class="tab-panel p0">
+                    <div class="module-box p0">
+                        <!-- 은행 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">하나은행</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">83,428,520</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">행복Knowhow주거래 우대통장</p>
+                                        <p class="fs-df fc-gray mt5">53888815435785</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">9,543,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <button type="button" class="btn btn-sm">등록</button>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">하나월복리적금</p>
+                                        <p class="fs-df fc-gray mt5">101987201578973</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">6,700,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                                <button type="button" class="btn btn-sm">송금</button>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">주택청약종합저축</p>
+                                        <p class="fs-df fc-gray mt5">7724359782214566</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 증권 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">카카오페이증권</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">83,428,520</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">행복Knowhow주거래 우대통장</p>
+                                        <p class="fs-df fc-gray mt5">53888815435785</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">9,543,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <button type="button" class="btn btn-sm">송금</button>
+                            </div>
+                        </div>
+                        <!-- 증권 -->
+                        <!-- 자산연결 만료 전 안내 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <!-- 알림 아이콘 추가 -->
+                                    <span class="icon-excalmation-bank"></span>
+                                    <img class="icon40 mr5" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">카카오페이증권</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">2,830,080</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">종합계좌</p>
+                                        <p class="fs-df fc-gray mt5">53888815435785</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">2,830,080</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <button type="button" class="btn btn-sm">송금</button>
+                            </div>
+                        </div>
+                        <!-- 증권 -->
+                        <!-- 자산연결 만료 안내 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">카카오페이증권</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-red">재연결</button>
+                            </div>
+                            <div class="d-flex-between pb10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="sub-text-unit fs-df">
+                                            자산연결이 만료되어 <br>
+                                            최신정보를 불러올 수 없습니다.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 조각투자 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/views/auth/icon_logo_funble_40.png" alt="FUNBLE (펀블)">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">FUNBLE (펀블)</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">조각투자 자산명</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/views/auth/icon_logo_sotwo_40.png" alt="SOTWO (소투)">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">SOTWO (소투)</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">조각투자 자산명</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/views/auth/icon_logo_tessa_40.png" alt="TESSA (테사)">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">TESSA (테사)</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">조각투자 자산명</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/views/auth/icon_logo_at_40.png" alt="Art Together (아트투게더)">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">Art Together (아트투게더)</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">조각투자 자산명</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40 mr5" src="../../../resources/new_images/views/auth/icon_logo_ang_40.png" alt="ARTnGUIDE (아트앤가이드)">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">ARTnGUIDE (아트앤가이드)</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">조각투자 자산명</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 조각투자 제휴사 추가 연결-->
+                        <a href="#" class="piece-link mb25">
+                            <p>다른 조각투자 자산이 있으신가요?</p>
+                            <button type="button">연결하기</button>
+                        </a>
+
+                        <!-- 보험 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">신한라이프 생명</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">9,999,999,999,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">신한THE착한연금미리받을수있는긴이름긴이름긴이름긴이름긴이름긴이름</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="mr5">월</span>
+                                            <span class="number">9,999,999,999,999</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">무배당 신한 케어받는 암보험</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="mr5">월</span>
+                                            <span class="number">125,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!-- 카드 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">하나카드</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">3,396,456</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">1Q Daily+</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">1,271,456</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">트래블로그 체크카드 여권형</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">2,215,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 할부금융 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">DB캐피탈</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="mr5">-</span>
+                                    <span class="number">3,396,456</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">1Q Daily+</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">-1,271,456</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">트래블로그 체크카드 여권형</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">-2,215,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 전자금융 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">네이버파이낸셜</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">3,396,456</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">네이버페이 포인트</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">1,271,456</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">트래블로그 체크카드 여권형</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">-2,215,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 통신 -->
+                        <div class="py20">
+                            <div class="d-flex-between">
+                                <div class="sub-link icon-title fs-md">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fw-b ellipsis">LG유플러스</p>
+                                    </div>
+                                </div>
+                                <p class="number-unit fc-black3 fs-md">
+                                    <span class="number">83,428,520</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">010-36**-0***</p>
+                                            <p class="fs-df fc-gray ellipsis">2022.04 기준</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">1,271,456</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex-between py10">
+                                <div class="pl45 overflow-hidden">
+                                    <a href="#;" class="sub-link d-block">
+                                        <p class="fs-df fc-gray ellipsis">인터넷</p>
+                                            <p class="fs-df fc-gray ellipsis">2022.04 기준</p>
+                                        <p class="number-unit fw-m fs-md mt5">
+                                            <span class="number">9,999,999,999,999</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!-- 조각투자 미연결 시 -->
+                        <div class="py20">
+                            <a href="#;" class="tooltip fs-md fw-b" data-tooltip="aa">조각투자</a>
+                            <div class="tooltip-box" data-tooltip-box="aa">
+                                <p class="title">조각투자는?</p>
+                                <p>미술품, 부동산, 지식재산권 등 1개의 자산을 소액으로 조각내어 여러명이 투자할 수 있도록 만든 투자 방식이에요.</p>
+                                <button type="button" class="tooltip-close">닫기</button>
+                            </div>
+                            <div class="d-flex-between mt20">
+                                <p class="fc-gray fs-df">조각투자 자산 확인이 어려우신가요? <br>
+                                    모아서 한 번에 관리하세요</p>
+                                <button type="button" class="btn btn-sm">연결하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 계좌별 자산 탭 -->
+                <div id="tab_panel02" class="tab-panel p0">
+                    계좌별 자산 컨텐츠 영역
+                </div>
+            </div>
+            <!-- 자동차 -->
+            <div class="module-box py20">
+                <div class="d-flex-between">
+                    <p class="fs-md fw-b">자동차</p>
+                    <p class="number-unit fc-black3 fs-md">
+                        <span class="number">186,000,000</span>
+                        <span class="unit">원</span>
+                    </p>
+                </div>
+                <div class="mt10">
+                    <a href="#;" class="sub-link card-box d-block bg-ex-blue6">
+                        <div class="icon-title">
+                            <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w70">
+                            <div class="overflow-hidden ml5">
+                                <p class="fs-df fc-gray ellipsis">현대 팰리세이드</p>
+                                <p class="fs-df fc-gray mt5">2022.02 기준</p>
+                                <p class="number-unit fs-md fc-black mt5">
+                                    <span class="number">186,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="mt10">
+                    <a href="#;" class="sub-link card-box d-block bg-ex-blue6">
+                        <div class="icon-title">
+                            <img src="../../../resources/new_images/views/home/img_car_sample.png" class="w70">
+                            <div class="overflow-hidden ml5">
+                                <p class="fs-df fc-gray ellipsis">현대 팰리세이드</p>
+                                <p class="fs-df fc-gray mt5">2022.02 기준</p>
+                                <p class="number-unit fs-md fc-black mt5">
+                                    <span class="number">186,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <!-- 부동산 -->
+            <div class="module-box">
+                <div class="d-flex-between">
+                    <p class="fs-md fw-b">부동산</p>
+                    <p class="number-unit fc-black3 fs-md">
+                        <span class="number">1,656,000,000</span>
+                        <span class="unit">원</span>
+                    </p>
+                </div>
+                <div class="mt10">
+                    <a href="#;" class="sub-link card-box d-block bg-ex-blue6">
+                        <div class="icon-title">
+                            <!-- 주택 ico_home1.png, 아파트 ico_home2.png, 오피스텔 ico_home3.png -->
+                            <img src="../../../resources/new_images/views/mydoth/icon_bank.png" class="w50 mx10">
+                            <div class="ml10">
+                                <p class="fs-df fc-gray">부동산 건물명</p>
+                                <p class="fs-df fc-gray mt5">2022.02 기준</p>
+                                <p class="number-unit fs-md fc-black mt5">
+                                    <span class="number">9,999,999</span>
+                                    <span class="unit">만원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>     
+                </div>
+            </div>    
+            <!-- 자산 연결 미완료 -->
+            <div class="module-box pt10">
+                <div class="card-box bg-gray">
+                    <a href="#;" class="sub-link sub-icon-link fs-lg d-block">
+                        <div class="d-flex-start">
+                            <p class="fs-md fw-m">연결 미완료</p>
+                            <span class="custom-label label-solid c-primary fs-df fw-b ml10">21</span>
+                        </div>
+                        <p class="fs-sm fw-r fc-gray-d mt10">자산 연결을 진행중이었어요<br>연결을 완료해주세요</p>
+                    </a>
+                </div>
+            </div>
+            <!-- 자산 연결 버튼 -->
+            <div class="module-box pt10">
+                <p class="fs-md fw-b">키움자산과 같이 보고 싶다면</p>
+                <div class="btn-box mt10">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <span class="fs-df fw-r line-height-ex">MY자산 서비스 바로가기</span> 
+                        <i class="deco-icon icon-16 ico-arrow-w ml5"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 관리자 배너 -->
+            <div class="module-box pt10">
+                <a href="#" class="d-block">
+                    <img src="../../../resources/new_images/views/mydoth/img_mydoth_001_001_01.png" alt="관리자배너1">
+                </a>
+            </div>
+        </main>
+    </div>
+    <article class="modal-popup bottomsheet" id="bottomsheet">
+        <div class="modal-header">
+            <h1>다른금융</h1>
+            <button type="button" class="modal-close">닫기</button>
+        </div>
+        <div class="modal-body">
+            <ul class="bullet-list bullet-dot">
+                <li>다른금융은 MY자산(마이데이터)으로 수집한 다른 금융기관의 자산을 한눈에 보여드리는 기능입니다.</li>
+                <li>금융사별 자산은 보유한 계좌 정보를 금융사별로 정렬해 보여드리는 기능입니다.</li>
+                <li>계좌별 자산은 보유한 계좌를 업권별(은행, 금투, 보험 등)로 정렬해 보여드리는 기능입니다.</li>
+                <li>다른금융은 키움증권 보유자산을 표기하지 않아, MY자산(마이데이터)의 자산총액과 상이할 수 있습니다.</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#bottomsheet')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+</body>
+
+</html>

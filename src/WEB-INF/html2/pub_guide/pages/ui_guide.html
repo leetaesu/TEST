@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터 퍼블리싱 가이드</title>
+
+    <link rel="shortcut icon" href="https://m.kiwoom.com/nkm/img/main/icn_kmobile01.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../../resources/css/ui_common_pub.css">
+    <link rel="stylesheet" href="../assets/css/ui_guide.css">
+</head>
+
+<body>
+
+    <div id="content_detail">
+
+        <h2 class="guide-main-title">Publishing guide</h2>
+
+        <section  class="content-box">
+            <h3 class="guide-title">개요</h3>
+            <ul class="bullet-list">
+                <li>본 가이드는 키움 마이데이터 모바일의 퍼블리싱에 대해서 일관적으로 작성하는 방법을 제공하고자 합니다.</li>
+                <li>퍼블리싱 개발은 프론트-엔드 페이지의 기본 골격을 형성하기 때문에 디자인, 브라우저, 스크립트, 성능, 접근성 등과 긴밀한 관계가 있습니다.</li>
+                <li>향후 업무 변경이나 버전업으로 인한 화면 추가/변경 시 다수의 퍼블리셔가 만든 코드의 일관성을 유지하고 서로간의 이해도를 높여 신속하게 대응할 수 있습니다.</li>
+                <li>통일성 있는 코드로 인해 개발자와의 커뮤니케이션이 일관성 있게 진행 됩니다.</li>
+                <li>불필요한 리소스를 방지하고 소프트웨어 유지 및 운영에 효율적인 코드를 제공할 수 있습니다.</li>
+            </ul>
+        </section>
+
+        <!-- 코드 작성 규칙(공통) -->
+        <section  class="content-box">
+            <h3 class="guide-title">코드 작성 규칙(공통)</h3>
+            <table class="custom-table">
+                <colgroup>
+                    <col style="width: 150px;" />
+                    <col style="width: auto;" />
+                    <col style="width: 300px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>가이드라인</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">적용대상 OS</td>
+                        <td class="text-left">Native : IOS 10.0 이상, Android 6.0 이상</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">WEB : 모바일 브라우저</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">개발환경</td>
+                        <td class="text-left">기본적으로 Editor는 VS Code를 사용한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">CSS파일은 .css파일과 .min.css 두 가지 버전으로 배포한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">HTML 유효성 검사는 W3C Validation extension(JDK필요)을 설치하여 실시간 검증한다.</td>
+                        <td class="text-left">마크업 오류 방지</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">형상관리는 SVN으로 한다. (TortoiseSVN-1.14.0.28885-x64-svn-1.14.0)</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="8">공통</td>
+                        <td class="text-left">파일명은 Screen ID로 한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">파일 명(html, css, image)은 Snake case를 사용한다. 언더스코어('_')를 사용</td>
+                        <td class="text-left">ui_common_pub.css</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">클래스 명은 Kebab case를 사용한다. 하이픈('-')을 사용</td>
+                        <td class="text-left">.custom-table</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">JavaScript에서 함수 및 변수명은 Camel case를 사용한다.</td>
+                        <td class="text-left">popupOpen()</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">인코딩과 관련된 이슈를 방지하기 위해 '@charset'을 사용하여 UTF-8 인코딩을 강제한다. (다음에 빈 라인 1줄 추가)</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">파일의 마지막에는 빈 라인 1줄을 추가한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Indent는 에디터에서 Tab size 4, insert spaces 체크로 한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">코드 정렬은 VS Code에서 Beautify extension을 추천한다.</td>
+                        <td class="text-left">Prettier extension 보다 좀더 자유로움</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- HTML 작성 규칙 -->
+        <section  class="content-box">
+            <h3 class="guide-title">HTML 작성 규칙</h3>
+            <table class="custom-table">
+                <colgroup>
+                    <col style="width: 150px;" />
+                    <col style="width: auto;" />
+                    <col style="width: 300px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>가이드라인</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="6">공통</td>
+                        <td class="text-left">HTML 마크업은 Semantic(의미론적)에 의거하여 작성합니다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">파일의 상단에 DTD를 표시한다.</td>
+                        <td class="text-left">&lt;!DOCTYPE html&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">HTML 속성에는 기본적으로 큰 따옴표("")를 사용한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">JavaScript에서는 작은 따옴표('')를 사용한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">단일 태그(Single tag)는 뒤에 슬래시(/)를 생략한다.</td>
+                        <td class="text-left">&lt;br&gt;, &lt;input&gt; 등</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">외부 css는 head 하단에, JavaScript는 body 하단에 배치한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td>버튼</td>
+                        <td class="text-left">onclick event가 필요한 상황이라면 버튼을 사용한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">앵커</td>
+                        <td class="text-left">다른 리소스나 페이지 내의 위치를 가리키면 href 속성과 함께 앵커를 사용한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">전화번호는 필히 &lt;a href="tel:전화번호"&gt;전화번호&lt;a&gt; 링크를 걸어준다</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">주석</td>
+                        <td class="text-left">HTML 블록이 길어지는 경우 끝나는 지점 다음줄에 '// + 클래스 명'을 추가한다.</td>
+                        <td class="text-left">&lt;--// .wrapper --&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">수정을 하는 경우 (날짜: 작업자 - 내용) 주석을 추가한다.</td>
+                        <td class="text-left">&lt;-- 2021-06-01 : 홍길동 - Textfield width 수정 --&gt;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">대체 텍스트 제공</td>
+                        <td class="text-left">이미지에는 반드시 alt 속성으로 적절한 대체 텍스트를 넣어준다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">대체 텍스트의 내용이 긴 경우는 대체 텍스트는 비워놓고 마크업으로 제공한다. (차트등 복잡한 콘텐츠 포함)</td>
+                        <td class="text-left">.. alt=""&gt;&lt;span class="sr-only"&gt;대체텍스트&lt;span&gt;</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">적절한 링크 텍스트</td>
+                        <td class="text-left">이미지를 독립적 링크로 제공하는 경우 alt에 적절한 링크 텍스트를 제공한다.</td>
+                        <td class="text-left">&lt;a href="#"&gt;&lt;img src="btn.png" alt="다음버튼"&gt;&lt;/a&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">링크 아이콘과 같이 링크에 의미 있는 배경 이미지를 적용한 경우에도 적절한 링크 텍스트를 제공한다.</td>
+                        <td class="text-left">&lt;a href="#" class="배경이미지"&gt;대체텍스트&lt;a&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">의미가 없는 이미지는 alt 속성에 빈 값을 제공한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">OR코드의 경우 링크 주소를 알 수 있도록 대체 텍스트를 제공한다.</td>
+                        <td class="text-left">alt="https://www.kiwoom.com 바로가기 OR 코드"</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">링크의 용도나 목적을 알 수 있도록 적절한 링크 텍스트를 제공한다.</td>
+                        <td class="text-left">&lt;span class="sr-only"&gt;공지사항&lt;span&gt;더 보기</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">레이블 제공</td>
+                        <td class="text-left">사용자 입력에는 이에 대응하는 레이블을 제공한다.</td>
+                        <td class="text-left">Label의 for값과 id값을 동일하게 제공</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">label이 없는 input, select 태그는 title 속성을 넣어준다.</td>
+                        <td class="text-left">&lt;input type="text" title="생년월일 중 월 입력"&gt;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- CSS 작성 규칙 -->
+        <section  class="content-box">
+            <h3 class="guide-title">CSS 작성 규칙</h3>
+            <table class="custom-table">
+                <colgroup>
+                    <col style="width: 150px;" />
+                    <col style="width: auto;" />
+                    <col style="width: 300px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>가이드라인</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="19">CSS</td>
+                        <td class="text-left">클래스명은 기본적으로 'OOCSS(Object Oriented CSS)' 방식을 따릅니다.</td>
+                        <td class="text-left">일명 레고방식 or Bootstrap 방식</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">클래스 명은 의미를 파악하기 어렵게 함부로 축약하지 않는다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">ID 선택자는 특별한 경우를 제외하고 사용하지 않는다.</td>
+                        <td class="text-left">Library 사용 시 개발자와 협의 필요</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">전체 선택자와 태그 선택자의 사용을 지양한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">모든 속성은 영문 소문자로만 작성한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">가급적 과도한 중첩은 사용하지 않는다. (최대 5Depth)</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">의미 없는 줄 바꿈은 사용하지 않는다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">선택자의 그룹핑이 필요할 때는 줄 바꿈 한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">클래스 명 선언 후 여는 줄괄호 앞에 띄어쓰기 1칸을 추가하고 닫는 중괄호는 줄 바꿈 한다.</td>
+                        <td class="text-left">.class-name {}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">콜론(:) 후에는 띄어쓰기 1칸을 추가하고, 속성값 마지막에는 세미콜론(;)을 반드시 쓴다.</td>
+                        <td class="text-left">width: calc(100% - 10px);</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">한 줄에 하나의 속성값만 선언한다. 속성값이 길어지는 경우 쉼표 뒤에 줄 바꿈을 사용할 수 있다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">소수 값에는 0을 표시한다. 후행 0은 표시하지 않는다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">0은 단위를 생략한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">background의 url 속성의 파라미터 값에는 따옴표를 생략한다.</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">background-position은 숫자로 선언한다</td>
+                        <td class="text-left">background-position: 50% 50%;</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">컬러값은 축약형을 사용한다.</td>
+                        <td class="text-left">color: #ffffff (X) > color: #fff (O)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">border가 없는 경우 'none' 대신 0을 사용한다. outline은 'none'을 사용한다.</td>
+                        <td class="text-left">border: none (X) > border: 0 (O)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">media query 속성은 인접하여 선언한다. (그룹핑으로 관리가 필요한 경우 협의하여 찾기 쉬운 곳에 선언)</td>
+                        <td class="text-left"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">속성을 정의 할 때의 순서는 따로 지정하지 않지만 가급적 비슷한 속성들끼리 붙여서 작성한다.</td>
+                        <td class="text-left">width와 height, padding과 margin 등</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 폴더구조 -->
+        <section class="content-box">
+            <h3 class="guide-title">폴더구조</h3>
+            <table class="custom-table table-detail">
+                <colgroup>
+                    <col style="width: 130px;">
+                    <col style="width: 130px;">
+                    <col style="width: 200px;">
+                    <col style="width: auto;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th rowspan="7">폴더명/설명<br>(webapp)</th>
+                        <th rowspan="5">resources</th>
+                        <th>css</th>
+                        <td colspan="2">new_ui_common.css (UI/UX용 css 파일)</td>
+                    </tr>
+                    <tr>
+                        <th>font</th>
+                        <td colspan="2">웹폰트 파일 (SpoqaHanSansNeo)</td>
+                    </tr>
+                    <tr>
+                        <th>new_images</th>
+                        <th>icons, views(아래 메뉴별 폴더)</th>
+                        <td>이미지 파일</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">js</th>
+                        <th>lib</th>
+                        <td>Library 파일 (jQuery, Swiper, Highchart, ui-datepicker 등)</td>
+                    </tr>                    
+                    <tr>
+                        <th>views2\common</th>
+                        <td>new_ui_common.js (UI/UX interaction용 js파일)</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">WEB-INF</th>
+                        <th rowspan="2">html2</th>
+                        <th>annu, auth, bank, card, cred, insu, inve, loan, my, noti, reco 등</th>
+                        <td>퍼블리싱 폴더</td>
+                    </tr>
+                    <tr>
+                        <th>pub_guide</th>
+                        <td>퍼블리싱 가이드 폴더</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SVN Setting -->
+        <section class="content-box">
+            <h3 class="guide-title">SVN Setting</h3>
+            <h4 class="guide-sub-title">Tortoise SVN 프로그램 folder 에서 사용시</h4>
+            <ul>
+                <li>1. Tortoise SVN 설치</li>
+                <li><strong>경로:</strong> \\172.51.250.112\mydata_web\Publishing\개발환경</li>
+                <li><strong>파일:</strong> TortoiseSVN-1.14.0.28885-x64-svn-1.14.0.msi</li>
+            </ul>
+            <h4 class="guide-sub-title">VSCode SVN 사용시</h4>
+            <ul>
+                <li>1. local Extend 파일 추가</li>
+                <li><strong>경로:</strong> \\172.51.250.112\mydata_web\Publishing\개발환경</li>
+                <li><strong>파일:</strong> johnstoncode.svn-scm-2.11.3.VSIX</li>
+                <li>2. Tortoise SVN 설치</li>
+                <li><strong>경로:</strong> \\172.51.250.112\mydata_web\Publishing\개발환경</li>
+                <li><strong>파일:</strong> TortoiseSVN-1.14.0.28885-x64-svn-1.14.0</li>
+                <li>3. svn 설치 옵션 변경: command line client tools > Will be installed on local hard dirve 로 선택</li>
+                <li>vscode svn 설정</li>
+                <li><strong>경로:</strong>
+                    C:\Users\kiwoom\AppData\Local\Programs\Microsoft VS Code\resources\app\product.json</li>
+                <li>4. 해당 파일에 코드 추가 <br>
+                    "extensionAllowedProposedApi": [
+                    "johnstoncode.svn-scm"
+                    ]
+                </li>
+                <li>5. project 폴더 생성</li>
+                <li>SVN checkout: http://172.22.4.135/inv2/web/branches/kiwoom-mydata.ols/</li>
+                <li>개인 계정으로 접속 - 양석열 과장에게 설치방법 및 권한 요청</li>
+            </ul>
+        </section>
+
+        <!-- <section  class="content-box">
+            <h3 class="guide-title">iOS Safe Area 대응</h3>
+            <ul>
+                <li>뷰포트 메타에 viewport-fit=cover 추가. </li>
+                <li>iOS 11.0 대응 : constant()</li>
+                <li>iOS 11.2 이상 : env()</li>
+                <li>source 예)
+                    <div class="guide-source">
+                        .main-wrap { <br>&nbsp;&nbsp; padding-right: constant(safe-area-inset-right);<br>
+                        &nbsp;&nbsp; padding-left: constant(safe-area-inset-left);<br>
+                        &nbsp;&nbsp; padding-top: constant(safe-area-inset-top);<br>
+                        &nbsp;&nbsp; padding-bottom: constant(safe-area-inset-bottom);<br>
+                        &nbsp;&nbsp; padding-right: env(safe-area-inset-right);<br>
+                        &nbsp;&nbsp; padding-left: env(safe-area-inset-left);<br>
+                        &nbsp;&nbsp; padding-right: env(safe-area-inset-top);<br>
+                        &nbsp;&nbsp; padding-left: env(safe-area-inset-bottom);<br>
+                        }
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+
+</body>
+
+</html>

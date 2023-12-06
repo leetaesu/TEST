@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g data-name="2">
+        <g data-name="그룹 13206">
+            <g data-name="타원 193" transform="translate(8 8)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="6" cy="6" r="6" style="stroke:none"/>
+                <circle cx="6" cy="6" r="5.5" style="fill:none"/>
+            </g>
+            <path data-name="선 110" transform="translate(14 5.222)" style="fill:none;stroke:#2e82ca" d="M0 3.278V0"/>
+            <path data-name="선 111" transform="translate(14 19.5)" style="fill:none;stroke:#2e82ca" d="M0 2.722V0"/>
+            <path data-name="선 112" transform="rotate(-90 9.611 4.389)" style="fill:none;stroke:#2e82ca" d="M0 3.278V0"/>
+            <path data-name="선 113" transform="rotate(-90 16.75 -2.75)" style="fill:none;stroke:#2e82ca" d="M0 2.722V0"/>
+            <g data-name="타원 194" transform="translate(11 22)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <g data-name="타원 195" transform="translate(11)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <g data-name="타원 196" transform="rotate(-90 19.5 -2.5)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <g data-name="타원 197" transform="rotate(-90 8.5 8.5)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <path data-name="선 114" transform="rotate(45 .697 28.289)" style="fill:none;stroke:#2e82ca" d="M0 3.278V0"/>
+            <path data-name="선 115" transform="rotate(45 -16.538 21.15)" style="fill:none;stroke:#2e82ca" d="M0 2.722V0"/>
+            <g data-name="타원 198" transform="rotate(45 -18.057 16.279)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <g data-name="타원 199" transform="rotate(45 8.5 27.278)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <path data-name="선 116" transform="rotate(135 5.918 14.289)" style="fill:none;stroke:#2e82ca" d="M0 3.278V0"/>
+            <path data-name="선 117" transform="rotate(135 2.961 7.15)" style="fill:none;stroke:#2e82ca" d="M0 2.722V0"/>
+            <g data-name="타원 200" transform="rotate(135 3.944 5.278)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+            <g data-name="타원 201" transform="rotate(135 8.5 16.278)" style="stroke:#2e82ca;fill:#2e82ca">
+                <circle cx="3" cy="3" r="3" style="stroke:none"/>
+                <circle cx="3" cy="3" r="2.5" style="fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

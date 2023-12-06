@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>부동산 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <!-- 부동산-직접등록 정보 -->
+            <div class="module-box module-header bg-purple fc-white pb30">
+                <div class="swiper-container custom-swiper" id="swiper01">
+                    <div class="swiper-wrapper">
+
+                        <!-- 자가인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">서울시 마포구 도화동 565-64 4..(1줄)</p>
+                            <p class="mt5 fw-l">기타
+                                <span class="divide-bar">자가</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">매입가</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p> 
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <!-- 전세인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">마포태영데시앙</p>
+                            <p class="mt5 fw-l">기타
+                                <span class="divide-bar">전세</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">보증금</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p> 
+                                </dd>
+                                <dt class="fw-l">계약일</dt>
+                                <dd>2020.04.29</dd>                                
+                                <dt class="fw-l flex-row">
+                                    <span>만기일</span>
+                                    <span class="fc-yellow fw-b ml5">D-16</span>
+                                </dt>
+                                <dd>2020.04.29</dd>
+                            </dl>
+                        </div>
+
+                        <!-- 월세인 경우 -->
+                        <div class="swiper-slide">
+                            <p class="fs-2xl ellipsis">마포태영데시앙</p>
+                            <p class="mt5 fw-l">기타
+                                <span class="divide-bar">월세</span>
+                            </p>
+                            <dl class="data-list line-height-1 border-top-black pt20 mt20 fc-white">
+                                <dt class="fw-l">보증금/월세</dt>
+                                <dd>
+                                    <p class="number-unit">
+                                        <span class="number">999,999</span>
+                                        <span class="unit">만원</span>
+                                    </p> 
+                                </dd>
+                                <dt class="fw-l">계약일</dt>
+                                <dd>2020.04.29</dd>                                
+                                <dt class="fw-l flex-row">
+                                    <span>만기일</span>
+                                    <span class="fc-yellow fw-b ml5">D-16</span>
+                                </dt>
+                                <dd>2020.04.29</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination bullet-white mt10"></div>
+                </div>            
+            </div>
+
+            <div class="module-group">
+                <!-- 시세조회 불가 안내 -->
+                <div class="module-box">   
+                    <h3 class="fs-lg">시세조회 불가 안내</h3>
+                    <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                        <li>단독주택, 빌라, 다세대/연립 부동산은 실시간 시세정보를 제공하지 않습니다.</li>
+                        <li>시세조회 없이 부동산을 직접 등록한 경우 시세정보를 제공하지 않습니다.</li>
+                    </ul>
+                    <div class="btn-box mt30">
+                        <button type="button" class="btn btn-lg btn-block">부동산 변경</button>
+                        <button type="button" class="btn btn-lg btn-block" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">부동산 삭제</button>
+                    </div>  
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1>삭제 알럿</h1>
+        </div>
+        <div class="modal-body">
+            <p class="fs-md fw-m text-center p20">등록된 부동산을 삭제합니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer w-70" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">취소</button>
+                <button type="button" class="btn btn-footer btn-primary">확인</button>
+            </div>
+        </div>
+    </article>    
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+
+    </script>
+
+</body>
+
+</html>

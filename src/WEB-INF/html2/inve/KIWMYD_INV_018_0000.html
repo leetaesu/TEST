@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>수익률 인증 안내</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group bg-white2">
+
+            <section class="module-box w-full p0">
+
+                <div class="swiper-container custom-swiper mt60" id="swiper01">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">키움만의 색다른 수익률 인증<br>서비스 이용해 보세요</h3>
+                            <p class="fs-md fc-gray-d mt10">키움증권에서 제공하는 수익률 인증 서비스<br>(전 증권사 종목 인증 가능)</p>
+                            <img src="../../../resources/new_images/views/inve/img_018_0000_001.png" class="mt100" alt="">
+                        </div>
+
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">인증할 종목과 계좌만 선택하면<br>자동 생성돼요</h3>
+                            <p class="fs-md fc-gray-d mt10">보유종목 수익, 계좌수익 현황,<br>키움 내 순위 인증 가능!</p>
+                            <img src="../../../resources/new_images/views/inve/img_018_0000_002.png" class="mt100" alt="">
+                        </div>
+
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">카카오톡, Instagram에<br>나의 투자 성과를 공유해보세요</h3>
+                            <p class="fs-md fc-gray-d mt10">나의 투자성과를 친구에게 자랑해 보세요</p>
+                            <img src="../../../resources/new_images/views/inve/img_018_0000_003.png" class="mt100" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 15rem"></div>
+                </div>
+
+            </section>
+
+            <div class="module-box pb30">
+                <!-- 유의사항 -->
+                <h3 class="fs-lg fw-m">유의사항</h3>
+                <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                    <li>본 수익률 인증서비스는 단순 참고용 자료이며, 당사는 투자권유를 하지 않습니다.</li>                    
+                    <li>수익률 인증서 발급 시 직전 조회 시점의 시세를 반영하며, 시세 등의 변동으로 수익률이 달라 질 수 있습니다.</li>
+                    <li>실제 계좌의 수익률과 수익률 인증서의 수익률이 다를 수 있습니다.</li>
+                    <li>수익률 인증서는 개인의 이익을 위한 위변조 및 오남용을 해서는 안되며, 당사는 이에 대해 법적 책임을 지지 않습니다.</li>
+                </ul>
+            </div>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">수익률 인증하기</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+    </script>
+
+</body>
+
+</html>

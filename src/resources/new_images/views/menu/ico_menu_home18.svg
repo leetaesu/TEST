@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <g data-name="18" transform="translate(-26 -418)">
+        <rect data-name="사각형 9049" width="10" height="14" rx="5" transform="translate(27 425)" style="fill:#b7d9fc"/>
+        <g transform="translate(26 418)">
+            <circle data-name="타원 2241" cx=".82" cy=".82" r=".82" transform="translate(12.797 3.281)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2242" cx=".82" cy=".82" r=".82" transform="translate(16.078 6.563)" style="fill:#3a3a3a"/>
+            <path data-name="패스 17975" d="M13.037 7.963a.82.82 0 0 0 1.16 0l3.281-3.281a.82.82 0 0 0-1.16-1.16L13.037 6.8a.82.82 0 0 0 0 1.163z" style="fill:#3a3a3a"/>
+            <path data-name="패스 17976" d="M21 13.945V4.1A4.106 4.106 0 0 0 16.9 0h-6.564a4.106 4.106 0 0 0-4.1 4.1.82.82 0 0 0 1.641 0 2.464 2.464 0 0 1 2.461-2.461H16.9A2.464 2.464 0 0 1 19.359 4.1v9.844a2.464 2.464 0 0 1-2.459 2.462h-3.564a.821.821 0 1 0 0 1.641H16.9a4.106 4.106 0 0 0 4.1-4.1z" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2243" cx=".82" cy=".82" r=".82" transform="translate(6.563 12.797)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2244" cx=".82" cy=".82" r=".82" transform="translate(6.563 16.078)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2245" cx=".82" cy=".82" r=".82" transform="translate(3.281 12.797)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2246" cx=".82" cy=".82" r=".82" transform="translate(3.281 16.078)" style="fill:#3a3a3a"/>
+            <path data-name="패스 17977" d="M13.617 11.484H16.9a.82.82 0 0 0 0-1.641h-3.283a.82.82 0 1 0 0 1.641z" style="fill:#3a3a3a"/>
+            <path data-name="패스 17978" d="M13.617 14.766H16.9a.82.82 0 0 0 0-1.641h-3.283a.82.82 0 1 0 0 1.641z" style="fill:#3a3a3a"/>
+            <path data-name="패스 17979" d="M4.1 21h3.283a4.106 4.106 0 0 0 4.1-4.1v-6.564a4.106 4.106 0 0 0-4.1-4.1H4.1a4.106 4.106 0 0 0-4.1 4.1V16.9A4.106 4.106 0 0 0 4.1 21zM1.641 10.336A2.464 2.464 0 0 1 4.1 7.875h3.283a2.464 2.464 0 0 1 2.461 2.461V16.9a2.464 2.464 0 0 1-2.461 2.461H4.1A2.464 2.464 0 0 1 1.641 16.9z" style="fill:#3a3a3a"/>
+            <path data-name="패스 17980" d="M4.1 11.156h3.283a.821.821 0 0 0 0-1.641H4.1a.82.82 0 1 0 0 1.641z" style="fill:#3a3a3a"/>
+        </g>
+    </g>
+</svg>

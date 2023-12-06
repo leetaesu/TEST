@@ -1,0 +1,32 @@
+<svg data-name="-e-로고" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="39.98" viewBox="0 0 40 39.98">
+    <defs>
+        <linearGradient id="710as0qnva" x1=".104" y1=".719" x2="1.102" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffc738"/>
+            <stop offset="1" stop-color="#e97264"/>
+        </linearGradient>
+        <linearGradient id="w4wybh76kc" x1=".049" y1=".888" x2=".115" y2=".951" xlink:href="#710as0qnva"/>
+        <linearGradient id="mxcaqjzpvd" x1=".141" y1=".91" x2=".092" y2=".861" xlink:href="#710as0qnva"/>
+        <linearGradient id="az2ba86woe" x1="-6.259" y1="5.911" x2="-7.825" y2="4.874" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#e97264" stop-opacity="0"/>
+            <stop offset="1" stop-color="#b53759"/>
+        </linearGradient>
+        <linearGradient id="u61my78yjf" x1=".248" y1=".099" x2=".991" y2="1.279" xlink:href="#710as0qnva"/>
+        <linearGradient id="ghoaz6xwkg" x1=".634" y1="1" x2=".222" y2="-.182" xlink:href="#710as0qnva"/>
+        <radialGradient id="s65v1apxgb" cx=".184" cy=".077" r=".738" gradientTransform="rotate(26.578 .184 .077)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#5e5fa8"/>
+            <stop offset="1" stop-color="#1e2077"/>
+        </radialGradient>
+        <radialGradient id="wegvpqumoh" cx=".5" cy=".5" r=".5" gradientTransform="rotate(45 -6.034 5.395)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#b53759"/>
+            <stop offset="1" stop-color="#e97264" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <ellipse data-name="Ellipse 2252" cx="20" cy="19.99" rx="20" ry="19.99" style="fill:url(#s65v1apxgb)"/>
+    <path data-name="패스 18365" d="m3.9 221.039.43-.43a.54.54 0 0 1 .45-.154.54.54 0 0 0 .6-.6.54.54 0 0 1 .154-.45l.43-.43a.385.385 0 0 1 .544 0 .385.385 0 0 0 .544 0l.892-.892a.385.385 0 0 0 0-.544.385.385 0 0 1 0-.544l.821-.821a.385.385 0 0 1 .544 0 .385.385 0 0 0 .544 0l2.15-2.15-3.076-3.076L.575 219.3a1.6 1.6 0 0 0-.467 1.039L0 222.073a.822.822 0 0 0 .87.87l1.739-.1a1.605 1.605 0 0 0 1.039-.467l.245-.245a.385.385 0 0 0 0-.544.385.385 0 0 1 0-.544zm0 0" transform="translate(9.997 -192.83)" style="fill:url(#710as0qnva)"/>
+    <path data-name="패스 18366" d="M13.941 250.632a.367.367 0 0 1 0-.519l9.291-9.291a.367.367 0 0 1 .519.519l-9.291 9.291a.367.367 0 0 1-.519 0zm0 0" transform="translate(-3.209 -221.251)" style="fill:url(#w4wybh76kc)"/>
+    <path data-name="패스 18367" d="M37.982 189.727a.367.367 0 0 0 .519 0l9.291-9.291a.367.367 0 0 0-.519-.519l-9.291 9.291a.367.367 0 0 0 0 .519zm0 0" transform="translate(-26.16 -163.105)" style="fill:url(#mxcaqjzpvd)"/>
+    <path data-name="패스 18368" d="m179.008 216.826.656-.656a.385.385 0 0 1 .544 0 .384.384 0 0 0 .544 0l2.15-2.15-3.076-3.076-.817.817zm0 0" transform="translate(-160.903 -192.83)" style="fill:url(#az2ba86woe)"/>
+    <path data-name="패스 18369" d="M177.672 33.579a6.277 6.277 0 1 0 0 8.877 6.277 6.277 0 0 0 0-8.877zm-4.011 4.011a1.78 1.78 0 1 1 2.517 0 1.78 1.78 0 0 1-2.517 0zm0 0" transform="translate(-149.398 -21.74)" style="fill:url(#u61my78yjf)"/>
+    <path data-name="패스 18370" d="M200.026 57.486a5.18 5.18 0 1 0 0 7.325 5.18 5.18 0 0 0 0-7.325zm-3.235 3.235a1.78 1.78 0 1 1 2.517 0 1.78 1.78 0 0 1-2.517 0zm0 0" transform="translate(-172.527 -44.872)" style="fill:url(#ghoaz6xwkg)"/>
+    <path data-name="패스 18371" d="M287.2 73.673a2.728 2.728 0 1 0 0 3.858 2.728 2.728 0 0 0 0-3.858zm-3.188 3.188a1.779 1.779 0 1 1 2.517 0 1.78 1.78 0 0 1-2.518 0zm0 0" transform="translate(-259.747 -61.011)" style="fill:url(#wegvpqumoh)"/>
+</svg>

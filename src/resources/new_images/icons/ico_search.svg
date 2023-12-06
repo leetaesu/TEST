@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="hto8zdf3sa">
+            <path data-name="사각형 9455" transform="translate(197 185)" style="fill:#fff" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 13790" transform="translate(-197 -185)" style="clip-path:url(#hto8zdf3sa)">
+        <g data-name="Zoom Out - 192x192">
+            <path data-name="패스 18372" d="m17 17-3.378-3.378m0 0a6.222 6.222 0 1 0-4.4 1.822 6.2 6.2 0 0 0 4.4-1.822z" transform="translate(199 187)" style="fill:none;stroke:#292929;stroke-linecap:round;stroke-linejoin:round"/>
+        </g>
+    </g>
+</svg>

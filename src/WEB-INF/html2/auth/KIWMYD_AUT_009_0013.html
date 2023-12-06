@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>금융사 연결</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+
+                <div class="text-center">
+                    <img class="w80" src="../../../resources/new_images/icons/ico_done.svg" alt="">
+                    <p class="fs-lg fw-m mt20">신한은행 연결이<br>완료되었습니다.</p>
+                    <p class="fc-gray-d mt5">연결 내역을 확인해 주세요.</p>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border py20">
+
+                <div class="icon-title mt20">
+                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                    <div class="overflow-hidden">                                
+                        <p class="fs-sm fc-gray">자유입출식</p>
+                        <p class="fs-sm ellipsis">우리 주거래 직장인 우대통장 우리 주거래 직장인 우대통장 우리 주거래 직장인 우대통장</p>
+                    </div>
+                </div>
+                <div class="icon-title mt20">
+                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                    <div class="overflow-hidden">                                
+                        <p class="fs-sm fc-gray">예금</p>
+                        <p class="fs-sm ellipsis">우리 주거래 직장인 우대통장(저축예금)</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer">추가 연결</button>
+                <button type="button" class="btn btn-footer btn-primary">MY자산 보기</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+    
+    <script>
+        // 팝업 닫기 방지
+        $('.sub-prev, .sub-close').off('click').on('click', function(e) {
+            e.preventDefault();
+            KW_MOBILE.guiEvent.popup.openPop('#modal_alert2');
+        })
+    </script>
+</body>
+</html>

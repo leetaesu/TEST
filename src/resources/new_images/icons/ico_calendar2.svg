@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path style="fill:none" d="M0 0h24v24H0z"/>
+    <rect data-name="사각형 19332" width="20" height="16" rx="2" transform="translate(2 5)" style="fill:#a4a4c9"/>
+    <path data-name="사각형 19333" d="M1 0h1a1 1 0 0 1 1 1v2H0V1a1 1 0 0 1 1-1z" transform="translate(5 2)" style="fill:#797ab7"/>
+    <path data-name="사각형 19334" d="M1 0h1a1 1 0 0 1 1 1v2H0V1a1 1 0 0 1 1-1z" transform="translate(16 2)" style="fill:#797ab7"/>
+    <path data-name="합치기 21" d="M12 10V8h2v2zm-4 0V8h2v2zm-4 0V8h2v2zm-4 0V8h2v2zm12-4V4h2v2zM8 6V4h2v2zM4 6V4h2v2zM0 6V4h2v2zm12-4V0h2v2zM8 2V0h2v2zM4 2V0h2v2zM0 2V0h2v2z" transform="translate(5 8)" style="fill:#fff;stroke:transparent;stroke-miterlimit:10"/>
+</svg>

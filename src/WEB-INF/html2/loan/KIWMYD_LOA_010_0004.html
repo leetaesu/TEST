@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common_loan.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">약관동의 full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>약관동의</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+            <div class="module-box">
+                <p class="fc-black2 fs-xl fw-m mb20">오늘의 최저금리를<br>알아보기 위한 동의에요</p>
+
+                <!-- 23-06-08 추가 -->
+                <div class="agree-box">
+                    <h4 class="tit">왜 동의해야 될까요?</h4>
+                    <ul>
+                        <li>
+                            <div class="img-wrap">
+                                <img src="../../../resources/new_images/views/loan/icon_certification.png" alt="본인인증">
+                            </div>
+                            <div class="text-wrap">
+                                <span>본인인증</span>
+                                <p>대출 조회 시 본인 확인을 위해 필요해요</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-wrap">
+                                <img src="../../../resources/new_images/views/loan/icon_calculation.png" alt="대출 금리한도 계산">
+                            </div>
+                            <div class="text-wrap">
+                                <span>대출 금리·한도 계산</span>
+                                <p>본인 정보를 통해 보다 정확한 금리·한도 계산해요</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check1_all" name="check1">
+                                <label for="check1_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)키움증권 서비스 이용약관 동의</p>
+                                </label>
+                            </div> 
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check1_1" name="check1">
+                                            <label for="check1_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)대출한도비교서비스 이용약관</p>
+                                            </label>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check2_all" name="check2">
+                                <label for="check2_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)키움증권 개인(신용)정보 수집·이용·제공 동의</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check2_1" name="check2">
+                                            <label for="check2_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)키움증권 개인(신용)정보 수집·이용 동의</p>
+                                            </label>
+                                        </div>
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04" onClick="alert('약관 상세')">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check2_2" name="check2">
+                                            <label for="check2_2">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)키움증권 개인(신용)정보 제3자 제공 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check2_3" name="check2">
+                                            <label for="check2_3">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)키움증권 고유식별정보 수집·이용 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>                                                                        
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check3_all" name="check3">
+                                <label for="check3_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)금융사 개인(신용)정보 수집·이용·제공 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check3_1" name="check3">
+                                            <label for="check3_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)금융사 개인(신용)정보 수집·이용·제공 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check3_2" name="check3">
+                                            <label for="check3_2">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)금융사 개인(신용)정보 수집·이용·제공·조회 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check3_3" name="check3">
+                                            <label for="check3_3">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)금융사 고유식별정보 수집·이용 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>                                                                        
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">                    
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">  
+                                <input type="checkbox" id="check4_all" name="check4">
+                                <label for="check4_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)금융사 개인(신용)정보 제3자 제공 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check4_1" name="check4">
+                                            <label for="check4_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)금융사 개인(신용)정보 제3자 제공 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check4_2" name="check4">
+                                            <label for="check4_2">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)금융사 고유식별정보 처리 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check5_all" name="check5">
+                                <label for="check5_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)햇살론 개인(신용)정보 수집·이용·제공 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                            
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check5_1" name="check5">
+                                                <label for="check5_1">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)개인(신용)정보 수집·이용 동의</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                        </div>
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check5_2" name="check5">
+                                                <label for="check5_2">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)개인(신용)정보 제3자 제공 동의</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                        </div>
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check5_3" name="check5">
+                                                <label for="check5_3">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)고유식별정보 처리 동의</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                        </div>
+                                </li>                                    
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check6_all" name="check6">
+                                <label for="check6_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)햇살론 개인(신용)정보 수집·이용·제공 조회 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                            
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check6_1" name="check6">
+                                                <label for="check6_1">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)신용정보 조회 동의</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check6_2" name="check6">
+                                                <label for="check6_2">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)고유식별정보 수집·이용 동의</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>                                 
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">
+                                <input type="checkbox" id="check7_all" name="check7">
+                                <label for="check7_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)햇살론 개인(신용)정보 수집·이용·제공·조회 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                            
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check7_1" name="check7">
+                                                <label for="check7_1">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)개인(신용)정보 수집·이용·제공 동의서(햇살론뱅크보증 신청용)</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check7_2" name="check7">
+                                                <label for="check7_2">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(필수)개인(신용)정보 조회 동의서(신용보증 신청용)</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check7_3" name="check7">
+                                                <label for="check7_3">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(선택)개인(신용)정보 수집·이용 동의서(보증료 우대 서비스)</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li> 
+                                <li class="pb15">
+                                    <div class="d-flex-between">
+                                            <div class="custom-check no-box fs-sm">     
+                                                <input type="checkbox" id="check7_4" name="check7">
+                                                <label for="check7_4">
+                                                    <i></i>
+                                                    <p class="fs-sm fc-gray pl10">(선택)개인(신용)정보 수집·이용 동의서(상품서비스 안내 등)</p>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>
+                                </li>                                                                                                          
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box"> 
+                                <input type="checkbox" id="check8_all" name="check8">
+                                <label for="check8_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)SGI 개인(신용)정보 수집·이용·제공 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check8_1" name="check8">
+                                            <label for="check8_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">(필수)개인(신용)정보 수집·이용·제공 동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>                                   
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="accordion-wrap no-border">
+                    <li class="accordion">
+                        <div class="fold-head pb15">
+                            <button type="button" class="btn-fold">열기/닫기</button>                                    
+                            <div class="custom-check no-box">  
+                                <input type="checkbox" id="check9_all" name="check9">
+                                <label for="check9_all">
+                                    <i></i>
+                                    <p class="fc-gray fs-df pr30">(필수)휴대폰 본인인증 동의</p>
+                                </label>
+                            </div>                                    
+                        </div>
+                        <div class="fold-body">
+                            <ul>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check9_1" name="check9">
+                                            <label for="check9_1">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">개인정보취급동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check9_2" name="check9">
+                                            <label for="check9_2">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">본인확인서비스이용약관동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check9_3" name="check9">
+                                            <label for="check9_3">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">고유식별정보처리동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check9_4" name="check9">
+                                            <label for="check9_4">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">통신사이용약관동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>
+                                <li class="pb15">
+                                    <div class="d-flex-between">                                                                                            
+                                        <div class="custom-check no-box fs-sm">     
+                                            <input type="checkbox" id="check9_5" name="check9">
+                                            <label for="check9_5">
+                                                <i></i>
+                                                <p class="fs-sm fc-gray pl10">개인정보제3자동의</p>
+                                            </label>
+                                        </div>                                                
+                                        <button type="button" class="btn btn-sm btn-icon-only btn-icon-arrow-right opacity-04">이동</button>
+                                    </div>                                            
+                                </li>                                                                                                                                                
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- 230417 추가 -->
+                <p class="fc-gray fs-df" style="padding-left: 2.7rem; margin-top: 1.2rem;">개인(신용) 동의 항목 꼼꼼히 확인하세요!</p>
+                        
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">모두 동의하기</button>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+
+</body>
+
+</html>

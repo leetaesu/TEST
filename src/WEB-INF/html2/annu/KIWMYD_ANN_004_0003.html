@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>연금 세액공제 시뮬레이션</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <section class="module-box">
+                <h3 class="fs-lg fw-r">2023년 연말정산(또는 종합소득신고) 시<br><span class="fc-pink fw-b">660,000원</span> 환급 받을 수 있어요</h3>
+                <div class="barchart-box flex-wrap mt20">
+                    <div class="chart-tooltip tooltip-flow flex-column">총 공제 적용금액<span class="fc-black">6,500,000원</span></div>
+                    <div class="barchart barchart-lg">
+                        <!-- 각 i의 width는 계산하여 조정 -->
+                        <i class="bg-ex-blue3" style="width: 40%;"></i>
+                        <i class="bg-ex-green3" style="width: 20%;"></i>
+                    </div>
+                    <p class="ml-auto text-right">세액공제 한도 금액<br>7,000,000원</p>
+                </div>
+                <ul class="chart-legend-box flex-column mt30">
+                    <li class="d-flex-between">
+                        <p class="chart-legend legend-blue">개인연금 공제 적용금액</p>
+                        <p class="number-unit" style="color: #2969ba">
+                            <span class="number">40,000,000</span>
+                            <span class="unit">원</span>
+                        </p>
+                    </li>
+                    <li class="d-flex-between">
+                        <p class="chart-legend legend-green2">퇴직연금 IRP 공제 적용금액</p>
+                        <p class="number-unit" style="color: #59c39b">
+                            <span class="number">10,000,000</span>
+                            <span class="unit">원</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="border-top mt30 py30">
+                    <h3 class="fs-lg fw-r"><span class="fw-b">퇴직연금 IRP</span>에 <span class="fw-b">2,000,000원</span> 추가 납부 시<br>
+                        <span class="fc-pink fw-b">924,000원</span> 환급 받을 수 있어요
+                    </h3>
+                    <!-- 개인연금 400만원 초과 && IRP 300만원 초과 -->
+                    <!-- <h3 class="fs-lg fw-r">올해 납부금액으로<br><span class="fw-b">최대 환급</span>을 받을 수 있어요</h3> -->
+
+                    <div class="btn-box mt40">
+                        <button type="button" class="btn btn-lg btn-border btn-block btn-icon-add">연금 연결하기</button>
+                    </div>
+                </div>
+            </section>
+            <section class="module-box module-border">
+                <h3 class="fs-lg fw-m">유의사항</h3>
+                <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                    <li>실제 환급액은 기존 납입 세금에 따라 달라집니다.</li>
+                    <li>연금 중복 가입은 가능합니다.</li>
+                    <li>총 연금 납입은 1,800만원까지, 세액공제는 최대 700만원까지 받을 수 있습니다.
+                        (2022.12.31까지 50세 이상 가입자에 대해서 2백만원 인상됩니다.)</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer">연금상품 보기</button>
+                <button type="button" class="btn btn-footer btn-primary">연금 전문가 채팅상담</button>
+                <!-- 채팅상담 버튼 클릭시 안내 슬라이딩 팝업 > KIWMYD_ANN_003_0001에 있는 팝업과 동일 -->
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // Bar chart - Stack with tooltip
+        $('.chart-tooltip.tooltip-flow').each(function() {
+                var totalWidth = 0,
+                    targetWidth = $(this).next('.barchart').children('i'),
+                    tooltipWidth = $(this).outerWidth();
+                for (var i = 0; i < targetWidth.length; i++) totalWidth += parseInt(targetWidth.eq(i).outerWidth());
+
+                totalWidth - tooltipWidth < 0 ? $(this).css('left', tooltipWidth) : $(this).css('left', totalWidth);
+            });
+    </script>
+</body>
+
+</html>

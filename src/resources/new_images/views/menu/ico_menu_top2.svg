@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="38" viewBox="0 0 119 38">
+    <defs>
+        <radialGradient id="31jsmcfcka" cx=".5" cy=".248" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#f9f9f9"/>
+        </radialGradient>
+        <filter id="20y8viceyb" x="0" y="0" width="119" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="-5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-color="#fff" flood-opacity=".949" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 13794">
+        <g data-type="innerShadowGroup" transform="translate(-113 -162)">
+            <rect data-name="사각형 3832" width="119" height="38" rx="19" transform="translate(113 162)" style="fill:url(#31jsmcfcka)"/>
+            <g style="filter:url(#20y8viceyb)">
+                <rect data-name="사각형 3832" width="119" height="38" rx="19" style="fill:#fff" transform="translate(113 162)"/>
+            </g>
+        </g>
+        <text transform="translate(40.001 24)" style="fill:#1e1e1e;font-size:14px;font-family:SpoqaHanSansNeo-Medium,Spoqa Han Sans Neo;font-weight:500;letter-spacing:-.02em"><tspan x="0" y="0">고객게시판</tspan></text>
+        <g data-name="그룹 16645">
+            <g data-name="패스 18093" style="fill:none">
+                <path d="M2 0h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" style="stroke:none" transform="translate(16 12)"/>
+                <path d="M2 1c-.551 0-1 .449-1 1v7c0 .551.449 1 1 1h11c.551 0 1-.449 1-1V2c0-.551-.449-1-1-1H2m0-1h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" style="fill:#3a3a3a;stroke:none" transform="translate(16 12)"/>
+            </g>
+            <path data-name="패스 18099" d="M2 0 0 4" transform="translate(19 22.5)" style="stroke-linecap:round;stroke:#3a3a3a;fill:none"/>
+            <path data-name="패스 18098" d="m0 0 2 4" transform="translate(26 22.5)" style="stroke-linecap:round;stroke:#3a3a3a;fill:none"/>
+            <path data-name="패스 18097" d="M0 0h3" transform="translate(20 16)" style="stroke:#e22d72;stroke-linecap:round;fill:none"/>
+            <path data-name="패스 18096" d="M0 0h7" transform="translate(20 19)" style="stroke-linecap:round;stroke:#3a3a3a;fill:none"/>
+        </g>
+    </g>
+</svg>

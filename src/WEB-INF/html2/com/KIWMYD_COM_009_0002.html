@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>투자성향 진단</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <p class="fs-xl fw-m">투자성향을 진단해주세요</p>
+                <p class="mt10">
+                    투자성향을 진단에 따라<br>
+                    고객님의 성향에 맞는 상품을 추천합니다.
+                </p>
+                <p class="bullet bullet-noti mt15">금융소비자 보호에 관한 법률 시행에 따른 투자자 보호를 위해 투자성향 진단이 필요합니다.</p>
+
+                <h3 class="mt30 fs-md">투자권유/정보제공</h3>
+                
+                <p class="mt15">투자권유(상담) 및 추천정보 제공을 희망합니다.</p>
+                <div class="grid-box col-2 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-agrmt" id="rdo_inv_01">
+                        <label for="rdo_inv_01"><i></i>투자권유 희망</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-agrmt" id="rdo_inv_02" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">
+                        <label for="rdo_inv_02"><i></i>원치 않음</label>
+                    </div>
+                </div>
+
+                <p class="mt30">투자성향 정보제공에 동의합니다.</p>
+                <div class="grid-box col-2 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-agrmt2" id="rdo_inv_03">
+                        <label for="rdo_inv_03"><i></i>정보제공</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-agrmt2" id="rdo_inv_04" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert')">
+                        <label for="rdo_inv_04"><i></i>정보 미제공</label>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">다음</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 원치않음/정보 미제공 선택 시 알럿 팝업 -->
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1></h1>
+        </div>
+        <div class="modal-body">
+            <p class="fc-gray">MY자산 서비스를 이용하시려면 투자권유/정보제공에 모두 동의 하셔야 합니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

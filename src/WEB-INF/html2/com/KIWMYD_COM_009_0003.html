@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>투자성향 진단</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <section class="module-box">
+
+                <p class="fs-xl fw-m">투자성향 진단을 위한 질문입니다.</p>
+                <p class="mt10">
+                    최대한 고객님의 상황에 부합하거나<br>
+                    가장 가까운 항목을 선택해 주세요
+                </p>
+
+                <h3 class="mt30 fs-md">PART1 투자 이해도</h3>
+
+                <h4 class="fs-md fw-m mt10">연령대</h4>
+                <div class="grid-box col-3 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_01">
+                        <label for="rdo_age_01"><i></i>19세 이하</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_02">
+                        <label for="rdo_age_02"><i></i>20~40세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_03">
+                        <label for="rdo_age_03"><i></i>41~50세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_04">
+                        <label for="rdo_age_04"><i></i>51~64세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_05">
+                        <label for="rdo_age_05"><i></i>65~79세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-age" id="rdo_age_06">
+                        <label for="rdo_age_06"><i></i>80세 이상</label>
+                    </div>
+                </div>
+
+                <h4 class="fs-md fw-m mt30">투자 가능 기간</h4>
+                <div class="grid-box col-2 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-periods" id="rdo_periods_01">
+                        <label for="rdo_periods_01"><i></i>1년 미만</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-periods" id="rdo_periods_02">
+                        <label for="rdo_periods_02"><i></i>1년 이상 ~ 2년 미만</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-periods" id="rdo_periods_03">
+                        <label for="rdo_periods_03"><i></i>2년 이상 ~ 3년 미만</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-periods" id="rdo_periods_04">
+                        <label for="rdo_periods_04"><i></i>3년 이상 ~ 5년 미만</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-periods" id="rdo_periods_05">
+                        <label for="rdo_periods_05"><i></i>5년 이상</label>
+                    </div>
+                </div>
+
+                <h4 class="fs-md fw-m mt30">투자 경험 (복수 선택)</h4>
+                <ul>
+                    <li class="mt10">
+                        <div class="custom-check btn-type w-100">
+                            <input type="checkbox" id="chk_exp_01">
+                            <label for="chk_exp_01"><i></i>은행 예금, 적금, 국채, 지방채, 보증채, MMF 등</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-check btn-type w-100">
+                            <input type="checkbox" id="chk_exp_02">
+                            <label for="chk_exp_02"><i></i>금융채, 신용도 높은 회사채, 채권형펀드, 원금보장형 ELS</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-check btn-type w-100">
+                            <input type="checkbox" id="chk_exp_03">
+                            <label for="chk_exp_03"><i></i>신용도 중간 회사채, 원금일부보장 ELS, 혼합형펀드</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-check btn-type w-100">
+                            <input type="checkbox" id="chk_exp_04">
+                            <label for="chk_exp_04"><i></i>신용도 낮은 회사채, 주식, 원금비보장형 ELS, 시장수익율 수준의 주식형펀드 등</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-check btn-type w-100">
+                            <input type="checkbox" id="chk_exp_05">
+                            <label for="chk_exp_05"><i></i>ELW, 선물옵션, 시장수익율 이상의 주식형펀드 파생형펀드, 주식신용거래 등</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 class="fs-md fw-m mt30">금융 지식 수준 / 이해도</h4>
+                <ul>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-know" id="rdo_know_01">
+                            <label for="rdo_know_01" class="px-padding"><i></i>금융투자상품에 투자 경험 없음</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-know" id="rdo_know_02">
+                            <label for="rdo_know_02" class="px-padding"><i></i>널리 알려진 금융투자상품(주식, 채권, 펀드) 등의 내용 및 위험을 일정 부분 이해하고 있음</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-know" id="rdo_know_03">
+                            <label for="rdo_know_03" class="px-padding"><i></i>널리알려진 금융투자상품( 주식 , 채권, 펀드 ) 등의 내용 및 위험을 깊이있게 이해하고 있음</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-know" id="rdo_know_04">
+                            <label for="rdo_know_04" class="px-padding"><i></i>파생상품을 포함한 대부분의 금융투자상품의 내용 및 위험을 이해하고 있음</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 class="fs-md fw-m mt30">기대 이익수준 및 손실 감내수준</h4>
+                <ul>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-risk" id="rdo_risk_01">
+                            <label for="rdo_risk_01" class="px-padding"><i></i>무슨 일이 있어도 투자 원금은 보전되어야 함</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-risk" id="rdo_risk_02">
+                            <label for="rdo_risk_02" class="px-padding"><i></i>원금 기준 ±5%</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-risk" id="rdo_risk_03">
+                            <label for="rdo_risk_03" class="px-padding"><i></i>원금 기준 ±10%</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-risk" id="rdo_risk_04">
+                            <label for="rdo_risk_04" class="px-padding"><i></i>원금 기준 ±20%</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-risk" id="rdo_risk_05">
+                            <label for="rdo_risk_05" class="px-padding"><i></i>원금 기준 ±20% 초과</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <h4 class="fs-md fw-m mt30">총 자산 대비 금융상품 유형별 기준</h4>
+                <!-- 22.08.23 -->
+                <div class="d-flex-between mt20">
+                    <div>
+                        보장형 상품<br>
+                        <p class="mt5 fc-gray">생명보험, 손해보험, 신협공제 등</p>
+                    </div>
+                    <div class="input-unit">
+                        <input type="text" class="custom-input w60" placeholder="">
+                        <span class="txt-unit">%</span>
+                    </div>
+                </div>
+                <div class="d-flex-between mt20">
+                    <div>
+                        투자성 상품<br>
+                        <p class="mt5 fc-gray">주식, 펀드, 파생상품, 신탁, 투자일임 등</p>
+                    </div>
+                    <div class="input-unit">
+                        <input type="text" class="custom-input w60" placeholder="">
+                        <span class="txt-unit">%</span>
+                    </div>
+                </div>
+                <div class="d-flex-between mt20">
+                    <div>
+                        대출성 상품<br>
+                        <p class="mt5 fc-gray">은행대출, 신용카드 등</p>
+                    </div>
+                    <div class="input-unit">
+                        <input type="text" class="custom-input w60" placeholder="">
+                        <span class="txt-unit">%</span>
+                    </div>
+                </div>
+                <div class="d-flex-between mt20">
+                    <div>
+                        기타상품<br>
+                        <p class="mt5 fc-gray">예적금 등</p>
+                    </div>
+                    <div class="input-unit">
+                        <input type="text" class="custom-input w60" placeholder="">
+                        <span class="txt-unit">%</span>
+                    </div>
+                </div>
+
+                <h4 class="fs-md fw-m mt30">금융상품 취득 및 처분 목적</h4>
+                <div class="grid-box col-2 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt" id="rdo_tgt_01">
+                        <label for="rdo_tgt_01"><i></i>채무 상환</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt" id="rdo_tgt_02">
+                        <label for="rdo_tgt_02"><i></i>학비</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt" id="rdo_tgt_03">
+                        <label for="rdo_tgt_03"><i></i>생활비</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt" id="rdo_tgt_04">
+                        <label for="rdo_tgt_04"><i></i>주택 마련</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt" id="rdo_tgt_05">
+                        <label for="rdo_tgt_05"><i></i>자산 증식</label>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="module-box module-border">
+                <h3 class="fs-md">
+                    PART2 위험선호도
+                    <a href="#;" class="tooltip" data-tooltip="aa"><span class="sr-only">툴팁</span></a>
+                </h3>
+                <!-- 툴팁 내용 -->
+                <div class="tooltip-box" data-tooltip-box="aa">
+                    <p class="title fs-md fc-gray-d">위험선호도란?</p>
+                    <p>
+                        안정형(초저위험 5등급)<br>
+                        예금 또는 적금 수준의 수익률을 기대하며, 투자원금에 손실이 발생하는 것을 원하지 않음
+                    </p>
+                    <p class="mt10">
+                        안정추구형(저위험 4등급)<br>
+                        투자 원금의 손실위험을 최소화하고, 이자소득이나 배당소득 수준의 안정적인 투자를 목표로 하는 성향
+                    </p>
+                    <p class="mt10">
+                        위험중립형(중위험 3등급)<br>
+                        투자에는 그에 상응하는 위험이 있음을 충분히 인식하고 있으며, 예·적금보다 높은 수익을 기대할 수 있다면 일정 수준의 손실위험을 감수할 수 있는 성향
+                    </p>
+                    <p class="mt10">
+                        적극투자형(고위험 2등급)<br>
+                        투자원금의 보전보다는 위험을 감내하더라도 높은 수준의 투자수익 실현을 추구하는 성향
+                    </p>
+                    <p class="mt10">
+                        공격투자형(초고위험 1등급)<br>
+                        시장평균 수익률을 훨씬 넘어서는 높은 수준의 투자수익을 추구하며, 이를 위해 자산가치의 변동에 따른 손실위험을 적극 수용하는 성향
+                    </p>
+                    <button type="button" class="tooltip-close">닫기</button>
+                </div>
+                
+                <h4 class="fs-md fw-m mt10">투자목표성향</h4>
+                <div class="grid-box col-2 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt2" id="rdo_tgt2_01">
+                        <label for="rdo_tgt2_01"><i></i>안정형</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt2" id="rdo_tgt2_02">
+                        <label for="rdo_tgt2_02"><i></i>안정추구형</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt2" id="rdo_tgt2_03">
+                        <label for="rdo_tgt2_03"><i></i>위험중립형</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt2" id="rdo_tgt2_04">
+                        <label for="rdo_tgt2_04"><i></i>적극투자형</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-inv-tgt2" id="rdo_tgt2_05">
+                        <label for="rdo_tgt2_05"><i></i>공격투자형</label>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="module-box module-border">
+
+                <h3 class="fs-md">기타</h3>
+                <h4 class="fs-md fw-m mt10">파생상품 투자기간</h4>
+                <ul>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-etc" id="rdo_etc_01">
+                            <label for="rdo_etc_01" class="px-padding"><i></i>경험이 없거나, 1년 미만</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-etc" id="rdo_etc_02">
+                            <label for="rdo_etc_02" class="px-padding"><i></i>1년 이상 3년 미만</label>
+                        </div>
+                    </li>
+                    <li class="mt10">
+                        <div class="custom-radio btn-type w-100 text-left">
+                            <input type="radio" name="radio-etc" id="rdo_etc_03">
+                            <label for="rdo_etc_03" class="px-padding"><i></i>3년 이상</label>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section class="module-box module-border">
+
+                <h3 class="fs-md fw-m">본인은 귀사에 제공한 투자정보와 관련하여 다음과 같은 사항을 <span class="fc-pink">확인합니다.</span></h3>
+                <ul class="bullet-list bullet-dot border-top mt10 pt15">
+                    <li>귀사에 제공한 투자정보는 본인의 투자목적, 재산상황 및 투자경험 등의 정보를 정확히 알려드린 것입니다.</li>
+                    <li>향후 12개월 동안에는 본인의 투자자정보가 변경되지 않는 것으로 간주한다는 내용을 확인하였습니다.</li>
+                    <li>본인의 투자자정보에 변경사항이 발생한 경우에는 이를 귀사에 통지하여야 귀사가 본인에게 적합한 투자권유를 할 수 있다는 내용을 확인하였습니다.</li>
+                </ul>
+
+            </section>
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">다음</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

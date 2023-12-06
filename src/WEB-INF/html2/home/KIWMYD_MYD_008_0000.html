@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="description" content="키움증권의 대표 홈페이지입니다." />
+        <meta name="keywords" content="키움증권" />
+        <meta name="author" content="키움증권" />
+
+        <title>키움증권 마이데이터</title>
+
+        <!-- Style -->
+        <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css" />
+        <link rel="stylesheet" href="../../../resources/css/new_ui_common.css" />
+    </head>
+
+    <body>
+        <!-- 서비스 가입 안내(초기 미 가입자 진입시) -->
+        <div class="page-wrapper fixed">
+            <main>
+                <section class="module-box p0 h-100">
+                    <div class="pt40 text-center d-flex-between flex-column h-100">
+                        <div>
+                            <p class="fs-2xl fw-b">다른 금융사 계좌도</p>
+                            <p class="fs-2xl fw-b">키움증권에서 확인하세요.</p>
+                        </div>
+                        <div class="w-100">
+                            <img src="../../../resources/new_images/views/home/img_myd_008_0000_01.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-footer btn-primary">다음</button>
+                </div>
+            </footer>
+        </div>
+
+        <!-- 가입제한 안내 (연령제한) -->
+        <!-- <div class="page-wrapper main fixed bg-white">
+		<main>
+			<section class="module-box px-padding">
+				<h3 class="mt40 fs-xl">MY자산 서비스는<br>만 19세 이상부터 이용할 수 있어요</h3>
+				<p class="mt10">
+                    고객님은 만 19세 미만으로 <br> 
+                    서비스 이용 대상 연령이 아닙니다.
+                </p>
+				<div class="d-flex-center mt80">
+					<img src="../../../resources/new_images/views/auth/img_service01.png" alt="" style="width: 29.5rem;">
+				</div>
+			</section>
+		</main>
+	</div> -->
+
+        <!-- 가입제한 안내 (개인회원) -->
+        <!-- <div class="page-wrapper main fixed bg-white">
+		<main>
+			<section class="module-box px-padding">
+				<h3 class="mt40 fs-xl">MY자산 서비스는<br>개인회원만 이용할 수 있어요</h3>
+				<p class="mt10">
+                    고객님은 법인회원으로<br> 
+                    서비스 이용 대상이 아닙니다.
+                </p>
+				<div class="d-flex-center mt80">
+					<img src="../../../resources/new_images/views/auth/img_service01.png" alt="" style="width: 29.5rem;">
+				</div>
+			</section>
+		</main>
+	</div> -->
+
+        <!-- Script -->
+        <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+        <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+        <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+        <script src="../../../resources/js/views/common/ui_common.js"></script>
+        <script>
+            KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', true);
+        </script>
+    </body>
+</html>

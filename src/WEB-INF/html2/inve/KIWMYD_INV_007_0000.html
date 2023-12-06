@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>키움 자동일지</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group bg-white2">
+
+            <section class="module-box w-full p0">
+
+                <div class="swiper-container custom-swiper mt60" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">차트로 보는 투자 타이밍</h3>
+                            <p class="fs-md fc-gray-d mt10">매매 내역 확인하고,<br>메모할 수 있어요</p>
+                            <img src="../../../resources/new_images/views/inve/img_autolog_info01.png" class="mt100" alt="">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">매매손익 관리</h3>
+                            <p class="fs-md fc-gray-d mt10">거래내역이 자동기록되어<br>매매손익을 쉽게 확인할 수 있어요</p>
+                            <img src="../../../resources/new_images/views/inve/img_autolog_info02.png" class="mt100" alt="">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <h3 class="fs-2xl fw-m">나만의 일지 메모</h3>
+                            <p class="fs-md fc-gray-d mt10">매매 시점의 정보, 판단, 근거를 메모하고<br>이기는 투자 습관 길러보세요</p>
+                            <img src="../../../resources/new_images/views/inve/img_autolog_info03.png" class="mt100" alt="">
+                        </div>                        
+                    </div>
+
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 12rem"></div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">키움 자동일지 시작하기</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <h1>질병명·수술명 검색</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <div class="input-unit w-100" style="border-bottom-color: #212121;">
+                    <input type="text" class="custom-input input-block clear text-left" placeholder="질병명·수술명을 검색해보세요">
+                    <button type="button" class="btn btn-icon-only btn-icon-search">검색</button>
+                </div>
+            </div>
+
+            <div class="module-box module-border pt0">
+
+                <!-- 1. 진단명 리스트: 수술을 받지 않고 진단만 받은 경우 -->
+                <p class="fs-lg mt30"><span class="fw-b mr5">급성심근경색증</span>포함된 진단명</p>
+                <p class="fs-sm fc-gray">(수술을 하지 않고 진단만 받은 경우)</p>
+                <p class="fs-md mt20">총<span class="fw-b ml5">3</span>개</p>
+                <ul class="mt10">
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-md fc-black2">후속심근경색증</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-md fc-black2">급성심근경색증후특정현존합병증</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-md fc-black2">급성심근경색증</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- 2. 수술명 리스트: 수술을 받은 경우 -->
+                <p class="fs-lg mt30"><span class="fw-b mr5">급성심근경색증</span>포함된 수술명</p>
+                <p class="fs-sm fc-gray">(수술을 받은 경우)</p>
+                <p class="fs-md mt20">총<span class="fw-b ml5">6</span>개</p>
+                <ul class="mt10">
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-sm fc-gray">급성심근경색 진단 시</p>
+                            <p class="fs-md fc-black2">관상동맥내막절제수술</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-sm fc-gray">급성심근경색 진단 시</p>
+                            <p class="fs-md fc-black2">관상동맥우회로조성술</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-sm fc-gray">급성심근경색 진단 시</p>
+                            <p class="fs-md fc-black2">관상동맥협착증수술</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-sm fc-gray">급성심근경색 진단 시</p>
+                            <p class="fs-md fc-black2">관상동맥우회로조성술</p>
+                        </a>
+                    </li>
+                    <li class="py20 border-bottom">
+                        <a href="#;" class="sub-link sub-icon-link d-block depth">
+                            <p class="fs-sm fc-gray">급성심근경색 진단 시</p>
+                            <p class="fs-md fc-black2">관상동맥우회로조성술</p>
+                        </a>
+                    </li>                                        
+                </ul>
+                <!-- 검색결과 6개 이상시 더 보기 버튼 노출 -->
+                <div class="btn-box mt20">
+                    <button type="button" class="btn btn-lg btn-block btn-border fc-black2 fw-b">더 보기</button>
+                </div>
+
+                <!-- 3. 내역이 없는 경우 -->
+                <div class="no-data mt30">
+                    <p class="fs-lg fw-m">검색 결과가 없습니다.</p>
+                    <p class="fc-gray">검색어가 올바른지 다시 확인 후,<br>정확하게 입력해주세요.</p>
+                </div>
+                
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>부동산 추가</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+
+            <!-- 주소지 정보 -->
+            <div class="module-box module-header bg-purple fc-white" 
+                style="background:#7551aa url(../../../resources/new_images/icons/ico_location.svg) no-repeat calc(100% + 4.5rem) 1rem;">
+                <p class="fs-xl fw-l">서울시 영등포구 여의대로 123<br>캐슬센트럴파크 101동 2305호</p>                    
+                <div class="d-flex mt20 fs-sm">
+                    <div class="w-50">전용면적<p class="fs-md">59.96㎡</p></div>
+                    <div class="w-50 border-left-alpha pl10">최근 실거래가<p class="fs-md">999,999만원</p></div>
+                </div>
+            </div>
+            
+            <div class="module-box">
+                <h3 class="fs-lg">나의 부동산 정보를<br><span class="fw-r">입력해주세요.</span></h3>
+
+                <h4 class="fc-gray fw-m mt30">주거 형태</h4>
+                <div class="grid-box col-3 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-house" id="rdo_htype01">
+                        <label for="rdo_htype01"><i></i>자가</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-house" id="rdo_htype02">
+                        <label for="rdo_htype02"><i></i>전세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-house" id="rdo_htype03">
+                        <label for="rdo_htype03"><i></i>월세</label>
+                    </div>
+                </div>
+
+                <!-- 선택: [자가] 매입가  -->
+                <div class="form-box flex-column mt30">
+                    <label class="form-label fc-gray">매입가</label>
+                    <div class="input-unit input-block mt10 error">
+                        <input type="text" class="custom-input" placeholder="000,000" value="">
+                        <span class="txt-unit">만원</span>
+                    </div>
+                    <!-- 에러메시지 -->
+                    <p class="fs-sm mt10 fc-red">매입가는 필수 입력 사항입니다.</p>
+                </div>
+
+                <!-- 선택: [전세, 월세] 보증금 -->
+                <div class="form-box flex-column mt30">                    
+                    <label class="form-label fc-gray">보증금</label>
+                    <div class="input-unit input-block mt10 error">
+                        <input type="text" class="custom-input" placeholder="000,000" value="">
+                        <span class="txt-unit">만원</span>
+                    </div>
+                    <!-- 에러메시지 -->
+                    <p class="fs-sm mt10 fc-red">보증금은 필수 입력 사항입니다.</p>
+                </div>
+
+                <!-- 선택: 월세 / 월세 -->
+                <div class="form-box flex-column mt30">                    
+                    <label class="form-label fc-gray">월세</label>
+                    <div class="input-unit input-block mt10 error">
+                        <input type="text" class="custom-input" placeholder="000,000" value="">
+                        <span class="txt-unit">만원</span>
+                    </div>
+                    <!-- 에러메시지 -->
+                    <p class="fs-sm mt10 fc-red">월세는 필수 입력 사항입니다.</p>
+                </div> 
+
+                <!-- 선택: [전세, 월세] 계약 일자 -->
+                <div class="form-box flex-column mt30">                    
+                    <label class="form-label fc-gray">계약 일자(선택)</label>
+                    <div class="form-box">
+                        <input type="text" class="custom-input calendar day w-50" placeholder="기간선택" readonly="">
+                        <input type="text" class="custom-input calendar day w-50" placeholder="기간선택" readonly="">
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert1')">부동산 등록</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="modal-popup popup-alert" id="modal_alert1">
+        <div class="modal-header sr-only">
+            <h1>부동산 등록 결과</h1>
+        </div>
+        <div class="modal-body text-center">
+            <p class="fc-gray mt15"><span class="d-block mb10">부동산을 추가 등록하였습니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert1')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="modal-popup popup-alert" id="modal_alert2">
+        <div class="modal-header sr-only">
+            <h1>부동산 등록 결과</h1>
+        </div>
+        <div class="modal-body text-center">
+            <p class="fs-md fw-m">이미 등록된 부동산입니다.</p>
+            <p class="fc-gray mt5">부동산 수정 또는 삭제 후 재등록바랍니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert2')">확인</button>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+
+</body>
+
+</html>

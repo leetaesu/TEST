@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <g data-name="12" transform="translate(-26 -418)">
+        <rect data-name="사각형 9053" width="19" height="9" rx="3" transform="translate(27 421)" style="fill:#b7d9fc"/>
+        <g transform="translate(26 418)">
+            <circle data-name="타원 2248" cx=".82" cy=".82" r=".82" transform="translate(12.961 13.781)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2249" cx=".82" cy=".82" r=".82" transform="translate(12.961 7.219)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2250" cx=".82" cy=".82" r=".82" transform="translate(12.961 10.5)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2251" cx=".82" cy=".82" r=".82" transform="translate(16.242 7.219)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2252" cx=".82" cy=".82" r=".82" transform="translate(16.242 10.5)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2253" cx=".82" cy=".82" r=".82" transform="translate(9.68 10.5)" style="fill:#3a3a3a"/>
+            <circle data-name="타원 2254" cx=".82" cy=".82" r=".82" transform="translate(9.68 13.781)" style="fill:#3a3a3a"/>
+            <path data-name="패스 17995" d="M5.742 8.859h1.641a.82.82 0 0 0 0-1.641h-.82V6.4a.82.82 0 0 0-1.641 0v.96a2.461 2.461 0 0 0 .82 4.781.82.82 0 0 1 0 1.641H4.1a.82.82 0 0 0 0 1.641h.82v.82a.82.82 0 0 0 1.641 0v-.961a2.461 2.461 0 0 0-.82-4.781.82.82 0 0 1 0-1.641z" style="fill:#3a3a3a"/>
+            <path data-name="패스 17996" d="M17.719 2.379v-.9a.82.82 0 0 0-1.641 0V2.3H11.32v-.82a.82.82 0 0 0-1.641 0v.82H4.922v-.82a.82.82 0 0 0-1.641 0v.9A4.109 4.109 0 0 0 0 6.4v9.844a4.106 4.106 0 0 0 4.1 4.1h12.8a4.106 4.106 0 0 0 4.1-4.1V6.4a4.109 4.109 0 0 0-3.281-4.021zm1.641 13.863A2.464 2.464 0 0 1 16.9 18.7H4.1a2.464 2.464 0 0 1-2.461-2.461V6.4A2.464 2.464 0 0 1 4.1 3.938h12.8A2.464 2.464 0 0 1 19.359 6.4z" style="fill:#3a3a3a"/>
+        </g>
+    </g>
+</svg>

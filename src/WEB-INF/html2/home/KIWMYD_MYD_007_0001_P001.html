@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>분석리포트 이용현황</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>
+        <div class="modal-body">
+            <div class="module-box bg-ex-blue-l">
+                <div class="icon-title">
+                    <img class="icon60" src="../../../resources/new_images/views/home/img_report_status.png" alt="">
+                    <p class="fs-md fw-m">
+                        <span class="fs-sm fw-r">금융 자산을 모두 연결하면</span><br>
+                        총 <span>29</span>개 분석 리포트를<br>이용할 수 있어요</p>
+                </div>
+            </div>
+            <div class="module-box pt0">                
+                <ul class="accordion-wrap type-block mt15">
+                    <!-- 투자 -->
+                    <li class="accordion is-open">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <p class="fs-lg fw-b">투자</p>
+                        </div>
+                        <div class="fold-body bg-white2 px-padding" style="display: none;">
+                            <!-- 국내주식 -->
+                            <ul class="py10">
+                                <li class="py10">
+                                    <h3 class="fw-m">국내주식</h3>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled"><!-- 08.23 disabled 추가 | 이하 동일적용 -->
+                                        <h4 class="fw-r fc-gray">국내주식 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span><!-- 08.05 c-lavendar 추가 | 이하 동일적용 -->
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">업종별 보유현황</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">보유종목분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">관심종목리포트</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">그룹별 관심종목</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- 해외주식 -->
+                            <ul class="py10">
+                                <li class="py10">
+                                    <h3 class="fw-m">해외주식</h3>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">해외주식 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">업종별 보유현황</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- 펀드 -->
+                            <ul class="py10">
+                                <li class="py10">
+                                    <h3 class="fw-m">펀드</h3>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">펀드 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">펀드 진단</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">투자고수 관심펀드</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 은행 -->
+                    <li class="accordion is-open mt15">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <p class="fs-lg fw-b">은행</p>
+                        </div>
+                        <div class="fold-body bg-white2 px-padding" style="display: none;">
+                            <ul class="py10">
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">은행자산 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">여유자금 분석</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">예&middot;적금 분석</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between">
+                                        <h4 class="fw-r fc-gray">신탁&middot;ISA 분석</h4>
+                                        <span class="custom-label label-solid c-yellow fs-xs">미사용</span>
+                                    </a>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 카드 -->
+                    <li class="accordion is-open mt15">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <p class="fs-lg fw-b">카드</p>
+                        </div>
+                        <div class="fold-body bg-white2 px-padding" style="display: none;">
+                            <ul class="py10">
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">카드이용분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">카드결제금액분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">카드할부내역</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">카드포인트</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 대출 -->
+                    <li class="accordion is-open mt15">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <p class="fs-lg fw-b">대출</p>
+                        </div>
+                        <div class="fold-body bg-white2 px-padding" style="display: none;">
+                            <ul class="py10">
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">대출분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">대출금리변동</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">금리인하진단</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">신용대출분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- 연금 -->
+                    <li class="accordion is-open mt15">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <p class="fs-lg fw-b">연금</p>
+                        </div>
+                        <div class="fold-body bg-white2 px-padding" style="display: none;">
+                            <ul class="py10">
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">연금자산 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">연금납입액 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">연금세액공제 분석</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">연금펀드현황</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                                <li class="py10">
+                                    <a href="#;" class="sub-link d-flex-between disabled">
+                                        <h4 class="fw-r fc-gray">연금펀드진단</h4>
+                                        <span class="custom-label c-lavendar fs-xs">사용중</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="btn-box mt50">
+                    <button type="button" class="btn btn-lg btn-block btn-border btn-icon-add">자산추가</button>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

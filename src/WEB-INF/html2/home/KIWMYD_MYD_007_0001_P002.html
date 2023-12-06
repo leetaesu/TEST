@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">        
+        <header>
+            <h1>보유종목분석</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+        <main>
+            <div class="module-group">
+
+                <div class="module-box">
+
+                    <h3 class="fs-lg fw-m">보유중이신 <span class="fc-pink">25개</span> 종목을<br>분석했어요</h3>
+                    <div class="form-box flex-column mt30">
+                        <div class="custom-select2 select-block" data-title="보유종목 선택">
+                            <select>
+                                <option selected>보유종목명</option>
+                                <option>보유종목명</option>
+                                <option>보유종목명</option>
+                                <option>보유종목명</option>
+                                <option>보유종목명</option>
+                            </select>   
+                        </div>
+                    </div>
+
+                    <div class="mt20">
+                        <span class="custom-label label-tag">코스피</span>
+                        <span class="custom-label label-tag">화학</span>
+                        <span class="custom-label label-tag">정유</span>
+                        <span class="custom-label label-tag">2차전지</span>
+                    </div>
+
+                </div>
+
+                <div class="module-box pt0">
+
+                    <div class="d-flex-between">
+                        <h3 class="fw-m">종목전망-연간</h3>
+
+                        <!-- 색상 범례 -->
+                        <ul class="stock-weather-legend">
+                            <li>
+                                <img src="../../../resources/new_images/views/home/icon_weather_cloudy.svg" class="w18">
+                            </li>
+                            <li>
+                                <span class="weather-gray"></span>
+                            </li>
+                            <li>
+                                <span class="weather-sky-blue"></span>
+                            </li>
+                            <li>
+                                <span class="weather-yellow"></span>
+                            </li>
+                            <li>
+                                <span class="weather-orange"></span>
+                            </li>
+                            <li>
+                                <span class="weather-red"></span>
+                            </li>                                                
+                            <li>
+                                <img src="../../../resources/new_images/views/home/icon_weather_sunny.svg" class="w18">
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!--  각 card-box 배경 색상은 위의 색상 범례의 색상 css 사용 -->
+                    <ul class="tab-head stock-weather-box mt10 p0">
+                        <li id="tab_weather01" class="tab-btn p0" aria-controls="tab_panel_weather01">
+
+                            <div class="card-box card-weather weather-yellow"><!-- 범례 색상 적용: [예] weather-yellow -->
+                                <a href="#;" class="sub-link d-block">
+                                    <div class="d-flex-start">                                
+                                        <h4 class="fs-df fc-black fw-m mr5">안정성</h4>
+                                        <img src="../../../resources/new_images/views/home/icon_weather_sunny.svg" class="w18"><!-- 범례 아이콘 적용 -->
+                                    </div>
+                                </a>
+                                <div class="d-flex-between">
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group1"></div><!-- 차트: 유동비율 -->
+                                    </div>
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group5"></div><!-- 차트: 이자보상배율 -->
+                                    </div>
+                                </div>
+                                <!-- 범례 22.07.21 추가 -->
+                                <div class="position-absolute" style="top:1.2rem; right:0;">
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#dcdfe4;"></span>21년
+                                    </p> 
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#6666cc;"></span>22년
+                                    </p>
+                                </div>                                
+                            </div>
+
+                        </li>
+                        <li id="tab_weather02" class="tab-btn p0" aria-controls="tab_panel_weather02">
+
+                            <div class="card-box card-weather weather-orange"><!-- 범례 색상 적용: [예] weather-orange -->
+                                <a href="#;" class="sub-link d-block">
+                                    <div class="d-flex-start">
+                                        <h4 class="fs-df fc-black fw-m mr5">성장성</h4>
+                                        <img src="../../../resources/new_images/views/home/icon_weather_sunny.svg" class="w18"><!-- 범례 아이콘 적용 -->
+                                    </div>
+                                </a>
+                                <div class="d-flex-between">
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group2"></div><!-- 차트: 영업이익 -->
+                                    </div>
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group6"></div><!-- 차트: 당기순이익 -->
+                                    </div>
+                                </div>
+                                <!-- 범례 22.07.21 추가 -->
+                                <div class="position-absolute" style="top:1.2rem; right:0;">
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#dcdfe4;"></span>21년
+                                    </p> 
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#6666cc;"></span>22년
+                                    </p>
+                                </div>                            
+                            </div>
+
+                        </li>
+                        <li id="tab_weather03" class="tab-btn p0" aria-controls="tab_panel_weather03">
+
+                            <div class="card-box card-weather weather-sky-blue"><!-- 범례 색상 적용: [예] weather-sky-blue -->
+                                <a href="#;" class="sub-link d-block">
+                                    <div class="d-flex-start">
+                                        <h4 class="fs-df fc-black fw-m mr5">수익성</h4>
+                                        <img src="../../../resources/new_images/views/home/icon_weather_cloudy.svg" class="w18"><!-- 범례 아이콘 적용 -->
+                                    </div>
+                                </a>
+                                <div class="d-flex-between">
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group3"></div><!-- 차트: 영업이익률 -->
+                                    </div>
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group7"></div><!-- 차트: 지배주주ROE -->
+                                    </div>
+                                </div>
+                                <!-- 범례 22.07.21 추가 -->
+                                <div class="position-absolute" style="top:1.2rem; right:0;">
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#dcdfe4;"></span>21년
+                                    </p> 
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#6666cc;"></span>22년
+                                    </p>
+                                </div>  
+                            </div>
+
+                        </li>
+                        <li id="tab_weather04" class="tab-btn p0" aria-controls="tab_panel_weather04">
+
+                            <div class="card-box card-weather weather-gray"><!-- 범례 색상 적용: [예] weather-gray -->
+                                <a href="#;" class="sub-link d-block">
+                                    <div class="d-flex-start">
+                                        <h4 class="fs-df fc-black fw-m mr5">활동성</h4>
+                                        <img src="../../../resources/new_images/views/home/icon_weather_cloudy.svg" class="w18"><!-- 범례 아이콘 적용 -->
+                                    </div>
+                                </a>
+                                <div class="d-flex-between">
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group4"></div><!-- 차트: 총자산회전율 -->
+                                    </div>
+                                    <div class="chart-wrapper w-100">
+                                        <div id="chart-column-group8"></div><!-- 차트: 타인자본회전율 -->
+                                    </div>
+                                </div>
+                                <!-- 범례 22.07.21 추가 -->
+                                <div class="position-absolute" style="top:1.2rem; right:0;">
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#dcdfe4;"></span>21년
+                                    </p> 
+                                    <p class="fs-xs fc-black mr10">
+                                        <span class="legend-dot" style="background-color:#6666cc;"></span>22년
+                                    </p>
+                                </div> 
+                            </div>
+
+                        </li>
+                    </ul>
+                        
+                    <!-- tab panel for 안정성  -->
+                    <div id="tab_panel_weather01" class="tab-panel px0 pt30">
+                        
+                        <!-- 스크롤 테이블 -->
+                        <div class="table-overflow-x">
+
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 90px; height: 56px;">항목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-left">유동비율</td></tr>
+                                    <tr><td class="text-left">이자보상배율</td></tr>
+                                    <tr><td class="text-left">부채비율</td></tr>
+                                    <tr><td class="text-left">자기자본비율</td></tr>
+                                    <tr><td class="text-left">순차입금비율</td></tr>
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <!-- min-width를 inline css로 적용 -->
+                                <table class="custom-table" style="width: 240px;">
+                                    <caption>등록 자산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px; height: 56px;">2010.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2011.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2012.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2013.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2014.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2015.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2016.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2017.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2018.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2019.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2020.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2021.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2022.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">전년동기<br>IFRS(연결)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>131.9</td>
+                                            <td>100.7</td>
+                                            <td>131.9</td>
+                                            <td>131.9</td>
+                                            <td>100.7</td>
+                                            <td>131.9</td>
+                                            <td>131.9</td>
+                                            <td>100.7</td>
+                                            <td>131.9</td>
+                                            <td>131.9</td>
+                                            <td>100.7</td>
+                                            <td>131.9</td>
+                                            <td>131.9</td>
+                                            <td>131.9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>N/A</td>
+                                            <td>11.5</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>11.5</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>11.5</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>11.5</td>
+                                            <td>N/A</td>                                                                                                                                    
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>163.6</td>
+                                            <td>171.8</td>
+                                            <td>163.6</td>
+                                            <td>163.6</td>
+                                            <td>171.8</td>
+                                            <td>163.6</td>
+                                            <td>163.6</td>
+                                            <td>171.8</td>
+                                            <td>163.6</td>
+                                            <td>163.6</td>
+                                            <td>171.8</td>
+                                            <td>163.6</td>                                                                                                                                    
+                                            <td>163.6</td>
+                                            <td>163.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>37.9</td>
+                                            <td>36.8</td>
+                                            <td>37.9</td>
+                                            <td>37.9</td>
+                                            <td>36.8</td>
+                                            <td>37.9</td>
+                                            <td>37.9</td>
+                                            <td>36.8</td>
+                                            <td>37.9</td>
+                                            <td>37.9</td>
+                                            <td>36.8</td>
+                                            <td>37.9</td>                                                                                                                                    
+                                            <td>37.9</td>
+                                            <td>37.9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>53.4</td>
+                                            <td>64.8</td>
+                                            <td>53.4</td>
+                                            <td>53.4</td>
+                                            <td>64.8</td>
+                                            <td>53.4</td>
+                                            <td>53.4</td>
+                                            <td>64.8</td>
+                                            <td>53.4</td>
+                                            <td>53.4</td>
+                                            <td>64.8</td>
+                                            <td>53.4</td>                                                                                                                                    
+                                            <td>53.4</td>
+                                            <td>53.4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- tab panel for 성장성  -->
+                    <div id="tab_panel_weather02" class="tab-panel px0 pt30">
+
+                        <!-- 스크롤 테이블 -->
+                        <div class="table-overflow-x">
+
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 90px; height: 56px;">항목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-left">영업이익</td></tr>
+                                    <tr><td class="text-left">당기순이익</td></tr>
+                                    <tr><td class="text-left">매출액</td></tr>
+                                    <tr><td class="text-left">매출총이익</td></tr>
+                                    <tr><td class="text-left">EPS(주당순이익)</td></tr>
+                                    <tr><td class="text-left">BPS(주당순자산)</td></tr>
+                                    <tr><td class="text-left">매출액증가율</td></tr>
+                                    <tr><td class="text-left">영업이익증가율</td></tr>
+                                    <tr><td class="text-left">EBITDA증가율</td></tr>
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <!-- min-width를 inline css로 적용 -->
+                                <table class="custom-table" style="width: 240px;">
+                                    <caption>등록 자산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px; height: 56px;">2020.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2021.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">전년동기<br>IFRS(연결)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fc-pink">-1,752</td>
+                                            <td>100.7</td>
+                                            <td>131.9</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fc-pink">-4,518</td>
+                                            <td>11.5</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14,611</td>
+                                            <td>171.8</td>
+                                            <td>163.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2,240</td>
+                                            <td>36.8</td>
+                                            <td>37.9</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fc-pink">- 1,277.6</td>
+                                            <td>64.8</td>
+                                            <td>53.4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>34,405.8</td>
+                                            <td>39830.6</td>
+                                            <td>34,405.8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.8</td>
+                                            <td>18.1</td>
+                                            <td>2.8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29.6</td>
+                                            <td>43.5</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fc-pink">-12.3</td>
+                                            <td>29.5</td>
+                                            <td class="fc-pink">-12.3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- tab panel for 수익성  -->
+                    <div id="tab_panel_weather03" class="tab-panel px0 pt30">
+
+                        <!-- 스크롤 테이블 -->
+                        <div class="table-overflow-x">
+
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 90px; height: 56px;">항목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-left">영업이익률</td></tr>
+                                    <tr><td class="text-left">지배주주ROE</td></tr>
+                                    <tr><td class="text-left">매출총이익율</td></tr>
+                                    <tr><td class="text-left">세전계속사업이익율</td></tr>
+                                    <tr><td class="text-left">EBITDA마진율</td></tr>
+                                    <tr><td class="text-left">ROA</td></tr>
+                                    <tr><td class="text-left">ROIC</td></tr>
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <!-- min-width를 inline css로 적용 -->
+                                <table class="custom-table" style="width: 240px;">
+                                    <caption>등록 자산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px; height: 56px;">2020.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2021.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">전년동기<br>IFRS(연결)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fc-pink">-32.5</td>
+                                            <td>4.3</td>
+                                            <td class="fc-pink">-32.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>10.7</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15.3</td>
+                                            <td>21.8</td>
+                                            <td>15.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fc-pink">-41.4</td>
+                                            <td>4.4</td>
+                                            <td class="fc-pink">-41.4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fc-pink">- 24.6</td>
+                                            <td>12.4</td>
+                                            <td class="fc-pink">- 24.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>4.3</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>5.6</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- tab panel for 활동성  -->
+                    <div id="tab_panel_weather04" class="tab-panel px0 pt30">
+
+                        <!-- 스크롤 테이블 -->
+                        <div class="table-overflow-x">
+
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 90px; height: 56px;">항목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td class="text-left">총자산회전율</td></tr>
+                                    <tr><td class="text-left">타인자본회전율</td></tr>
+                                    <tr><td class="text-left">자기자본회전율</td></tr>
+                                    <tr><td class="text-left">순운전자본회전율</td></tr>
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <!-- min-width를 inline css로 적용 -->
+                                <table class="custom-table" style="min-width: 240px;">
+                                    <caption>등록 자산</caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 80px; height: 56px;">2020.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">2021.12<br>IFRS(연결)</th>
+                                            <th style="width: 80px; height: 56px;">전년동기<br>IFRS(연결)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0.7</td>
+                                            <td>4.3</td>
+                                            <td>0.7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.5</td>
+                                            <td>10.7</td>
+                                            <td>2.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0.9</td>
+                                            <td>4.3</td>
+                                            <td>0.9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29.5</td>
+                                            <td>5.6</td>
+                                            <td>29.5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    <script>
+
+        var tableScrolling = (function() {
+            
+            // 종목전망 각 탭 터치 시 data table이 맨 오른쪽(최신 데이터)으로 이동
+            var tabHead = $('.tab-btn'),
+                id;
+
+            if(!tabHead.length) { return false; }
+
+            var setScrollToRight = function() { // 초기상태 
+                
+                var initTarget = $('.tab-panel').first().find('.table-overflow-x > div'),
+                    initScrollWidth = initTarget.find('.custom-table').width();
+
+                initTarget.animate({scrollLeft: initScrollWidth}, 800);
+            }
+            setScrollToRight();
+
+            tabHead.each(function() {
+                var _this = $(this);
+
+                _this.on('click', function(e) {
+                    e.preventDefault();
+
+                    id = _this.attr('aria-controls');
+                    targetToScroll = $('#'+id).find('.table-overflow-x > div'); // 스크롤될 요소
+                    scrollWidth = targetToScroll.find('.custom-table').width(); // 스크롤 너비
+                    targetToScroll.animate({scrollLeft: scrollWidth}, 800);     // 맨 우측 이동
+                });
+            });
+        })();
+        
+        // Highcharts Default options
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        var nullFormat = function() {
+            
+            var column = this,
+                seriesL = column.series.length,
+                yaxis = column.yAxis[0];
+
+            if(column.textAdded) { 
+                column.textAdded.destroy();
+            }
+            column.textAdded = column.renderer.g('').add();
+
+            column.series.forEach((s_data, i) => {
+                column.series[i].data.forEach(point => {
+
+                    var x, y, textDisplayed, bBox;
+
+                    /*  highcharts에서 number 타입이 아닌 경우(null 제외) undefined로 처리됨.
+                        undefined 라면 'N/A'로 표시 */
+                    if(point.y === undefined) {
+
+                        if(i % 2 === 0) {
+                            x = point.plotX + column.plotLeft - 12; // x position [Primary Color Colomn]
+                        } else {
+                            x = point.plotX + column.plotLeft + 6; // x position [Gray Color Colomn]
+                        }
+
+                        y = yaxis.toPixels(0) + 10; // y position
+
+                        textDisplayed = column.renderer.text('N/A', x, y)
+                            .attr({ zIndex: 5 })
+                            .css({ fontSize: '10px '})
+                            .add(column.textAdded);
+
+                        bBox = textDisplayed.getBBox();
+                        textDisplayed.translate(-bBox.width / 4, -bBox.height);
+                    }
+                });
+            });
+        }
+
+        // Column chart - Group - 보유종목분석 (KIWMYD_MYD_007_0001 동일)
+        /* 안정성 - 유동비율 */
+        var chartColumnGroup1 = new Highcharts.Chart('chart-column-group1', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marginTop: 20,
+                    events: { 
+                        render: nullFormat 
+                    }
+                },
+                xAxis: { 
+                    categories: ['유동비율'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { 
+                        enabled: false
+                    },
+                    gridLineWidth: 0,
+                    minorGridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: [159.4], color: '#dcdfe4'}, // 'N/A'이면 'N/A'로 보이고, null이면 공백으로 표시, 22.07.21 수정
+                    {data: [172.5], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 안정성 - 이자보상배율 */
+        var chartColumnGroup5 = new Highcharts.Chart('chart-column-group5', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marginTop: 20,
+                    events: { 
+                        render: nullFormat 
+                    }
+                },
+                xAxis: { 
+                    categories: ['이자보상배율'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { 
+                        enabled: false
+                    },
+                    gridLineWidth: 0,
+                    minorGridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: [null], color: '#dcdfe4'}, // 'N/A'이면 'N/A'로 보이고, null이면 공백으로 표시, 22.07.21 수정
+                    {data: [100], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 성장성 - 영업이익 */
+        var chartColumnGroup2 = new Highcharts.Chart('chart-column-group2', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['영업이익'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    minorGridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: ['N/A'], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [100.7], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 성장성 - 당기순이익 */
+        var chartColumnGroup6 = new Highcharts.Chart('chart-column-group6', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['당기순이익'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    minorGridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: [-518], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [11.5], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 수익성 - 영업이익률 */
+        var chartColumnGroup3 = new Highcharts.Chart('chart-column-group3', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125, 
+                    spacing: [10, 0, 10, 0], 
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['영업이익률'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08,
+                    }
+                },
+                series: [
+                    {data: [-32.5], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [4.3], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 수익성 - 지배주주ROE */
+        var chartColumnGroup7 = new Highcharts.Chart('chart-column-group7', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 125, 
+                    spacing: [10, 0, 10, 0], 
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['지배주주ROE'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08,
+                    }
+                },
+                series: [
+                    {data: [null], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [10.7], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 활동성 - 총자산회전율 */
+        var chartColumnGroup4 = new Highcharts.Chart('chart-column-group4', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: {
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['총자산회전율'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: [0.7], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [4.3], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+        /* 활동성 - 타인자본회전율 */
+        var chartColumnGroup8 = new Highcharts.Chart('chart-column-group8', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: {
+                    height: 125,
+                    spacing: [10, 0, 10, 0],
+                    marignTop: 20,
+                    events: { render: nullFormat }
+                },
+                xAxis: { 
+                    categories: ['타인자본회전율'],
+                    labels: { overflow: 'allow', autoRotationLimit: 0, style: { color: '#1E1E1E', fontSize: '9px', fontWeight: '600' } },
+                    lineColor: 'transparent',
+                },                    
+                yAxis: {
+                    labels: { enabled: false },
+                    gridLineWidth: 0,
+                    plotLines: [{ value: 0, width: 1, color: 'rgba(0,0,0,0.1)', zIndex: 10 }]
+                },
+                plotOptions: {
+                    column: {
+                        dataLabels: { 
+                            enabled: true,
+                            inside: false,
+                            overflow: 'none',
+                            crop: false,
+                            useHTML: true,
+                            formatter: function() {
+                                return '<span class="mb5">' + this.y +'</span>'
+                            }
+                        },
+                        pointWidth: 18,
+                        borderWidth: 0,
+                        grouping: true,
+                        groupPadding: 0.08
+                    }
+                },
+                series: [
+                    {data: [2.5], color: '#dcdfe4'}, // 22.07.21 수정
+                    {data: [10.7], color: '#6666cc'} // 22.07.21 수정
+                ]
+            }
+        ));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터 퍼블리싱 가이드</title>
+
+    <link rel="shortcut icon" href="https://m.kiwoom.com/nkm/img/main/icn_kmobile01.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/ui_common_pub.css">
+    <link rel="stylesheet" href="assets/css/ui_guide.css">
+    <style>
+        .table-guide .complete > td:nth-last-child(2)::before { content: '공통'; background: #006eff; }
+        .table-guide .modify > td:nth-last-child(2)::before { content: '비공통'; background: #f12929; }
+    </style>
+</head>
+
+<body class="guide-layout">
+
+    <header class="guide-header">
+        <h1>
+            <img src="assets/images/logo.png" alt="키움증권">마이데이터 V2
+        </h1>
+        <ul>
+            <li class="on"><a href="mobile_publish_list.html">퍼블리싱 화면 목록</a></li>
+            <li><a href="mobile_guide.html">퍼블리싱 개발 가이드</a></li>
+        </ul>
+    </header>
+
+    <main class="guide-main">
+        <!-- Menu -->
+        <div class="guide-menu">
+            <ul>
+                <li class="on"><a href="#content_home">홈</a></li>
+                <li><a href="#content_others">다른금융</a></li>                
+                <li><a href="#content_analysis">분석</a></li>
+                <li><a href="#content_smart">스마트금융</a></li>
+                <li><a href="#content_fpr">금융상품몰</a></li>
+
+                <li><a href="#content_inv">투자</a></li>
+                <li><a href="#content_loa">대출</a></li>
+
+                <li><a href="#content_detail">상세</a></li>
+                <li><a href="#content_info">안내</a></li>
+                <li><a href="#content_splash">스플래시</a></li>
+
+                <li><a href="#content_form">입력폼</a></li>
+                <li><a href="#content_table">테이블</a></li>
+                
+                <li><a href="#content_alert">알럿</a></li>
+                <li><a href="#content_popup">모달팝업</a></li>
+                <li><a href="#content_fullpopup">풀팝업</a></li>
+                <li><a href="#content_bottomsheet">바텀시트</a></li>
+
+                <li><a href="#content_aut">인증</a></li>
+                <li><a href="#content_mgt">금융사관리</a></li>
+                <li><a href="#content_set">설정</a></li>
+                <li><a href="#content_bnk">은행</a></li>
+                <li><a href="#content_inv">투자</a></li>
+                <li><a href="#content_loa">대출</a></li>
+                <li><a href="#content_crt">신용</a></li>
+                <li><a href="#content_ins">보험</a></li>
+                <li><a href="#content_ann">연금</a></li>
+                <li><a href="#content_tim">알림</a></li>
+                <li><a href="#content_tip">꿀팁</a></li>
+                <li><a href="#content_lan">부동산</a></li>
+                <li><a href="#content_trd">예수금</a></li>
+
+                
+            </ul>
+        </div>
+
+        <div class="guide-content pub-list">
+            <div class="progress-box">
+                <dl class="progress-count">
+                    <dt class="count-unit">총 페이지수</dt>
+                    <dd class="count-total"></dd>
+                </dl>
+                <ul class="progress-status">
+                    <li>분류 : </li>
+                    <li class="g-complete">공통</li>
+                    <li class="g-modify">비공통</li>
+                </ul>
+            </div>
+
+            <!-- 마이데이터 홈 -->
+            <section class="content-box" id="content_home">
+                <h3 class="guide-title">홈</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_004_0001.html" target="_blank">KIWMYD_MYD_004_0001</a></td>
+                            <td class="text-left">마이데이터</td>
+                            <td class="text-left">HOME</td>
+                            <td></td>
+                            <td class="text-left"></td>  
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_005_0001.html" target="_blank">KIWMYD_MYD_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산</td>
+                            <td class="text-left">MY자산 한눈에</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_005_0002.html" target="_blank">KIWMYD_MYD_005_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산</td>
+                            <td class="text-left">MY자산 편집</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_006_0001.html" target="_blank">KIWMYD_MYD_006_0001</a></td>
+                            <td class="text-left">홈 > 금융일정</td>
+                            <td class="text-left">금융일정</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 다른금융 -->
+            <section class="content-box" id="content_others">
+                <h3 class="guide-title">다른금융</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_008_0001.html" target="_blank">KIWMYD_MYD_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 다른금융</td>
+                            <td class="text-left">다른금융</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 분석 -->
+            <section class="content-box" id="content_analysis">
+                <h3 class="guide-title">분석</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_007_0000.html" target="_blank">KIWMYD_MYD_007_0000</a></td>
+                            <td class="text-left">마이데이터 > 분석</td>
+                            <td class="text-left">분석홈_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_007_0001.html" target="_blank">KIWMYD_MYD_007_0001</a></td>
+                            <td class="text-left">마이데이터 > 분석</td>
+                            <td class="text-left">분석홈</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_007_0001_P002.html" target="_blank">KIWMYD_MYD_007_0001_P002</a></td>
+                            <td class="text-left">분석 > 보유종목분석</td>
+                            <td class="text-left">보유종목분석</td>
+                            <td></td>
+                            <td class="text-left">종목전망 그래프</td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_003_0001.html" target="_blank">KIWMYD_CRD_003_0001</a></td>
+                            <td class="text-left">분석 > 카드이용분석</td>
+                            <td class="text-left">카드이용분석</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_005_0001.html" target="_blank">KIWMYD_CRD_005_0001</a></td>
+                            <td class="text-left">분석 > 카드결제분석</td>
+                            <td class="text-left">카드결제분석</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 스마트금융 -->
+            <section class="content-box" id="content_smart">
+                <h3 class="guide-title">스마트금융</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/sma/KIWMYD_SMA_001_0001.html" target="_blank">KIWMYD_SMA_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 스마트금융</td>
+                            <td class="text-left">스마트 금융</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 금융상품몰 -->
+            <section class="content-box" id="content_fpr">
+                <h3 class="guide-title">금융상품몰</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_001_0001.html" target="_blank">KIWMYD_FPR_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">금융상품몰</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_002_0001.html" target="_blank">KIWMYD_FPR_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">투자 상품</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_003_0001.html" target="_blank">KIWMYD_FPR_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">투자 상품</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_004_0001.html" target="_blank">KIWMYD_FPR_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">대출</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_005_0001.html" target="_blank">KIWMYD_FPR_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">카드</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_005_0002.html" target="_blank">KIWMYD_FPR_005_0002</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">신용카드 신청</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_005_0003.html" target="_blank">KIWMYD_FPR_005_0003</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">카드 이벤트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_006_0001.html" target="_blank">KIWMYD_FPR_006_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">보험_영웅문 S# 카드</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_007_0001.html" target="_blank">KIWMYD_FPR_007_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">보험_영웅문 S# 대출</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_008_0001.html" target="_blank">KIWMYD_FPR_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">보험_영웅문 S# 보험</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 투자 수익률인증서 -->
+            <section class="content-box" id="content_inv">
+                <h3 class="guide-title">수익률인증서</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 200px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0004.html" target="_blank">KIWMYD_INV_018_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자 > 수익률인증서</td>
+                            <td class="text-left">수익률 인증서</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0008.html" target="_blank">KIWMYD_INV_018_0008</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자 > 수익률인증서</td>
+                            <td class="text-left">인증서 조회결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 대출 -->
+            <section class="content-box" id="content_loa">
+                <h3 class="guide-title">대출</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 200px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="modify">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0001.html" target="_blank">KIWMYD_LOA_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출 > 대출한도비교</td>
+                            <td class="text-left">대출한도 비교</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 마이데이터 상세 화면 -->
+            <section class="content-box" id="content_detail">
+                <h3 class="guide-title">상세</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_009_0001.html" target="_blank">KIWMYD_BNK_009_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">계좌상세</td>
+                            <td></td>
+                            <td class="text-left"></td>                            
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_009_0002.html" target="_blank">KIWMYD_BNK_009_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">외환계좌상세</td>
+                            <td></td>
+                            <td class="text-left"></td>   
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_009_0003.html" target="_blank">KIWMYD_BNK_009_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">선불충전 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>   
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_009_0004.html" target="_blank">KIWMYD_BNK_009_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">간편결제 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>   
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_009_0005.html" target="_blank">KIWMYD_BNK_009_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">계좌상세_신탁/ISA 계좌정보</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_013_0002.html" target="_blank">KIWMYD_INV_013_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">투자 계좌상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_013_0001.html" target="_blank">KIWMYD_INV_013_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">상품상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_008_0001.html" target="_blank">KIWMYD_LOA_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_008_0002.html" target="_blank">KIWMYD_LOA_008_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">운용리스 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_008_0003.html" target="_blank">KIWMYD_LOA_008_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">보험 대출 거래내역 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_005_0001.html" target="_blank">KIWMYD_INS_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">보험 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_007_0001.html" target="_blank">KIWMYD_ANN_007_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 상세_IRP</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_007_0002.html" target="_blank">KIWMYD_ANN_007_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 상세_개인연금</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_007_0003.html" target="_blank">KIWMYD_ANN_007_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금상세_퇴직연금DC형</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_002_0001.html" target="_blank">KIWMYD_CRD_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 카드</td>
+                            <td class="text-left">카드 상세_거래내역</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_002_0002.html" target="_blank">KIWMYD_CRD_002_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 카드</td>
+                            <td class="text-left">카드 상세_청구내역</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_002_0003.html" target="_blank">KIWMYD_CRD_002_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 카드</td>
+                            <td class="text-left">리볼빙 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_002_0004.html" target="_blank">KIWMYD_CRD_002_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 카드</td>
+                            <td class="text-left">단기카드대출 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lnk/KIWMYD_LNK_001_0001.html" target="_blank">KIWMYD_LNK_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 통신</td>
+                            <td class="text-left">통신상세 (전화, 인터넷) </td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_004_0001.html" target="_blank">KIWMYD_CRD_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 선불카드</td>
+                            <td class="text-left">선불카드 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0002.html" target="_blank">KIWMYD_LAN_003_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 상세-아파트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0003.html" target="_blank">KIWMYD_LAN_003_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 상세-오피스텔</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0004.html" target="_blank">KIWMYD_LAN_003_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 상세-드림하우스</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                                                
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0005.html" target="_blank">KIWMYD_LAN_003_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 상세-직접 등록</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0002.html" target="_blank">KIWMYD_CAR_001_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 자동차</td>
+                            <td class="text-left">자동차 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 안내 화면 -->
+            <section class="content-box" id="content_info">
+                <h3 class="guide-title">안내</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_014.html" target="_blank">KIWMYD_COM_014</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">서비스 점검 안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_015.html" target="_blank">KIWMYD_COM_015</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">연결 끊김 안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_016.html" target="_blank">KIWMYD_COM_016</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">일시적 오류 안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_011_0001.html" target="_blank">KIWMYD_COM_011_0001</a></td>
+                            <td class="text-left">마이데이터 > 투자성향진단</td>
+                            <td class="text-left">전문가 상담</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_008_0000.html" target="_blank">KIWMYD_AUT_008_0000</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 가입 안내/가입 제한 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_008_0002.html" target="_blank">KIWMYD_AUT_008_0002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 가입/금융사 연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0000.html" target="_blank">KIWMYD_AUT_009_0000</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 연결 방식 선택 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/sma/KIWMYD_SMA_002_0000.html" target="_blank">KIWMYD_SMA_002_0000</a></td>
+                            <td class="text-left">마이데이터 > 스마트 금융</td>
+                            <td class="text-left">스마트 금융 > 금투/은행_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_006_0000.html" target="_blank">KIWMYD_MYD_006_0000</a></td>
+                            <td class="text-left">마이데이터 > 금융일정</td>
+                            <td class="text-left">금융일정_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_008_0000.html" target="_blank">KIWMYD_MYD_008_0000</a></td>
+                            <td class="text-left">마이데이터 > 다른금융</td>
+                            <td class="text-left">다른금융_미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                         
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_002_0000.html" target="_blank">KIWMYD_BNK_002_0000</a></td>
+                            <td class="text-left">마이데이터 > 은행 > 여유자금</td>
+                            <td class="text-left">여유자금_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_004_0000.html" target="_blank">KIWMYD_BNK_004_0000</a></td>
+                            <td class="text-left">마이데이터 > 은행 > 예/적금 분석</td>
+                            <td class="text-left">예/적금 분석_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0000.html" target="_blank">KIWMYD_INV_005_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 투자자산분석리포트</td>
+                            <td class="text-left">투자자산 분석 리포트_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_006_0000.html" target="_blank">KIWMYD_INV_006_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 펀드투자진단</td>
+                            <td class="text-left">펀드 투자 진단_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_016_0001.html" target="_blank">KIWMYD_INV_016_0001</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 투자분석 안내</td>
+                            <td class="text-left">투자분석리포트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_017_0001.html" target="_blank">KIWMYD_INV_017_0001</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 펀드투자진단 안내</td>
+                            <td class="text-left">펀드투자진단</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_007_0000.html" target="_blank">KIWMYD_INV_007_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 키움자동일지</td>
+                            <td class="text-left">키움 자동일지_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0000.html" target="_blank">KIWMYD_INV_011_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 관심종목리포트</td>
+                            <td class="text-left">관심종목 리포트_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_012_0000.html" target="_blank">KIWMYD_INV_012_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 주식진단</td>
+                            <td class="text-left">주식진단_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0000.html" target="_blank">KIWMYD_INV_018_0000</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 수익률인증</td>
+                            <td class="text-left">수익률인증안내_인트로</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0001.html" target="_blank">KIWMYD_INV_018_0001</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 수익률인증</td>
+                            <td class="text-left">수익률인증안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_007_0000.html" target="_blank">KIWMYD_LOA_007_0000</a></td>
+                            <td class="text-left">마이데이터 > 대출 > 신용대출리포트</td>
+                            <td class="text-left">신용대출 리포트_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0000.html" target="_blank">KIWMYD_INS_002_0000</a></td>
+                            <td class="text-left">마이데이터 > 보험 > 보장분석</td>
+                            <td class="text-left">보장분석_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_004_0000.html" target="_blank">KIWMYD_INS_004_0000</a></td>
+                            <td class="text-left">마이데이터 > 보험 > 실손보험청구대상탐지</td>
+                            <td class="text-left">실손보험 청구 대상 탐지_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_003_0000.html" target="_blank">KIWMYD_ANN_003_0000</a></td>
+                            <td class="text-left">마이데이터 > 연금 > 연금포트폴리오</td>
+                            <td class="text-left">연금 포트폴리오 분석_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../trd/KIWMYD_TRD_001_0000.html" target="_blank">KIWMYD_TRD_001_0000</a></td>
+                            <td class="text-left">마이데이터 > 예수금</td>
+                            <td class="text-left">타사 예수금 안내_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_SERVICE_INFO01.html" target="_blank">KIWMYD_COM_SERVICE_INFO01</a></td>
+                            <td class="text-left">앱 > 안내</td>
+                            <td class="text-left">영웅문S 100% 활용하기 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_SERVICE_INFO03.html" target="_blank">KIWMYD_COM_SERVICE_INFO03</a></td>
+                            <td class="text-left">앱 > 안내</td>
+                            <td class="text-left">(공통) MY자산 서비스 가입 완료</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                                                 
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 스플래시 -->
+            <section class="content-box" id="content_splash">
+                <h3 class="guide-title">스플래시</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0010_P001.html" target="_blank">KIWMYD_LOA_005_0010_P001</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">대출 신청 이동 안내 스플래시 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_005_0001_P001.html" target="_blank">KIWMYD_FPR_005_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">카드 이동 안내 스플래시 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../fpr/KIWMYD_FPR_008_0001_P001.html" target="_blank">KIWMYD_FPR_008_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 금융상품몰</td>
+                            <td class="text-left">키움에셋플래너 이동 안내 스플래시 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 입력폼 화면 -->
+            <section class="content-box" id="content_form">
+                <h3 class="guide-title">입력폼</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_013_P001.html" target="_blank">KIWMYD_COM_013_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">휴대폰 본인인증(공통)</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_009_0002.html" target="_blank">KIWMYD_COM_009_0002</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 투자권유/정보제공 동의</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_009_0003.html" target="_blank">KIWMYD_COM_009_0003</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 설문조사항목</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_008_0001.html" target="_blank">KIWMYD_AUT_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">약관 동의</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_003_0001.html" target="_blank">KIWMYD_LOA_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">대출이자 계산 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_SERVICE_INFO02.html" target="_blank">KIWMYD_COM_SERVICE_INFO02</a></td>
+                            <td class="text-left">앱 > 마이데이터 이용동의</td>
+                            <td class="text-left">(공통) 마이데이터 서비스 이용 동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0001.html" target="_blank">KIWMYD_LAN_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 건물명 검색 초기화면</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0002.html" target="_blank">KIWMYD_LAN_001_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 건물명 검색결과 없음</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0003.html" target="_blank">KIWMYD_LAN_001_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 건물명 검색결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0004.html" target="_blank">KIWMYD_LAN_001_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 조회 – 건물명 동/호수 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0001.html" target="_blank">KIWMYD_CAR_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 자동차</td>
+                            <td class="text-left">자동차 추가</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 테이블 -->
+            <section class="content-box" id="content_table">
+                <h3 class="guide-title">테이블</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_009_0004.html" target="_blank">KIWMYD_COM_009_0004</a></td>
+                            <td class="text-left">마이데이터 공통</td>                            
+                            <td class="text-left">투자성향진단 입력 확인</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_009_0005.html" target="_blank">KIWMYD_COM_009_0005</a></td>
+                            <td class="text-left">마이데이터 공통</td>                            
+                            <td class="text-left">투자성향 진단 결과 안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+
+
+            <!-- For 영웅문S# -->
+            <section class="content-box" id="content_trd">
+                <h3 class="guide-title">다른금융 예수금 안내</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../trd/KIWMYD_TRD_001_0001.html" target="_blank">KIWMYD_TRD_001_0001</a></td>
+                            <td class="text-left">앱 > 다른금융 예수금 안내</td>
+                            <td class="text-left">다른금융 예수금 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../trd/KIWMYD_TRD_001_0002.html" target="_blank">KIWMYD_TRD_001_0002</a></td>
+                            <td class="text-left">앱 > 다른금융 예수금 안내</td>
+                            <td class="text-left">다른금융 예수금 안내-가져오기 기능 계좌가 없는 경우</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 알럿 -->
+            <section class="content-box" id="content_alert">
+                <h3 class="guide-title">알럿 (대부분 개발에서 공통양식으로 사용)</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_001_P002.html" target="_blank">KIWMYD_MYD_001_P002</a></td>
+                            <td class="text-left">마이데이터 > 홈</td>
+                            <td class="text-left">MY자산 알림 받기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                      
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 모달팝업 -->
+            <section class="content-box" id="content_popup">
+                <h3 class="guide-title">모달팝업 (대부분 각 페이지 안에 포함해놓음)</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0008_P002.html" target="_blank">KIWMYD_AUT_009_0008_P002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">상세정보 선택 동의 확인</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0004_P001.html" target="_blank">KIWMYD_INS_006_0004_P001</a></td>
+                            <td class="text-left">마이데이터 > 보험</td>
+                            <td class="text-left">특약 상세보기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0004_P002.html" target="_blank">KIWMYD_INS_006_0004_P002</a></td>
+                            <td class="text-left">마이데이터 > 보험</td>
+                            <td class="text-left">보험사별 고객센터</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 풀팝업 -->
+            <section class="content-box" id="content_fullpopup">
+                <h3 class="guide-title">풀팝업</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_008_0001_P001.html" target="_blank">KIWMYD_AUT_008_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">스마트알림 동의</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004_P007.html" target="_blank">KIWMYD_AUT_009_0004_P007</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">통합인증 이용약관 상세</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_P006.html" target="_blank">KIWMYD_AUT_009_P006</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 연결중 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0004_P002.html" target="_blank">KIWMYD_AUT_010_0004_P002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 해제연결 중</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0004_P004.html" target="_blank">KIWMYD_AUT_010_0004_P004</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 연결해제 완료</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_011_0001_P001.html" target="_blank">KIWMYD_AUT_011_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">약관상세 - 기본형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_011_0001_P003.html" target="_blank">KIWMYD_AUT_011_0001_P003</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">약관상세 - 상세동의서형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_013_0002_P002.html" target="_blank">KIWMYD_AUT_013_0002_P002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 해지 연결 중</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_013_0002_P004.html" target="_blank">KIWMYD_AUT_013_0002_P004</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 해지완료</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_007_0001_P001.html" target="_blank">KIWMYD_MYD_007_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 분석</td>
+                            <td class="text-left">분석리포트 이용현황</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0002_P001.html" target="_blank">KIWMYD_LOA_005_0002_P001</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">미승인 대출내역</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0001_P001.html" target="_blank">KIWMYD_INV_018_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 투자 > 수익률인증</td>
+                            <td class="text-left">다른 증권사 정보 불러오기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                          
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0003_P001.html" target="_blank">KIWMYD_LOA_005_0003_P001</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">약관상세 기본형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0003_P002.html" target="_blank">KIWMYD_LOA_005_0003_P002</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">약관상세 상세동의서형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_004_P001_P001.html" target="_blank">KIWMYD_CRT_004_P001_P001</a></td>
+                            <td class="text-left">마이데이터 > 신용</td>
+                            <td class="text-left">약관상세 기본형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_004_P001_P002.html" target="_blank">KIWMYD_CRT_004_P001_P002</a></td>
+                            <td class="text-left">마이데이터 > 신용</td>
+                            <td class="text-left">약관상세 상세동의서형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0001_P002.html" target="_blank">KIWMYD_INS_006_0001_P002</a></td>
+                            <td class="text-left">마이데이터 > 보험</td>
+                            <td class="text-left">개인정보 제3자 제공 동의서</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0001_P003.html" target="_blank">KIWMYD_INS_006_0001_P003</a></td>
+                            <td class="text-left">마이데이터 > 보험</td>
+                            <td class="text-left">개인(신용)정보 수집·이용 동의서</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0000_P001.html" target="_blank">KIWMYD_ANN_005_0000_P001</a></td>
+                            <td class="text-left">마이데이터 > 연금</td>
+                            <td class="text-left">현재 모은 연금액</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0001_P003.html" target="_blank">KIWMYD_ANN_005_0001_P003</a></td>
+                            <td class="text-left">마이데이터 > 연금</td>
+                            <td class="text-left">국민연금 월 수령액 직접 입력</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_002_0001_P001.html" target="_blank">KIWMYD_LAN_002_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산추가-시세조회 시</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_002_0001_P002.html" target="_blank">KIWMYD_LAN_002_0001_P002</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산 추가 - 드림하우스시</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_002_0001_P003.html" target="_blank">KIWMYD_LAN_002_0001_P003</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산추가- 직접등록 시</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0002_P001.html" target="_blank">KIWMYD_LAN_003_0002_P001</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산 수정-시세조회 등록</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0004_P001.html" target="_blank">KIWMYD_LAN_003_0004_P001</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산 수정-드림하우스 등록</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0005_P001.html" target="_blank">KIWMYD_LAN_003_0005_P001</a></td>
+                            <td class="text-left">마이데이터 > 부동산</td>
+                            <td class="text-left">부동산 수정-직접 등록</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0001_P001.html" target="_blank">KIWMYD_CAR_001_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 자동차</td>
+                            <td class="text-left">약관상세 상세동의형 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0002_P002.html" target="_blank">KIWMYD_CAR_001_0002_P002</a></td>
+                            <td class="text-left">마이데이터 > 자동차</td>
+                            <td class="text-left">기준변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- 슬라이딩 팝업 -->
+            <section class="content-box" id="content_bottomsheet">
+                <h3 class="guide-title">슬라이딩 팝업 (바텀시트)</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_006_P001.html" target="_blank">KIWMYD_COM_006_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 서비스 가입 안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_007_P001.html" target="_blank">KIWMYD_COM_007_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 금융사 연결_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_007_P002.html" target="_blank">KIWMYD_COM_007_P002</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 금융사 연결_자산연결</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_007_P003.html" target="_blank">KIWMYD_COM_007_P003</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 금융사 연결_자산연결</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_008_P001.html" target="_blank">KIWMYD_COM_008_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 연결 자산</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_008_P002.html" target="_blank">KIWMYD_COM_008_P002</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 연결 자산_분류</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_009_P001.html" target="_blank">KIWMYD_COM_009_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 투자성향진단안내</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../com/KIWMYD_COM_010_P001.html" target="_blank">KIWMYD_COM_010_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">(공통) 단일 선택_슬라이딩 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_017_P001.html" target="_blank">KIWMYD_COM_017_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">휴대폰 본인인증_본인 정보 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/com/KIWMYD_COM_018_P001.html" target="_blank">KIWMYD_COM_018_P001</a></td>
+                            <td class="text-left">마이데이터 공통</td>
+                            <td class="text-left">마케팅제공 동의 설정 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_004_0001_P001.html" target="_blank">KIWMYD_MYD_004_0001_P001</a></td>
+                            <td class="text-left">마이데이터</td>
+                            <td class="text-left">알림</td>
+                            <td></td>
+                            <td class="text-left"></td> 
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_004_0001_P002.html" target="_blank">KIWMYD_MYD_004_0001_P002</a></td>
+                            <td class="text-left">마이데이터</td>
+                            <td class="text-left">MY자산 알림 받기_슬라이딩 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_005_0001_P001.html" target="_blank">KIWMYD_MYD_005_0001_P001</a></td>
+                            <td class="text-left">마이데이터</td>
+                            <td class="text-left">MY자산 연금계좌개설을 위한 금융사 연결 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../home/KIWMYD_MYD_005_0001_P002.html" target="_blank">KIWMYD_MYD_005_0001_P002</a></td>
+                            <td class="text-left">마이데이터</td>
+                            <td class="text-left">MY자산 연금이전을 위한 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004_P001.html" target="_blank">KIWMYD_AUT_009_0004_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">신규 간편인증 발급 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004_P003.html" target="_blank">KIWMYD_AUT_009_0004_P003</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">공동인증서 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004_P004.html" target="_blank">KIWMYD_AUT_009_0004_P004</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">공동인증서 발급 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                                                
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004_P006.html" target="_blank">KIWMYD_AUT_009_0004_P006</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">통합인증 이용약관 동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0008_P001.html" target="_blank">KIWMYD_AUT_009_0008_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">상세정보 조회 조건 설정</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0002_P001.html" target="_blank">KIWMYD_AUT_010_0002_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">인증방법 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_005_0001_P001.html" target="_blank">KIWMYD_BNK_005_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 은행</td>
+                            <td class="text-left">송금하기_출금계좌 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_005_0001_P002.html" target="_blank">KIWMYD_BNK_005_0001_P002</a></td>
+                            <td class="text-left">마이데이터 > 은행</td>
+                            <td class="text-left">송금하기_금융사 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0010_P002.html" target="_blank">KIWMYD_LOA_005_0010_P002</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">대출 신청 이동 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_008_0001_P001.html" target="_blank">KIWMYD_INV_008_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 투자</td>
+                            <td class="text-left">투자 서비스 조회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0001_P001.html" target="_blank">KIWMYD_INV_011_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 투자</td>
+                            <td class="text-left">관심종목 리포트 종목선택 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0004_P001.html" target="_blank">KIWMYD_INV_018_0004_P001</a></td>
+                            <td class="text-left">마이데이터 > 투자</td>
+                            <td class="text-left">수익률 인증서 저장 방법 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_P003.html" target="_blank">KIWMYD_LOA_005_P003</a></td>
+                            <td class="text-left">마이데이터 > 대출</td>
+                            <td class="text-left">대출한도 비교 약관동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_004_P001.html" target="_blank">KIWMYD_CRT_004_P001</a></td>
+                            <td class="text-left">마이데이터 > 신용</td>
+                            <td class="text-left">신용정보 연결 약관동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../card/KIWMYD_CRD_005_0001_P001.html" target="_blank">KIWMYD_CRD_005_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 신용</td>
+                            <td class="text-left">기간 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                         
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0001_P001.html" target="_blank">KIWMYD_INS_006_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 보험</td>
+                            <td class="text-left">예상 보험금 서비스 이용 동의서</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0001_P005.html" target="_blank">KIWMYD_ANN_005_0001_P005</a></td>
+                            <td class="text-left">마이데이터 > 연금</td>
+                            <td class="text-left">연금계좌 개설/연금계좌 이전 선택 연결자산 팝업</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0002_P001.html" target="_blank">KIWMYD_CAR_001_0002_P001</a></td>
+                            <td class="text-left">마이데이터 > 자동차</td>
+                            <td class="text-left">주행거리 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../car/KIWMYD_CAR_001_0002_P003.html" target="_blank">KIWMYD_CAR_001_0002_P003</a></td>
+                            <td class="text-left">마이데이터 > 자동차</td>
+                            <td class="text-left">차량선택/삭제</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>  
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 인증 - AUT -->
+            <section class="content-box" id="content_aut">
+                <h3 class="guide-title">인증 - AUT</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0001.html" target="_blank">KIWMYD_AUT_009_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0001_P001.html" target="_blank">KIWMYD_AUT_009_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 검색(통합인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0002.html" target="_blank">KIWMYD_AUT_009_0002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">전송요구서 및 수집.이용 동의(알고하는 동의)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0003.html" target="_blank">KIWMYD_AUT_009_0003</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">표준 제공 동의서</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0004.html" target="_blank">KIWMYD_AUT_009_0004</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">인증방식 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0007.html" target="_blank">KIWMYD_AUT_009_0007</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">계좌/상품 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0008.html" target="_blank">KIWMYD_AUT_009_0008</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">상세 전송요구서 및 수집ㆍ이용 동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0009.html" target="_blank">KIWMYD_AUT_009_0009</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 연결 완료</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0010.html" target="_blank">KIWMYD_AUT_009_0010</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 선택(개별인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0010_P001.html" target="_blank">KIWMYD_AUT_009_0010_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 검색(개별인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0011.html" target="_blank">KIWMYD_AUT_009_0011</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">표준 수집.이용 동의(개별인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0011_P001.html" target="_blank">KIWMYD_AUT_009_0011_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">상세정보 조회 조건 설정</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                         
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0012.html" target="_blank">KIWMYD_AUT_009_0012</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">표준 제공 동의서(개별인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>  
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0013.html" target="_blank">KIWMYD_AUT_009_0013</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">연결완료(개별인증)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_P014.html" target="_blank">KIWMYD_AUT_009_P014</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">개별인증 금융사 연결 / 연결오류</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_100_0000.html" target="_blank">KIWMYD_AUT_100_0000</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">개인신용정보</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_100_P001.html" target="_blank">KIWMYD_AUT_100_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">연결·만료·삭제내역</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_009_0005.html" target="_blank">KIWMYD_AUT_100_P001</a></td>
+                            <td class="text-left">마이데이터 > 인증 > 알고하는 동의</td>
+                            <td class="text-left">상세조회 동의</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 금융사관리 - AUT -->
+            <section class="content-box" id="content_mgt">
+                <h3 class="guide-title">금융사관리 - AUT</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0001.html" target="_blank">KIWMYD_AUT_010_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사연결현황</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0002.html" target="_blank">KIWMYD_AUT_010_0002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">연결 금융사 상세 정보</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0003.html" target="_blank">KIWMYD_AUT_010_0003</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">연결정보 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_010_0004.html" target="_blank">KIWMYD_AUT_010_0004</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">금융사 연결 해제</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 설정 - AUT -->
+            <section class="content-box" id="content_set">
+                <h3 class="guide-title">설정 - AUT</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_011_0001.html" target="_blank">KIWMYD_AUT_011_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">개인정보 처리</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_011_0002.html" target="_blank">KIWMYD_AUT_011_0002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">선택이용동의 철회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_012_0001.html" target="_blank">KIWMYD_AUT_012_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">개인정보 삭제</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_013_0001.html" target="_blank">KIWMYD_AUT_013_0001</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 해지</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>   
+                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../../html2/auth/KIWMYD_AUT_013_0002.html" target="_blank">KIWMYD_AUT_013_0002</a></td>
+                            <td class="text-left">마이데이터 > 인증</td>
+                            <td class="text-left">서비스 가입 약관 철회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 은행 - BNK -->
+            <section class="content-box" id="content_bnk">
+                <h3 class="guide-title">은행 - BNK</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_002_0001.html" target="_blank">KIWMYD_BNK_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">여유자금</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_003_0001.html" target="_blank">KIWMYD_BNK_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">투자상품 목록</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_004_0001.html" target="_blank">KIWMYD_BNK_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">예/적금 분석</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_005_0001.html" target="_blank">KIWMYD_BNK_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">송금하기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_005_0002.html" target="_blank">KIWMYD_BNK_005_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">송금하기_이체금액 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_006_0001.html" target="_blank">KIWMYD_BNK_006_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">오픈뱅킹 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_008_0001.html" target="_blank">KIWMYD_BNK_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">투자금 가져오기_출금계좌 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../bank/KIWMYD_BNK_008_0002.html" target="_blank">KIWMYD_BNK_008_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 은행</td>
+                            <td class="text-left">투자금 가져오기_입금계좌 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- 투자 - INV -->
+            <section class="content-box" id="content_inv">
+                <h3 class="guide-title">투자 - INV</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0001.html" target="_blank">KIWMYD_INV_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">투자자산 분석 리포트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0002.html" target="_blank">KIWMYD_INV_005_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">국내시장 등락률</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0003.html" target="_blank">KIWMYD_INV_005_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">업종별 종목 등락률_국내시장</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0004.html" target="_blank">KIWMYD_INV_005_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">해외시장 등락률</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0005.html" target="_blank">KIWMYD_INV_005_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">업종별 종목 등락률_해외시장</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_005_0006.html" target="_blank">KIWMYD_INV_005_0006</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">나의 포트폴리오</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_006_0001.html" target="_blank">KIWMYD_INV_006_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">펀드 투자 진단</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_006_0002.html" target="_blank">KIWMYD_INV_006_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">개별 펀드 진단</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_007_0001.html" target="_blank">KIWMYD_INV_007_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">키움 자동일지</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                      
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_008_0001.html" target="_blank">KIWMYD_INV_008_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">투자 서비스</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_009_0001.html" target="_blank">KIWMYD_INV_009_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">펀드상품</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_010_0001.html" target="_blank">KIWMYD_INV_010_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">투자고수의 관심상품</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0001.html" target="_blank">KIWMYD_INV_011_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">관심종목 리포트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0002.html" target="_blank">KIWMYD_INV_011_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">관심종목 리포트 설정</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0002_P001.html" target="_blank">KIWMYD_INV_011_0002_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">종목 추가하기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_011_0003.html" target="_blank">KIWMYD_INV_011_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">종목별 이슈 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_012_0001.html" target="_blank">KIWMYD_INV_012_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">주식진단</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_014_0001.html" target="_blank">KIWMYD_INV_014_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">관심상품</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0002.html" target="_blank">KIWMYD_INV_018_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">보유종목 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0003.html" target="_blank">KIWMYD_INV_018_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">인증서 항목 설정</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0005.html" target="_blank">KIWMYD_INV_018_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">수익률 인증 계좌 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0006.html" target="_blank">KIWMYD_INV_018_0006</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">키움 MY랭킹 인증</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../inve/KIWMYD_INV_018_0007.html" target="_blank">KIWMYD_INV_018_0007</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 투자</td>
+                            <td class="text-left">인증서 진위확인</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 대출 -->
+            <section class="content-box" id="content_loa">
+                <h3 class="guide-title">대출 - LOA</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_003_0002.html" target="_blank">KIWMYD_LOA_003_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출이자 계산 결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_004_0000.html" target="_blank">KIWMYD_LOA_004_0000</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">DSR 계산기_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_004_0001.html" target="_blank">KIWMYD_LOA_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">DSR 계산기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_004_0001_P001.html" target="_blank">KIWMYD_LOA_004_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출금액 직접 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_004_0003.html" target="_blank">KIWMYD_LOA_004_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">DSR 계산기_결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0002.html" target="_blank">KIWMYD_LOA_005_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출상품 조회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0004.html" target="_blank">KIWMYD_LOA_005_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출한도 비교 직업 선택</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0005.html" target="_blank">KIWMYD_LOA_005_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출한도 비교 소득정보 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0005_P001.html" target="_blank">KIWMYD_LOA_005_0005_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">직장명 검색</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0005_P002.html" target="_blank">KIWMYD_LOA_005_0005_P002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">직장명 직접입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0006.html" target="_blank">KIWMYD_LOA_005_0006</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출한도 비교 추가정보 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0007.html" target="_blank">KIWMYD_LOA_005_0007</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출한도 비교 입력정보확인</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0007_P001.html" target="_blank">KIWMYD_LOA_005_0007_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출한도 비교 결과 조회 로딩화면</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0010.html" target="_blank">KIWMYD_LOA_005_0010</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출상품 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0011.html" target="_blank">KIWMYD_LOA_005_0011</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">대출 신청내역</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_005_0012.html" target="_blank">KIWMYD_LOA_005_0012</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">직장명 입력(직장인, 공무원, 사업자, 프리랜서 선택 시)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0000.html" target="_blank">KIWMYD_LOA_006_0000</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">금리 인하 진단_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0001.html" target="_blank">KIWMYD_LOA_006_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">금리 인하 진단</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0002.html" target="_blank">KIWMYD_LOA_006_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">신용점수 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0003.html" target="_blank">KIWMYD_LOA_006_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">금융자산 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0004.html" target="_blank">KIWMYD_LOA_006_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">연 소득 변경</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_006_0005.html" target="_blank">KIWMYD_LOA_006_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">금리 인하 진단_결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../loan/KIWMYD_LOA_007_0001.html" target="_blank">KIWMYD_LOA_007_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 대출</td>
+                            <td class="text-left">신용대출 리포트</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 신용 - CRT -->
+            <section class="content-box" id="content_crt">
+                <h3 class="guide-title">신용 - CRT</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_002_0001.html" target="_blank">KIWMYD_CRT_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">신용 리포트 (선오픈)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_002_0001_1.html" target="_blank">KIWMYD_CRT_002_0001_1</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">신용정보</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_002_0002.html" target="_blank">KIWMYD_CRT_002_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">신용정보 상세(카드,대출,연체,보증 탭)</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_002_0003.html" target="_blank">KIWMYD_CRT_002_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">신용정보 조회/변동 내역</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_003_0001.html" target="_blank">KIWMYD_CRT_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">신용점수 올리기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_005_P001.html" target="_blank">KIWMYD_CRT_005_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">연결 로딩</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../cred/KIWMYD_CRT_005_P002.html" target="_blank">KIWMYD_CRT_005_P002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 신용</td>
+                            <td class="text-left">데이터 조회 완료 화면</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- 보험 - INS -->
+            <section class="content-box" id="content_ins">
+                <h3 class="guide-title">보험 - INS</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0001.html" target="_blank">KIWMYD_INS_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">보장분석</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0002.html" target="_blank">KIWMYD_INS_002_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">실손의료비 보장 분석 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0003.html" target="_blank">KIWMYD_INS_002_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">$보장명$ 보장 분석 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0004.html" target="_blank">KIWMYD_INS_002_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">입원 보장 분석 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_002_0005.html" target="_blank">KIWMYD_INS_002_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">수술 보장 분석 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_003_0001.html" target="_blank">KIWMYD_INS_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">갱신형/비갱신형 보험 안내</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_004_0001.html" target="_blank">KIWMYD_INS_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">실손보험 청구 대상 탐지</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_004_0001_P001.html" target="_blank">KIWMYD_INS_004_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">실손보험 빠른 청구</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0001.html" target="_blank">KIWMYD_INS_006_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">예상 보험금 조회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0002.html" target="_blank">KIWMYD_INS_006_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">질병명·수술명 검색</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0003.html" target="_blank">KIWMYD_INS_006_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">질병명·수술명 검색결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../insu/KIWMYD_INS_006_0004.html" target="_blank">KIWMYD_INS_006_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 보험</td>
+                            <td class="text-left">예상 보험금 조회 결과</td>
+                            <td></td>
+                            <td class="text-left">(11.10) 배너 추가</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 연금 - ANN -->
+            <section class="content-box" id="content_ann">
+                <h3 class="guide-title">연금 - ANN</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_003_0001.html" target="_blank">KIWMYD_ANN_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 포트폴리오 분석</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_004_0000.html" target="_blank">KIWMYD_ANN_004_0000</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 세액공제 시뮬레이션_자산 미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_004_0001.html" target="_blank">KIWMYD_ANN_004_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 세액공제 시뮬레이션</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_004_0001_P001.html" target="_blank">KIWMYD_ANN_004_0001_P001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">올해 연금 납입액 직접 입력</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_004_0003.html" target="_blank">KIWMYD_ANN_004_0003</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 세액공제 시뮬레이션_결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0000.html" target="_blank">KIWMYD_ANN_005_0000</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 수령액 계산하기_자산미연결</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>      
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0001.html" target="_blank">KIWMYD_ANN_005_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금 수령액 계산하기</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../annu/KIWMYD_ANN_005_0004.html" target="_blank">KIWMYD_ANN_005_0004</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 연금</td>
+                            <td class="text-left">연금수령액 계산하기_결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+                        
+            <!-- 알림 - TIM -->
+            <section class="content-box" id="content_tim">
+                <h3 class="guide-title">알림 - TIM</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../noti/KIWMYD_TIM_002_0001.html" target="_blank">KIWMYD_TIM_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 알림</td>
+                            <td class="text-left">알림 내역 조회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 꿀팁 - TIP -->
+            <section class="content-box" id="content_tip">
+                <h3 class="guide-title">꿀팁 - TIP</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0001.html" target="_blank">KIWMYD_TIP_001_0001</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">꿀팁 목록</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0002.html" target="_blank">KIWMYD_TIP_001_0002</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">보험 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0003.html" target="_blank">KIWMYD_TIP_001_0003</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">연금 상세</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0004.html" target="_blank">KIWMYD_TIP_001_0004</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">신용 상세 - 웹툰</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0005.html" target="_blank">KIWMYD_TIP_001_0005</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">신용 상세 - 카드뉴스</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../tip/KIWMYD_TIP_001_0006.html" target="_blank">KIWMYD_TIP_001_0006</a></td>
+                            <td class="text-left">마이데이터 > 꿀팁</td>
+                            <td class="text-left">신용 상세 - 신용관리팁</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 부동산 - LAN -->
+            <section class="content-box" id="content_lan">
+                <h3 class="guide-title">부동산 - LAN</h3>
+                <table class="table-guide">
+                    <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 300px;">
+                        <col style="width: 100px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>화면ID</th>
+                            <th>경로</th>
+                            <th>화면명</th>
+                            <th>분류</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    </thead>
+                    <tbody>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0005.html" target="_blank">KIWMYD_LAN_001_0005</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 도로명 검색 초기화면</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0006.html" target="_blank">KIWMYD_LAN_001_0006</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 도로명 검색결과 없음</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_001_0007.html" target="_blank">KIWMYD_LAN_001_0007</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산조회 – 도로명 검색결과</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_002_0001.html" target="_blank">KIWMYD_LAN_002_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 상세 - 시세조회</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_002_0002.html" target="_blank">KIWMYD_LAN_002_0002</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">부동산 시세조회_시세조회 불가시</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr class="complete">
+                            <td></td>
+                            <td class="text-left"><a href="../lan/KIWMYD_LAN_003_0001.html" target="_blank">KIWMYD_LAN_003_0001</a></td>
+                            <td class="text-left">마이데이터 > 내자산 > 부동산</td>
+                            <td class="text-left">나의 부동산</td>
+                            <td></td>
+                            <td class="text-left"></td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </section>
+            
+        </div>
+
+    </main>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/ui_guide.js"></script>
+</body>
+
+</html>

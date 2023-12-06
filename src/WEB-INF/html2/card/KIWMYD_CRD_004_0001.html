@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>선불카드 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <!-- <button type="button" class="sub-close">팝업 닫기</button> -->
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box bg-white2">
+                
+                <div class="d-flex-between">
+                    <p class="fs-lg fw-m">
+                        카드사명<br>
+                        상품명상품명
+                    </p>
+                    <span class="custom-label c-purple align-self-start">선불카드</span>
+                </div>
+
+                <div class="d-flex-between mt15">
+                    <div class="align-self-start">
+                        <span class="fc-gray">5246 4862 2795 3751</span>
+                    </div>
+
+                    <div class="text-right">
+                        <span class="fc-gray">총잔액</span><br>
+                        <p class="number-unit fs-2xl fc-black fw-b mt10">
+                            <span class="number">99,999,999</span>
+                            <span class="unit">원</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border px0">
+
+                <ul class="tab-head tab-block">
+                    <li id="tab_lnk_04" class="tab-btn" aria-controls="tab_lnk_panel04">납부예정상세</li>
+                    <li id="tab_lnk_05" class="tab-btn" aria-controls="tab_lnk_panel05">납부내역</li>
+                </ul>
+
+                <!-- 카드정보 tab panel -->
+                <div id="tab_lnk_panel04" class="tab-panel">
+    
+                    <table class="custom-table mt10">
+                        <caption>카드정보 데이터(적립포인트,적립예정 포인트,소멸예정 포인트)</caption>
+                        <tbody>
+                            <tr>
+                                <th class="text-left" style="width: 110px;">적립포인트</th>
+                                <td class="text-right">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">27,861</span>
+                                        <span class="unit">포인트</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-left" style="width: 110px;">적립예정 포인트</th>
+                                <td class="text-right">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">43,300</span>
+                                        <span class="unit">포인트</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-left" style="width: 110px;">소멸예정 포인트</th>
+                                <td class="text-right">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">0</span>
+                                        <span class="unit">포인트</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="custom-table mt30">
+                        <caption>카드정보 데이터(발급일자,충전한도)</caption>
+                        <tbody>
+                            <tr>
+                                <th class="text-left" style="width: 110px;">발급일자</th>
+                                <td class="text-right">
+                                    2020.10.10
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-left" style="width: 110px;">충전한도</th>
+                                <td class="text-right">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">3,000,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- 거래내역 tab panel -->
+                <div id="tab_lnk_panel05" class="tab-panel p0">
+
+                    <div class="module-box">
+
+                        <div>
+                            <div class="custom-radio">
+                                <input type="radio" name="radio-tran01" id="rdo_trans_01">
+                                <label for="rdo_trans_01"><i></i>거래내역</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input type="radio" name="radio-tran02" id="rdo_trans_02">
+                                <label for="rdo_trans_02"><i></i>승인내역</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-box mt20 mb10">
+                            <input type="text" class="custom-input input-block calendar month" placeholder="기간선택" readonly="">
+                        </div>
+
+                        <!-- 거래내역 목록 -->
+                        <ul>
+                            <li class="mt30">
+                                <p class="fs-sm fc-gray">2020.05.27 11:56</p>
+                                <p class="fs-lg fw-m mt5">충전</p>
+                                
+                                <div class="detail-block">
+                                    <div class="detail-collapse" style="height: 60px;">
+                                        <dl class="data-list">
+                                            <dt>거래금액</dt>
+                                            <dd class="fs-md">
+                                                <p class="number-unit fc-black">
+                                                    <span class="number">100,000</span>
+                                                    <span class="unit">원</span>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래 후 잔액</dt>
+                                            <dd class="fs-md">
+                                                <p class="number-unit fw-r">
+                                                    <span class="number">1,340,000</span>
+                                                    <span class="unit">원</span>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래기관</dt>
+                                            <dd class="fs-md">은행</dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래상대</dt>
+                                            <dd class="fs-md">카카오뱅크3283</dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래메모</dt>
+                                            <dd class="fs-md">키움</dd>
+                                        </dl>
+                                    </div>
+                                    
+                                    <div class="detail-footer">
+                                        <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+
+                            <li class="mt30">
+                                <p class="fs-sm fc-gray">2021.03.10 10:22</p>
+                                <p class="fs-lg fw-m mt5">송금수취</p>
+                                
+                                <div class="detail-block">
+                                    <div class="detail-collapse" style="height: 60px;">
+                                        <dl class="data-list">
+                                            <dt>거래금액</dt>
+                                            <dd class="fs-md">
+                                                <p class="number-unit fc-black">
+                                                    <span class="number">6,000</span>
+                                                    <span class="unit">원</span>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래 후 잔액</dt>
+                                            <dd class="fs-md">
+                                                <p class="number-unit fw-r">
+                                                    <span class="number">1,596,000</span>
+                                                    <span class="unit">원</span>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래기관</dt>
+                                            <dd class="fs-md">은행</dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래상대</dt>
+                                            <dd class="fs-md">카카오뱅크3283</dd>
+                                        </dl>
+                                        <dl class="data-list">
+                                            <dt>거래메모</dt>
+                                            <dd class="fs-md">키움</dd>
+                                        </dl>
+                                    </div>
+                                    
+                                    <div class="detail-footer">
+                                        <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                        
+                        <button type="button" class="btn btn-lg btn-block btn-border mt30">더 보기</button>
+
+                    </div>
+
+                    <!-- 배너 -->
+                    <div class="module-box w-full py0">                        
+                        <a href="#;" class="sub-link d-block">
+                            <img src="../../../resources/new_images/views/card/img_banner_fn01.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <!-- 영웅문S의 금융상품 메뉴로 이동 -->
+                    <div class="module-box">
+                        <h4 class="fs-md fw-b">키움에서 판매중인 금융상품</h4>
+                        <div class="overflow-x w-full mt20">
+                            <div class="d-flex px-padding">
+                                <a href="#;" class="btn-link">펀드</a>
+                                <a href="#;" class="btn-link">연금</a>
+                                <a href="#;" class="btn-link">ELS</a>
+                                <a href="#;" class="btn-link">채권(국내)</a>
+                                <a href="#;" class="btn-link">채권(해외)</a>
+                                <a href="#;" class="btn-link">RP</a>
+                                <a href="#;" class="btn-link">ISA</a>
+                                <a href="#;" class="btn-link">Wrap</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 승인내역 목록 -->
+                    <div class="module-box">
+                        <ul>
+                            <li class="border py20">
+                                <p class="fs-sm fc-gray">2020.05.27 11:56</p>
+                                <p class="fs-lg fw-m mt5">한국정보통신 - 쿠팡</p>
+                                <dl class="data-list mt10">
+                                    <dt>이용금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-b fs-md fc-black">
+                                            <span class="number">120,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>결제상태</dt>
+                                    <dd>
+                                        승인
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li class="py20 border">
+                                <p class="fs-sm fc-gray">2021.03.10 10:22</p>
+                                <p class="fs-lg fw-m mt5">토스페이먼츠 - 마켓컬리</p>
+                                <dl class="data-list mt10">
+                                    <dt>이용금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-b fs-md cancel-line"><!-- 취소 : cancel-line 추가 + fc-black 삭제 -->
+                                            <span class="number">1,371,521</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>결제상태</dt>
+                                    <dd>
+                                        취소
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-lg btn-block btn-border mt10">더 보기</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

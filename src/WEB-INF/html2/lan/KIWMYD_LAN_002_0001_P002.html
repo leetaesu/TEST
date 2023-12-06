@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+    <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_full-popup')">Open full popup</a>
+
+    <article class="modal-popup popup-full" id="modal_full-popup">
+        <div class="modal-header">
+            <h1>부동산 추가</h1>
+            <button type="button" class="modal-close">팝업 닫기</button>
+        </div>                        
+        <div class="modal-body">
+
+            <!-- 주소지 정보 -->
+            <div class="module-box module-header bg-purple fc-white" 
+                style="background:#7551aa url(../../../resources/new_images/icons/ico_location.svg) no-repeat calc(100% + 4.5rem) 1rem;">
+                <p class="fs-xl fw-l">서울시 영등포구 여의대로 123<br>캐슬센트럴파크 101동 2305호</p>                    
+                <div class="d-flex mt20 fs-sm">
+                    <div class="w-50">전용면적<p class="fs-md">59.96㎡</p></div>
+                    <div class="w-50 border-left-alpha pl10">최근 실거래가<p class="fs-md">999,999만원</p></div>
+                </div>
+            </div>
+            
+            <div class="module-box">
+                <h3 class="fs-lg">나의 드림하우스 정보를<br><span class="fw-r">입력해주세요.</span></h3>
+
+                <!-- 선택: 별명 -->
+                <h4 class="fw-r fc-gray mt30">별명(선택)</h4>
+                <input type="text" class="custom-input input-block mt10" placeholder="별명을 20자 이내 입력해주세요.">
+
+                <!-- 선택: 희망주거 형태 -->
+                <h4 class="fw-r fc-gray mt30">희망주거 형태(필수)</h4>
+                <div class="grid-box col-3 mt10">
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-hope" id="rdo_hope01">
+                        <label for="rdo_hope01"><i></i>자가</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-hope" id="rdo_hope02">
+                        <label for="rdo_hope02"><i></i>전세</label>
+                    </div>
+                    <div class="custom-radio btn-type">
+                        <input type="radio" name="radio-hope" id="rdo_hope03">
+                        <label for="rdo_hope03"><i></i>월세</label>
+                    </div>
+                </div>
+
+                <!-- 선택: 목표금액 설정  -->
+                <div class="form-box flex-column mt30">                    
+                    <label class="form-label fc-gray">목표금액 설정(필수)</label>
+                    <div class="input-unit input-block mt10 error">
+                        <input type="text" class="custom-input" placeholder="000,000" value="">
+                        <span class="txt-unit">만원</span>
+                    </div>
+                    <!-- 에러메시지 -->
+                    <p class="fs-sm mt10 fc-red">목표금액은 필수 입력 사항입니다.</p>
+                </div>
+            </div>
+
+            <div class="module-box module-border">
+                <h3 class="fs-lg">자산계좌 연결</h3>
+                <p class="mt5">목표금액까지 필요한 자산을 확인해보세요.</p>
+
+                <div class="card-box text-center fc-white mt10" style="background-color:#73b2ce;">
+                    내가모은금액<p class="fs-2xl"><span class="fw-b pr5">1,552,000</span>만원</p>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border">
+
+                <!-- 내가 모은 금액 -->
+                <h3 class="fs-lg">부동산 구매 가능한 자산을<br><span class="fw-r">선택해주세요.</span></h3>
+
+                <!-- 아코디언 -->
+                <ul class="accordion-wrap type-block mt15">
+                    <li class="accordion">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <div class="fs-md fw-b">
+                                은행<span class="ml5">2</span>
+                            </div>
+                        </div>
+                        <div class="fold-body pb20" style="display: none;">
+
+                            <div class="custom-check check-vertical mt20">
+                                <input type="checkbox" id="chk_bk01">
+                                <label for="chk_bk01"><i></i>
+                                    <div class="icon-title">
+                                        <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                            <p class="fs-sm fc-gray">1002444111111</p>
+                                            <p class="number-unit fs-md fc-black mt3">
+                                                <span class="number">9,543,000</span>
+                                                <span class="unit">원</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="custom-check check-vertical mt20">
+                                <input type="checkbox" id="chk_bk02">
+                                <label for="chk_bk02"><i></i>
+                                    <div class="icon-title">
+                                        <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                            <p class="fs-sm fc-gray">1002444111111</p>
+                                            <p class="number-unit fs-md fc-black mt3">
+                                                <span class="number">9,543,000</span>
+                                                <span class="unit">원</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="accordion">
+                        <div class="fold-head">
+                            <button type="button" class="btn-fold">열기/닫기</button>
+                            <div class="fs-md fw-b">
+                                투자<span class="ml5">2</span>
+                            </div>
+                        </div>
+                        <div class="fold-body pb20" style="display: none;">
+
+                            <div class="custom-check check-vertical mt20">
+                                <input type="checkbox" id="chk_bk03">
+                                <label for="chk_bk03"><i></i>
+                                    <div class="icon-title">
+                                        <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                            <p class="fs-sm fc-gray">1002444111111</p>
+                                            <p class="number-unit fs-md fc-black mt3">
+                                                <span class="number">9,543,000</span>
+                                                <span class="unit">원</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="custom-check check-vertical mt20">
+                                <input type="checkbox" id="chk_bk04">
+                                <label for="chk_bk04"><i></i>
+                                    <div class="icon-title">
+                                        <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                            <p class="fs-sm fc-gray">1002444111111</p>
+                                            <p class="number-unit fs-md fc-black mt3">
+                                                <span class="number">9,543,000</span>
+                                                <span class="unit">원</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="module-box w-full">
+                <!-- 광고 -->
+                <div class="swiper-container custom-swiper" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <!-- contents -->
+                            <a href="#;" class="sub-link">
+                                <img src="../../../resources/new_images/views/lan/img_land_banner01.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <a href="#;" class="sub-link">
+                                <img src="../../../resources/new_images/views/lan/img_land_banner02.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.openPop('#modal_alert1')">드림하우스 등록</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="modal-popup popup-alert" id="modal_alert1">
+        <div class="modal-header sr-only">
+            <h1>부동산 등록 결과</h1>
+        </div>
+        <div class="modal-body text-center">
+            <p class="fc-gray mt15"><span class="d-block mb10">드림하우스를 등록하였습니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert1')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- "이미 등록된 부동산..." alert 내용은 KIWMYD_LAN_002_0001_P001과 동일 -->
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // Swiper 실행
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', true);
+    </script>
+</body>
+
+</html>

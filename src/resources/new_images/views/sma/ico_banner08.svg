@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 12929">
+        <path data-name="패스 3168" d="m15.766 9.268-4.33-6.36a.616.616 0 0 1 .243-.9l.88-.514a7.659 7.659 0 0 1 8.18.394l.784.58a3.813 3.813 0 0 0 3.213.561l2.389-.645c1.388-.374 2.634.823 1.987 1.91l-2.96 4.974" transform="translate(-2.298 3.656)" style="fill:#fff;stroke:#333;stroke-miterlimit:10"/>
+        <path data-name="패스 3167" d="M19.336 12.383H8.76C4.127 14.358.5 19.846.5 25.6c0 7.205 6.1 7.353 13.616 7.353s13.616-.148 13.616-7.353c0-5.754-3.763-11.242-8.396-13.217z" transform="translate(4.518 -.148)" style="fill:#fff;stroke:#333;stroke-miterlimit:10"/>
+    </g>
+    <g data-name="그룹 13485">
+        <g data-name="사각형 3869" transform="translate(16 16)" style="stroke:#292929;fill:#deecfb">
+            <rect width="20" height="20" rx="4" style="stroke:none"/>
+            <rect x=".5" y=".5" width="19" height="19" rx="3.5" style="fill:none"/>
+        </g>
+        <path data-name="패스 5783" d="M9 13h4" transform="translate(11.129 8.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="패스 5784" d="M14 13h4" transform="translate(14.415 8.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="패스 9232" d="M9 13h4" transform="rotate(90 12.193 22.936)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="패스 9233" d="M9 13h4" transform="rotate(45 -3.644 34.804)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="패스 9234" d="M9 13h4" transform="rotate(135 13.097 23.676)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="패스 9235" d="M14 13h4" transform="translate(14.415 16.742)" style="stroke-linecap:round;fill:none;stroke:#292929"/>
+        <path data-name="사각형 3870" transform="translate(30.415 28)" style="stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+        <path data-name="사각형 3871" transform="rotate(30 -43.524 72.498)" style="stroke-linejoin:round;fill:none;stroke:#292929" d="M0 0h.01v.01H0z"/>
+    </g>
+</svg>

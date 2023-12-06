@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <linearGradient id="ttnzye277g" x1=".211" y1=".211" x2=".923" y2=".923" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#7faef4"/>
+            <stop offset="1" stop-color="#4c8df1"/>
+        </linearGradient>
+        <linearGradient id="m0owsmr4ua" x1=".5" y1=".693" x2=".5" y2=".141" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#4256ac" stop-opacity="0"/>
+            <stop offset="1" stop-color="#1b1464"/>
+        </linearGradient>
+        <linearGradient id="3g1yjp047h" y1=".547" y2="1.329" xlink:href="#m0owsmr4ua"/>
+        <linearGradient id="isfvqgphyb" x1=".462" y1=".477" x2=".888" y2=".737" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#a7c5fd"/>
+            <stop offset="1" stop-color="#7faef4"/>
+        </linearGradient>
+        <linearGradient id="q5xedbec5c" x1=".564" y1=".542" x2="1.018" y2=".846" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#4166bf"/>
+            <stop offset="1" stop-color="#4256ac"/>
+        </linearGradient>
+        <linearGradient id="gs18a3n4mi" x1=".229" y1=".368" x2=".852" y2=".784" xlink:href="#isfvqgphyb"/>
+        <linearGradient id="7yazd9kosj" x1=".372" y1=".497" x2=".893" y2=".895" xlink:href="#q5xedbec5c"/>
+        <linearGradient id="vdivrrejck" x1=".383" y1=".033" x2=".819" y2=".806" xlink:href="#isfvqgphyb"/>
+        <linearGradient id="pys69te49l" x1=".524" y1=".284" x2=".726" y2=".641" xlink:href="#q5xedbec5c"/>
+        <linearGradient id="xpluvbwcam" x1=".324" y1="-.072" x2=".739" y2=".665" xlink:href="#isfvqgphyb"/>
+        <linearGradient id="wh5xxva1pn" x1=".374" y1=".016" x2=".771" y2=".721" xlink:href="#q5xedbec5c"/>
+        <radialGradient id="a5jftahbsd" cx=".5" cy=".13" r=".648" gradientTransform="rotate(90 .5 .13)" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#f9f9f9"/>
+        </radialGradient>
+        <clipPath id="uz8h79zu7f">
+            <path data-name="사각형 9057" transform="translate(-622 506)" style="stroke:#707070;fill:#fff" d="M0 0h30v30H0z"/>
+        </clipPath>
+        <filter id="p6sjc2uffe" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+            <feOffset dy="-5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-color="#fff" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="4">
+        <g data-type="innerShadowGroup">
+            <rect data-name="bg" width="60" height="60" rx="25" style="fill:url(#a5jftahbsd)"/>
+            <g style="filter:url(#p6sjc2uffe)">
+                <rect data-name="bg" width="60" height="60" rx="25" style="fill:#fff"/>
+            </g>
+        </g>
+        <g data-name="마스크 그룹 13746" transform="translate(637 -491)" style="clip-path:url(#uz8h79zu7f)">
+            <g data-name="그룹 16634">
+                <path data-name="패스 18011" d="M25.955 29.625H4.385a2.512 2.512 0 0 1-2.512-2.512V5.543A2.512 2.512 0 0 1 4.385 3.03h21.57a2.512 2.512 0 0 1 2.512 2.512v21.57a2.512 2.512 0 0 1-2.512 2.513z" transform="translate(-622.171 505.725)" style="fill:url(#ttnzye277g)"/>
+                <path data-name="패스 18012" d="M28.468 5.542v21.571a2.512 2.512 0 0 1-2.512 2.512H15.712L1.873 15.787V5.542A2.512 2.512 0 0 1 4.385 3.03h21.571a2.512 2.512 0 0 1 2.512 2.512z" transform="translate(-622.171 505.725)" style="fill:url(#m0owsmr4ua)"/>
+                <path data-name="패스 18013" d="M1.873 25.507v3.65a2.512 2.512 0 0 0 2.512 2.512h21.57a2.512 2.512 0 0 0 2.512-2.512v-3.65z" transform="translate(-622.171 503.681)" style="fill:url(#3g1yjp047h)"/>
+            </g>
+            <g data-name="그룹 16635">
+                <path data-name="패스 18014" d="M7.5 11.956H0l1.795-9.19A2.538 2.538 0 0 1 4.286.715H8.6z" transform="translate(-622 505.935)" style="fill:url(#isfvqgphyb)"/>
+                <path data-name="패스 18015" d="M15.75 11.956h-7.5L9.348.715h6.4z" transform="translate(-622.75 505.935)" style="fill:url(#q5xedbec5c)"/>
+                <path data-name="패스 18016" d="M24 11.956h-7.5V.715h6.4z" transform="translate(-623.5 505.935)" style="fill:url(#gs18a3n4mi)"/>
+                <path data-name="패스 18017" d="M32.14 11.956h-7.5L23.542.715h4.312a2.538 2.538 0 0 1 2.491 2.051z" transform="translate(-624.14 505.935)" style="fill:url(#7yazd9kosj)"/>
+            </g>
+            <g data-name="그룹 16636">
+                <path data-name="패스 18018" d="M7.5 13.08H0v.478a3.75 3.75 0 0 0 7.5 0z" transform="translate(-622 504.811)" style="fill:url(#vdivrrejck)"/>
+                <path data-name="패스 18019" d="M15.75 13.08h-7.5v.478a3.75 3.75 0 0 0 7.5 0z" transform="translate(-622.75 504.811)" style="fill:url(#pys69te49l)"/>
+                <path data-name="패스 18020" d="M24 13.08h-7.5v.478a3.75 3.75 0 0 0 7.5 0z" transform="translate(-623.5 504.811)" style="fill:url(#xpluvbwcam)"/>
+                <path data-name="패스 18021" d="M32.25 13.08h-7.5v.478a3.75 3.75 0 1 0 7.5 0z" transform="translate(-624.25 504.811)" style="fill:url(#wh5xxva1pn)"/>
+            </g>
+        </g>
+    </g>
+</svg>

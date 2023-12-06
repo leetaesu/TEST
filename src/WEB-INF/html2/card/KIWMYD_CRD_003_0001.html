@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>카드이용분석</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box pb0 bg-white2">
+                
+                <p class="fw-m">2022년 4월</p>
+                <p class="number-unit fs-2xl fc-black fw-b">
+                    <span class="number">2,858,564</span>
+                    <span class="unit">원</span>
+                </p>
+                <p class="fs-sm fc-gray">6개월간 월평균 1,856,410원</p>
+
+                <!-- 차트 -->
+                <div class="chart-wrapper">
+                    <div id="chart-column-basic"></div>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border p0">
+
+                <ul class="tab-head tab-block mt15">
+                    <li id="tab_use_01" class="tab-btn" aria-controls="tab_use_panel01">캘린더</li>
+                    <li id="tab_use_02" class="tab-btn" aria-controls="tab_use_panel02">결제수단</li>
+                </ul>
+
+                <!-- 캘린더 tab panel -->
+                <div id="tab_use_panel01" class="tab-panel p0">
+                    <div class="module-box py10 px-padding">
+                        <!-- 캘린더 -->
+                        <div class="datepicker-month" id="card_calendar"></div>
+                    </div>                    
+
+                    <div class="module-box module-border">
+                        
+
+                        <div class="d-flex-between data-list-block py10">
+                            <p class="fs-sm fc-gray">2022.04.21 (목)</p>
+                            <p class="number-unit fs-lg fc-black fw-b">
+                                <span class="number">123,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+
+                        <ul class="border-bottom">                        
+                            <li class="py20 border">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray ellipsis"><span class="mr5 fc-gray-d">신용</span>현대카드ZERO Edition2(할인형)</p>
+                                        <p class="fw-df mt5">여의도오목집</p>
+                                    </div>
+                                </div>
+                                <div class="mt10 text-right">
+                                    <p class="number-unit fs-df fc-black fw-b">
+                                        <span class="number">164,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </li>
+    
+                            <li class="py20 border">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray ellipsis"><span class="mr5 fc-gray-d">체크</span>토스뱅크 체크카드</p>
+                                        <p class="fw-df mt5">신천포차</p>
+                                    </div>
+                                </div>
+                                <div class="mt10 text-right">
+                                    <p class="number-unit fs-df fc-black fw-b">
+                                        <span class="number">70,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="py20 border">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray ellipsis"><span class="mr5 fc-gray-d">선불카드</span>선불카드명</p>
+                                        <p class="fw-df mt5">인터파크티켓</p>
+                                    </div>
+                                </div>
+                                <div class="mt10 text-right">
+                                    <p class="number-unit fs-df fc-black fw-b">
+                                        <span class="number">36,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 승인 내역 없을 경우 -->
+                        <div class="d-flex-between data-list-block py10">
+                            <p class="fs-sm fc-gray">2022.04.21 (목)</p>
+                            <p class="number-unit fs-lg fc-black fw-b">
+                                <span class="number">0</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </div>
+
+                        <div class="no-data">
+                            <p class="fs-lg fw-m">승인 내역이 없습니다.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 결제수단 tab panel -->
+                <div id="tab_use_panel02" class="tab-panel">
+
+                    <ul>
+                        <li class="py10">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray-l ellipsis">현대카드</p>
+                                        <p class="number-unit fs-df fc-black fw-m">
+                                            <span class="number">338,270</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py10">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray-l ellipsis">토스카드</p>
+                                        <p class="number-unit fs-df fc-black fw-m">
+                                            <span class="number">274,900</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py10">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc-gray-l ellipsis">하나카드</p>
+                                        <p class="number-unit fs-df fc-black fw-m">
+                                            <span class="number">100,300</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="module-box module-box5  pt10">
+                      
+                        <ul class="bullet-list bullet-dot border-top pt15">
+                            <li>해외 통화로 결제한 경우 환율정책에 따라 카드사의 이용금액과 차이가 발생할 수 있습니다.</li>
+                        </ul>
+        
+        
+                    </div>
+                </div>
+               
+            </div>
+            
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+
+    
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+
+        // Column chart - Basic
+        var chartColumnBasic = new Highcharts.Chart('chart-column-basic', Highcharts.merge (
+            KW_MOBILE.highcharts.types.column,
+            {
+                chart: { 
+                    height: 150,
+                    marginRight: 30,
+                    events: {
+                        load: function(e) {
+                            var lastData = this.pointCount - 1
+                            this.series[0].data[lastData].select();
+                        }
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        color: '#dcdfe4',                        
+                        states: {
+                            select: {
+                                color: '#59c39b'
+                            }
+                        },
+                        allowPointSelect: true,
+                        point: {
+                            events: {
+                                click: function(e) {
+                                    var seriesName = e.point.category;
+                                    console.log(seriesName);
+                                }
+                            }
+                        },
+                    },
+                    column: {
+                        pointWidth: 22,
+                        padding: 20,
+                        margin: 20
+                    }
+                },
+                xAxis: { 
+                    categories: ['11월', '12월', '1월', '2월', '3월', '4월'],
+                },                    
+                yAxis: {
+                    labels: {
+                        enabled: false
+                    },
+                    min: 0,
+                    tickInterval: 500000,
+                    plotLines: [{   //평균선
+                        value: '900000',
+                        width: 1,
+                        zIndex: 10,
+                        dashStyle: 'shortdash',
+                        label: {
+                            useHTML: true,
+                            x: 30,
+                            y: 1,
+                            align: 'right',
+                            text: '<span class="custom-label label-square label-solid c-gray">평균</span>'
+                        }
+                    }],
+                },
+                series: [{
+                    data: [1010000, 1010000, 1020000, 1200000, 800000, 1160000],
+                }]
+            }
+        ));
+
+        // 캘린더
+        var $datepicker = $('#card_calendar'),
+            currentDate = new Date(),
+            currentYear = currentDate.getFullYear(),
+            currentMonth = currentDate.getMonth(),
+            currentDay = currentDate.getDate(),
+            eventDates = [1, 10, 12, 22],
+            eventMoney = ['100,000', '', '', '']; // 사용한 금액 
+
+        $datepicker.datepicker({
+            language: 'ko',
+            firstDay: 1,
+            // navTitles: {
+            //     days: 'yyyy<span>년</span>&nbsp;MM ',
+            //     months: 'yyyy<span>년</span>',
+            //     years: 'yyyy1 - yyyy2'
+            // },
+            view: 'days',
+            minView: 'days',
+            dateFormat: 'yyyy.mm.dd',
+            minDate: new Date(currentYear, currentMonth-1, 1),
+            maxDate: new Date(currentYear, currentMonth, currentDay),
+            // prevHtml: '<svg><path d="M 17,9 l -7,7 l 7,7"></path></svg>',
+            // nextHtml: '<svg><path d="M 14,9 l 7,7 l -7,7"></path></svg>',
+            showOtherMonths: false,
+            selectOtherMonths: false,
+            onRenderCell: function(date, cellType) {
+                var currentDate = date.getDate();
+
+                if (cellType == 'day' && eventDates.indexOf(currentDate) != -1) {
+                    return {
+                        html: currentDate + `<span class="date-price">${eventMoney}</span>`
+                    }
+                }
+
+                if (cellType == 'day') {
+                    var day = date.getDay(),
+                    isSun = [0].indexOf(day) != -1,
+                    isSat = [6].indexOf(day) != -1;
+
+                    if(isSun == true) return { classes: 'fc-orange' }
+                    if(isSat == true) return { classes: 'fc-darkblue' }
+                }
+
+                
+            },
+            onSelect: function(fd, date, param) {
+                $(param.el).change();
+            }
+        });
+        
+    </script>
+
+</body>
+
+</html>

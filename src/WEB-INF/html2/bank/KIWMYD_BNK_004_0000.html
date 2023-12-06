@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../resources/css/swiper.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>예·적금 분석</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group bg-white2">
+
+            <section class="module-box w-full p0">
+
+                <div class="swiper-container custom-swiper mt60" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <span class="custom-badge badge-lg bg-primary mb15">1</span>
+                            <h3 class="fs-2xl fw-m h85">흩어진 예·적금<br>MY자산으로 한번에 확인해요!</h3>
+
+                            <img src="../../../resources/new_images/views/bank/img_banner_deposit_01.png" class="mt80" alt="">
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <span class="custom-badge badge-lg bg-primary mb15">2</span>
+                            <h3 class="fs-2xl fw-m h85">만기가 다가오면 알려드려요!</h3>            
+
+                            <img src="../../../resources/new_images/views/bank/img_banner_deposit_02.png" class="mt80" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination bullet-gray custom-bullet" style="top: 13rem"></div>
+                </div>
+                
+            </section>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">예·적금 분석하기</button>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+    </script>
+
+</body>
+
+</html>

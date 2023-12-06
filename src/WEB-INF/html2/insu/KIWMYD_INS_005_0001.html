@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>보험 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group ins_details">
+
+            <div class="module-box bg-white2 pt30r">
+                <!-- 은행명 -->
+                <p class="fs-lg fw-m">주택금융공사</p>
+                <!-- 상품명 -->
+                <h3 class="fs-lg fw-m ellipsis">전세반환 보증보험</h3>
+
+                <div class="d-flex-between mt20">
+                    <p class="fc-gray">납입주기<span class="fc-black fw-m ml5">매월10일</span></p>
+                    <p class="fc-gray">납입 보험료</p>
+                    <!-- API 2.0 피보험자 케이스 -->
+                    <!-- <p class="fc-gray">납입주기 -</p> -->
+                </div>
+
+                <div class="text-right">
+                    <p class="number-unit fs-2xl fw-b mt10">
+                        <span class="number">254,000</span>
+                        <span class="unit">원</span>
+                    </p>                    
+                    <!-- API 2.0 피보험자 케이스 -->
+                    <!-- <p class="number-unit fs-2xl fw-b mt10">-</p>   -->
+                </div>
+            </div>
+
+            <div class="module-box module-border w-full pt20">
+
+                <ul class="tab-head tab-block">
+                    <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">납입내역</li>
+                    <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">상품정보</li>
+                </ul>
+                
+                <!-- 납입내역 Tab -->
+                <div id="tab_panel01" class="tab-panel p0">
+
+                    <!-- API 2.0 피보험자노출 화면 -->
+                    <!-- <div class="module-box pt20">
+                        <div class="no-data">
+                            <p class="fs-lg fw-m">납입내역은 보험계약자에게만<br>정보를 제공합니다.</p>
+                        </div>
+                    </div> -->
+
+                    <div class="module-box pt20">
+                        <div class="form-box">
+                            <input type="text" class="custom-input input-block calendar month" placeholder="기간선택" readonly="">
+                        </div>
+
+                        <!-- 회차 컨텐츠 -->
+                        <div class="py30 border">
+                            <span class="fs-sm fc-gray">2022.03.10</span>
+                            <p class="fs-lg fw-m fc-black mt5">21회차</p>
+
+                            <dl class="data-list">
+                                <dt>납입 보험료</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">180,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                                <dt>수금 방법</dt>
+                                <dd class="fs-md">가상계좌</dd>
+                            </dl>
+                        </div>
+
+                        <!-- 회차 컨텐츠 -->
+                        <div class="py30 border">
+                            <span class="fs-sm fc-gray">2022.03.10</span>
+                            <p class="fs-lg fw-m fc-black mt5">21회차</p>
+
+                            <dl class="data-list">
+                                <dt>납입 보험료</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">180,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                                <dt>수금 방법</dt>
+                                <dd class="fs-md">가상계좌</dd>
+                            </dl>
+                        </div>
+
+                        <!-- 거래내역이 500개 이상인 경우 노출 -->
+                        <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                    </div>
+                </div>
+
+                <!-- 상품정보 Tab -->
+                <div id="tab_panel02" class="tab-panel p0">
+                    <div class="module-box pt30">
+                        <table class="custom-table">
+                            <caption>보험상품 상세</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">계약일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">만기일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">납입 주기</th>
+                                    <td class="text-right">매월 25일</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">납입 기관</th>
+                                    <td class="text-right">우리은행</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">보험 구분</th>
+                                    <td class="text-right">저축보험/변액유니버셜</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">통화코드</th>
+                                    <td class="text-right">USD</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">계약 상태</th>
+                                    <td class="text-right">정상</td>
+                                </tr>
+                                <!-- API 2.0 보험계약관계 추가 -->
+                                <tr>
+                                    <th class="text-left">보험계약 관계</th>
+                                    <td class="text-right">계약자/피보험자</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+
+                        <!-- 보증보험 상세 -->
+                        <!-- <table class="custom-table">
+                            <caption>보증보험 상세</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">계약일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">종료일</th>
+                                    <td class="text-right">2020.10.10</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">보험 가입 금액</th>
+                                    <td class="text-right">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">180,000,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">총 납입 보험료</th>
+                                    <td class="text-right">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">180,000,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">납입 구분</th>
+                                    <td class="text-right">분납</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">피보험자</th>
+                                    <td class="text-right">김키움</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+
+                    <div class="module-box module-border w-full">
+                        <h4 class="fs-md fw-r mb30 px-padding">
+                            피보험자
+                            <!-- 피보험자가 한명인 경우 -->
+                            <span class="fc-pink ml5 mr5 fw-m">김키움</span>
+                            님
+                            <!-- 피보험자가 여러명인 경우 -->
+                            <!-- <div class="custom-select2 fc-pink ml5 mr5" data-title="피보험자 선택">
+                                <select>
+                                    <option>김키움님</option>
+                                </select>
+                            </div>
+                            특약 정보 -->
+                        </h4>
+                        <ul class="tab-head tab-block">
+                            <li id="tab_03" class="tab-btn" aria-controls="tab_ins_01">특약정보</li>
+                            <li id="tab_04" class="tab-btn" aria-controls="tab_ins_02">보장정보</li>
+                        </ul>
+                        <div id="tab_ins_01" class="tab-panel p0">
+                            <!-- 피보험자 특약 정보 -->
+                            <div class="module-box">
+
+                                <!-- 특약 컨텐츠 건수 -->
+                                <div class="d-flex-between border-bottom pb10 mt30">
+                                    <p class="fs-lg">총 <span class="fw-b">99</span>건</p>
+                                    <span class="fs-sm fc-gray">통화코드 USD</span>
+                                </div>
+    
+                                <!-- 특약 컨텐츠 -->
+                                <dl class="data-list border">
+                                    <dt>특약명</dt>
+                                    <dd class="fs-md">일반상해사망후유장애</dd>
+                                    <dt>특약금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">180,000,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>특약만기일</dt>
+                                    <dd class="fs-md">2068.10</dd>
+                                </dl>
+    
+                                <!-- 특약 컨텐츠 -->
+                                <dl class="data-list border">
+                                    <dt>특약명</dt>
+                                    <dd class="fs-md">일반상해사망후유장애</dd>
+                                    <dt>특약금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">180,000,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>특약만기일</dt>
+                                    <dd class="fs-md">2068.10</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div id="tab_ins_02" class="tab-panel p0">
+                             <div class="module-box">
+
+                                <!-- 보장정보 컨텐츠 건수 -->
+                                <div class="d-flex-between border-bottom pb10 mt30">
+                                    <p class="fs-lg">총 <span class="fw-b">10</span>건</p>
+                                </div>
+    
+                                <!-- 보장정보 컨텐츠 -->
+                                <dl class="data-list border">
+                                    <dt>담보명</dt>
+                                    <dd class="fs-md">암진단</dd>
+                                    <dt>담보금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">50,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>담보만기일</dt>
+                                    <dd class="fs-md">2032.03.11</dd>
+                                </dl>
+
+                                <dl class="data-list border">
+                                    <dt>담보명</dt>
+                                    <dd class="fs-md">고액암진단</dd>
+                                    <dt>담보금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">20,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>담보만기일</dt>
+                                    <dd class="fs-md">2032.03.11</dd>
+                                </dl>
+
+                                <dl class="data-list border">
+                                    <dt>담보명</dt>
+                                    <dd class="fs-md">암수술</dd>
+                                    <dt>담보금액</dt>
+                                    <dd class="fs-md">
+                                        <p class="number-unit fw-r">
+                                            <span class="number">10,000,000</span>
+                                            <span class="unit">원</span>
+                                        </p>
+                                    </dd>
+                                    <dt>담보만기일</dt>
+                                    <dd class="fs-md">2032.03.11</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="module-box pt30">
+                                <table class="custom-table">
+                                    <caption>보장정보 상세</caption>
+                                    <colgroup>
+                                        <col style="width: 13rem;">
+                                        <col style="width: 19.6rem;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row" class="text-left">담보명</th>
+                                            <td class="text-left fc-black2">
+                                                암진단
+                                                <button type="button"></button>
+                                            </td>
+                                        </tr> 
+                                    </thead>
+                                    <tbody>                           
+                                        <tr>
+                                            <th scope="row" class="text-left">담보금액</th>
+                                            <td class="text-left fc-black2">50,000,000원</td>
+                                        </tr>                            
+                                        <tr>
+                                            <th scope="row" class="text-left">계약관계자</th>
+                                            <td class="text-left fc-black2">계약자</td>
+                                        </tr>                            
+                                        <tr>
+                                            <th scope="row" class="text-left">피보험자계약자관계</th>
+                                            <td class="text-left fc-black2">본인</td>
+                                        </tr>                            
+                                        <tr>
+                                            <th scope="row" class="text-left">담보상태</th>
+                                            <td class="text-left fc-black2">정상</td>
+                                        </tr>                            
+                                        <tr>
+                                            <th scope="row" class="text-left">담보기간</th>
+                                            <td class="text-left fc-black2">2017.03.11 ~ 2032.03.11</td>
+                                        </tr>                            
+                                    </tbody>
+                                </table>
+                                <table class="custom-table" style="margin-top: 3rem;">
+                                    <caption>보장정보 상세</caption>
+                                    <colgroup>
+                                        <col style="width: 13rem;">
+                                        <col style="width: 19.6rem;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row" class="text-left">담보명</th>
+                                            <td class="text-left fc-black2">
+                                                암진단
+                                                <button type="button"></button>
+                                            </td>
+                                        </tr> 
+                                    </thead>
+                                    <tbody>                           
+                                        <tr>
+                                            <th scope="row" class="text-left">담보금액</th>
+                                            <td class="text-left fc-black2">50,000,000원</td>
+                                        </tr>                            
+                                        <tr>
+                                            <th scope="row" class="text-left">계약관계자</th>
+                                            <td class="text-left fc-black2">계약자</td>
+                                        </tr>                           
+                                    </tbody>
+                                </table>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+</body>
+
+</html>

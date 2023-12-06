@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+    <defs>
+        <filter id="avrm5splga" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 19125">
+        <g style="filter:url(#avrm5splga)">
+            <g data-name="타원 2650" transform="translate(3 2)" style="fill:#fff;stroke:#ddd">
+                <circle cx="19" cy="19" r="19" style="stroke:none"/>
+                <circle cx="19" cy="19" r="18.5" style="fill:none"/>
+            </g>
+        </g>
+        <g data-name="Upload - 192x192">
+            <path data-name="패스 5696" d="m7 13.333 5.833 5.833m0 0 5.833-5.833m-5.833 5.833V5.034" transform="rotate(180 17.416 17.334)" style="stroke:#292929;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+            <path data-name="패스 5697" d="M6 20h14" transform="rotate(180 17.5 16.5)" style="stroke:#292929;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        </g>
+    </g>
+</svg>

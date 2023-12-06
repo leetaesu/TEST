@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <a href="#;" role="button" onclick="KW_MOBILE.guiEvent.popup.openPop('#bottomsheet')">Open Slide Popup</a>
+
+        <article class="modal-popup bottomsheet" id="bottomsheet">
+            <div class="modal-header">
+                <h1>알림</h1>
+                <button type="button" class="modal-close">닫기</button>
+            </div>                        
+            <div class="modal-body pb10">
+                <h3 class="fs-df fw-r">정보 연결이 종료되는 금융사가 있어요.</h3>
+                <p class="fs-sm fc-gray mt5 mb10">MY자산 서비스를 이용하기 위해서는 연장이 필요해요.</p>
+
+                <!-- 금융사 리스트 -->
+                <div class="icon-title y10">
+                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                    <p class="ellipsis fs-df">IBK 기업은행</p>
+                </div>
+                <div class="icon-title y10">
+                    <img class="icon40" src="../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                    <p class="ellipsis fs-df">미래에셋생명(수익증권)</p>
+                </div>
+
+                <div class="btn-box text-center mt10">
+                    <button type="button" class="btn btn-transparent fs-sm">오늘 하루 동안 보지 않기</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-box">
+                    <button type="button" class="btn btn-footer btn-primary">연장하기</button>
+                </div>                            
+            </div>
+        </article>
+
+    </div>
+
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

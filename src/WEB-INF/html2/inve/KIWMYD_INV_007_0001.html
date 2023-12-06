@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+
+        <header>
+            <h1>키움 자동일지</h1>
+            <button type="button" class="sub-close">닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box pb30">                
+                <div class="custom-select2 select-block">
+                    <select>
+                        <option>삼성전자(005390)</option>
+                        <option>삼성전자</option>
+                    </select>
+                </div>
+
+                <div class="card-box d-flex mt30 bg-gray-l">
+                    <div class="w-50">
+                        <p class="fs-sm fc-gray-d">매입가</p>
+                        <p class="number-unit fs-2xl fw-b">
+                            <span class="number">108,000</span>
+                            <span class="unit fs-df fw-m">원</span>
+                        </p>
+                    </div>
+                    <div class="w-50 border-left-alpha pl20">
+                        <p class="fs-sm fc-gray-d">수익률</p>
+                        <!-- 플러스일 때에는 fc-num-red, 마이너스일 때에는 fc-num-blue 사용 -->
+                        <p class="fs-2xl fw-b fc-num-red">+8.59%</p>
+                    </div>
+                </div>
+
+                <p class="fs-lg mt20">보유 비중은
+                    <span class="fw-b fc-black">20.05%</span>이고,<br>
+                    총 <span class="fw-b fc-black">2,000,000원</span>투자중이에요.
+                </p>                
+
+            </div>
+
+            <!-- 수익률 비교 -->            
+            <div class="module-box module-border"> 
+
+                <!-- 차트 -->                
+                <h3 class="fs-lg fw-m">수익률 비교</h3>
+                <div class="chart-wrapper mt10">
+                    <div id="chart-column-negative"></div>
+                </div>
+
+                <div class="d-flex flex-column mt20">
+                    <div class="d-flex-between card-box-sm bg-gray-l">
+                        <p class="w-40 text-center">MY자산 고객평균</p>
+                        <p class="w-20 text-center"><span class="custom-label label-solid c-primary fs-sm">VS</span></p>
+                        <p class="w-40 text-center">키움증권 고객평균</p>
+                    </div>
+
+                    <div class="d-flex-between py20 border">
+                        <p class="w-40 text-center fs-sm">22,000</p>
+                        <p class="w-20 text-center fs-sm">보유 계좌수</p>
+                        <p class="w-40 text-center fs-sm">2,800,000</p>
+                    </div>
+
+                    <div class="d-flex-between py20 border">
+                        <p class="w-40 text-center fs-sm">2,000,000원</p>
+                        <p class="w-20 text-center fs-sm">매입가</p>
+                        <p class="w-40 text-center fs-sm">2,000,000원</p>
+                    </div>
+
+                    <div class="d-flex-between py20 border">
+                        <p class="w-40 text-center fs-sm fc-num-red">+8.59%</p>
+                        <p class="w-20 text-center fs-sm">수익률</p>
+                        <p class="w-40 text-center fs-sm fc-num-red">+12.59%</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border">  
+
+                <h3 class="fs-lg fw-m">키움 자동일지의 더 많은 기능을<br>이용해보세요
+                </h3>
+
+                <ul class="grid-box col-3 mt30">
+                    <li class="text-center">
+                        <a href="#;" class="sub-link">
+                            <i class="deco-icon icon-70 ico-autolog01"></i>
+                            <p class="fs-sm mt10">차트로 보는<br>투자 타이밍</p>
+                        </a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#;" class="sub-link">
+                            <i class="deco-icon icon-70 ico-autolog02"></i>
+                            <p class="fs-sm mt10">수익률<br>분포도 보기</p>
+                        </a>
+                    </li>
+                    <li class="text-center">
+                        <a href="#;" class="sub-link">
+                            <i class="deco-icon icon-70 ico-autolog03"></i>
+                            <p class="fs-sm mt10">나만의<br>일지메모</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="bullet bullet-dot mt30">키움 자동일지는 키움증권 계좌로 거래한 종목에 한하여 이용할 수 있습니다.</p>
+
+            </div>
+
+            <div class="module-box pt0">
+                <button type="button" class="btn btn-border btn-block btn-lg btn-icon-add">증권 연결하기</button>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary">자동일지 바로가기</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!--하이차트 관련 lib-->
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-more.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/series-label.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/solid-gauge.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/exporting.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/export-data.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/accessibility.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/modules/variable-pie.js"></script>
+    <script src="../../../resources/js/lib/Highcharts-8.2.2/code/highcharts-border.js"></script>
+        
+    <script>
+        // Highcharts Default options (Highchart 사용시 필수 적용)
+        Highcharts.setOptions(KW_MOBILE.highcharts.general);
+        
+        // 수익률 비교차트
+        var chartColumnBasic = new Highcharts.Chart('chart-column-negative', Highcharts.merge (
+                KW_MOBILE.highcharts.types.column,
+                {
+                    chart: { 
+                        height: 200,
+                        marginTop: 40,
+                        events: {
+                            render: function() {
+                                var tick0 = this.yAxis[0].toPixels(0, true);
+                                Highcharts.each(this.series[0].points, function(point) {
+                                    if(point.y < 0) {
+                                        point.dataLabel.attr({ y: tick0 - 50 });
+                                    }
+                                });
+                            }
+                        }
+                    },
+                    plotOptions: {
+                        column: {
+                            pointWidth: 44,
+                            borderRadiusTopLeft: 0,
+                            borderRadiusTopRight: 0,
+                            dataLabels: {
+                                enabled: true,
+                                inside: false,
+                                overflow: 'none',
+                                crop: false,
+                                useHTML: true,
+                                formatter: function() {
+                                    return '<span class="chart-tooltip mb5">' + Highcharts.numberFormat(this.y) +'%</span>'
+                                }
+                            }
+                        },
+                    },
+                    xAxis: { 
+                        categories: ['내종목', '키움증권', 'MY자산'],
+                        labels:{
+                            y: 25,
+                            style: { fontSize: '12px', fontWeight: 'bold', color: '#888' }
+                        }
+                    },                    
+                    yAxis: {
+                        labels: {
+                            enabled: true
+                        },
+                        plotLines: [{
+                            color: '#ddd',
+                            width: 1,
+                            value: 0,
+                            zIndex: 1
+                        }]
+                    },
+                    series: [{
+                        data: [
+                            { y: 5.10, color: '#f36b7f' },
+                            { y: -2.29, color: '#2969ba' },
+                            { y: 8.59, color: '#f36b7f' }                      
+                        ]
+                    }]
+                }
+            ));
+    </script>
+
+</body>
+
+</html>

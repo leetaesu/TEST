@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="39.98" viewBox="0 0 40 39.98">
+    <g transform="translate(-839 -433)">
+        <g data-name="Ellipse 2252" transform="translate(839 433)" style="fill:#4152a2;stroke:#38478c;stroke-linejoin:round">
+            <ellipse cx="20" cy="19.99" rx="20" ry="19.99" style="stroke:none"/>
+            <ellipse cx="20" cy="19.99" rx="19.5" ry="19.49" style="fill:none"/>
+        </g>
+        <rect data-name="사각형 9579" width="20" height="22" rx="3" transform="rotate(90 214 656)" style="fill:#fff"/>
+        <path data-name="패스 18515" d="M5.15 18H2a2 2 0 0 1-2-2v-3.076" transform="rotate(90 212 657)" style="stroke-width:1.5px;stroke:#4152a2;fill:none"/>
+        <path data-name="패스 18518" d="M5.15 0H2a2 2 0 0 0-2 2v3.076" transform="matrix(0 -1 1 0 851 459.15)" style="stroke-width:1.5px;stroke:#4152a2;fill:none"/>
+        <path data-name="패스 18516" d="M5.15 0H2a2 2 0 0 0-2 2v3.076" transform="rotate(90 211.019 656.019)" style="stroke-width:1.5px;stroke:#4152a2;fill:none"/>
+        <path data-name="패스 18519" d="M854.273 455.989s4.087-3.429 9.371 0" transform="translate(0 .035)" style="stroke-linecap:round;stroke-width:1.5px;stroke:#4152a2;fill:none"/>
+        <g data-name="타원 2332" transform="translate(859 451)" style="stroke-width:2.5px;stroke:#4152a2;fill:#fff">
+            <circle cx="7.5" cy="7.5" r="7.5" style="stroke:none"/>
+            <circle cx="7.5" cy="7.5" r="6.25" style="fill:none"/>
+        </g>
+        <path data-name="선 176" transform="translate(864.5 458.25)" style="stroke-width:2px;stroke-linecap:round;stroke:#4152a2;fill:none" d="m0 0 2 2"/>
+        <path data-name="선 177" transform="translate(866.5 454.5)" style="stroke-width:2px;stroke-linecap:round;stroke:#4152a2;fill:none" d="M6 0 0 5.75"/>
+        <g data-name="타원 2333" transform="translate(856 447)" style="stroke-width:1.5px;stroke:#4152a2;fill:#fff">
+            <circle cx="3" cy="3" r="3" style="stroke:none"/>
+            <circle cx="3" cy="3" r="2.25" style="fill:none"/>
+        </g>
+    </g>
+</svg>

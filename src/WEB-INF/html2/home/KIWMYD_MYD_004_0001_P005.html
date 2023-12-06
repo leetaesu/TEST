@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>관심 부동산 등록</h1>
+            <!-- <button type="button" class="sub-prev">이전으로 가기</button> -->
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box w-full pt20">
+                
+                <ul class="tab-head tab-block">
+                    <li id="tab_h01" class="tab-btn" aria-controls="tab_panelh01">지번으로 찾기</li>
+                    <li id="tab_h02" class="tab-btn" aria-controls="tab_panelh02">도로명으로 찾기</li>
+                </ul>
+                <!-- 지번으로 찾기 -->
+                <div id="tab_panelh01" class="tab-panel pt0">
+                    <!-- 지역선택 -->
+                    <div class="cont01">
+                        <p class="fs-lg mt30 fw-m">지역 선택</p>
+                    
+                        <div class="module-box w-full">
+                            <p class="form-label fc-gray mb10">시/도</p>
+                            <div class="custom-select2 w-100 mb20" data-title="시/도 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>강원도</option>
+                                    <option>경기도</option>
+                                    <option>경상남도</option>
+                                    <option>경상북도</option>
+                                    <option>광주광역시</option>
+                                    <option>대구광역시</option>
+                                    <option>대전광역시</option>
+                                    <option>부산광역시</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">시/군/구</p>
+                            <div class="custom-select2 w-100 mb20" data-title="시/군/구 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>가평군</option>
+                                    <option>고양시 덕양구</option>
+                                    <option>고양시 일산동구</option>
+                                    <option>고양시 일산서구</option>
+                                    <option>과천시</option>
+                                    <option>광명시</option>
+                                    <option>광주시</option>
+                                    <option>구리시</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">읍/면/동</p>
+                            <div class="custom-select2 w-100" data-title="읍/면/동 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>가학동</option>
+                                    <option>광명동</option>
+                                    <option>노온사동</option>
+                                    <option>소하동</option>
+                                    <option>옥길동</option>
+                                    <option>일직동</option>
+                                    <option>철산동</option>
+                                    <option>하안동</option>
+                                </select>
+                            </div>
+
+                            <div class="btn-box mt30">
+                                <button type="button" class="btn btn-lg btn-block fs-lg btn-primary">아파트 검색하기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 아파트 선택 -->
+                    <div class="cont02">
+                        <p class="fs-lg mt30 fw-m">아파트 선택</p>
+                    
+                        <div class="module-box w-full">
+                            <p class="form-label fc-gray mb10">단지명</p>
+                            <div class="custom-select2 w-100 mb20" data-title="단지명 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>강변코오롱하늘채</option>
+                                    <option>강변효성백년가약</option>
+                                    <option>대덕1차</option>
+                                    <option>대덕1차</option>
+                                    <option>대성맨션</option>
+                                    <option>래미안웰리스트</option>
+                                    <option>미리내</option>
+                                    <option>반도A</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">전용면적</p>
+                            <div class="custom-select2 w-100 mb20" data-title="전용면적 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>전용 137m² (40평)</option>
+                                    <option>전용 140m² (41평)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                 <!-- 도로명으로 찾기 -->
+                 <div id="tab_panelh02" class="tab-panel pt0">
+                    <!-- 지역선택 -->
+                    <div class="cont01">
+                        <p class="fs-lg mt30 fw-m">지역 선택</p>
+                    
+                        <div class="module-box w-full">
+                            <p class="form-label fc-gray mb10">시/도</p>
+                            <div class="custom-select2 w-100 mb20" data-title="시/도 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>강원도</option>
+                                    <option>경기도</option>
+                                    <option>경상남도</option>
+                                    <option>경상북도</option>
+                                    <option>광주광역시</option>
+                                    <option>대구광역시</option>
+                                    <option>대전광역시</option>
+                                    <option>부산광역시</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">시/군/구</p>
+                            <div class="custom-select2 w-100 mb20" data-title="시/군/구 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>가평군</option>
+                                    <option>고양시 덕양구</option>
+                                    <option>고양시 일산동구</option>
+                                    <option>고양시 일산서구</option>
+                                    <option>과천시</option>
+                                    <option>광명시</option>
+                                    <option>광주시</option>
+                                    <option>구리시</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">도로명</p>
+                            <div class="custom-select2 w-100" data-title="도로명 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>가학동</option>
+                                    <option>광명동</option>
+                                    <option>노온사동</option>
+                                    <option>소하동</option>
+                                    <option>옥길동</option>
+                                    <option>일직동</option>
+                                    <option>철산동</option>
+                                    <option>하안동</option>
+                                </select>
+                            </div>
+
+                            <div class="btn-box mt30">
+                                <button type="button" class="btn btn-lg btn-block fs-lg btn-primary">아파트 검색하기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 아파트 선택 -->
+                    <div class="cont02">
+                        <p class="fs-lg mt30 fw-m">아파트 선택</p>
+                    
+                        <div class="module-box w-full">
+                            <p class="form-label fc-gray mb10">단지명</p>
+                            <div class="custom-select2 w-100 mb20" data-title="단지명 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>강변코오롱하늘채</option>
+                                    <option>강변효성백년가약</option>
+                                    <option>대덕1차</option>
+                                    <option>대덕1차</option>
+                                    <option>대성맨션</option>
+                                    <option>래미안웰리스트</option>
+                                    <option>미리내</option>
+                                    <option>반도A</option>
+                                </select>
+                            </div>
+
+                            <p class="form-label fc-gray mb10">전용면적</p>
+                            <div class="custom-select2 w-100 mb20" data-title="전용면적 선택" data-placeholder="선택해주세요">
+                                <select>
+                                    <option>전용 137m² (40평)</option>
+                                    <option>전용 140m² (41평)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- 활성화시 disabled 삭제 -->
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" disabled>저축 금액 설정하기</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+    <script src="../../../resources/js/lib/rolldate-master/rolldate.js"></script>
+
+    <script>
+            new Rolldate({
+                el: '#rolldate',
+                format: 'YYYY.MM.DD',
+                beginYear: 2000,
+                endYear: 2025,
+                lang: { title: '계약종료일', confirm: '확인', year: '', month: '', day: '' },
+
+                trigger: 'tap',
+            })
+
+            new Rolldate({
+                el: '#rolldate1',
+                format: 'YYYY.MM.DD',
+                beginYear: 2000,
+                endYear: 2025,
+                lang: { title: '계약종료일', confirm: '확인', year: '', month: '', day: '' },
+
+                trigger: 'tap',
+            })
+    </script>
+
+</body>
+
+</html>

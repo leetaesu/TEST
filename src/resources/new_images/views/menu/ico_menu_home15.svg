@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <defs>
+        <clipPath id="vdbebdej5a">
+            <path data-name="사각형 9006" transform="translate(26 418)" style="stroke:#707070;fill:#3a3a3a" d="M0 0h21v21H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="15">
+        <g data-name="마스크 그룹 13718" style="clip-path:url(#vdbebdej5a)" transform="translate(-26 -418)">
+            <rect data-name="사각형 9019" width="19" height="8" rx="4" transform="translate(27 419)" style="fill:#b7d9fc"/>
+            <path data-name="search (1)" d="M16.16 9.68h-.738a.82.82 0 0 1 0-1.641h.738a3.2 3.2 0 0 0 0-6.4H4.84a3.2 3.2 0 0 0 0 6.4h1.149a.82.82 0 0 1 0 1.641H4.84a4.84 4.84 0 0 1 0-9.68h11.32a4.84 4.84 0 0 1 0 9.68zM9.68 4.84a1.025 1.025 0 1 0-1.026 1.025A1.025 1.025 0 0 0 9.68 4.84zM4.963 5.865A1.025 1.025 0 1 1 5.988 4.84a1.025 1.025 0 0 1-1.025 1.025zm7.383 0a1.025 1.025 0 1 1 1.025-1.025 1.025 1.025 0 0 1-1.025 1.025zm3.691 0a1.025 1.025 0 1 1 1.025-1.025 1.025 1.025 0 0 1-1.025 1.025zm-5.331 12.1a4.307 4.307 0 1 1 4.307-4.307 4.312 4.312 0 0 1-4.307 4.306zm0-6.973a2.666 2.666 0 1 0 2.666 2.666 2.669 2.669 0 0 0-2.666-2.666zm7.061 9.768a.82.82 0 0 0 0-1.16L15.8 17.63a.82.82 0 0 0-1.16 1.16l1.969 1.969a.82.82 0 0 0 1.16 0z" transform="translate(26 418)" style="fill:#3a3a3a"/>
+        </g>
+    </g>
+</svg>

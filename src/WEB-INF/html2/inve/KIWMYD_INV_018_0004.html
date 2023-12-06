@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub" style="display: none;">
+        
+        <header>
+            <h1>수익률 인증</h1>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+            <!-- case: 수익률 인증서 이력이 있는 경우 노출 -->
+            <div class="module-box inve-cert">
+                
+                <!--  상단 -->
+                <div class="module-box p20" style="height: 14.4rem; background-color: #13161e !important;">
+                    <div class="d-flex-between h-100">
+
+                        <div class="w-100 py20">
+                            <p class="fs-lg vw-unit fc-cert-yellow fw-m">
+                                <span>김키움</span>
+                                <span class="d-none">김키움</span><!-- 이름 비공개 -->
+                            </p>
+                            <p class="fs-df vw-unit fc-cert-gray-l">KI12-WM34-89012<br>2022.2.18</p>
+                        </div>
+
+                        <div class="w-100 align-self-start text-right">
+                            <img src="../../../resources/new_images/views/inve/img_cert_signature.png" alt="" class="w90"><br>
+
+                            <!-- 아래 이미지: 수익률 구간에 따른 메달 이미지 파일(.png) (제플린 디자인 기준)
+                                -50% 미만:  img_level_unique
+                                -20% 미만:  img_level_01_1
+                                0% 미만:    img_level_01_2
+                                20% 미만:   img_level_02_1
+                                50% 미만:   img_level_02_2
+                                50% 이상:   img_level_03
+                                100% 이상:  img_level_04
+                                200% 이상:  img_level_05
+                                400% 이상:  img_level_06
+                            -->
+                            <img id="medalOutMotion" src="../../../resources/new_images/views/inve/img_level_unique.png" alt="" class="position-relative w150 mt15" style="z-index: 1;">
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!--  하단 -->
+                <!-- 22.09.20 스크롤 없이 내용이 화면에 다 들어가도록 특정 가로폭 이하로 vw 단위 사용 (vw-unit 추가 및 아래 media query 스타일 참조)-->
+                <div class="module-box cert-content cert-content-bg border-level unique"><!-- 레벨에 따라 border color 적용 [ unique, level1-1, level1-2, level2-1, level2-2, level3, level4, level5, level6 ] -->
+                    
+                    <div class="mt30 vw-unit"><!-- grid top --><!-- 22.09.20 vw-unit 추가 -->
+                        
+                        <div id="motion05">
+                            <!-- case : 보유종목 --><!-- 22.09.20 : fs-5xl, vw-unit 추가 style="" 삭제-->
+                            <p class="fs-2xl vw-unit fc-cert-yellow fw-b">키움증권 <span class="fs-sm fw-r">nasdaq</span></p> 
+                            <p class="fs-5xl vw-unit ff-number fc-num-red fw-b"><span class="fw-r">+</span>1,054.89%</p>
+
+                            <!-- case : 계좌 --><!-- 22.09.20 : fs-5xl, vw-unit 추가 style="" 삭제-->
+                            <p class="fs-2xl vw-unit fc-cert-yellow fw-b">키움증권</p>
+                            <p class="fs-xl vw-unit fc-cert-gray-l mt10"><span class="fw-b fc-cert-yellow">국내</span> 계좌수익률</p>
+                            <p class="fs-5xl vw-unit ff-number fc-num-red fw-b"><span class="fw-r">+</span>304.89%</p>
+
+                            <!-- case : MY랭킹 --><!-- 22.09.20 : fs-5xl, vw-unit 추가 style="" 삭제-->
+                            <p class="fs-2xl vw-unit fc-cert-yellow fw-b">
+                                키움증권<br>
+                                11월 국내주식 <span class="fc-cert-gray-l fw-r">수익률 랭킹</span>
+                            </p>
+                            <p class="fs-xl fc-cert-gray-l mt30 vw-unit">월 수익률
+                                <span class="fs-sm fc-gray fw-r">(10.21 기준)</span>
+                            </p>
+                            <p class="fs-4xl vw-unit ff-number fc-num-blue fw-b">
+                                <span class="fw-r">-</span>304.89%
+                            </p>
+                        </div>
+
+                        <div id="motion06">
+                            <!-- case : 보유종목 --><!-- 22.09.20 : fs-3xl, fs-4xl, vw-unit 추가 style="" 삭제--><!-- 22.09.22 data-list vw-unit 추가 -->
+                            <!-- <p class="fs-xl fc-cert-gray-l mt30 vw-unit">평가차액</p>   
+                            <p class="fs-4xl vw-unit number-unit fc-num-red">
+                                <span class="number">120,000,000,000</span>
+                                <span class="fs-3xl vw-unit unit fw-r">원</span>
+                            </p>
+                            
+                            <dl class="data-list fc-cert-gray-l mt20 vw-unit">
+                                <dt>매수가</dt>
+                                <dd class="fw-m">120,000,000,000원</dd>
+                                <dt>보유수량</dt>
+                                <dd class="fw-m">300주</dd>
+                                <dt>현재가</dt>
+                                <dd class="fw-m">342,400원</dd>
+                                <dt>평가금액</dt>
+                                <dd class="fw-m">123,653,200원</dd>
+                            </dl> -->
+
+
+                            <!-- case : 계좌 --><!-- 22.09.22 data-list vw-unit 추가 -->
+                            <!-- <p class="fs-xl fc-cert-gray-l mt30  vw-unit">손익금액</p>
+                            <p class="fs-4xl vw-unit number-unit fc-num-red">
+                                <span class="number">120,000,000,000</span>
+                                <span class="fs-3xl vw-unit unit fw-r">원</span>
+                            </p>
+
+                            <dl class="data-list fc-cert-gray-l mt20 vw-unit">
+                                <dt>계좌번호</dt>
+                                <dd class="fw-m">****-****-3333</dd>
+                            
+                                <dt>매입금액</dt>
+                                <dd class="fw-m">120,000,000,000원</dd>
+                            
+                                <dt>평가금액</dt>
+                                <dd class="fw-m">123,653,200원</dd>
+                            
+                                <dt>보유주식</dt>
+                                <dd class="fw-m">삼성전자 외 5개</dd>
+                            </dl> -->
+                            
+
+                            <!-- case : MY랭킹 -->
+                            <p class="fs-xl vw-unit fc-cert-gray-l mt30">10만~1백 미만, 40대, 여성 중</p>
+                            <p class="fs-4xl vw-unit number-unit">
+                                <span class="number fc-cert-yellow">1,234</span>
+                                <span class="fs-3xl vw-unit unit fc-cert-gray-l fw-r">위</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    
+                    <div id="motion07"><!-- grid bottom -->
+                        <p class="fs-4xl vw-unit fc-cert-gray-l opacity-04 ff-nanum">시작은 미약하나, 그 끝은 창대하리</p>
+                        <p class="mt20 vw-unit text-right"><!-- 22.09.22 vw-unit 추가 -->
+                            <img src="../../../resources/new_images/views/inve/img_cert_logo.png" alt="키움증권" class="w80">
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-footer btn-primary">저장하기</button>
+            </div>
+		</footer>
+    </div>
+    
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+    <!-- 애니메이션 -->
+    <script src="../../../resources/js/lib/lottie.min.js"></script>
+    <style>
+        .ani-levelup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            background-color: #292c34 !important;
+        }
+        .lottie-levelup {
+            bottom: -6.6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 21.4rem;
+            height: 46.2rem;
+            opacity:0.8;
+        }
+        .lottie-particle {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, calc(-50% - 16rem));
+            width: 36rem;
+            height: 36rem;
+            opacity:0.6;
+        }
+        /* #motion01, #motion02, #motion03, #motion04, #motion05, #motion06, #motion07 {display:none;} */
+        /* #motion02, #motion03 {animation: fade-in 0.8s ease-in-out;} */ /* 22.09.20 */
+        /* #motion02 {animation: fade-in 0.8s ease-in-out;} */
+        #motion01, #motion04, #motion05, #motion06, #motion07 {display:none;} /* 22.09.29 */
+        #motion02, #motion03 {opacity: 0;}  /* 22.09.29 */
+
+        @keyframes fade-in {
+            0% { opacity: 0; margin-top: 6rem; } /* 22.09.20 */
+            60% { opacity: 0; margin-top: 6rem; } /* 22.09.20 */
+            100% { opacity: 1; margin-top: 0; }
+        }
+         /* 22.09.20  START */
+        .fs-3xl { font-size: 2.6rem; }
+        .fs-4xl { font-size: 3.6rem; }
+        .fs-5xl { font-size: 4.4rem; }
+
+        /* @media screen and (max-width: 389px) { */
+        @media screen and (max-width: 414px) {
+            .lottie-levelup { width: 42.7778vw; height: 111.6667vw; }
+
+            .module-box.inve-cert > .module-box.p20 { height: 32.5vw !important; }
+            .module-box.cert-content { padding: 5.5555vw !important; }
+            .cert-content > .mt30.vw-unit { margin-top: 0 !important; }
+            .mt10.vw-unit { margin-top: 1.3888vw !important; }
+            .mt20.vw-unit { margin-top: 2.2223vw !important; }
+            .mt30.vw-unit { margin-top: 3.8889vw !important; }
+
+            .fs-df.vw-unit { font-size: 3.3335vw !important; }
+            .fs-lg.vw-unit { font-size: 4.4445vw !important; }
+            .fs-xl.vw-unit { font-size: 4.4445vw !important; }
+            .fs-2xl.vw-unit { font-size: 5.2778vw !important; }
+            .fs-3xl.vw-unit { font-size: 5.5555vw !important; }
+            .fs-4xl.vw-unit { font-size: 6.6667vw !important; }
+            .fs-5xl.vw-unit { font-size: 7.7778vw !important; }
+
+            .data-list.vw-unit dt, .data-list.vw-unit dd { padding: 0.5556vw 0; font-size: 3.3335vw !important; }
+            .ff-nanum + .mt20.vw-unit { margin-top: 0 !important; }
+            .ff-nanum + .mt20.vw-unit img { width: 19.4446vw !important; }
+
+            @keyframes fade-in {
+                0% { opacity: 0; margin-top: 2rem; }
+                50% { opacity: 0; margin-top: 2rem; }
+                100% { opacity: 1; margin-top: 0; }
+            }
+        }
+        @media screen and (max-width: 280px) {
+            .module-box.inve-cert > .module-box.p20 { height: 40vw !important; }
+        }
+         /* 22.09.20 END */
+    </style>
+
+    <script>
+        $(document).ready(function() {
+
+            // 레벨업 화면 애니메이션
+            // 1. 인증서 축하 HTML 구조
+            if($('#motionWrap').length) $('#motionWrap').remove();
+
+            // 이미지 경로에서 메달 타입 가져오기
+            var medalImgSrc = $('#medalOutMotion').attr('src'),
+                medalFile = medalImgSrc.substring(medalImgSrc.lastIndexOf('/') + 1),
+                medalTitle = medalFile.split('.')[0];
+            // console.log(medalTitle);
+
+            var levelupHtml = `<article id="motionWrap" class="ani-levelup">
+                <div class="position-relative d-flex-center w-100 h-100">
+
+                    <div class="levelup-group">
+                        <div id="motion02" class="text-center">
+                            <!-- 보유종목 -->                            
+                            <p class=""><span class="custom-label" style="border-color:#e0b75c;color:#e0b75c;width:6.5rem;height:3rem;font-size:1.4rem;margin-bottom:1.6rem;">코스피</span></p>
+                            <!-- <p class="fs-2xl fc-cert-gray-l"><span class="fc-cert-yellow">abcd***</span> 님</p>
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-cert-yellow fw-b">삼성전자</span> 종목 수익률은</p>
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-num-red fw-b">120.98%</span> 입니다.</p> -->
+
+                            <!-- 계좌 -->
+                            <!-- <p class="fs-2xl fc-cert-gray-l"><span class="fc-cert-yellow">abcd***</span> 님</p>
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-cert-yellow fw-b">키움증권</span> 계좌 수익률은</p>
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-num-red fw-b">+6.88%</span> 입니다.</p>-->
+
+                            <!-- MY랭킹 -->
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-cert-yellow">abcd***</span> 님</p>
+                            <p class="fs-2xl fc-cert-yellow fw-b">국내, 10만~1백 미만,<br>40대, 여성</p>
+                            <p class="fs-2xl fc-cert-gray-l">중에서 수익률 랭킹은</p>
+                            <p class="fs-2xl fc-cert-gray-l"><span class="fc-num-red fw-b">1,234위</span> 입니다.</p>
+                        </div>
+                        <div id="motion03" style="width:23rem;margin:auto;">
+                            <img id="medalInMotion" src="../../../resources/new_images/views/inve/${medalTitle}.png" alt="" class="position-relative mt20" style="z-index: 1;">
+                        </div>
+                    </div>
+
+                    <div id="motion01" class="position-absolute lottie-levelup"></div>
+                    <div id="motion04" class="position-absolute lottie-particle"></div>
+                </div>
+
+                <div class="btn-wrap py20 px-padding">
+                    <button type="button" id="showCert" class="btn btn-lg btn-block fs-lg fc-white" style="background-color: #e22d72;" >인증서 보기</button>
+                </div>
+            </article>`;
+            $('.page-wrapper').after(levelupHtml);
+
+            var motion01 = $('#motion01')[0],
+                motion04 = $('#motion04')[0],
+                lottie01 = lottieMotion(motion01, 'KIWMYD_LevelUp.json'),
+                lottie02 = lottieMotion(motion04, 'KIWMYD_Particle.json');
+
+            var aniProcess01 = setTimeout( function() { 
+                    $('#motion01').show(); lottie01.play();
+
+                    /* setTimeout( function() { $('#motion03, #motion02').show(); }, 600 ); */ /* 22.09.20 */
+                    setTimeout( function() { $('#motion03').css({'animation':'fade-in 0.6s ease-in-out', 'opacity': '1'});  }, 600 ); /* 22.09.29 */
+                    setTimeout( function() { $('#motion02').css({'animation':'fade-in 0.8s ease-in-out', 'opacity': '1'});  }, 1000 ); /* 22.09.29 */
+                    setTimeout( function() { $('#motion04').show(); lottie02.play(); }, 1500 ); /* 22.09.20 */
+                }, 0 );
+
+            lottie01.stop();
+            lottie02.stop();
+
+            $('.page-wrapper').show();
+
+            
+            // 3. 인증서 보기 클릭 이벤트 후 애니메이션
+            $('#showCert').on('click', function() {
+
+                // 메달 위치 및 너비, 높이 등의 값
+                var motion1X = $('#medalInMotion').offset().left,
+                    motion1Y = $('#medalInMotion').offset().top,
+                    motion1W = $('#medalInMotion').width(),
+                    motion1H = $('#medalInMotion').height(),
+                    motion3X = $('#medalOutMotion').offset().left,
+                    motion3Y = $('#medalOutMotion').offset().top,
+                    motion3W = $('#medalOutMotion').width(),
+                    motion3H = $('#medalOutMotion').height();
+
+                // console.log("motion1 x: " + motion1X+ " , y: " + motion1Y +  " , w: " + motion1W + " , h: " +  motion1H);
+                // console.log("motion3 x: " + motion3X+ " , y: " + motion3Y +  " , w: " + motion3W + " , h: " +  motion3H);
+
+                // 애니메이션 멈추고 숨기기 => 문구 사라지기
+                lottie01.destroy();  /* 22.09.20 */
+                lottie02.destroy();  /* 22.09.20 */
+                $('#motion01').hide();
+                $('#motion04').hide();
+                $('#motion02').addClass('fade-out');
+                $('#motionWrap').fadeOut();
+                $('#medalOutMotion').hide(); // 마지막에 보여질 메달
+
+                // 대각선으로 크기 줄어드는 애니메이션
+                var moveX = parseInt(motion3X - motion1X),
+                    moveY = parseInt((motion3Y - motion1Y) * -1), /* 22.09.20 */
+                    sizeW = parseInt((motion3W - motion1W) * -1),
+                    sizeH = parseInt((motion3H - motion1H) * -1);
+
+                // console.log("moveX: " + moveX + " , moveY: " + moveY + " , sizeW: " + sizeW + " , sizeH: " + sizeH);
+
+                if($('#medalCloned').length) $('#medalCloned').remove();
+                $('.page-wrapper').after('<img id="medalCloned" src="../../../resources/new_images/views/inve/'+medalTitle+'.png" alt="">');
+
+                $('#medalCloned').css({
+                    'position':'fixed',
+                    'top': motion1Y,
+                    'left': motion1X,
+                    'width': motion1W,
+                    'height': motion1H
+                })
+                .delay(400) /* 22.09.20 ? */
+                .animate({ 
+                    left: '+=' + moveX,
+                    top: '-=' + moveY,
+                    width: '-=' + sizeW,
+                    height: '-=' + sizeH
+                }, 300)
+                .delay(100)
+                .fadeOut();
+
+                $('#medalOutMotion').delay(700).fadeIn(); /* 22.09.20 */
+
+                setTimeout( function() {
+                    $('#motion05').css({'animation':'fade-in 1s ease-in-out'}).fadeIn(); /* 22.09.20 */
+
+                    setTimeout( function() { $('#motion06').css({'animation':'fade-in 1s ease-in-out'}).fadeIn(); }, 500 ); /* 22.09.20 */
+                    setTimeout( function() { $('#motion07').css({'animation':'fade-in 1s ease-in-out'}).fadeIn(); }, 600 ); /* 22.09.20 */
+
+                }, 400 );
+            });
+
+        });
+
+        // 2. 인증서 축하 애니메이션
+        // Lottie function
+        function lottieMotion(opt1, opt2) {
+            return bodymovin.loadAnimation({
+                container: opt1,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: '../../../resources/new_images/views/inve/'+opt2,
+                // rendererSettings: {
+                //     progressiveLoad: true // lottie json 파일크기가 클 때
+                // }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

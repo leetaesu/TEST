@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        
+        <header>
+            <h1>투자성향 진단</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+            <button type="button" class="sub-close">팝업 닫기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box">
+                <p class="fs-xl fw-m">입력한 내용을 확인해주세요</p>
+                
+
+                <h3 class="mt30 fs-md">PART1 투자이해도</h3>
+                <table class="custom-table no-border-bottom mt10">
+                    <caption>투자이해도 데이터</caption>
+                    <tbody>
+                        <tr>
+                            <th class="text-left" style="width: 50%;">연령대</th>
+                            <th class="text-left" style="width: 50%;">투자 가능 기간</th>
+                        </tr>
+                        <tr>
+                            <td class="text-left">20~40세</td>
+                            <td class="text-left">1년 미만</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-left">투자 경험(복수 선택)</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-left">
+                                은행 예금, 적금, 국채, 지방채, 보증채, MMF 등<br>
+                                신용도 중간 회사채, 원금일부보장 ELS, 혼합형펀드
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-left">금융 지식 수준 / 이해도</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-left">금융투자상품에 대한 경험 없음</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="text-left">기대 이익수준 및 손실 감내수준</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-left">원금 기준 ±10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="custom-table no-border-top">
+                    <tbody>
+                        <tr>
+                            <th colspan="4" class="text-left">총 자산 대비 금융상품 유형별 기준</th><!-- 22.08.04 colspan 수정 -->
+                        </tr>
+                        <tr>
+                            <td>
+                                보장성상품<br>
+                                20%
+                            </td>
+                            <td>                                
+                                투자성상품<br>
+                                20%
+                            </td>
+                            <td>
+                                대출성상품<br>
+                                25%
+                            </td>
+                            <!-- 22.08.04 추가 -->
+                            <td>
+                                기타상품<br>
+                                15%
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="text-left">금융상품 취득 및 처분 목적</th><!-- 22.08.04 colspan 수정 -->
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-left">생활비</td><!-- 22.08.04 colspan 수정 -->
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="mt30 fs-md">PART2 투자성향</h3>
+                <table class="custom-table mt10">
+                    <caption>투자성향 데이터</caption>   
+                    <tbody>
+                        <tr>
+                            <th style="width: 110px;" class="text-left">투자목표성향</th>
+                            <td class="text-left">위험중립형</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="bullet bullet-dot mt15">투자에는 그에 상응하는 위험이 있음을 충분히 인식하고 있으며, 예·적금보다 높은 수익을 기대할 수 있다면 일정 수준의 손실위험을 감수할 수 있는 성향</p>
+
+                <h3 class="mt30 fs-md">기타</h3>
+                <table class="custom-table mt10">
+                    <caption>기타 데이터</caption>   
+                    <tbody>
+                        <tr>
+                            <th style="width: 110px;" class="text-left">파생상품 투자기간</th>
+                            <td class="text-left">경험이 없거나, 1년 미만</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </main>
+        <footer>
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer">수정하기</button>
+                <button type="button" class="btn btn-footer btn-primary">다음</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 원치않음/정보 미제공 선택 시 알럿 팝업 -->
+    <article class="modal-popup popup-alert" id="modal_alert">
+        <div class="modal-header sr-only">
+            <h1></h1>
+        </div>
+        <div class="modal-body">
+            <p class="fc-gray mt15">MY자산 서비스를 이용하시려면 투자권유/정보제공에 모두 동의 하셔야 합니다.</p>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-box">
+                <button type="button" class="btn btn-footer btn-primary" onclick="KW_MOBILE.guiEvent.popup.closePop('#modal_alert')">확인</button>
+            </div>
+        </div>
+    </article>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+</body>
+
+</html>

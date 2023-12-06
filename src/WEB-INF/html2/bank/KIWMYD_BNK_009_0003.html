@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../resources/css/new_ui_common.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper sub">
+        <header>
+            <h1>선불충전 상세</h1>
+            <button type="button" class="sub-prev">이전으로 가기</button>
+        </header>
+
+        <main class="module-group">
+
+            <div class="module-box bg-white2 pt30">
+
+                <p class="fs-lg fw-m">쿠페이머니</p>
+                <h3 class="fs-lg fw-m">쿠팡페이</h3>
+
+                <div class="text-right mt20">
+                    <p class="fc-gray">한도<span class="fc-black fw-m ml5">200만원</span> / USD</p>
+                </div>
+
+                <div class="text-right">
+                    <p class="number-unit fs-2xl fw-b mt10">
+                        <span class="number">120,000,000</span>
+                        <span class="unit">원</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="module-box module-border w-full pt20">
+
+                <ul class="tab-head tab-block">
+                    <li id="tab_01" class="tab-btn" aria-controls="tab_panel01">거래내역</li>
+                    <li id="tab_02" class="tab-btn" aria-controls="tab_panel02">계좌정보</li>
+                </ul>
+
+                <!-- 거래내역 탭 -->
+                <div id="tab_panel01" class="tab-panel">
+
+                    <div class="form-box mb30">
+                        <input type="text" class="custom-input input-block calendar month" placeholder="기간선택" readonly="">
+                    </div>
+
+                    <!-- 충전 -->
+                    <div class="detail-block">
+                        <span class="fs-sm fc-gray">2022.03.10 11:56</span>
+                        <p class="fs-lg fw-m mt5">충전</p>
+                        <div class="detail-collapse">                            
+                            <dl class="data-list">
+                                <dt>거래금액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit fc-black">
+                                        <span class="number">5,000,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래 후 잔액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit">
+                                        <span class="number">125,480,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- 닫혀있는 부분 -->
+                            <dl class="data-list">
+                                <dt>거래기관</dt>
+                                <dd class="fs-md">은행</dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래상대</dt>
+                                <dd class="fs-md">카카오뱅크 3283</dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래메모</dt>
+                                <dd class="fs-md">키움</dd>
+                            </dl>
+                        </div>
+                        
+                        <div class="detail-footer">
+                            <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                        </div>
+                    </div>
+
+                    <!-- 결제 -->
+                    <div class="detail-block">
+                        <p class="fs-sm fc-gray">2022.03.10 11:56</p>
+                        <p class="fs-lg fw-m mt5">결제</p>
+                        <div class="detail-collapse">
+                            <dl class="data-list">
+                                <dt>거래금액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit fc-black fw-b">
+                                            <span class="number">100,000</span>
+                                            <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래 후 잔액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit">
+                                            <span class="number">1,340,000</span>
+                                            <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- 닫혀있는 부분 -->
+                            <dl class="data-list">
+                                <dt>결제방법</dt>
+                                <dd class="fs-md">온라인결제</dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>가맹점명</dt>
+                                <dd class="fs-md">카카오커머스</dd>
+                            </dl>
+                            <dl class="data-list grid-box col-2">
+                                <dt>상품명</dt>
+                                <dd class="fs-md d-inline-block text-right">
+                                    <span class="ellipsis">니몸내몸 영양 젤리(비타민C, 비타민D, 루테인)선물포장</span>
+                                </dd>
+                            </dl>
+                        </div>                        
+                        <div class="detail-footer">
+                            <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                        </div>
+
+                    </div>
+
+                    <!-- 송금수취 -->
+                    <div class="detail-block">
+                        <p class="fs-sm fc-gray">2022.03.10 11:56</p>
+                        <p class="fs-lg fw-m mt5">송금수취</p>
+                        <div class="detail-collapse">
+                            <dl class="data-list">
+                                <dt>거래금액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit fc-black fw-b">
+                                            <span class="number">100,000</span>
+                                            <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래 후 잔액</dt>
+                                <dd class="fs-md">
+                                    <p class="number-unit">
+                                            <span class="number">1,340,000</span>
+                                            <span class="unit">원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <!-- 닫혀있는 부분 -->
+                            <dl class="data-list">
+                                <dt>거래기관</dt>
+                                <dd class="fs-md">은행</dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래상대</dt>
+                                <dd class="fs-md">카카오뱅크 3283</dd>
+                            </dl>
+                            <dl class="data-list">
+                                <dt>거래메모</dt>
+                                <dd class="fs-md">키움</dd>
+                            </dl>
+                        </div>                            
+                        <div class="detail-footer">
+                            <a href="#;" class="sub-link sub-icon-more">상세보기</a>
+                        </div>
+                    </div>                 
+
+                    <!-- 초기 500개 거래내역 조회 -->
+                    <div class="btn-box mt20">
+                        <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                    </div>
+
+                    <!-- 최초 1년의 거래내역이 끝났을 경우 -->
+                    <div class="btn-box mt20">
+                        <button type="button" class="btn btn-lg btn-block btn-border">이전 내역 조회</button>
+                    </div>
+
+                    <!-- 이후 3개월 거래내역이 500개 이상인 경우 -->
+                    <div class="btn-box mt20">
+                        <button type="button" class="btn btn-lg btn-block btn-border">더 보기</button>
+                    </div>
+                    <p class="text-center mt15">2020.09.06~2020.12.06</p>
+
+
+                    <!-- 3개월 거래내역이 끝났을 경우 -->
+                    <p class="text-center mt20">2020.09.06~2020.12.06</p>
+                    <div class="btn-box mt15">
+                        <button type="button" class="btn btn-lg btn-block">이전 내역 조회</button>
+                    </div>
+
+                    <!-- 거래내역이 끝났을 경우 -->
+                    <div class="module-box w-full mt20">
+                        <p class="text-center fc-gray">이전 내역이 없습니다</p>
+                    </div>     
+
+                </div>
+
+                <!-- 계좌정보 탭 -->                
+                <div id="tab_panel02" class="tab-panel p0">
+
+                    <div class="module-box">
+
+                        <ul class="grid-box col-4">
+                            <li class="text-center">
+                                <p><img class="w45" src="../../../resources/new_images/views/bank/ico_bank_info01.png"></p>
+                                <p class="fs-sm fc-gray mt10">거래금액</p>
+                                <p class="fs-sm fw-b">1,000,000원</p>
+                            </li>
+                            <li class="text-center">
+                                <p><img class="w45" src="../../../resources/new_images/views/bank/ico_bank_info02.png"></p>
+                                <p class="fs-sm fc-gray mt10">적립포인트</p>
+                                <p class="fs-sm fw-b">700원</p>
+                            </li>
+                            <li class="text-center">
+                                <p><img class="w45" src="../../../resources/new_images/views/bank/ico_bank_info03.png"></p>
+                                <p class="fs-sm fc-gray mt10">적립예정</p>
+                                <p class="fs-sm fw-b">1,000원</p>
+                            </li>
+                            <li class="text-center">
+                                <p><img class="w45" src="../../../resources/new_images/views/bank/ico_bank_info04.png"></p>
+                                <p class="fs-sm fc-gray mt10">소멸예정</p>
+                                <p class="fs-sm fw-b">1,500원</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="module-box module-border">
+
+                        <div class="d-flex-between">
+                            <h3>자동 충전 등록 내역</h3>
+                            <p class="fs-md"><span class="fc-pink fw-b mr5">3개</span>사용중</p>
+                        </div>
+
+                        <table class="custom-table mt15">
+                            <caption>자동 충전 등록 내역</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">충전 지불 기관</th>
+                                    <td class="text-right">신한은행</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전 지불 수단</th>
+                                    <td class="text-right">11038202104</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전조건</th>
+                                    <td class="text-right">월정액 충전</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">기준날짜</th>
+                                    <td class="text-right">매월 23일</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전금액</th>
+                                    <td class="text-right">300,000원</td>
+                                </tr>                            
+                            </tbody>
+                        </table>
+
+                        <table class="custom-table mt30">
+                            <caption>자동충전 등록 내역</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">충전 지불 기관</th>
+                                    <td class="text-right">신한카드</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전 지불 수단</th>
+                                    <td class="text-right">842332****2486</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전조건</th>
+                                    <td class="text-right">기준 하한 충전</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">기준금액</th>
+                                    <td class="text-right">300,000원</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전금액</th>
+                                    <td class="text-right">300,000원</td>
+                                </tr>                            
+                            </tbody>
+                        </table>                    
+
+                        <table class="custom-table mt30">
+                            <caption>자동충전 등록 내역</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="text-left" style="width:110px;">충전 지불 기관</th>
+                                    <td class="text-right">선불(머니)</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전 지불 수단</th>
+                                    <td class="text-right">카카오페이</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전조건</th>
+                                    <td class="text-right">월정액 충전</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">기준날짜</th>
+                                    <td class="text-right">매월 31일</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-left">충전금액</th>
+                                    <td class="text-right">300,000원</td>
+                                </tr>                            
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="module-box pt0">
+                    <a href="#;" class="sub-link d-block w-full">
+                        <img src="../../../resources/new_images/views/bank/img_banner_bank_04.png" alt="">
+                    </a>    
+                    <h3 class="mt30">키움에서 판매중인 금융상품</h3>                    
+                    <div class="overflow-x w-full mt20">
+                        <div class="d-flex px-padding">
+                            <a href="#;" class="btn-link">펀드</a>
+                            <a href="#;" class="btn-link">연금</a>
+                            <a href="#;" class="btn-link">ELS</a>
+                            <a href="#;" class="btn-link">국내채권</a>
+                            <a href="#;" class="btn-link">해외채권</a>
+                            <a href="#;" class="btn-link">RP</a>
+                            <a href="#;" class="btn-link">ISA</a>
+                            <a href="#;" class="btn-link">Wrap</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../resources/js/views2/common/new_ui_common.js"></script>
+
+
+</body>
+
+</html>

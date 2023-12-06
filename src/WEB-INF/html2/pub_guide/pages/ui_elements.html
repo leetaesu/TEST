@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="키움증권의 대표 홈페이지입니다.">
+    <meta name="keywords" content="키움증권">
+    <meta name="author" content="키움증권">
+
+    <title>키움증권 마이데이터 퍼블리싱 가이드</title>
+
+    <link rel="shortcut icon" href="https://m.kiwoom.com/nkm/img/main/icn_kmobile01.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../../../../resources/js/lib/air-datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="../../../../resources/css/new_ui_common.css">
+    <link rel="stylesheet" href="../../../../resources/css/swiper.css">
+    <link rel="stylesheet" href="../assets/css/ui_guide.css">
+
+    <!-- coverflow 스와이퍼 사용 -->
+    <link rel="stylesheet" href="../../../../resources/js/lib/swiper-6.5.1/swiper-bundle.css">
+    <style>
+        .swiper-coverflow .swiper-slide { width: auto; flex-shrink: 1;}
+    </style>
+
+</head>
+
+<body>
+    <div class="page-wrapper sub">
+        <main class="p30 px-padding">
+
+            <h2 class="guide-main-title">UI Elements</h2>
+
+            <!-- divide-box -->
+            <section class="content-box">
+                <h3 class="guide-title">Divide Box</h3>
+                <section>
+                    <h4 class="guide-sub-title">기본형(.divide-box)</h4>
+                    <ul class="divide-box">
+                        <li>
+                            <p class="fs-sm">채무불이행</p>
+                            <p class="fs-md fw-b">2건</p>
+                        </li>
+                        <li>
+                            <p class="fs-sm">공공정보</p>
+                            <p class="fs-md fw-b">1건</p>
+                        </li>
+                        <li>
+                            <p class="fs-sm">금융질서문란</p>
+                            <p class="fs-md fw-b">1건</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">bg-gray (.divide-box.bg-gray)</h4>
+                    <ul class="divide-box bg-gray">
+                        <li>
+                            <p class="fs-sm">채무불이행</p>
+                            <p class="fs-md fw-b">2건</p>
+                        </li>
+                        <li>
+                            <p class="fs-sm">공공정보</p>
+                            <p class="fs-md fw-b">1건</p>
+                        </li>
+                        <li>
+                            <p class="fs-sm">금융질서문란</p>
+                            <p class="fs-md fw-b">1건</p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">head-box</h4>
+                    <div class="d-flex-between">
+                        <dl class="head-box">
+                            <dt>2021년 6월 금리</dt>
+                            <dd>3.65%</dd>
+                        </dl>
+                        <dl class="head-box fc-black fw-m">
+                            <dt>2021년 7월 금리</dt>
+                            <dd>3.82%</dd>
+                        </dl>
+                        <dl class="head-box">
+                            <dt>차이</dt>
+                            <dd class="fc-pink fw-b">+0.17%</dd>
+                        </dl>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">card-divide-btn</h4>
+                    <div class="card-box-sm card-border card-divide-btn">
+                        <ul class="divide-box w-100">
+                            <li>
+                                <a href="#;" class="sub-link d-block">
+                                    <p class="fw-m">종목전망 상세</p>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link d-block">
+                                    <p class="fw-m">수급분석 상세</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>                
+                <section>
+                    <h4 class="guide-sub-title">기타(.border-left-alpha)</h4>
+                    <div class="d-flex mt20">
+                        <div class="w-50 border-left-alpha pl10">
+                            <p class="fc-gray">매수비중</p>
+                            <p class="fs-lg fw-b">20.05%</p>
+                        </div>
+                        <div class="w-50 border-left-alpha pl10">
+                            <p class="fc-gray">수익률</p>
+                            <p class="fs-lg fw-b fc-num-red">+15.26%</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- 결과 메시지 -->
+            <section class="content-box">
+                <h3 class="guide-title">결과 메시지</h3>
+                <h4 class="guide-sub-title">데이터 없음(.no-data)</h4>
+                <div class="no-data">
+                    <p class="fs-lg fw-m">금융일정이 없습니다.</p>
+                </div>
+                
+                <h4 class="guide-sub-title">완료</h4>
+                <div class="text-center mt5 mb20">
+                    <img class="w80" src="../../../../resources/new_images/icons/ico_done.svg" alt="">
+                    <p class="fs-xl fw-m mt20">연결 해제 완료</p>
+                    <p class="fc-gray-d mt5">재연결은 연결 해제 완료 시각 기준<br>24시간 이후부터 가능합니다.</p>
+                </div>
+                <div class="text-center mt5">
+                    <img class="w80" src="../../../../resources/new_images/icons/ico_done_indigo.svg" alt="">
+                    <p class="fs-xl fw-m mt20">연결 해제 완료</p>
+                    <p class="fc-gray-d mt5">재연결은 연결 해제 완료 시각 기준<br>24시간 이후부터 가능합니다.</p>
+                </div>
+                
+            </section>
+
+            <!-- 아이콘 타이틀 -->
+            <section class="content-box">
+                <h3 class="guide-title">아이콘 타이틀</h3>
+                <div class="icon-title">
+                    <img class="icon40" src="../../../../resources/images/icons/org/A1AAEO0000.png" alt="">
+                    <p class="fs-lg fw-m">KB국민카드</p>
+                </div>
+            </section>
+
+            <!-- 배너타입 링크 -->
+            <section class="content-box">
+                <h3 class="guide-title">배너타입 링크</h3>
+                <a href="#;" class="sub-link sub-icon-link fs-lg d-block">
+                    <div class="icon-title">
+                        <img class="icon60" src="../../../../resources/images/views/bank/icon_bnk_01.png" alt="">
+                        <div>
+                            <p class="fs-df">내 투자성향에 맞는</p>
+                            <p class="fw-m fs-md">추천상품 한눈에 보기</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <!-- 데코 아이콘 -->
+            <section class="content-box">
+                <h3 class="guide-title">데코 아이콘</h3>
+                <h4 class="guide-sub-title">.deco-icon</h4>
+                <ul class="grid-box col-4 mt10">
+                    <li class="text-center">
+                        <i class="deco-icon icon-30 ico-fund01"></i>
+                        <p>ico30</p>
+                    </li>
+                    <li>
+                        <div class="text-center">
+                            <i class="deco-icon icon-40 ico-fund01"></i>
+                            <p>ico40</p>                                 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-center">
+                            <i class="deco-icon icon-50 ico-fund01"></i>
+                            <p>ico50</p>                              
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-center">
+                            <i class="deco-icon icon-60 ico-fund01"></i>
+                            <p>ico60</p>                                  
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="content-box">
+                <h3 class="guide-title">Card-Box</h3>
+                <h4 class="guide-sub-title">card-box card-border</h4>
+                <section>
+                    <div class="card-box card-border p0">
+                        <div class="p20">
+                            <a href="#" class="sub-link d-block sub-icon-link fs-lg">
+                                <div class="icon-title">
+                                    <img class="icon20" src="../../../../resources/new_images/icons/ico_bank_sample.png"
+                                        alt="">
+                                    <p class="fs-df">입원 보장 내역을 한눈에 보고 싶어요</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p20 border-top">
+                            <a href="#" class="sub-link d-block sub-icon-link fs-lg">
+                                <div class="icon-title">
+                                    <img class="icon20" src="../../../../resources/new_images/icons/ico_bank_sample.png"
+                                        alt="">
+                                    <p class="fs-df">수술 보장 내역을 한눈에 보고 싶어요</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt20">
+                    <div class="card-box card-border p0">
+                        <div class="p20">
+                            <div class="icon-title">
+                                <img class="icon20" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p class="fs-df">내 보장내역 상세 분석 결과</p>
+                            </div>
+                        </div>
+                        <div class="p20 border-top">
+                            <p class="bullet bullet-noti2 fc-pink fs-df">
+                                암 진단보장, 암수술 보장이 부족해요<br>
+                                <span class="fs-sm fc-gray mt5">아래의 표를 살펴보시면 더 자세히 볼 수 있어요.</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Data List -->
+            <section class="content-box">
+                <h3 class="guide-title">Data-List</h3>
+                <section>
+                    <h4 class="guide-sub-title">기본</h4>
+                    <div>
+                        <div class="d-flex-between">
+                            <p class="fs-lg fw-m">1회차</p>
+                        </div>
+                        <dl class="data-list mt10">
+                            <dt>상환금</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit">
+                                    <span class="number">21,299,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                            <dt>원금</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit">
+                                    <span class="number">21,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                            <dt>이자</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit">
+                                    <span class="number">299,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                        </dl>
+
+                        <div class="d-flex-between mt10">
+                            <p class="fs-lg fw-m">2회차</p>
+                        </div>
+                        <dl class="data-list mt10">
+                            <dt>상환금</dt>
+                            <dd class="fs-md">
+                                <p class="text-right fc-black fw-m">
+                                    <span>21,299,999</span>
+                                    <span>원</span>
+                                </p>
+                            </dd>
+                            <dt>원금</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit">
+                                    <span class="number">21,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                            <dt>취소</dt>
+                            <dd class="fs-md">
+                                <p class="number-unit cancel-line">
+                                    <span class="number">21,299,999</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">두줄 말줄임</h4>
+                    <dl class="data-list">
+                        <dt>
+                            <a href="#;" class="sub-link">
+                                <p class="fc-black fw-m ellipsis2 h-100">미래에셋전략배분TDF2040년 혼합자산 자산투자신탁C-PE미래에셋전략배분TDF2040년
+                                    혼합자산 자산투자신탁C-PE미래에셋전략배분TDF2040년 혼합자산 자산투자신탁C-PE</p>
+                            </a>
+                        </dt>
+                        <dd>
+                            <p class="fs-sm fc-gray mr5">6개월수익률</p>
+                            <p class=" fs-lg fw-m fc-num-blue">-7.25%</p>
+                        </dd>
+                        <dt>
+                            <a href="#;" class="sub-link">
+                                <p class="fc-black fw-m ellipsis2 h-100">미래에셋전략배분TDF2040년 혼합자산 자산투자신탁C-PE</p>
+                            </a>
+                        </dt>
+                        <dd>
+                            <p class="fs-sm fc-gray mr5">6개월수익률</p>
+                            <p class=" fs-lg fw-m fc-num-red">+10.25%</p>
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">padding (.data-list.padding-20)</h4>
+                    <dl class="data-list padding-20">
+                        <dt>
+                            <p class="fc-black ellipsis">
+                                <span class="fc-pink">병원</span>
+                                같은마음 정신건강의학과의원
+                            </p>
+                            <p class="fs-sm fc-gray-l mt5">[하나카드] 1Q Daily</p>
+                        </dt>
+                        <dd class="valign-bottom">
+                            <p class="number-unit">
+                                <span class="number fs-md fc-black">3,000,000</span>
+                                <span class="unit fs-md fc-black">원</span>
+                            </p>
+                        </dd>
+                        <dt>
+                            <p class="fc-black ellipsis">
+                                <span class="fc-pink">병원</span>
+                                같은마음 정신건강의학과의원
+                            </p>
+                            <p class="fs-sm fc-gray-l mt5">[하나카드] 1Q Daily</p>
+                        </dt>
+                        <dd class="valign-bottom">
+                            <p class="number-unit fs-md">
+                                <span class="number fs-md fc-black">3,000,000</span>
+                                <span class="unit fs-md fc-black">원</span>
+                            </p>
+                        </dd>
+                        <dt>
+                            <p class="fc-black ellipsis">
+                                <span class="fc-pink">병원</span>
+                                같은마음 정신건강의학과의원
+                            </p>
+                            <p class="fs-sm fc-gray-l mt5">[하나카드] 1Q Daily</p>
+                        </dt>
+                        <dd class="valign-bottom">
+                            <p class="number-unit">
+                                <span class="number fs-md fc-black">3,000,000</span>
+                                <span class="unit fs-md fc-black">원</span>
+                            </p>
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">data-list-block(.data-list-block)</h4>
+                    <ul class="data-list-block">
+                        <li>
+                            <dl class="data-list">
+                                <dt class="fc-black fw-m">암 수술</dt>
+                                <dd>
+                                    <p class="number-unit fc-black">
+                                        <span class="number">3,000</span>
+                                        <span class="unit">만원</span>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <ul>
+                                <li>
+                                    <dl class="data-list">
+                                        <dt class="fs-sm">[금융사명]금융상품명</dt>
+                                        <dd>
+                                            <p class="number-unit">
+                                                <span class="number fs-sm">250</span>
+                                                <span class="unit fs-sm">만원</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl class="data-list">
+                                        <dt class="fs-sm">[금융사명]금융상품명</dt>
+                                        <dd>
+                                            <p class="number-unit">
+                                                <span class="number fs-sm">250</span>
+                                                <span class="unit fs-sm">만원</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <dl class="data-list">
+                                <dt class="fc-black fw-m">허혈성심장질환 입원일당</dt>
+                                <dd>
+                                    <p class="fc-pink fc-black">미 보장</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="data-list">
+                                <dt class="fc-black fw-m">질병 입원일당</dt>
+                                <dd>
+                                    <p class="fc-pink">미 보장</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Order List -->
+            <section class="content-box">
+                <h3 class="guide-title">Order-List</h3>
+
+                <section>
+                    <h4 class="guide-sub-title">한줄 양식</h4>
+                    <ol class="order-list border-bottom fs-md">
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <dl class="data-list">
+                                    <dt class="flex-row fs-md fc-black">
+                                        <span class="order-count"></span>
+                                        <p class="ellipsis">삼성전자 삼성전자 삼성전자 삼성전자</p>
+                                    </dt>
+                                    <dd class="flex-row">
+                                        <span>82,900원</span>
+                                        <span class="divide-bar fw-b fc-num-red">45.2%</span>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <dl class="data-list">
+                                    <dt class="flex-row fs-md fc-black">
+                                        <span class="order-count"></span>
+                                        <p class="ellipsis">에너지및관련 서비스 에너지및관련 서비스서비스</p>
+                                        <span class="custom-label c-blue ml5">보유</span>
+                                    </dt>
+                                    <dd>
+                                        <span class="fw-b fc-num-blue flex-shrink0">-7.25%</span>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">여러줄 양식</h4>
+                    <ol class="order-list border-bottom fs-df">
+                        <li class="py20 border w-100">
+                            <a href="#;" class="sub-link sub-icon-link d-flex">
+                                <span class="order-count"></span>
+                                <div class="overflow-hidden">
+                                    <span class="custom-label c-pink">초고위험</span>
+                                    <p class="fs-df ellipsis mt5">멀티에셋글로벌에너지증권(주식)_Ae</p>
+                                    <p class="d-flex-start mt5">
+                                        <span class="fs-sm fc-gray mr5">3개월 수익률</span>
+                                        <span class="fs-md fw-b fc-num-red">45.2%</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py20 border w-100">
+                            <a href="#;" class="sub-link sub-icon-link d-flex">
+                                <span class="order-count"></span>
+                                <div class="overflow-hidden">
+                                    <span class="custom-label c-orange">고위험</span>
+                                    <p class="fs-df ellipsis mt5">멀티에셋글로벌에너지증권(주식)_Ae</p>
+                                    <p class="d-flex-start mt5">
+                                        <span class="fs-sm fc-gray mr5">세전 수익률</span>
+                                        <span class="fs-md fw-b fc-num-blue">-45.2%</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+
+            </section>
+
+            <!-- List Item -->
+            <section class="content-box">
+                <h3 class="guide-title">List Item</h3>
+                <section>
+                    <h4 class="guide-sub-title">금융일정</h4>
+                    <ul>
+                        <li class="py20 border">
+                            <p>
+                                <span class="custom-label c-salmon">대출</span>
+                                <span class="custom-label c-primary">상환</span>
+                            </p>
+                            <p class="fs-md ellipsis mt5">[신한은행]신한 청년월세대출</p>
+                            <p class="fc-gray fs-sm mt15 text-right">금리 <span class="fc-num-red">3.04%</span></p>
+                            <div class="d-flex-between">
+                                <p class="fs-sm fc-gray">지난달 상환금액</p>
+                                <p class="number-unit fw-b fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py20 border">
+                            <p>
+                                <span class="custom-label c-salmon">대출</span>
+                                <span class="custom-label c-primary">상환</span>
+                            </p>
+                            <p class="fs-md ellipsis mt5">[한화생명]한화생명 간편가입 누구나 필요한 수술비 건강을 챙겨요</p>
+                            <p class="fc-gray fs-sm mt15 text-right">금리 <span class="fc-num-red">3.04%</span></p>
+                            <div class="d-flex-between">
+                                <p class="fs-sm fc-gray">지난달 상환금액</p>
+                                <p class="number-unit fw-b fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">대출 - 회차별 상환금액</h4>
+                    <dl class="data-list border">
+                        <dt>
+                            <p class="fs-md fc-black">1회차</p>
+                            <div class="d-flex-start mt10">
+                                <span class="fc-gray fs-sm mr5">원금</span>
+                                <p class="number-unit fc-gray fs-sm fw-r">
+                                    <span class="number">21,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-start mt5">
+                                <span class="fc-gray fs-sm mr5">이자</span>
+                                <p class="number-unit fc-gray fs-sm fw-r">
+                                    <span class="number">21,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </dt>
+                        <dd class="valign-bottom">
+                            <p class="number-unit fw-b fs-md fc-black">
+                                <span class="number">21,021,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="data-list border">
+                        <dt>
+                            <p class="fs-md fc-black">2회차</p>
+                            <div class="d-flex-start mt10">
+                                <span class="fc-gray fs-sm mr5">원금</span>
+                                <p class="number-unit fc-gray fs-sm fw-r">
+                                    <span class="number">21,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                            <div class="d-flex-start mt5">
+                                <span class="fc-gray fs-sm mr5">이자</span>
+                                <p class="number-unit fc-gray fs-sm fw-r">
+                                    <span class="number">21,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </dt>
+                        <dd class="valign-bottom">
+                            <p class="number-unit fw-b fs-md fc-black">
+                                <span class="number">21,021,000</span>
+                                <span class="unit">원</span>
+                            </p>
+                        </dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">보험 - 실손보험 청구 대상탐지</h4>
+                    <ul>
+                        <li class="py10">
+                            <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                            <!-- 병원 -->
+                            <div class="d-flex-start mt5">
+                                <span class="fc-mint mr5">병원</span>
+                                <p class="ellipsis">같은마음 정신건강의학과의원</p>
+                            </div>                        
+                            <div class="d-flex-between mt5">
+                                <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                                <p class="number-unit fw-m fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py10">
+                            <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                            <!-- 약국 -->
+                            <div class="d-flex-start mt5">
+                                <span class="fc-pink mr5">약국</span>
+                                <p class="ellipsis">공덕오거리약국</p>
+                            </div>
+                            <div class="d-flex-between mt5">
+                                <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                                <p class="number-unit fw-m fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py10">
+                            <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                            <!-- 치과 -->
+                            <div class="d-flex-start mt5">
+                                <span class="fc-blue mr5">치과</span>
+                                <p class="ellipsis">디자인스타치과의원</p>
+                            </div>
+                            <div class="d-flex-between mt5">
+                                <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                                <p class="number-unit fw-m fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="py10">
+                            <p class="fc-gray fs-sm">2022.01.24 23:16</p>
+                            <!-- 의원 -->
+                            <div class="d-flex-start mt5">
+                                <span class="fc-purple mr5">의원</span>
+                                <p class="ellipsis">광덕안정한의원 신촌점</p>
+                            </div>
+                            <div class="d-flex-between mt5">
+                                <p class="fs-sm fc-gray">[하나카드] 1Q Daily+</p>
+                                <p class="number-unit fw-m fs-md">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">대출 - 대출 상품 조회</h4>
+                    <ul class="py10">
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png"
+                                        alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-df ellipsis">원큐 신용대출</p>
+                                        <p>
+                                            <span class="fs-sm fc-gray-l">금리</span>
+                                            <span class="fs-df fw-m fc-num-red">2.99%</span>
+                                            <span class="divide-bar fs-sm fc-gray-l">대출한도</span>
+                                            <span class="fs-df fw-m fc-black">9천만원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <div class="icon-title">
+                                    <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png"
+                                        alt="">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-df ellipsis">원큐 신용대출</p>
+                                        <p>
+                                            <span class="fs-sm fc-gray-l">금리</span>
+                                            <span class="fs-df fw-m fc-num-red">2.99%</span>
+                                            <span class="divide-bar fs-sm fc-gray-l">대출한도</span>
+                                            <span class="fs-df fw-m fc-black">9천만원</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">홈 - MY자산</h4>
+                    <div class="d-flex-between">
+                        <p>은행</p>
+                        <!-- 자산 연결시에만 노출 -->
+                        <p class="number-unit fc-gray-d fw-r">
+                            <span class="number">1,656,000,000</span>
+                            <span class="unit">원</span>
+                        </p>
+                    </div>
+                    <div class="d-flex-between mt20">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div class="overflow-hidden">
+                                <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                <p class="fs-sm fc-gray">1002444111111</p>
+                                <p class="number-unit fs-md fc-black mt3">
+                                    <span class="number">9,543,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm">송금</button>
+                    </div>
+                    <div class="d-flex-between mt20">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div class="overflow-hidden">
+                                <p class="fs-sm fc-gray ellipsis">주택청약예금만기지급식</p>
+                                <p class="fs-sm fc-gray">1002444111111</p>
+                                <p class="number-unit fs-md fc-black mt3">
+                                    <span class="number">3,000,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm">송금</button>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">BottomSheet - 공통(연결자산)</h4>
+                    <a href="#;" class="sub-link d-block py10">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div>
+                                <p class="fs-df">우리 주거래 우대 통장(저축예금)</p>
+                                <p class="fs-sm fc-gray">654568455454</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#;" class="sub-link d-block py10">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div>
+                                <p class="fs-df">우리 주거래 우대 통장(저축예금)</p>
+                                <p class="fs-sm fc-gray">654568455454</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">BottomSheet - 보험(보장성보험)</h4>
+                    <a href="#;" class="sub-link d-block py10">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div>
+                                <p class="fs-sm fc-gray">애니카다이렉트_개인용</p>
+                                <p class="number-unit fs-md">
+                                    <span class="front">월</span>
+                                    <span class="number">150,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#;" class="sub-link d-block py10">
+                        <div class="icon-title">
+                            <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                            <div>
+                                <p class="fs-sm fc-gray">애니카다이렉트_개인용</p>
+                                <p class="number-unit fs-md">
+                                    <span class="front">월</span>
+                                    <span class="number">150,000</span>
+                                    <span class="unit">원</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- 알림 리스트 -->
+                <section>
+                    <h4 class="guide-sub-title">알림 리스트</h4>
+                    <ul>
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <p class="d-flex-start fs-sm fc-gray"><span
+                                        class="custom-label c-mint mr5">공지</span>2022.05.20</p>
+                                <p class="mt10 fs-df fc-gray-d">저축은행 60개사가 추가되었어요.</p>
+                            </a>
+                        </li>
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link sub-icon-link d-block">
+                                <p class="d-flex-start fs-sm fc-gray"><span
+                                        class="custom-label c-primary mr5">공통</span>2022.05.20</p>
+                                <p class="mt10 fs-df fc-gray-d">자산 변동이 있으시네요. 접속해서 확인해보세요.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 날짜별 Block 반복 리스트 -->
+                <section>
+                    <h4 class="guide-sub-title">날짜별 Block 반복 리스트</h4>
+                    <div class="module-box bg-white2 py10">
+                        <div class="d-flex-between fs-sm fc-gray-d">
+                            <p>03.03 오늘</p>
+                            <p>2 건</p>
+                        </div>
+                    </div>
+                    <!-- 날짜별 Block 반복용 -->
+                    <ul class="module-box pt10">
+                        <!-- 첫번째 리스트 -->
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link d-block">
+                                <!-- KIWMYD_TIM_002_0001 라벨종류 확인할 것 -->
+                                <span class="custom-label c-salmon">대출</span>
+                                <span class="custom-label c-primary">상환</span>
+
+                                <p class="fs-md ellipsis mt10">[신한은행] 신한 청년월세 대출</p>
+
+                                <p class="fs-sm fc-gray text-right mt15">금리 <span class="fc-num-red">3.03%</span></p>
+                                <div class="d-flex-between">
+                                    <span class="fs-sm fc-gray-d">지난달 상환 금액</span>
+                                    <p class="number-unit fs-md fw-b">
+                                        <span class="number">600,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 두번째 리스트 -->
+                        <li class="py20 border">
+                            <a href="#;" class="sub-link d-block">
+                                <span class="custom-label c-orange">보험</span>
+                                <span class="custom-label c-primary">납입</span>
+
+                                <p class="fs-md ellipsis mt10">[한화생명] 한화생명 간편가입 누구나 필요한 필요한 </p>
+
+                                <p class="fs-sm fc-gray text-right mt15">금리 <span class="fc-num-red">3.03%</span></p>
+                                <div class="d-flex-between">
+                                    <span class="fs-sm fc-gray-d">지난달 상환 금액</span>
+                                    <p class="number-unit fs-md fw-b">
+                                        <span class="number">600,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 펀드상품 리스트-->
+                <section>
+                    <h4 class="guide-sub-title">펀드상품 리스트</h4>
+                    <ul>
+                        <li class="py20 border">
+                            <a href="#" class="sub-link sub-icon-link d-block">
+                                <div class="d-flex-start">
+                                    <div class="card-box-sm flex-shrink0 w55 bg-ex-navy text-center px0">
+                                        <p class="fs-xs fc-white">평가점수</p>
+                                        <p class="fs-xl fw-m fc-white mt3">81</p>
+                                    </div>
+                                    <div class="overflow-hidden ml10">
+                                        <span class="custom-label c-yellow">보통위험</span>
+                                        <p class="ellipsis2">NH-Amundi 베트남 레버리지 증권투자신탁주식NH-Amundi 베트남 레버리지 증권투자신탁주식NH-Amundi
+                                            베트남 레버리지 증권투자신탁주식</p>
+                                        <p class="d-flex-start mt10">
+                                            <span class="fs-sm fc-gray">3개월 수익률</span>
+                                            <span class="fs-md fw-b fc-num-red ml5">45.2%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py20 border">
+                            <a href="#" class="sub-link sub-icon-link d-block">
+                                <div class="d-flex-start">
+                                    <div class="card-box-sm flex-shrink0 w55 bg-ex-navy text-center px0">
+                                        <p class="fs-xs fc-white">평가점수</p>
+                                        <p class="fs-xl fw-m fc-white mt3">78</p>
+                                    </div>
+                                    <div class="overflow-hidden ml10">
+                                        <span class="custom-label c-orange">매우높은위험</span>
+                                        <p class="ellipsis2">NH-Amundi 베트남 레버리지 증권투자신탁주식NH-Amundi 베트남 레버리지 증권투자신탁주식NH-Amundi
+                                            베트남 레버리지 증권투자신탁주식</p>
+                                        <p class="d-flex-start mt10">
+                                            <span class="fs-sm fc-gray">3개월 수익률</span>
+                                            <span class="fs-md fw-b fc-num-red ml5">45.2%</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- checkbox/radio List -->
+            <section class="content-box">
+                <h3 class="guide-title">라디오 버튼 리스트</h3>
+                <section>
+                    <h4 class="guide-sub-title">radio-button list (기본)</h4>
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" name="rdo_1" id="rdo_01" checked="">
+                        <label for="rdo_01"><i></i><span class="ellipsis">항목명</span></label>
+                    </div>
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" name="rdo_1" id="rdo_02">
+                        <label for="rdo_02"><i></i><span class="ellipsis">항목항목항목항목항목항목항목항목항목항목항목항목항목항목항목항</span></label>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">radio-button list (아이콘 양식)</h4>
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" id="rdo_03" name="rdo_2" checked="">
+                        <label for="rdo_03">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p>신한지주1</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" id="rdo_04" name="rdo_2">
+                        <label for="rdo_04">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p>신한지주2</p>
+                            </div>
+                        </label>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">radio-button list (여러줄 양식)</h4>                  
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" id="rdo_05" name="radio1" checked="">
+                        <label for="rdo_05">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden">
+                                    <p class="fs-sm ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                    <p class="number-unit fs-md fc-black mt3">
+                                        <span class="number">9,543,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" id="rdo_06" name="radio1">
+                        <label for="rdo_06">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden">
+                                    <p class="fs-sm ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                    <p class="number-unit fs-md fc-black mt3">
+                                        <span class="number">9,543,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>                
+                    <div class="module-box bg-white2 w-full mt30 mb20">
+                        <p>오픈뱅킹 미등록계좌</p>
+                        <p class="fs-sm fc-gray">오픈뱅킹 계좌등록 후 진행합니다.</p>
+                    </div>                
+                    <div class="custom-radio radio-vertical">
+                        <input type="radio" id="rdo_07" name="radio1">
+                        <label for="rdo_07">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden">
+                                    <p class="fs-sm ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                    <p class="number-unit fs-md fc-black mt3">
+                                        <span class="number">9,543,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </section> 
+            </section>
+
+            <section class="content-box">
+                <h3 class="guide-title">체크박스 리스트</h3>
+                <section>
+                    <h4 class="guide-sub-title">아이콘 타입의 양쪽 정렬 리스트</h4>
+                    <div class="custom-check check-vertical reverse">     
+                        <input type="checkbox" id="bank1" name="bank1" checked>               
+                        <label for="bank1">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p>우리은행</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="custom-check check-vertical reverse">     
+                        <input type="checkbox" id="bank2" name="bank1" checked>               
+                        <label for="bank2">
+                            <i></i>
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <p>우리은행</p>
+                            </div>
+                        </label>
+                    </div>                
+                </section>
+            </section>
+
+            <!-- overflow-x 리스트 -->
+            <section class="content-box">
+                <h3 class="guide-title">overflow-x</h3>
+                <section>
+                    <h4 class="guide-sub-title">Type 1</h4>
+                    <div class="overflow-x">
+                        <div class="d-flex">
+                            <a href="#;" class="btn-link">펀드</a>
+                            <a href="#;" class="btn-link">연금</a>
+                            <a href="#;" class="btn-link">ELS</a>
+                            <a href="#;" class="btn-link">채권(국내)</a>
+                            <a href="#;" class="btn-link">채권(해외)</a>
+                            <a href="#;" class="btn-link">RP</a>
+                            <a href="#;" class="btn-link">ISA</a>
+                            <a href="#;" class="btn-link">Wrap</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Color Box -->        
+            <section class="content-box">
+                <h3 class="guide-title">Color Box</h3>
+                <section class="d-flex">
+                    <div class="card-box bg-ex-brown w-100">
+                        <h4 class="fs-md fw-l fc-white">내 종목</h4>
+                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                            <p class="fc-white">수익률</p>
+                            <p class="fs-md fw-b fc-white">45.2%</p>
+                            <p class="fc-white mt10">보유 계좌수</p>
+                            <p class="fs-md fw-b fc-white">2</p>
+                            <p class="fc-white mt10">매입가</p>
+                            <p class="fs-md fw-b fc-white">99,999</p>
+                        </div>
+                    </div>
+                    <div class="card-box bg-ex-purple2 w-100 ml12">
+                        <h4 class="fs-md fw-l fc-white">MY자산 고객전체</h4>
+                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                            <p class="fc-white">수익률</p>
+                            <p class="fs-md fw-b fc-white">45.2%</p>
+                            <p class="fc-white mt10">보유 계좌수</p>
+                            <p class="fs-md fw-b fc-white">2</p>
+                            <p class="fc-white mt10">매입가</p>
+                            <p class="fs-md fw-b fc-white">99,999</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="guide-sub-title">Swipe box type</h4>
+
+                    <div class="card-box box-shadow bg-ex-green2 fc-white">
+                        <h4 class="fs-xl fw-l">국내주식 투자고수 관심상품</h4>
+
+                        <div class="d-flex mt20">
+                            <div class="w-70">
+                                <img src="../../../../resources/new_images/views/inve/ico_first_record.svg" alt="" class="w50">
+                                <p class="ellipsis mt5">삼성전자</p>
+                            </div>
+                            <div class="border-left-alpha pl10">
+                                <p class="fs-sm fw-l">평균 수익률</p>
+                                <p class="fw-b mt3">333.01%</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#" class="sub-link sub-icon-link fc-white d-block">더 많은 상품 보기</a>
+                        </div>
+                    </div>
+
+                    <div class="card-box bg-blue w-100 mt20">
+                        <h4 class="d-flex-start fw-l fc-white" style="margin-left:-0.5rem"><span class="deco-icon ico-insu11 icon-30 mr5"></span>많이 방문한 의료기관</h4>
+                        <ol class="order-list border-top-alpha w-full-20 px20 pt10 mt15">
+                            <li class="d-flex-start mt10">
+                                <span class="order-count count-round white"></span>
+                                <p class="ellipsis">같은마음 정신건강의학과의원</p>
+                                <span class="flex-shrink0 ml5">(5,120회)</span>
+                            </li>
+                            <li class="d-flex-start mt10">
+                                <span class="order-count count-round"></span>
+                                <p class="ellipsis">디자인스타치과의원</p>
+                                <span class="flex-shrink0 ml5">(12회)</span>
+                            </li>
+                            <li class="d-flex-start mt10">
+                                <span class="order-count count-round"></span>
+                                <p class="ellipsis">삼성한의원</p>
+                                <span class="flex-shrink0 ml5">(4회)</span>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">Overflow-x</h4>
+                
+                    <div class="overflow-x w-full mt10">
+                        <ul class="list-inline px-padding2">
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-purple2 fc-white w140">
+                                        <h4 class="fs-md fw-l">삼성전자</h4>
+                                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                                            <p class="fs-sm">보유비중</p>
+                                            <p class="fw-b">45.2%</p>
+                                            <p class="fs-sm mt10">등락률</p>
+                                            <p class="fw-b">+45.2%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-brown fc-white w140">
+                                        <h4 class="fs-md fw-l">삼성전자</h4>
+                                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                                            <p class="fs-sm">보유비중</p>
+                                            <p class="fw-b">45.2%</p>
+                                            <p class="fs-sm mt10">등락률</p>
+                                            <p class="fw-b">+45.2%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-blue fc-white w140">
+                                        <h4 class="fs-md fw-l">삼성전자</h4>
+                                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                                            <p class="fs-sm">보유비중</p>
+                                            <p class="fw-b">45.2%</p>
+                                            <p class="fs-sm mt10">등락률</p>
+                                            <p class="fw-b">+45.2%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-mint fc-white w140">
+                                        <h4 class="fs-md fw-l">삼성전자</h4>
+                                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                                            <p class="fs-sm">보유비중</p>
+                                            <p class="fw-b">45.2%</p>
+                                            <p class="fs-sm mt10">등락률</p>
+                                            <p class="fw-b">+45.2%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-green fc-white w140">
+                                        <h4 class="fs-md fw-l">삼성전자</h4>
+                                        <div class="border-top-alpha w-full-20 px-padding pt15 mt15">
+                                            <p class="fs-sm">보유비중</p>
+                                            <p class="fw-b">45.2%</p>
+                                            <p class="fs-sm mt10">등락률</p>
+                                            <p class="fw-b">+45.2%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">Overflow-x + Order list(Top5)</h4>
+
+                    <div class="overflow-x w-full mt10">
+                        <ol class="order-list list-inline px-padding2">
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-purple2 fc-white w140 px10"><!-- 08.05 px10 추가 | 이하 동일적용 -->
+                                        <span class="order-count count-top5"></span>
+                                        <!-- 08.05 수정 | 이하 동일적용 -->
+                                        <h4 class="ellipsis2 fs-df fw-m mt40">삼성중국본토중소형FOCUS증권자투자신탁UH</h4>
+                                        <div class="d-flex-between mt30">
+                                            <p class="fw-m">95점</p>
+                                            <p class="fs-lg fw-b">+23.56%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-brown fc-white w140 px10">
+                                        <span class="order-count count-top5"></span>
+                                        <h4 class="ellipsis2 fs-df fw-m mt40">삼성중국본토중소형FOCUS증권자투자신탁UH</h4>
+                                        <div class="d-flex-between mt30">
+                                            <p class="fw-m">95점</p>
+                                            <p class="fs-lg fw-b">+23.56%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-blue fc-white w140 px10">
+                                        <span class="order-count count-top5"></span>
+                                        <h4 class="ellipsis2 fs-df fw-m mt40">삼성중국본토중소형FOCUS증권자투자신탁UH</h4>
+                                        <div class="d-flex-between mt30">
+                                            <p class="fw-m">95점</p>
+                                            <p class="fs-lg fw-b">+23.56%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-mint fc-white w140 px10">
+                                        <span class="order-count count-top5"></span>
+                                        <h4 class="ellipsis2 fs-df fw-m mt40">삼성중국본토중소형FOCUS증권자투자신탁UH</h4>
+                                        <div class="d-flex-between mt30">
+                                            <p class="fw-m">95점</p>
+                                            <p class="fs-lg fw-b">+23.56%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow bg-ex-green fc-white w140 px10">
+                                        <span class="order-count count-top5"></span>
+                                        <h4 class="ellipsis2 fs-df fw-m mt40">삼성중국본토중소형FOCUS증권자투자신탁UH</h4>
+                                        <div class="d-flex-between mt30">
+                                            <p class="fw-m">95점</p>
+                                            <p class="fs-lg fw-b">+23.56%</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">Overflow-x + .box-color, box-color2(자동)</h4>
+
+                    <div class="overflow-x w-full mt10">
+                        <ul class="list-inline px-padding2">
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">보험료를 낮추고 싶다면 꼭 확인해야할 3가지</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">보장범위를 모르고 가입했나요?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">암을 대비하는 스마트한 방법</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="overflow-x w-full mt10">
+                        <ul class="list-inline px-padding2">
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color2 w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">보험료를 낮추고 싶다면 꼭 확인해야할 3가지</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color2 w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">보장범위를 모르고 가입했나요?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#;" class="sub-link">
+                                    <div class="card-box box-shadow box-color2 w180 h180">
+                                        <span class="custom-label c-white mb10">보험</span>
+                                        <p class="fs-lg fc-white h90">암을 대비하는 스마트한 방법</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">link-home-report + bg-ex-card1~3</h4>            
+                    <div class="d-flex-between mt10">
+                        <a href="#;" class="link-home-report w-100 h100 flex-shrink1 bg-ex-card1">
+                            <p class="fw-r fs-md">차트로<br>보는 투자<br>타이밍</p>
+                        </a>
+                        <a href="#;" class="link-home-report w-100 h100 flex-shrink1 bg-ex-card3">
+                            <p class="fw-r fs-md">수익률<br>분포도<br>보기</p>
+                        </a>
+                        <a href="#;" class="link-home-report w-100 h100 flex-shrink1 bg-ex-card4">
+                            <p class="fw-r fs-md">나만의<br>일지<br>메모</p>
+                        </a>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">card-box icon type</h4>                  
+                    <div class="d-flex-between mt10">
+                        <a href="#" class="sub-link">
+                            <div class="text-center">                        
+                                <div class="card-box box-shadow w70 h70 p16">
+                                    <img src="../../../../resources/new_images/views/sma/ico_banner06.svg">
+                                </div>
+                                <p class="mt10">이자<br>계산기</p>
+                            </div>                    
+                        </a>
+                        <a href="#" class="sub-link">
+                            <div class="text-center">
+                                <div class="card-box box-shadow w70 h70 p16">
+                                    <img src="../../../../resources/new_images/views/sma/ico_banner07.svg">
+                                </div>
+                                <p class="mt10">DSR<br>계산기</p>
+                            </div>
+                        </a>
+                        <a href="#" class="sub-link">
+                            <div class="text-center">
+                                <div class="card-box box-shadow w70 h70 p16">
+                                    <img src="../../../../resources/new_images/views/sma/ico_banner08.svg">
+                                </div>
+                                <p class="mt10">연금<br>계산기</p>
+                            </div>
+                        </a>
+                        <a href="#" class="sub-link">
+                            <div class="text-center">
+                                <div class="card-box box-shadow w70 h70 p16">
+                                    <img src="../../../../resources/new_images/views/sma/ico_banner09.svg">
+                                </div>
+                                <p class="mt10">환급<br>계산기</p>
+                            </div>
+                        </a>
+                    </div>            
+                </section>
+                
+                <section>
+                    <h4 class="guide-sub-title">Custom color box + vs icon + position-center</h4>
+
+                    <div class="position-relative d-flex-between mt20">
+                        <span class="custom-badge badge-lg bg-primary fs-sm position-center">VS</span>
+
+                        <!-- 내펀드 -->
+                        <div class="card-box-sm card-border align-self-start border-blue w-100 p20 pb0">
+                            <h4 class="fs-md">내펀드</h4>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">3개월 수익률</dt>
+                                <dd class="fs-xl fw-b">1.59%</dd>
+                            </dl>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">6개월 수익률</dt>
+                                <dd class="fs-xl fw-b fc-pink">15.59%</dd>
+                            </dl>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">12개월 수익률</dt>
+                                <dd class="fs-xl fw-b">-</dd>
+                            </dl>
+                        </div>
+                        <!-- 우수 펀드 -->
+                        <div class="card-box-sm card-border align-self-start border-gray-l w-100 p20 pb0 ml5">
+                            <h4 class="fs-md text-right">우수 펀드</h4>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">3개월 수익률</dt>
+                                <dd class="fs-xl fw-b fc-pink">11.59%</dd>
+                            </dl>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">6개월 수익률</dt>
+                                <dd class="fs-xl fw-b">15.59%</dd>
+                            </dl>
+                            <dl class="data-list list-block border-sm">
+                                <dt class="fs-sm fc-gray-d">12개월 수익률</dt>
+                                <dd class="fs-xl fw-b">8.59%</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h4 class="guide-sub-title">.d-flex.flex-column + vs icon</h4>
+
+                    <ul class="d-flex flex-column mt10">
+                        <li class="d-flex-between card-box-sm bg-gray-l text-center">
+                            <p class="w-40">나</p>
+                            <p class="w-20"><span class="custom-label label-solid c-primary fs-sm">VS</span></p>
+                            <p class="w-40">40대 평균</p>
+                        </li>
+                        <li class="d-flex-between py20 border text-center fs-sm">
+                            <p class="w-40 fc-pink">30,000만원</p>
+                            <p class="w-20">원금보장</p>
+                            <p class="w-40">28,000만원</p>
+                        </li>
+                        <li class="d-flex-between py20 border text-center fs-sm">
+                            <p class="w-40">2,000만원</p>
+                            <p class="w-20">원금비보장</p>
+                            <p class="w-40 fc-pink">3,000만원</p>
+                        </li>
+                        <li class="d-flex-between py20 border text-center fs-sm">
+                            <p class="w-40 fc-pink">12,000만원</p>
+                            <p class="w-20">기타</p>
+                            <p class="w-40">10,000만원</p>
+                        </li>
+                    </ul>
+                </section>
+                
+            </section>
+
+            <!-- 서브페이지 양식 -->
+            <section class="content-box">
+                <h3 class="guide-title">서브페이지 양식</h3>
+
+                <section>
+                    <h4 class="guide-sub-title">서브페이지 상단 Type 1</h4>
+                    <div class="module-box text-center py20">
+                        <button type="button" class="btn btn-sm btn-border btn-round btn-icon-box fs-df">
+                            <span class="btn-icon-link fw-r">갱신/비갱신보험<em class="fw-b fc-num-red ml5">8</em>개</span>
+                        </button>
+                    </div>
+                    <div class="module-box bg-white2 pt10">
+                        <div class="form-box">
+                            <span class="fs-md mr10">다가오는</span>
+                            <div class="custom-select2 fc-pink">
+                                <select>
+                                    <option>전자금융</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="fs-md pt15">금융일정이 총<span class="fw-b"> 12 건</span> 있어요</p>
+                    </div>
+                </section>
+
+                <!-- 기준일 -->
+                <section>
+                    <h4 class="guide-sub-title">기준일 새로고침</h4>
+                    <div class="d-flex-between mt5">
+                        <p class="fs-sm fc-gray-d"><span class="fc-gray mr5">기준일</span>2022.03.02 09:15</p>
+                        <a href="#;" class="text-link text-icon-refresh fs-sm fc-gray">새로고침</a>
+                    </div>
+
+                    <div class="d-flex-start">
+                        <p class="fs-sm fc-gray-d">2022.03.02 09:15</p>
+                        <button type="button" class="btn btn-xs btn-icon-only btn-icon-refresh">새로고침</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- 범례 -->
+            <section class="content-box" id="content_tim">
+                <h3 class="guide-title">범례</h3>
+                <section>                
+                    <h4 class="guide-sub-title">범례 타이틀 (chart-legend.legend-square)</h4>
+                    <h4 class="chart-legend legend-square legend-red fs-lg fw-b">전기전자</h4>
+                    <h4 class="chart-legend legend-square legend-pink fs-lg fw-b">IT부품</h4>
+                    <h4 class="chart-legend legend-square legend-green fs-lg fw-b">의약품</h4>
+                    <h4 class="chart-legend legend-square legend-blue fs-lg fw-b">해외채권</h4>
+                    <h4 class="chart-legend legend-square legend-yellow fs-lg fw-b">유동성</h4>
+                </section>            
+
+            </section>
+
+            <!-- 스와이퍼 -->
+            <section class="content-box" id="content_tim">
+                <h3 class="guide-title">스와이퍼</h3>
+                <h4 class="guide-sub-title">공통 스와이퍼</h4>
+                <div class="swiper-container custom-swiper mt30" id="swiper01">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="sub-link">
+
+                                <div class="card-box bg-gray-l"> 
+                                    <div class="d-flex-between">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-md fw-b ellipsis2">멀티에셋 글로벌 에너지 증권(주식)_AE_펀드명이 2줄 출력일 경우드명이 2줄 출력일 경우</p>
+                                        </div>                                        
+                                        <span class="custom-label label-square label-solid c-pink w40 h40 ml5">점검</span>
+                                    </div>                    
+                                    <div class="d-flex mt20">
+                                        <div class="w-40">
+                                            <p class="fc-gray-d">평가점수</p>
+                                            <p class="fc-pink"><span class="fs-2xl fw-b">41</span>점</p>
+                                        </div>
+                                        <div class="border-left-alpha pl10 flex-shrink0">
+                                            <p class="fc-gray-d">평가금액</p>
+                                            <p>
+                                                <span class="fs-2xl fw-b">19,158</span>만원
+                                                <span class="arrow-down fw-b ml10">1.58%</span>
+                                            </p>
+                                        </div>
+                                    </div>                                                
+                                    <div class="card-box mt20">
+                                        <span class="custom-label label-solid c-primary fs-sm">진단</span>
+                                        <p class="fs-sm mt5">고객님이 투자한 펀드는 [투자위험 대비 수익률이 높지만,] [포트폴리오 분산이 필요합니다.]</p>
+                                    </div>                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="sub-link">
+
+                                <div class="card-box bg-gray-l">
+                                    <div class="d-flex-between">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-md fw-b ellipsis2">멀티에셋 글로벌 에너지 증권(주식)_AE_펀드명이 2줄 출력일 경우</p>
+                                        </div>
+                                        <span class="custom-label label-square label-solid c-green w40 h40 ml5">양호</span>
+                                    </div>                    
+                                    <div class="d-flex mt20">
+                                        <div class="w-40">
+                                            <p class="fc-gray-d">평가점수</p>
+                                            <p class="fc-green"><span class="fs-2xl fw-b">50</span>점</p>
+                                        </div>
+                                        <div class="border-left-alpha pl10 flex-shrink0">
+                                            <p class="fc-gray-d">평가금액</p>
+                                            <p>
+                                                <span class="fs-2xl fw-b">19,158</span>만원
+                                                <span class="arrow-up fw-b ml10">1.58%</span>
+                                            </p>
+                                        </div>
+                                    </div>                                                
+                                    <div class="card-box mt20">
+                                        <span class="custom-label label-solid c-primary fs-sm">진단</span>
+                                        <p class="fs-sm mt5">고객님이 투자한 펀드는 [투자위험 대비 수익률이 높지만,] [포트폴리오 분산이 필요합니다.]</p>
+                                    </div>                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="sub-link">
+
+                                <div class="card-box bg-gray-l">
+                                    <div class="d-flex-between">
+                                        <div class="overflow-hidden">
+                                            <p class="fs-md fw-b ellipsis2">멀티에셋 글로벌 에너지 증권(주식)_AE_펀드명이 2줄 출력일 경우</p>
+                                        </div>
+                                        <span class="custom-label label-square label-solid c-blue w40 h40 ml5">우수</span>
+                                    </div>                    
+                                    <div class="d-flex mt20">
+                                        <div class="w-40">
+                                            <p class="fc-gray-d">평가점수</p>
+                                            <p class="fc-blue"><span class="fs-2xl fw-b">70</span>점</p>                                                                                                
+                                        </div>
+                                        <div class="border-left-alpha pl10 flex-shrink0">
+                                            <p class="fc-gray-d">평가금액</p>
+                                            <p>
+                                                <span class="fs-2xl fw-b">19,158</span>만원
+                                                <span class="arrow-up fw-b ml10">1.58%</span>
+                                            </p>
+                                        </div>
+                                    </div>                                                
+                                    <div class="card-box mt20">
+                                        <span class="custom-label label-solid c-primary fs-sm">진단</span>
+                                        <p class="fs-sm mt5">고객님이 투자한 펀드는 [투자위험 대비 수익률이 높지만,] [포트폴리오 분산이 필요합니다.]</p>
+                                    </div>                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination" style="position:relative; margin-top:10px;"></div>
+                </div>
+                <p>
+                    KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+                </p>
+                
+            </section>
+
+            <section class="content-box">
+                <h3 class="guide-title">아코디언 리스트</h3>
+                <h4 class="guide-sub-title">Accordion</h4>
+                <section>
+                    <ul class="accordion-wrap type-block">
+                        <li class="accordion">
+                            <div class="fold-head">
+                                <button type="button" class="btn-fold">열기/닫기</button>
+                                <div class="flex-row">
+                                    <p class="fs-df fw-r">예금현황<span class="fc-purple fw-b pl10">1</span></p>
+                                    <p class="number-unit fs-md fw-b fc-black">
+                                        <span class="number">87,000,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="fold-body">
+
+                                <div class="py20 border">
+                                    <a href="#;" class="sub-link d-block">
+                                        <div class="d-flex-between">
+                                            <div class="icon-title">
+                                                <img src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="" class="icon40">
+                                                <div class="overflow-hidden">
+                                                    <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                                    <p class="number-unit fs-md fc-black mt5">
+                                                        <span class="number">9,543,000</span>
+                                                        <span class="unit">원</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- 만기일 초과 red, D-day 90일 이내 blue, D-day 90일 이전 grey -->
+                                            <span class="custom-label label-solid c-custom-red fs-sm">D+90</span>
+                                            <!-- <span class="custom-label label-solid c-custom-blue fs-sm">D-day</span>
+                                            <span class="custom-label label-solid c-custom-grey fs-sm">D-123</span> -->
+                                        </div>
+                                    </a>                            
+                                    <p class="fs-sm fc-gray mt15 text-right">총 12개월 / 9개월 경과</p>
+                                    <div class="barchart-box">
+                                        <div class="barchart"><i class="bg-purple" style="width: 75%;"></i></div>
+                                    </div>        
+                                    <dl class="data-list mt5">
+                                        <dt class="fs-sm">적용금리</dt>
+                                        <dd>2.43%</dd>
+                                        <dt class="fs-sm">월 납입액</dt>
+                                        <dd>500,000원</dd>
+                                        <dt class="fs-sm">
+                                            <a href="#;" class="tooltip fc-gray" data-tooltip="aa">만기 시 예상수익</a>
+                                            <div class="tooltip-box" data-tooltip-box="aa">
+                                                <p class="title">만기 시 예상수익</p>
+                                                <p>단리 이자를 기초로 계산한 예상 수익으로 실제 예·적금 상품 구조에 따라 실제 수익은 다를 수 있습니다.</p>
+                                                <button type="button" class="tooltip-close">닫기</button>
+                                            </div>
+                                        </dt>                             
+                                        <dd>
+                                            <p class="number-unit fs-md fw-b fc-num-red">
+                                                <span class="number">83,349</span>
+                                                <span class="unit">원</span>
+                                                <span class="fc-black">(세전)</span>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                
+                            </div>
+
+                        </li>
+
+                        <li class="accordion">
+                            <div class="fold-head">
+                                <button type="button" class="btn-fold">열기/닫기</button>
+                                <div class="flex-row">
+                                    <p class="fs-df fw-r">적금현황<span class="fc-purple fw-b pl10">2</span></p>
+                                    <p class="number-unit fs-md fw-b fc-black">
+                                        <span class="number">87,000,000</span>
+                                        <span class="unit">원</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="fold-body">
+
+                                <div class="py20 border">
+                                    <a href="#;" class="sub-link d-block">
+                                        <div class="d-flex-between">
+                                            <div class="icon-title">
+                                                <img src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="" class="icon40">
+                                                <div class="overflow-hidden">
+                                                    <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                                    <p class="number-unit fs-md fc-black mt5">
+                                                        <span class="number">9,543,000</span>
+                                                        <span class="unit">원</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="custom-label label-solid c-custom-blue fs-sm">D-day</span>
+                                        </div>
+                                    </a>
+
+                                    <dl class="data-list mt5">
+                                        <dt class="fs-sm">적용금리</dt>
+                                        <dd>2.43%</dd>
+
+                                    </dl>
+                                </div>
+
+                                <div class="py20 border">
+                                    <a href="#;" class="sub-link d-block">
+                                        <div class="d-flex-between">
+                                            <div class="icon-title">
+                                                <img src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="" class="icon40">
+                                                <div class="overflow-hidden">
+                                                    <p class="fs-sm fc-gray ellipsis">우리 주거래 우대통장(저축예금)</p>
+                                                    <p class="fs-sm fc-gray">1002444111111</p>
+                                                    <p class="number-unit fs-md fc-black mt5">
+                                                        <span class="number">9,543,000</span>
+                                                        <span class="unit">원</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="custom-label label-solid c-custom-grey fs-sm">D-123</span>
+                                        </div>
+                                    </a>                            
+                                    <p class="fs-sm fc-gray mt15 text-right">총 24회 / 11회 납입</p>
+                                    <div class="barchart-box">
+                                        <div class="barchart"><i class="bg-purple" style="width: 75%;"></i></div>
+                                    </div>        
+                                    <dl class="data-list mt5">
+                                        <dt class="fs-sm">적용금리</dt>
+                                        <dd>2.43%</dd>
+                                        <dt class="fs-sm">월 납입액</dt>
+                                        <dd>500,000원</dd>
+                                    </dl>                            
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <h4 class="guide-sub-title">Accordion (.fold-head.no-border)</h4>
+                <section>
+                    <ul class="accordion-wrap type-block">
+                        <li class="accordion">
+                            <div class="fold-head no-border">
+                                <button type="button" class="btn-fold">열기/닫기</button>
+                                <div class="icon-title">
+                                    <img src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="" class="icon40">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc ellipsis">위탁종합</p>
+                                        <p class="d-flex">
+                                            <span class="fs-md fw-b">키움증권</span>
+                                            <span class="custom-label label-solid c-custom-purple fs-sm ml5">12</span>
+                                        </p>
+                                        <p class="fs-sm fc-gray">6545 6846 8854</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fold-body">    
+                                <div class="mt10 mb20">
+                                    <div class="custom-radio radio-vertical btn-type3">
+                                        <input type="radio" name="rdo_1" id="rdo_01">
+                                        <label for="rdo_01"><i></i>
+                                            <div class="d-flex-between w-100">
+                                                <div class="flex-row">
+                                                    <p class="fs-sm">삼성전자</p>
+                                                    <p>70,000,000,000원</p>
+                                                </div>
+                                                <div class="flex-row">
+                                                    <p class="fs-sm text-right">수익률</p>
+                                                    <p class="fc-num-red fw-b">+15.26%</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio radio-vertical btn-type3">
+                                        <input type="radio" name="rdo_1" id="rdo_02">
+                                        <label for="rdo_02"><i></i>
+                                            <div class="d-flex-between w-100">
+                                                <div class="flex-row">
+                                                    <p class="fs-sm">율촌화학</p>
+                                                    <p>5,000,000,000원</p>
+                                                </div>
+                                                <div class="flex-row">
+                                                    <p class="fs-sm text-right">수익률</p>
+                                                    <p class="fc-num-blue fw-b">-5.26%</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </li>    
+                        <li class="accordion">
+                            <div class="fold-head no-border">
+                                <button type="button" class="btn-fold">열기/닫기</button>
+                                <div class="icon-title">
+                                    <img src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="" class="icon40">
+                                    <div class="overflow-hidden">
+                                        <p class="fs-sm fc ellipsis">비타 WON중금리 신용대출</p>
+                                        <p class="d-flex">
+                                            <span class="fs-md fw-b">삼성증권</span>
+                                            <span class="custom-label label-solid c-custom-purple fs-sm ml5">5</span>
+                                        </p>
+                                        <p class="fs-sm fc-gray">6545 6846 8854</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fold-body">    
+                                <div class="mt10 mb20">
+                                    <div class="custom-radio radio-vertical btn-type3">
+                                        <input type="radio" name="rdo_2" id="rdo_03">
+                                        <label for="rdo_03"><i></i>
+                                            <div class="d-flex-between w-100">
+                                                <div class="flex-row">
+                                                    <p class="fs-sm">삼성전자</p>
+                                                    <p>70,000,000,000원</p>
+                                                </div>
+                                                <div class="flex-row">
+                                                    <p class="fs-sm text-right">수익률</p>
+                                                    <p class="fc-num-red fw-b">+15.26%</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio radio-vertical btn-type3">
+                                        <input type="radio" name="rdo_2" id="rdo_04">
+                                        <label for="rdo_04"><i></i>
+                                            <div class="d-flex-between w-100">
+                                                <div class="flex-row">
+                                                    <p class="fs-sm">율촌화학</p>
+                                                    <p>5,000,000,000원</p>
+                                                </div>
+                                                <div class="flex-row">
+                                                    <p class="fs-sm text-right">수익률</p>
+                                                    <p class="fc-num-blue fw-b">-5.26%</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>    
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="content-box">
+                <h3 class="guide-title">카드박스</h3>
+                <h4 class="guide-sub-title">Card-Box</h4>
+                <section>
+                    <a href="#;" class="sub-link d-block mt10">
+                        <div class="card-box card-border">
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden">
+                                    <p class="ellipsis">우리금융저축은행</p>
+                                    <p class="fs-md ellipsis">비타WON 중금리 신용대출</p>
+                                </div>
+                            </div>
+                            <dl class="data-list line-height-1 mt15">
+                                <dt class="fs-sm">대출금리(연)</dt>
+                                <dd class="fc-black fw-b fs-md">
+                                    <p class="d-flex-start">
+                                        <span class="cancel-line fs-sm fw-r mr5">14.10%</span>
+                                        <span class="">7.90%</span>
+                                    </p>
+                                </dd>
+                                <dt class="fs-sm">가능한도</dt>
+                                <dd class="fc-black fw-b fs-md">1억 5,000만원</dd>
+                            </dl>
+
+                            <div class="mt15">
+                                <!-- 이벤트 라벨 -->
+                                <span class="custom-label label-square label-solid fs-sm c-primary"><span class="fc-yellow mr5">이벤트</span>키움 고객 금리우대</span>
+                                <span class="custom-label label-square label-solid fs-sm c-gray bg-ex-gray">1.5% 금리우대</span>
+                                <!-- 심의필 -->
+                                <p class="fc-gray-l fs-xs mt5">
+                                    BNK저축은행준법감시인 심의필 제2022-0179호(20220530~2023.05.29)
+                                    저축은행중앙회 심의필 제2021-01772호(2021.11.29~2022.11.28)
+                                </p>
+                            </div>        
+                        </div>
+                    </a>
+
+                    <a href="#;" class="sub-link d-block">
+                        <div class="card-box card-border mt15">                    
+                            <div class="icon-title">
+                                <img class="icon40" src="../../../../resources/new_images/icons/ico_bank_sample.png" alt="">
+                                <div class="overflow-hidden">
+                                    <p class="ellipsis">우리금융저축은행</p>
+                                    <p class="fs-md ellipsis">비타WON 중금리 신용대출</p>
+                                </div>
+                            </div>
+                            <dl class="data-list mt15">
+                                <dt class="fs-sm">대출금리(연)</dt>
+                                <dd class="fc-black fw-b fs-md">
+                                    <p>7.90% <span class="fs-df fw-r fc-gray">~ 14.10%</span></p>
+                                </dd>
+                                <dt class="fs-sm">가능한도</dt>
+                                <dd class="fc-black fw-b fs-md">1억 5,000만원</dd>
+                            </dl>
+                            <!-- 이벤트 라벨 -->
+                            <p class="mt15">
+                                <span class="custom-label label-square label-solid fs-sm c-primary">
+                                    <span class="fc-yellow mr5">이벤트</span>
+                                    키움 고객 금리우대
+                                </span>
+                                <span class="custom-label label-square label-solid fs-sm c-gray bg-ex-gray">1.5% 금리우대</span>
+                            </p>
+                            <p class="fc-gray-l fs-xs mt5">
+                                BNK저축은행준법감시인 심의필 제2022-0179호(20220530~2023.05.29)
+                                저축은행중앙회 심의필 제2021-01772호(2021.11.29~2022.11.28)
+                            </p>
+                        </div>
+                    </a>
+                </section>
+                
+
+                <h4 class="guide-sub-title">Card-Box 상품별</h4>
+                <section>
+                    <!-- 펀드 -->
+                    <a href="#" class="sub-link d-block mt10">
+                        <div class="card-box card-border">                            
+                            <div>
+                                <span class="custom-label c-risk2">높은위험</span>
+                                <span class="custom-label c-green">수수료 무료</span>
+                            </div>
+                            <p class="ellipsis2 mt5">코레이트하이일드공모주플러스증권투자신탁[채권혼합]</p>
+                            <div class="d-flex-start mt15">
+                                <div class="card-box-sm flex-shrink0 w55 bg-ex-navy text-center">
+                                    <p class="fs-xs fc-white">점수</p>
+                                    <p class="fs-xl fw-m fc-white mt3">95</p>
+                                </div>
+                                <dl class="data-list w-100 line-height-1 ml10">
+                                    <dt class="fs-sm">운용규모</dt>
+                                    <dd>1,137억</dd>
+                                    <dt class="fs-sm">수익률(3개월)</dt>
+                                    <dd class="fw-b fc-pink">3.92%</dd>
+                                    <dt class="fs-sm">수익률(1년)</dt>
+                                    <dd class="fw-b fc-pink">27.11%</dd>
+                                </dl>
+                            </div>                            
+                        </div>
+                    </a>
+
+                    <!-- ELS -->
+                    <a href="#;" class="sub-link d-block mt10">
+                        <div class="card-box card-border">
+                            <div>
+                                <!-- 채권용 위험도 5단계 -->
+                                <!-- c-risk1 초고위험
+                                    c-risk2 고위험
+                                    c-risk3 중위험
+                                    c-risk4 저위험
+                                    c-risk6 초저위험 -->
+                                <span class="custom-label c-risk2">고위험</span>
+                                <span class="custom-label c-risk4">원금비보장형</span>
+                                <span class="custom-label c-lavendar">월지급식</span>
+                                <span class="custom-label c-salmon">고난도</span>
+                            </div>
+                            <p class="ellipsis mt5">한진칼10-1</p>
+                            <dl class="data-list line-height-1 mt20">
+                                <dt class="fs-sm">특정조건 충족 시 수익률(세전)</dt>
+                                <dd class="fw-b fc-pink">5.10%</dd>
+                                <dt class="fs-sm">조건 미충족 시 최대손실률</dt>
+                                <dd class="fw-b fc-pink">4.28%</dd>
+                            </dl>
+                            <dl class="data-list reverse line-height-1">
+                                <dt class="fs-sm">기초자산</dt>
+                                <dd class="fc-gray-d">KOSPI200, NIKEI225, EuroStoxx50</dd>
+                            </dl>
+                        </div>
+                    </a>
+
+                    <!-- 단기사채 / 장외채권 -->
+                    <a href="#;" class="sub-link d-block mt10">
+                        <div class="card-box card-border">
+                            <div>
+                                <span class="custom-label c-risk1">초고위험</span>
+                                <span class="custom-label c-lavendar">신용등급BBB</span>
+                            </div>
+                            <p class="ellipsis mt5">한진칼10-1</p>
+                            <dl class="data-list line-height-1 mt20">
+                                <dt class="fs-sm">매수수익률(연,세전)</dt>
+                                <dd class="fw-b fc-pink">5.10%</dd>
+                                <dt class="fs-sm">세후수익률(연)</dt>
+                                <dd class="fw-b fc-pink">4.28%</dd>
+                                <dt class="fs-sm">잔존일수</dt>
+                                <dd class="fw-b fc-black">1년 310일</dd>
+                            </dl>                                        
+                        </div>
+                    </a>
+
+                    <!-- RP -->
+                    <a href="#;" class="sub-link d-block mt10">
+                        <div class="card-box card-border">
+                            <div>
+                                <span class="custom-label c-risk1">초고위험</span>
+                            </div>
+                            <p class="ellipsis mt5">한진칼10-1</p>
+                            <dl class="data-list line-height-1 mt20">
+                                <dt class="fs-sm">약정만기이율(연,세전)</dt>
+                                <dd class="fw-b fc-pink">1.75%</dd>
+                                <dt class="fs-sm">잔존일수</dt>
+                                <dd class="fw-b fc-black">1년 310일</dd>
+                            </dl>                                        
+                        </div>
+                    </a>
+                </section>
+
+                <h4 class="guide-sub-title">신용카드</h4>
+                <section>
+
+                    <a href="#;" class="sub-link d-block">
+                        <div class="card-box card-border">
+                            <div class="icon-title">
+                                <img src="../../../../resources/new_images/views/fpr/img_card_sample.png" class="w60" alt="">
+                                <div class="align-self-start ml15">
+                                    <p class="fs-md fw-m mb5">요기요 신한카드</p>
+                                    <ul class="fs-sm fc-gray">
+                                        <li>요기요 최대 2만원 할인</li>
+                                        <li>요기요 추가 5천원 캐시백 연회비 면제</li>
+                                        <li>밀딜리버리 최대 30% 적립</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
+
+                <h4 class="guide-sub-title">대출상품</h4>
+                <section>
+                    <div class="d-flex-between">
+                        <div class="card-box-sm box-shadow w-100 py20">
+                            <h4 class="fs-md fw-b text-center" style="color:#6560d7;">최대한도 상품</h4>
+                            <div class="card-box-sm bg-white2 mt15">
+                                <dl class="data-list">
+                                    <dt class="fs-sm pr0">대출금리</dt>
+                                    <dd class="fs-sm fw-b fc-pink">4.50%</dd>
+                                    <dt class="fs-sm pr0">대출한도</dt>
+                                    <dd class="fs-sm fw-b fc-black">3억 5,000만원</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="card-box-sm box-shadow w-100 py20 ml10">
+                            <h4 class="fs-md fw-b text-center" style="color:#fe6966;">최저금리 상품</h4>
+                            <div class="card-box-sm bg-white2 mt15">
+                                <dl class="data-list">
+                                    <dt class="fs-sm pr0">대출금리</dt>
+                                    <dd class="fs-sm fw-b fc-pink">3.50%</dd>
+                                    <dt class="fs-sm pr0">대출한도</dt>
+                                    <dd class="fs-sm fw-b fc-black">5,000만원</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- iOS UI Rolling Date Picker -->
+            <section class="content-box">
+                <h3 class="guide-title">iOS UI Rolling Date Picker</h3>
+                <section>
+                    <h4 class="fw-m fc-gray mt30">입사일</h4>
+                    <input readonly type="text" id="rolldate" class="custom-input calendar input-block mt10" placeholder="입사일을 입력해 주세요">
+
+                    <p>KIWMYD_LOA_005_0005.html</p>
+                </section>
+            </section>
+
+            <section class="content-box">
+                <h3 class="guide-title">비공통 스와이퍼</h3>                
+
+                <section>
+                    <h4 class="guide-sub-title">fade in-fade out swiper</h4>
+                    <div class="swiper-container custom-swiper px-padding" id="swiper_loan01">
+                        <div class="swiper-wrapper box-shadow border-radius">
+                            <div class="swiper-slide">
+                                <div class="card-box pb0 px20 text-center">
+                                    <h4 class="fs-xl fw-r mt10">여러 건의 신용조회</h4>
+                                    <p class="fs-md fc-gray-l mt10">
+                                        알림이 와도 걱정마세요.<br>
+                                        실제로는 딱 1건으로 처리되요!
+                                    </p>
+                                    <img src="../../../../resources/new_images/views/loan/img_loan_slide01.png" class="mt15">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-box pb0 px20 text-center">
+                                    <h4 class="fs-xl fw-r mt10">쉿! 비밀이에요</h4>
+                                    <p class="fs-md fc-gray-l mt10">
+                                        영웅문 고객님들께만<br>
+                                        대출금리인하 이벤트 진행중이에요.
+                                    </p>
+                                    <img src="../../../../resources/new_images/views/loan/img_loan_slide02.png" class="mt15">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-box pb0 px20 text-center">
+                                    <h4 class="fs-xl fw-r mt10">그거 아세요?</h4>
+                                    <p class="fs-md fc-gray-l mt10">
+                                        매일매일 제휴사와 이벤트가<br>
+                                        추가되고 있어요.
+                                    </p>
+                                    <img src="../../../../resources/new_images/views/loan/img_loan_slide03.png" class="mt15">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-box pb0 px20 text-center">
+                                    <h4 class="fs-xl fw-r mt10">대출금리와 한도 조회는</h4>
+                                    <p class="fs-md fc-gray-l mt10">
+                                        신용점수에 영향을 주지 않아요.<br>
+                                        &nbsp;
+                                    </p>
+                                    <img src="../../../../resources/new_images/views/loan/img_loan_slide04.png" class="mt15">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>                
+
+                <section>
+                    <h4 class="guide-sub-title">coverflow swiper + lottie animation</h4>
+                <!-- swiper lottie animation -->
+                    <div class="swiper-container custom-swiper swiper-coverflow mt30" id="swiper02">
+                        <div class="swiper-wrapper">                        
+                            <div class="swiper-slide">
+                                <div class="card-box box-shadow" style="width: 260px; height: 320px;">
+                                    <div class="motion01"></div>
+                                    <div class="text-center">
+                                        <p class="fs-md fc-gray">고신용 고객을 위한</p>
+                                        <p class="fs-lg fw-b">은행 프리미엄 상품</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card-box box-shadow" style="width: 260px; height: 320px;">
+                                    <div class="motion02"></div>
+                                    <div class="text-center">
+                                        <p class="fs-md fc-gray">저신용 고객을 위한</p>
+                                        <p class="fs-lg fw-b">정책대출상품 '햇살론'</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="card-box box-shadow" style="width: 260px; height: 320px;">
+                                    <div class="motion03"></div>
+                                    <div class="text-center">
+                                        <p class="fs-md fc-gray">사장님을 위한</p>
+                                        <p class="fs-lg fw-b">개인 사업자 대출상품</p>
+                                    </div>
+                                </div>
+                            </div>                        
+
+                            <div class="swiper-slide">
+                                <div class="card-box box-shadow" style="width: 260px; height: 320px;">
+                                    <div class="motion04"></div>
+                                    <div class="text-center">
+                                        <p class="fs-md fc-gray">프리랜서/주부를 위한</p>
+                                        <p class="fs-lg fw-b">다양한 상품</p>
+                                    </div>
+                                </div>  
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination" style="position:relative;margin-top:2rem;"></div>
+                    </div>
+                </section>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="../../../../resources/js/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../resources/js/lib/swiper-6.5.1/swiper-bundle.min.js"></script>
+    <script src="../../../../resources/js/lib/air-datepicker/datepicker.min.js"></script>
+    <script src="../../../../resources/js/lib/air-datepicker/i18n/datepicker.ko.js"></script>
+    <script src="../../../../resources/js/views2/common/new_ui_common.js"></script>
+    <script src="../assets/js/ui_guide.js"></script>
+    <script src="../../../../resources/js/lib/lottie.min.js"></script> 
+    <script>
+        // 각 swiper 실행 + autoplay
+        // KW_MOBILE.guiEvent.swiper.runSwiper(target, autoplay, type(default:bullets), 슬리이더 우측마진(default:10px))
+        KW_MOBILE.guiEvent.swiper.runSwiper('#swiper01', false);
+
+        // Go to Top
+        KW_MOBILE.guiEvent.goTop.init();
+    </script>
+    <script src="../../../../resources/js/lib/rolldate-master/rolldate.js"></script>
+    <script>   
+        new Rolldate({
+            el: '#rolldate',
+            format: 'YYYY.MM.DD',
+            beginYear: 2000,
+            endYear: 2022,
+            lang: { title: '입사일 선택', confirm: '확인', year: '', month: '', day: '' },
+
+            trigger: 'tap',
+            // Callback function
+            init: function() {
+                console.log('on init');
+            },
+            moveEnd: function(scroll) {
+                console.log(scroll)
+                console.log('scroll end');
+            },
+            confirm: function(date) {
+                console.log(date)
+                console.log('confirm');
+            },                        
+            cancel: function() {
+                console.log('cancel');
+            }
+        })    
+    </script>
+
+    <!-- fade in-fade out 스와이퍼 -->
+    <script>
+        KW_MOBILE.guiEvent.swiper.runSwiperEffect('#swiper_loan01', 'fade', 3000);
+    </script>   
+
+    <!-- coverflow 스와이퍼 -->
+    <script>
+        const swiper = new Swiper('#swiper02', {
+            effect:'coverflow',
+            coverflowEffect: {
+                rotate: 0,
+                slideShadows: false,
+                stretch: -50,
+                depth: 300,
+            },
+            loop: true,
+            autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: true
+                },            
+            centeredSlides: true,
+
+            slidesPerView: 'auto',
+
+            slideToClickedSlide: true,
+            pagination: {
+                    el: '.swiper-pagination'
+                },
+        });
+        var lottieBox=[]
+        function lottieMotion(opt1, opt2) {
+            return bodymovin.loadAnimation({
+                container: opt1,
+                renderer: 'svg',
+                loop: true,
+                autoplay: false,
+                path: '../../../../resources/new_images/views/loan/'+opt2+'.json'
+            });
+        }
+        for(var i=0; i<3; i++){
+            lottieBox.push(lottieMotion($('.motion01')[i], 'loancard_01'));
+            lottieBox.push(lottieMotion($('.motion02')[i], 'loancard_02'));
+            lottieBox.push(lottieMotion($('.motion03')[i], 'loancard_03'));
+            lottieBox.push(lottieMotion($('.motion04')[i], 'loancard_04'));
+        }
+        for(var i=0; i<lottieBox.length; i++){
+            lottieBox[i].play();
+        }
+    </script>    
+
+</body>
+
+</html>
