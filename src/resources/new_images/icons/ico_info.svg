@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
-  <g id="아이콘_안내" transform="translate(-0.342 -0.342)">
-    <path id="패스_24135" data-name="패스 24135" d="M17.687,19.791a.684.684,0,0,0,.684-.684V15.686a.684.684,0,1,0-1.368,0v3.421a.684.684,0,0,0,.684.684" transform="translate(-10.844 -9.434)" fill="#fff" fill-rule="evenodd"/>
-    <path id="패스_24136" data-name="패스 24136" d="M17.684,10.369A.684.684,0,1,0,17,9.685a.684.684,0,0,0,.684.684" transform="translate(-10.842 -5.75)" fill="#fff" fill-rule="evenodd"/>
-    <path id="패스_24137" data-name="패스 24137" d="M7.5,1.722A5.778,5.778,0,1,1,1.722,7.5,5.785,5.785,0,0,1,7.5,1.722M7.5,1A6.5,6.5,0,1,0,14,7.5,6.5,6.5,0,0,0,7.5,1" transform="translate(-0.658 -0.658)" fill="#fff"/>
-  </g>
-</svg>
