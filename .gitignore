@@ -1,3 +1,2 @@
 /* node modules 올리지 않기 */
 node_modules/
-dist/
