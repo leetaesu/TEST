@@ -2,7 +2,7 @@
 // 전달시 삭제
 #__bs_notify__{display: none !important; border: 5px solid #fff;}
 body.jump_bg{
-    background: url('../../../assets/images/cats_bg.png') repeat-x center top;
+    background: url('../../assets/images/cats_bg.png') repeat-x center top;
     background-size: cover;
     height: 100%;
     &.on{
@@ -33,7 +33,7 @@ body.jump_bg{
     left: -.4rem;
     bottom: .5rem;
     transform: rotateY(180deg) scale(.3);
-    background: url('../../../assets/images/cat4.png') no-repeat 0 0px;
+    background: url('../../assets/images/cat4.png') no-repeat 0 0px;
     &.run{
         @include catMove(13,114,catRun);
         animation: catRun .5s steps(1) infinite;
@@ -52,7 +52,7 @@ body.jump_bg{
     left: 150px;
     bottom: 80px;
     transform: rotateY(180deg);
-    background: url('../../../assets/images/cat1.png') no-repeat 0 0px;
+    background: url('../../assets/images/cat1.png') no-repeat 0 0px;
     &.walking{
         @include catMove(12,115,catWalking);
         animation: catWalking 1s steps(1) infinite;
@@ -142,7 +142,7 @@ body.jump_bg{
 
 // game list
 .gameList{
-    background: url('../../../assets/images/gamelist.png') no-repeat 0 0;
+    background: url('../../assets/images/gamelist.png') no-repeat 0 0;
     background-size: 100%;
     width: 3.6rem;
     height: 100%;
@@ -162,7 +162,7 @@ body.jump_bg{
     }
 }
 .mainList{
-    background: url('../../../assets/images/main1.jpg') no-repeat 0 0;
+    background: url('../../assets/images/main1.jpg') no-repeat 0 0;
     background-size: 100%;
     width: 3.6rem;
     height: 100%;
