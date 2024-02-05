@@ -1,0 +1,187 @@
+.top_contents {
+    overflow: auto;
+    height: calc(100vh - 4rem);
+    min-height: calc(100vh - 400px);
+}
+.container.no_space{
+    max-width: 3.6rem;
+    margin: 0 auto;
+}
+.matchgame {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 3.6rem;
+    height: 4rem;
+    max-height: 400px;
+    background-color: #000;
+    user-select: none;
+    margin: 0 auto;
+    .board {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 10px;
+            font-size: 17px;
+            color: #FFF;
+            div {
+                font-size: 16px;
+            }
+            .player_stage {
+                padding-left: 3px;
+                font-size: 16px;
+            }
+            .time {
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 5px;
+                    background: url('../images/matchgame/time.png') no-repeat 0 / contain;
+                }
+                .player_time {
+                    font-size: 16px;
+                    &.blink {
+                        animation: blinkingEffect 200ms 5 alternate;
+                    }
+                }
+            }
+        }
+        .game {
+            height: 100%;
+            .game_board {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+                .card {
+                    position: relative;
+                    width: 16.66666666666667%;
+                    height: 25%;
+                    .card_back,
+                    .card_front {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 2px solid #000;
+                        border-radius: 5px;
+                        background-clip: content-box;
+                        background-color: #FFF;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        backface-visibility: hidden;
+                        transition: transform 500ms;
+                    }
+                    .card_back {
+                        transform: rotateY(0deg);
+                        background-color: #181946;
+                        background-image: url('../images/matchgame/logo.png');
+                        background-size: 100% auto;
+                    }
+                    .card_front {
+                        transform: rotateY(-180deg);
+                        background-size: 80% auto;
+                    }
+                }
+            }
+        }
+        .stage_clear {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 300px;
+            background-image: url('../images/matchgame/clear.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: movingEffect 130ms 10 alternate;
+        }
+    }
+    .modal {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.5);
+        letter-spacing: -0.04em;
+        .modal_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 270px;
+            padding: 30px;
+            z-index: 1000;
+            border-radius: 5px;
+            background-color: #fff;
+            text-align: center;
+            .modal_result {
+                font-size: 21px;
+                margin-bottom: 10px;
+                color: #F38181;
+            }
+            .modal_stage {
+                display: inline-block;
+                margin-bottom: 10px;
+                font-size: 17px;
+                strong {
+                    font-size: 17px;
+                }
+            }
+            .modal_desc {
+                font-size: 15px;
+                strong {
+                    font-size: 15px;
+                }
+            }
+            .close_button {
+                margin-top: 25px;
+                padding: 5px 10px;
+                border: 1px solid rgb(209,213,219);
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.show {
+    display: block !important;
+}
+
+@keyframes blinkingEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes movingEffect {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 45%;
+    }
+}

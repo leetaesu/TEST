@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+// 호출
+// animation: layerHorizontalClose 1s 0s ease 1 backwards;
+
+// 컷수, 높이값 , 
+@mixin catMove($moveCut,$movePosY,$moveName){
+  @keyframes #{$moveName} {
+    $moveTimePercent : calc(100/$moveCut);
+    @for $move from 0 to $moveCut{
+      #{$move*$moveTimePercent}%{
+        background-position-y:-($movePosY*$move)+px;
+      }
+    }
+  }
+}
+
+@keyframes backgroundRepeat{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -100000px;
+  }
+}
+
+@keyframes catJump{
+  0%{
+    bottom: 80px;
+  }
+  60%{
+    bottom: 400px;
+  }
+  100%{
+    bottom: 80px;
+  }
+}
+
+@keyframes hurdle{
+  0%{
+    right: -160px;
+  }
+  90%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    right:100%;
+  }
+}

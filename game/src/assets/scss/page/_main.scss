@@ -1,0 +1,190 @@
+@charset "utf-8";
+// 전달시 삭제
+#__bs_notify__{display: none !important; border: 5px solid #fff;}
+body.jump_bg{
+    background: url('../../../assets/images/cats_bg.png') repeat-x center top;
+    background-size: cover;
+    height: 100%;
+    &.on{
+        animation: backgroundRepeat 400s 0s linear infinite backwards;
+    }
+}
+
+.score{
+    position: fixed;
+    left: -.03rem;
+    top: -.03rem;
+    background: rgba(#fff,.9);
+    padding: .1rem;
+    border-radius: .07rem;
+    box-sizing: border-box;
+    color: #1e1e1e;
+    span,em{
+        color: red;
+        font-style: normal;
+    }
+ 
+}
+
+.cats1{
+    width: 220px;
+    height: 100px;
+    position: fixed;
+    left: -.4rem;
+    bottom: .5rem;
+    transform: rotateY(180deg) scale(.3);
+    background: url('../../../assets/images/cat4.png') no-repeat 0 0px;
+    &.run{
+        @include catMove(13,114,catRun);
+        animation: catRun .5s steps(1) infinite;
+    }
+    &.jump{
+        animation: catJump .8s ease-in-out 1 backwards;
+        background-position-y: 100%;
+    }
+}
+
+.cats2{
+    display: none;
+    width: 220px;
+    height: 100px;
+    position: fixed;
+    left: 150px;
+    bottom: 80px;
+    transform: rotateY(180deg);
+    background: url('../../../assets/images/cat1.png') no-repeat 0 0px;
+    &.walking{
+        @include catMove(12,115,catWalking);
+        animation: catWalking 1s steps(1) infinite;
+    }
+}
+
+.myStockMenu{
+    position: fixed;
+    top: -.15rem;
+    right: -10%;
+    height: 2rem;
+    overflow-y: scroll;
+    opacity: .9;
+    border-radius: 20px;
+    img{
+    }
+}
+
+.hurdleBox{
+    .collision{
+        position: fixed;
+        right: 0;
+        bottom: .5rem;
+        img{
+            transform: scale(.3);
+            width: 1rem;
+            height: auto;
+            border-radius:10px;
+        }
+    }
+    
+    // .hurdleStep1{
+    //     position: fixed;
+    //     bottom: 80px;
+    //     right: -160px;
+    //     animation: hurdle 3s linear 1 forwards;
+    //     img{
+    //         width: 100px;
+    //         height: auto;
+    //         border-radius: .1rem;
+    //     }
+    // }
+}
+
+.gameover{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(#000000,.8);
+    .btngroup{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        text-align: center;
+        p{
+            color: #fff;
+            font-size: .32rem;
+            margin-bottom: .1rem;
+            &.rate{
+                font-weight: bold;
+                margin-bottom: .2rem;
+                font-size: .2rem;
+                span{
+                    font-size: .2rem;
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+            button{
+                width: 1rem;
+                font-size: .24rem;
+                background: #fff;
+                font-size: .2rem;
+                color: #000;
+                margin: 0 .1rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+}
+
+
+
+// game list
+.gameList{
+    background: url('../../../assets/images/gamelist.png') no-repeat 0 0;
+    background-size: 100%;
+    width: 3.6rem;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    p{
+        &:nth-child(1){
+            padding-top: 1.55rem;
+        }
+        margin-bottom: .05rem;
+        a{
+            font-size: .16rem;
+            font-weight: bold;
+            color: #000000;
+            text-shadow: 3px 4px 7px rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+.mainList{
+    background: url('../../../assets/images/main1.jpg') no-repeat 0 0;
+    background-size: 100%;
+    width: 3.6rem;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    transition: background 1s ease-in-out;
+}
+
+.jump_intro{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 300;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+    padding-top: 1rem;
+    p{
+        letter-spacing: 5px;
+    }
+}

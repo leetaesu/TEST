@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/default.css">
+</head>
+<body>
+    <input id="count" type="number" value="0" />
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    
+    <div class="cats1 run"></div>
+    <div class="cats2 walking"></div>
+
+    <div class="myStockMenu"><img src="./assets/images/stock.png" alt=""></div>
+
+    <div class="hurdleBox">
+        <div class="hurdleStep1"><img src="./assets/images/hurdle1.jpg" alt=""></div>
+    </div>
+        
+
+    <script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="./assets/js/dist/common.js"></script>
+    <script>
+
+        var mouseEvent = document.querySelector('html');
+        var isPressed = false,
+        jumpDataCount = 0;
+
+        mouseEvent.addEventListener('mouseup', function(event) {
+            isPressed = false;
+            console.log('aaa')
+        });
+
+        mouseEvent.addEventListener('mousedown', function(event) {
+            isPressed = true;
+            moveInterval('3');
+            // setTimeout(() => {
+            //     isPressed = false;
+            //     // $('.cats1').css({'bottom':jumpDataCount})
+            //     console.log('ddddddddddddd')
+            // }, 500);
+        });
+
+        // minusEle.addEventListener('mouseup', function(event) {
+        // isPressed = false;
+        // });
+
+        // minusEle.addEventListener('mousedown', function(event) {
+        // isPressed = true;
+        // moveInterval('-1');
+        // });
+
+        function moveInterval(action) {
+            if (isPressed) {
+                jumpDataCount += parseInt(action);
+                $('.cats1').css({'bottom':jumpDataCount+80})
+                console.log('jumpDataCount',jumpDataCount)
+                if(jumpDataCount > 200){
+                    isPressed = false;
+                    jumpDataCount=0;
+                    $('.cats1').css({'bottom':jumpDataCount+80})
+                    return
+                }
+                setTimeout(function() {
+                    moveInterval(action);
+                    
+                }, 1);
+            }
+        };
+    </script>
+</body>
+</html>

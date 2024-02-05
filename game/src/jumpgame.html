@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="./assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/default.css">
+</head>
+<body class="jump_bg">
+
+    <div class="jump_intro" style="display: none;">
+        <p>적절한 타이밍에 화면을 터치해서 금감원을 피하세요. <br>
+            검은 고양이 수익률을 올려주세요. <br><br>
+            ※ 게임 상단 나의 보유종목을 실시간으로 확인하세요.
+        </p>
+    </div>
+    <div class="score">수익률 : <span>0</span><em>%</em></div>
+    
+    <div class="cats1 run"></div>
+    <div class="cats2 walking"></div>
+
+    <div class="myStockMenu"><img src="./assets/images/stock.png" alt=""></div>
+
+    <div class="hurdleBox">
+        <div class="collision"><img src="./assets/images/hurdle1.jpg" alt=""></div>
+    </div>
+
+    <div class="gameover">
+        <div class="btngroup">
+            <p>GAME OVER</p>
+            <p class="rate">수익률 : <span></span> 달성</p>
+            <p><button class="restart">다시하기</button> <button onclick="location.href='./index.html'">나가기</button></p>
+        </div>
+    </div>
+
+    
+
+        
+
+    <script src="./assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="./assets/js/dist/common.js"></script>
+    <script>
+
+    function start(){
+
+        var cats1 = $('.cats1'),
+        jumpState =false,
+        scoreBox = $('.score'),
+        timeCnt=1;
+
+
+        // 충돌박스
+        $('.collision').css('right','-1rem') 
+        var collisionX = $('.collision').offset().left;
+        var collisionY = $('.collision').offset().top;
+        var collisionCenterX = -100;
+        var collisionCenterY = collisionY + ($('.collision').height() / 2);
+
+        // 즉시실행
+        // moveInterval(4)
+        $('body').addClass('on')
+
+        
+        // && collisionCenterX > $(window).width()+cats1.width()
+        function moveInterval(action) {
+            collisionCenterX=collisionCenterX+parseInt(action);
+            $('.collision').css({'right':collisionCenterX})
+            // console.log(collisionCenterX > $(window).width()-cats1.width())
+            // console.log(collisionCenterX,$(window).width()-100)
+            if(collisionCenterX > $(window).width()-200 && collisionCenterX > $(window).width()-100){
+                console.log('끝')
+                $('.collision').fadeOut()
+                collisionCenterX=-100;
+                return;
+            }
+            else if(collisionCenterX > $(window).width()-cats1.width()+50 && collisionCenterX > $(window).width()-200){ 
+            // if(collisionCenterX < (cats1.offset().left+cats1.width()) && collisionCenterX > cats1.offset().left){
+                console.log('지점') 
+                // console.log(jumpState)
+                if(!jumpState){
+                    // alert('게임오버');
+                    clearInterval(scoreTime)
+                    $('body').removeClass('on')
+                    cats1.hide();
+                    $('.collision').hide()
+                    $('.rate').find('span').html(timeCnt+'%')
+                    $('.gameover').show();
+                    return
+                }
+            }
+            // else if(collisionCenterX > $(window).width()){
+            //     alert('끝')
+            //     $('.collision').fadeOut()
+            //     collisionCenterX=$(window).width();
+            //     return;
+            // }
+            setTimeout(function() {
+                moveInterval(action);
+                    
+            }, 30);
+        };
+
+
+        
+        $(document).on('mousedown',function(){
+            jumpState = true;
+            if(jumpState){
+                $('.cats1').removeClass('run');
+                $('.cats1').addClass('jump')
+
+                setTimeout(() => {
+                    $('.cats1').removeClass('jump');
+                    $('.cats1').addClass('run');
+                    jumpState= false;
+                }, 700);
+            }
+        })
+        var testCnt=1;
+        var scoreTime = setInterval(() => {
+            timeCnt+=1;
+            scoreBox.find('span').text(timeCnt);
+            if(timeCnt % 30 == 0){
+                $('.collision').css({'right':'-1rem'})
+                $('.collision').fadeIn();
+                moveInterval(4+testCnt)
+                testCnt+=1
+            }
+
+        }, 200);
+
+        $('.restart').on('click',function(){
+            location.reload();
+            
+        })
+    }
+
+    setTimeout(() => {
+        // $('.jump_intro').hide();
+        // start();
+    }, 3000);
+
+    start();
+    </script>
+</body>
+</html>
